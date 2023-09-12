@@ -25,7 +25,7 @@ What do we mean when we are talking about Natural Language Processing?
 → Named-entity recognition 
 → Topic modeling 
 → Document classification 
-→ Question Answering 
+→ Question answering 
 ```
 
 ### **A Little Bit Of History** 
