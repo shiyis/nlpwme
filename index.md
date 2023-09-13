@@ -13,8 +13,11 @@ Areas that I have dabbled and focused in,
 → Statistical Natural Language Processing
 → State of the Art Language Modeling Tasks Benchmarking
 ```
-### **The Subject Matter**
 
+---
+###
+### **The Subject Matter**
+###
 What do we mean by Natural Language Processing? 
     if we do a little googling and researching, it's very intuitive that natural language processing involves a set of solutions to various natural human language tasks. The most common ones are
 ```
@@ -27,7 +30,8 @@ What do we mean by Natural Language Processing?
 → Document classification 
 → Question answering 
 ```
-
+---
+### 
 ### **A Little Bit Of History** 
 
 The history of Computational Linguistics dates back to the 40s to 50s. So, it's not very long ago that the field that has created ChatGPT or any form of AI that is so commonly adopted in every aspect of out lives started to have its very first ancestorial ideation. It's still a fairly new and young field with infinite possibilities up for exploration. 
@@ -56,9 +60,22 @@ Below are some important notes about the **historical timeline**:
 
 \textoutput{cards}
 
+---
+### 
 ### Topics We Care About
 
-
-
-
-
+- [Topic 0: Software installation](./modules/0-sotfware-installation)
+- [Topic 1: Introduction & General Overview](./modules/1-intro-general-overview)
+- [Topic 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
+- [Topic 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
+- [Topic 3: Loss functions for classification](./modules/3-loss-functions-for-classification)
+- [Topic 4: Optimization for Deep Learning](./modules/4-optimization-for-deep-learning)
+- [Topic 5: Stacking layers](./modules/5-stacking-layers)
+- [Topic 6: Convolutional Neural Network](./modules/6-convolutional-neural-network)
+- [Topic 7a: Embedding layers and dataloaders](./modules/7a-embedding-layers-dataloaders)
+- [Topic 7b: Collaborative Filtering](./modules/7b-collaborative-filtering)
+- [Modules 8: Autoencoders](./modules/8-autoencoders)
+- [Topic 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
+- [Topic 10a: Recurrent Neural Networks theory](./modules/10a-recurrent-neural-networks-theory)
+- [Topic 10b: Recurrent Neural Networks practice](./modules/10b-recurrent-neural-networks-practice)
+-->
