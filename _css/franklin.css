@@ -97,8 +97,18 @@ html {
 .franklin-content h2 {
     padding-bottom: 0.3em;
     border-bottom: 1px solid lightgrey;
-    margin-top: 2em;
-    margin-bottom: 1em; }
+    /* margin-top: 2em; */
+    /* margin-bottom: 1em; } */
+    margin-bottom: 2%;
+}
+
+.franklin-content h3 {
+    margin-top: 0%;
+}
+
+.franklin-content p {
+    padding-bottom: 0%;
+}
 
 .franklin-content h1 a { color: inherit; }
 .franklin-content h1 a:hover {text-decoration: none;}
@@ -138,7 +148,7 @@ html {
 
 /* spacing between bullet points */
 .franklin-content li p {
-        margin: 10px 0; }
+        margin: 10px 0 0 0; }
 
 .franklin-content a {
     color: #004de6;

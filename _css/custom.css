@@ -19,8 +19,9 @@ html, body {
 
 .sidebar {
     z-index: 2;
-    overflow-y: auto;
+    overflow-y: ri;
     overflow-x: hidden;
+    margin-left: auto;
 }
 
 .content {
@@ -150,3 +151,51 @@ h2 {
 }
 
 .colbox-blue{background-color:#EEF3F5;padding-top:5px;padding-right:10px;padding-left:10px;padding-bottom:5px;margin-left:5px;margin-top:5px;margin-bottom:5px;border-radius:0 10px 10px 0;border-left:5px solid #4C9CF1}
+
+
+
+
+.row {
+    /* float:right; */
+    width:100%;
+    margin:5px 10px 15px 15px;
+    padding:0 0px; }
+
+/* @media (max-width:62rem) {
+    .column {
+      width:100%;
+      display:block; }
+} */
+@media (min-width:500px){
+    .row {
+      width:97%;
+      display:block;}
+    }
+.card { 
+    .container {
+        padding: 3px 15px 3px 10px;
+    }
+    box-shadow: 0 4px 8px 0 rgba(144, 134, 134, 0.2); 
+}
+.card img {
+
+    padding-left:0;
+    width: 100%; 
+
+}
+
+
+.container::after, .row::after{
+    content: "";
+    clear: both;
+    display: table; 
+
+}
+.title { 
+    margin-top: -2em;
+    color: rgb(5, 75, 249); 
+
+}
+
+
+  /* .button:hover{ background-color: #555; }

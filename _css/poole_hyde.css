@@ -237,14 +237,15 @@ html {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  margin:auto
 }
 @media (min-width: 768px) {
   .sidebar {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 15rem;
+    width: 18rem;
     text-align: left;
   }
 }
@@ -302,13 +303,22 @@ a.sidebar-nav-item:focus {
 
 .content {
   padding-top:    4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
+  margin-left:18rem;
+
 }
 
 @media (min-width: 768px) {
   .content {
-    max-width: 45rem;
-    margin-left: 15rem;
+    /* max-width: 45rem; */
+    margin-left: 18rem;
     margin-right: 2rem;
+  }
+
+}
+
+.container {
+  .content{
+    margin:auto;
   }
 }

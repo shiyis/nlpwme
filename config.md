@@ -91,8 +91,8 @@ NOTE:
 See franklinjl.org for more information on how to introduce your own
 definitions and how they can be useful.
 -->
-\newcommand{\note}[1]{@@note @@title ❕ Note@@ @@content #1 @@ @@}
-\newcommand{\warn}[1]{@@warning @@title ❕ Warning!@@ @@content #1 @@ @@}
+\newcommand{\note}[1]{@@note @@title 💡 @@#1@@}
+\newcommand{\warn}[1]{@@warning @@title 💡 Warning!@@ @@content #1 @@ @@}
 
 \newcommand{\E}{\mathbb E} 
 \newcommand{\R}{\mathbb R}
@@ -139,4 +139,18 @@ For instance:
 
 \newcommand{\scal}[1]{\langle #1 \rangle}
 \newcommand{\blurb}[1]{~~~<p style="font-size: 1.05em; color: #333; line-height:1.5em">~~~#1~~~</p>~~~}
-\newcommand{\youtube}[1]{~~~<iframe width="1020" height="574" src="https://www.youtube.com/embed/~~~#1~~~" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>~~~}
+<!-- \newcommand{\youtube}[1]{~~~<iframe width="1020" height="574" src="https://www.youtube.com/embed/~~~#1~~~" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>~~~} -->
+
+\newcommand{\card}[2]{
+  @@card
+    @@container
+      ~~~
+      <h2>#1</h2>
+      ~~~
+      @@content #2 @@
+      <!-- ~~~
+      <p><button class="button">Contact</button></p>
+      ~~~ -->
+    @@
+  @@
+}
