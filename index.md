@@ -63,7 +63,6 @@ Below are some important notes about the **historical timeline**:
 ---
 ### 
 ### Topics We Care About
-
 - [Topic 0: Software installation](./modules/0-sotfware-installation)
 - [Topic 1: Introduction & General Overview](./modules/1-intro-general-overview)
 - [Topic 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
@@ -78,4 +77,4 @@ Below are some important notes about the **historical timeline**:
 - [Topic 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
 - [Topic 10a: Recurrent Neural Networks theory](./modules/10a-recurrent-neural-networks-theory)
 - [Topic 10b: Recurrent Neural Networks practice](./modules/10b-recurrent-neural-networks-practice)
--->
+
