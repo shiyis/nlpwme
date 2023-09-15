@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/poole_hyde.css">
+  <link rel="icon" type="img/png" href="/assets/emoji.png">
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+   <title>NLPwShiyi - Natural Language Processing with Shiyi</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+    <div class="sidebar-about">
+      <!-- <img src="/assets/robot.png"
+           style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> -->
+      <img src="/assets/nlpwshiyi.png"
+        style="width: 250px;position:relative; height: auto; display: inline">
+      <h1 style="font-size:1em; opacity: 0.95;"><a href="/">Natural Language Processing w Shiyi S.</a></h1>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <div class="week">Introduction</div>
+      <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+      href="/modules/privacy-preserving-ML">
+        <b>Part One - </b><em>Information Theory</em>
+      </a> -->
+
+      <a class="sidebar-nav-item "
+      href="/modules/info-theory.md">
+        <b>Part One - </b><em>Information Theory</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+      href="/modules/">
+        <b>Part Two - </b><em>Computationalism vs Connectionism</em>
+      </a>
+
+
+      <a class="sidebar-nav-item "
+      href="/modules/">
+        <b>Part Three - </b><em>Modern Natural Language Processing</em>
+      </a>
+
+      <!-- Week 1 starts here -->
+
+      <div class="week">NLP before AI</div>
+
+      <a class="sidebar-nav-item "
+         href="/modules/1-intro-general-overview">
+        <b>Topic 1</b> - <em>Introduction & General Overview</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/2a-pytorch-tensors">
+        <b>Topic 2a</b> - <em>PyTorch tensors</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/2b-automatic-differentiation">
+        <b>Topic 2b</b> - <em>Automatic differentiation</em>
+      </a>
+       <a class="sidebar-nav-item active"
+         href="/modules/2c-jax">
+        <b>Topic 2c</b> - <em>Automatic differentiation: VJP and intro to JAX</em>
+      </a>
+      <!-- Week 1 ends here -->
+
+      <!-- Week 2 starts here -->
+
+      
+      <div class="week">NLP with AI</div>
+      <a class="sidebar-nav-item "
+      href="/modules/1-intro-general-overview">
+     <b>Topic 1</b> - <em>Introduction & General Overview</em>
+   </a>
+
+   <a class="sidebar-nav-item "
+      href="/modules/2a-pytorch-tensors">
+     <b>Topic 2a</b> - <em>PyTorch tensors</em>
+   </a>
+
+   <a class="sidebar-nav-item "
+      href="/modules/2b-automatic-differentiation">
+     <b>Topic 2b</b> - <em>Automatic differentiation</em>
+   </a>
+    <a class="sidebar-nav-item active"
+      href="/modules/2c-jax">
+     <b>Topic 2c</b> - <em>Automatic differentiation: VJP and intro to JAX</em>
+   </a>
+      <a class="sidebar-nav-item "
+         href="/modules/3-loss-functions-for-classification">
+        <b>Topic 3</b> - <em>Loss functions for classification</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/4-optimization-for-deep-learning">
+        <b>Topic 4</b> - <em>Optimization for DL</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/5-stacking-layers">
+        <b>Topic 5</b> - <em>Stacking layers</em>
+      </a>
+
+            <!-- Week 2 ends here -->
+
+      <!-- Week 3 starts here -->
+      <div class="week">Math for DL/ML</div>
+
+      <a class="sidebar-nav-item "
+         href="/modules/6-convolutional-neural-network">
+        <b>Topic 6</b> - <em>Convolutional neural network</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/7-dataloading">
+        <b>Topic 7</b> - <em>Dataloading</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/8a-embedding-layers">
+        <b>Topic 8a</b> - <em>Embedding layers</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/8b-collaborative-filtering">
+        <b>Topic 8b</b> - <em>Collaborative filtering</em>
+      </a>
+      
+      <a class="sidebar-nav-item "
+      href="/modules/8c-word2vec">
+     <b>Topic 8c</b> - <em>Word2vec</em>
+   </a>
+      <!-- Week 3 ends here -->
+      <!-- Week 4 starts here -->
+      <!-- <div class="week">Unit 4</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/9a-autoencoders">
+        <b>Topic 9a</b> - <em>Autoencoders</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/9b-unet">
+        <b>Topic 9b</b> - <em>UNets</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/9c-flows">
+        <b>Topic 9c</b> - <em>Flows</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/10-generative-adversarial-networks">
+        <b>Topic 10</b> - <em>Generative adversarial networks</em>
+      </a>
+      
+      <!-- Week 4 ends here -->
+      <!-- Week 5 starts here -->
+      <!-- <div class="week">Unit 5</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/11a-recurrent-neural-networks-theory">
+        <b>Topic 11a</b> - <em>Recurrent Neural Networks (theory)</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/11b-recurrent-neural-networks-practice">
+        <b>Topic 11b</b> - <em>RNN in practice</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/11c-batches-with-sequences">
+        <b>Topic 11c</b> - <em>Batches with sequences in Pytorch</em>
+      </a>
+      <!-- Week 5 ends here -->
+      <!-- Unit 6 starts here -->
+      <!-- <div class="week">Unit 6</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/12-attention">
+        <b>Topic 12</b> - <em>Attention and Transformers</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/13-siamese">
+        <b>Topic 13</b> - <em>Siamese Networks and Representation Learning</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/14a-depth">
+        <b>Topic 14a</b> - <em>The Benefits of Depth</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/14b-depth">
+      <b>Topic 14b</b> - <em>The Problems with Depth</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/15-dropout">
+      <b>Topic 15</b> - <em>Dropout</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/16-batchnorm">
+      <b>Topic 16</b> - <em>Batchnorm</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/17-resnets">
+      <b>Topic 17</b> - <em>Resnets</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/18a-diffusion">
+      <b>Topic 18a</b> - <em>Denoising Diffusion Probabilistic Models</em>
+      </a>
+
+      <!-- <div class="week">Unit 7</div>-->
+      
+      <!-- Unit 6 ends here -->
+      <!-- Unit 7 starts here -->
+     
+      <div class="week">Homeworks</div>
+
+      <a class="sidebar-nav-item "
+          href="/homework/1-mlp-from-scratch">
+          <b>Homework 1</b> - <em>MLP from scratch</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+          href="/homework/2-CAM-adversarial">
+          <b>Homework 2</b> - <em>Class Activation Map and adversarial examples</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+          href="/homework/3-VAE">
+          <b>Homework 3</b> - <em>VAE for MNIST clustering and generation</em>
+      </a>
+
+      <div class="week">Bonus</div>
+      <a class="sidebar-nav-item "
+      href="/modules/12-intro-julia">
+     <b>Topic</b> - <em>Intro to Julia: Autodiff with dual numbers</em>
+    </a>
+    <a class="sidebar-nav-item "
+         href="/modules/graph0">
+        <b>Topic</b> - <em>Deep learning on graphs</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/graph1">
+        <b>Graph</b> - <em>Node embeddings</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/graph2">
+        <b>Graph</b> - <em>Signal processing on graphs</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/graph3">
+        <b>Graph</b> - <em> Graph embeddings and GNNs</em>
+      </a>
+    
+      <a class="sidebar-nav-item "
+         href="/modules/extras/GCN_inductivebias_spectral">
+        <b>Post</b> - <em>Spectral GCN</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/extras/Convolutions_first">
+        <b>Post</b> - <em>Convolutions from first principles</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/extras/invariant_equivariant">
+        <b>Post</b> - <em>Invariant and equivariant networks</em>
+      </a>
+      
+      <a class="sidebar-nav-item "
+         href="/modules/extras/graph_invariant">
+        <b>Graph</b> - <em>Exploiting Graph Invariants in Deep Learning</em>
+      </a>
+
+      <!-- <div class="week">Guest Lectures</div>
+      
+      <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+      href="/modules/privacy-preserving-ML">
+     <b>Privacy Preserving ML</b> - <em>Daniel Huynh</em> -->
+   </a>
+
+    </nav>
+  </div>
+</div>
+<div class="content container">
+
+<!-- Content appended here -->
+
+<div class="franklin-content"><h1 id="module_2c_-_automatic_differentiation_vjp_and_intro_to_jax"><a href="#module_2c_-_automatic_differentiation_vjp_and_intro_to_jax" class="header-anchor">Module 2c - Automatic differentiation: VJP and intro to JAX</a></h1>
+<p><strong>Table of Contents</strong></p>
+<div class="franklin-toc"><ol><li><a href="#jacobian">Jacobian</a></li><li><a href="#chain_composition">Chain composition</a></li><li><a href="#implementation">Implementation</a><ol><li><a href="#backprop_the_functional_way">Backprop the functional way</a></li></ol></li><li><a href="#practice">Practice</a></li></ol></div>
+<h1 id="autodiff_and_backpropagation"><a href="#autodiff_and_backpropagation" class="header-anchor">Autodiff and Backpropagation</a></h1>
+<h2 id="jacobian"><a href="#jacobian" class="header-anchor">Jacobian</a></h2>
+<p>Let \(\mathbf{f}:\mathbb{R}^n\to \mathbb{R}^m\), we define its Jacobian as:</p>
+<div class="nonumber">\[\begin{aligned}
+\frac{\partial \mathbf{f}}{\partial \mathbf{x}} = J_{\mathbf{f}}(\mathbf{x}) &= \left( \begin{array}{ccc}
+\frac{\partial f_1}{\partial x_1}&\dots& \frac{\partial f_1}{\partial x_n}\\
+\vdots&&\vdots\\
+\frac{\partial f_m}{\partial x_1}&\dots& \frac{\partial f_m}{\partial x_n}
+\end{array}\right)\\
+&=\left( \frac{\partial \mathbf{f}}{\partial x_1},\dots, \frac{\partial \mathbf{f}}{\partial x_n}\right)\\
+&=\left(
+\begin{array}{c}
+\nabla f_1(\mathbf{x})^T\\
+\vdots\\
+\nabla f_m(x)^T
+\end{array}\right)
+\end{aligned}\]</div>
+<p>Hence the Jacobian \(J_{\mathbf{f}}(\mathbf{x})\in \mathbb{R}^{m\times n}\) is a linear map from \(\mathbb{R}^n\) to \(\mathbb{R}^m\) such that for \(\mathbf{x},\mathbf{v} \in \mathbb{R}^n\) and \(h\in \mathbb{R}\):</p>
+<div class="nonumber">\[\begin{aligned}
+\mathbf{f}(\mathbf{x}+h\mathbf{v}) = \mathbf{f}(\mathbf{x}) + h J_{\mathbf{f}}(\mathbf{x})\mathbf{v} +o(h).
+\end{aligned}\]</div>
+<p>The term \(J_{\mathbf{f}}(\mathbf{x})\mathbf{v}\in \mathbb{R}^m\) is a Jacobian Vector Product &#40;<strong>JVP</strong>&#41;, corresponding to the interpretation where the Jacobian is the linear map: \(J_{\mathbf{f}}(\mathbf{x}):\mathbb{R}^n \to \mathbb{R}^m\), where \(J_{\mathbf{f}}(\mathbf{x})(\mathbf{v})=J_{\mathbf{f}}(\mathbf{x})\mathbf{v}\).</p>
+<h2 id="chain_composition"><a href="#chain_composition" class="header-anchor">Chain composition</a></h2>
+<p>In machine learning, we are computing gradient of the loss function with respect to the parameters. In particular, if the parameters are high-dimensional, the loss is a real number. Hence, consider a real-valued function \(\mathbf{f}:\mathbb{R}^n\stackrel{\mathbf{g}_1}{\to}\mathbb{R}^m \stackrel{\mathbf{g}_2}{\to}\mathbb{R}^d\stackrel{h}{\to}\mathbb{R}\), so that \(\mathbf{f}(\mathbf{x}) = h(\mathbf{g}_2(\mathbf{g}_1(\mathbf{x})))\in \mathbb{R}\). We have</p>
+<div class="nonumber">\[\begin{aligned}
+\underbrace{\nabla\mathbf{f}(\mathbf{x})}_{n\times 1}=\underbrace{J_{\mathbf{g}_1}(\mathbf{x})^T}_{n\times m}\underbrace{J_{\mathbf{g}_2}(\mathbf{g}_1(\mathbf{x}))^T}_{m\times d}\underbrace{\nabla h(\mathbf{g}_2(\mathbf{g}_1(\mathbf{x})))}_{d\times 1}.
+\end{aligned}\]</div>
+<p>To do this computation, if we start from the right so that we start with a matrix times a vector to obtain a vector &#40;of size \(m\)&#41; and we need to make another matrix times a vector, resulting in \(O(nm+md)\) operations. If we start from the left with the matrix-matrix multiplication, we get \(O(nmd+nd)\) operations. Hence we see that as soon as \(m\approx d\), starting for the right is much more efficient. Note however that doing the computation from the right to the left requires keeping in memory the values of \(\mathbf{g}_1(\mathbf{x})\in\mathbb{R}^m\), and \(\mathbf{x}\in \mathbb{R}^n\).</p>
+<p><strong>Backpropagation</strong> is an efficient algorithm computing the gradient &quot;from the right to the left&quot;, i.e. backward. In particular, we will need to compute quantities of the form: \(J_{\mathbf{f}}(\mathbf{x})^T\mathbf{u} \in \mathbb{R}^n\) with \(\mathbf{u} \in\mathbb{R}^m\) which can be rewritten \(\mathbf{u}^T J_{\mathbf{f}}(\mathbf{x})\) which is a Vector Jacobian Product &#40;<strong>VJP</strong>&#41;, correponding to the interpretation where the Jacobian is the linear map: \(J_{\mathbf{f}}(\mathbf{x}):\mathbb{R}^n \to \mathbb{R}^m\), composed with the linear map \(\mathbf{u}:\mathbb{R}^m\to \mathbb{R}\) so that \(\mathbf{u}^TJ_{\mathbf{f}}(\mathbf{x}) = \mathbf{u} \circ J_{\mathbf{f}}(\mathbf{x})\).</p>
+<p><strong>example:</strong> let \(\mathbf{f}(\mathbf{x}, W) = \mathbf{x} W\in \mathbb{R}^b\) where \(W\in \mathbb{R}^{a\times b}\) and \(\mathbf{x}\in \mathbb{R}^a\). We clearly have</p>
+\[
+J_{\mathbf{f}}(\mathbf{x}) = W^T.
+\]
+<p>Note that here, we are slightly abusing notations and considering the partial function \(\mathbf{x}\mapsto \mathbf{f}(\mathbf{x}, W)\). To see this, we can write \(f_j = \sum_{i}x_iW_{ij}\) so that </p>
+\[
+\frac{\partial \mathbf{f}}{\partial x_i}= \left( W_{i1}\dots W_{ib}\right)^T
+\]
+<p>Then recall from definitions that</p>
+\[
+J_{\mathbf{f}}(\mathbf{x}) = \left( \frac{\partial \mathbf{f}}{\partial x_1},\dots, \frac{\partial \mathbf{f}}{\partial x_n}\right)=W^T.
+\]
+<p>Now we clearly have</p>
+\[
+J_{\mathbf{f}}(W) = \mathbf{x} \text{ since, } \mathbf{f}(\mathbf{x}, W+\Delta W) = \mathbf{f}(\mathbf{x}, W) + \mathbf{x} \Delta W.
+\]
+<p>Note that multiplying \(\mathbf{x}\) on the left is actually convenient when using broadcasting, i.e. we can take a batch of input vectors of shape \(\text{bs}\times a\) without modifying the math above. </p>
+<h2 id="implementation"><a href="#implementation" class="header-anchor">Implementation</a></h2>
+<p>In PyTorch, <code>torch.autograd</code> provides classes and functions implementing automatic differentiation of arbitrary scalar-valued functions. To create a custom <a href="https://pytorch.org/docs/stable/autograd.html#torch.autograd.Function">autograd.Function</a>, subclass this class and implement the <code>forward&#40;&#41;</code> and <code>backward&#40;&#41;</code> static methods. Here is an example:</p>
+<pre><code class="language-python">class Exp&#40;Function&#41;:
+    @staticmethod
+    def forward&#40;ctx, i&#41;:
+        result &#61; i.exp&#40;&#41;
+        ctx.save_for_backward&#40;result&#41;
+        return result
+    @staticmethod
+    def backward&#40;ctx, grad_output&#41;:
+        result, &#61; ctx.saved_tensors
+        return grad_output * result
+# Use it by calling the apply method:
+output &#61; Exp.apply&#40;input&#41;</code></pre>
+<p>You can have a look at <a href="https://dataflowr.github.io/website/modules/2b-automatic-differentiation">Module 2b</a> to learn more about this approach as well as <a href="https://dataflowr.github.io/website/homework/1-mlp-from-scratch/">MLP from scratch</a>.</p>
+<h3 id="backprop_the_functional_way"><a href="#backprop_the_functional_way" class="header-anchor">Backprop the functional way</a></h3>
+<p>Here we will implement in <code>numpy</code> a different approach mimicking the functional approach of <a href="https://jax.readthedocs.io/en/latest/index.html">JAX</a> see <a href="https://jax.readthedocs.io/en/latest/notebooks/autodiff_cookbook.html#">The Autodiff Cookbook</a>.</p>
+<p>Each function will take 2 arguments: one being the input <code>x</code> and the other being the parameters <code>w</code>. For each function, we build 2 <strong>vjp</strong> functions taking as argument a gradient \(\mathbf{u}\), and corresponding to \(J_{\mathbf{f}}(\mathbf{x})\) and \(J_{\mathbf{f}}(\mathbf{w})\) so that these functions return \(J_{\mathbf{f}}(\mathbf{x})^T \mathbf{u}\) and \(J_{\mathbf{f}}(\mathbf{w})^T \mathbf{u}\) respectively. To summarize, for \(\mathbf{x} \in \mathbb{R}^n\), \(\mathbf{w} \in \mathbb{R}^d\), and, \(\mathbf{f}(\mathbf{x},\mathbf{w}) \in \mathbb{R}^m\),</p>
+<div class="nonumber">\[\begin{aligned}
+{\bf vjp}_\mathbf{x}(\mathbf{u}) &= J_{\mathbf{f}}(\mathbf{x})^T \mathbf{u}, \text{ with } J_{\mathbf{f}}(\mathbf{x})\in\mathbb{R}^{m\times n}, \mathbf{u}\in \mathbb{R}^m\\
+{\bf vjp}_\mathbf{w}(\mathbf{u}) &= J_{\mathbf{f}}(\mathbf{w})^T \mathbf{u}, \text{ with } J_{\mathbf{f}}(\mathbf{w})\in\mathbb{R}^{m\times d}, \mathbf{u}\in \mathbb{R}^m
+\end{aligned}\]</div>
+<p>Then backpropagation is simply done by first computing the gradient of the loss and then composing the <strong>vjp</strong> functions in the right order.</p>
+<h2 id="practice"><a href="#practice" class="header-anchor">Practice</a></h2>
+<ul>
+<li><p>intro to JAX: autodiff the functional way <a href="https://github.com/dataflowr/notebooks/blob/master/Module2/autodiff_functional_empty.ipynb">autodiff&#95;functional&#95;empty.ipynb</a> and its solution <a href="https://github.com/dataflowr/notebooks/blob/master/Module2/autodiff_functional_sol.ipynb">autodiff&#95;functional&#95;sol.ipynb</a></p>
+</li>
+<li><p>Linear regression in JAX <a href="https://github.com/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb">linear&#95;regression&#95;jax.ipynb</a></p>
+</li>
+</ul>
+<div class="page-foot">
+  <div class="copyright">
+    <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></img></b></a></br>
+    Last modified: September 12, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>

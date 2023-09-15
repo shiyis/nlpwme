@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/poole_hyde.css">
+  <link rel="icon" type="img/png" href="/assets/emoji.png">
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+   <title>NLPwShiyi - Natural Language Processing with Shiyi</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+    <div class="sidebar-about">
+      <!-- <img src="/assets/robot.png"
+           style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> -->
+      <img src="/assets/nlpwshiyi.png"
+        style="width: 250px;position:relative; height: auto; display: inline">
+      <h1 style="font-size:1em; opacity: 0.95;"><a href="/">Natural Language Processing w Shiyi S.</a></h1>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <div class="week">Introduction</div>
+      <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+      href="/modules/privacy-preserving-ML">
+        <b>Part One - </b><em>Information Theory</em>
+      </a> -->
+
+      <a class="sidebar-nav-item "
+      href="/modules/info-theory.md">
+        <b>Part One - </b><em>Information Theory</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+      href="/modules/">
+        <b>Part Two - </b><em>Computationalism vs Connectionism</em>
+      </a>
+
+
+      <a class="sidebar-nav-item "
+      href="/modules/">
+        <b>Part Three - </b><em>Modern Natural Language Processing</em>
+      </a>
+
+      <!-- Week 1 starts here -->
+
+      <div class="week">NLP before AI</div>
+
+      <a class="sidebar-nav-item "
+         href="/modules/1-intro-general-overview">
+        <b>Topic 1</b> - <em>Introduction & General Overview</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/2a-pytorch-tensors">
+        <b>Topic 2a</b> - <em>PyTorch tensors</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/2b-automatic-differentiation">
+        <b>Topic 2b</b> - <em>Automatic differentiation</em>
+      </a>
+       <a class="sidebar-nav-item "
+         href="/modules/2c-jax">
+        <b>Topic 2c</b> - <em>Automatic differentiation: VJP and intro to JAX</em>
+      </a>
+      <!-- Week 1 ends here -->
+
+      <!-- Week 2 starts here -->
+
+      
+      <div class="week">NLP with AI</div>
+      <a class="sidebar-nav-item "
+      href="/modules/1-intro-general-overview">
+     <b>Topic 1</b> - <em>Introduction & General Overview</em>
+   </a>
+
+   <a class="sidebar-nav-item "
+      href="/modules/2a-pytorch-tensors">
+     <b>Topic 2a</b> - <em>PyTorch tensors</em>
+   </a>
+
+   <a class="sidebar-nav-item "
+      href="/modules/2b-automatic-differentiation">
+     <b>Topic 2b</b> - <em>Automatic differentiation</em>
+   </a>
+    <a class="sidebar-nav-item "
+      href="/modules/2c-jax">
+     <b>Topic 2c</b> - <em>Automatic differentiation: VJP and intro to JAX</em>
+   </a>
+      <a class="sidebar-nav-item "
+         href="/modules/3-loss-functions-for-classification">
+        <b>Topic 3</b> - <em>Loss functions for classification</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/4-optimization-for-deep-learning">
+        <b>Topic 4</b> - <em>Optimization for DL</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/5-stacking-layers">
+        <b>Topic 5</b> - <em>Stacking layers</em>
+      </a>
+
+            <!-- Week 2 ends here -->
+
+      <!-- Week 3 starts here -->
+      <div class="week">Math for DL/ML</div>
+
+      <a class="sidebar-nav-item "
+         href="/modules/6-convolutional-neural-network">
+        <b>Topic 6</b> - <em>Convolutional neural network</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/7-dataloading">
+        <b>Topic 7</b> - <em>Dataloading</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/8a-embedding-layers">
+        <b>Topic 8a</b> - <em>Embedding layers</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/8b-collaborative-filtering">
+        <b>Topic 8b</b> - <em>Collaborative filtering</em>
+      </a>
+      
+      <a class="sidebar-nav-item "
+      href="/modules/8c-word2vec">
+     <b>Topic 8c</b> - <em>Word2vec</em>
+   </a>
+      <!-- Week 3 ends here -->
+      <!-- Week 4 starts here -->
+      <!-- <div class="week">Unit 4</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/9a-autoencoders">
+        <b>Topic 9a</b> - <em>Autoencoders</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/9b-unet">
+        <b>Topic 9b</b> - <em>UNets</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/9c-flows">
+        <b>Topic 9c</b> - <em>Flows</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/10-generative-adversarial-networks">
+        <b>Topic 10</b> - <em>Generative adversarial networks</em>
+      </a>
+      
+      <!-- Week 4 ends here -->
+      <!-- Week 5 starts here -->
+      <!-- <div class="week">Unit 5</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/11a-recurrent-neural-networks-theory">
+        <b>Topic 11a</b> - <em>Recurrent Neural Networks (theory)</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/11b-recurrent-neural-networks-practice">
+        <b>Topic 11b</b> - <em>RNN in practice</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/11c-batches-with-sequences">
+        <b>Topic 11c</b> - <em>Batches with sequences in Pytorch</em>
+      </a>
+      <!-- Week 5 ends here -->
+      <!-- Unit 6 starts here -->
+      <!-- <div class="week">Unit 6</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/12-attention">
+        <b>Topic 12</b> - <em>Attention and Transformers</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/13-siamese">
+        <b>Topic 13</b> - <em>Siamese Networks and Representation Learning</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/14a-depth">
+        <b>Topic 14a</b> - <em>The Benefits of Depth</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/14b-depth">
+      <b>Topic 14b</b> - <em>The Problems with Depth</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/15-dropout">
+      <b>Topic 15</b> - <em>Dropout</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/16-batchnorm">
+      <b>Topic 16</b> - <em>Batchnorm</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/17-resnets">
+      <b>Topic 17</b> - <em>Resnets</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/18a-diffusion">
+      <b>Topic 18a</b> - <em>Denoising Diffusion Probabilistic Models</em>
+      </a>
+
+      <!-- <div class="week">Unit 7</div>-->
+      
+      <!-- Unit 6 ends here -->
+      <!-- Unit 7 starts here -->
+     
+      <div class="week">Homeworks</div>
+
+      <a class="sidebar-nav-item "
+          href="/homework/1-mlp-from-scratch">
+          <b>Homework 1</b> - <em>MLP from scratch</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+          href="/homework/2-CAM-adversarial">
+          <b>Homework 2</b> - <em>Class Activation Map and adversarial examples</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+          href="/homework/3-VAE">
+          <b>Homework 3</b> - <em>VAE for MNIST clustering and generation</em>
+      </a>
+
+      <div class="week">Bonus</div>
+      <a class="sidebar-nav-item "
+      href="/modules/12-intro-julia">
+     <b>Topic</b> - <em>Intro to Julia: Autodiff with dual numbers</em>
+    </a>
+    <a class="sidebar-nav-item "
+         href="/modules/graph0">
+        <b>Topic</b> - <em>Deep learning on graphs</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/graph1">
+        <b>Graph</b> - <em>Node embeddings</em>
+      </a>
+      <a class="sidebar-nav-item active"
+         href="/modules/graph2">
+        <b>Graph</b> - <em>Signal processing on graphs</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/graph3">
+        <b>Graph</b> - <em> Graph embeddings and GNNs</em>
+      </a>
+    
+      <a class="sidebar-nav-item "
+         href="/modules/extras/GCN_inductivebias_spectral">
+        <b>Post</b> - <em>Spectral GCN</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/extras/Convolutions_first">
+        <b>Post</b> - <em>Convolutions from first principles</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/extras/invariant_equivariant">
+        <b>Post</b> - <em>Invariant and equivariant networks</em>
+      </a>
+      
+      <a class="sidebar-nav-item "
+         href="/modules/extras/graph_invariant">
+        <b>Graph</b> - <em>Exploiting Graph Invariants in Deep Learning</em>
+      </a>
+
+      <!-- <div class="week">Guest Lectures</div>
+      
+      <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+      href="/modules/privacy-preserving-ML">
+     <b>Privacy Preserving ML</b> - <em>Daniel Huynh</em> -->
+   </a>
+
+    </nav>
+  </div>
+</div>
+<div class="content container">
+
+<!-- Content appended here -->
+
+<div class="franklin-content"><h1 id="module_-_deep_learning_on_graphs_2"><a href="#module_-_deep_learning_on_graphs_2" class="header-anchor">Module - Deep Learning on graphs &#40;2&#41;</a></h1>
+<p><strong>Table of Contents</strong></p>
+<div class="franklin-toc"><ol><li><a href="#signal_processing_on_graphs">Signal processing on graphs</a></li><li><a href="#slides">Slides</a></li><li><a href="#notebook">Notebook</a></li><li><a href="#posts">Posts</a></li></ol></div>
+<h2 id="signal_processing_on_graphs"><a href="#signal_processing_on_graphs" class="header-anchor">Signal processing on graphs</a></h2>
+<p>    <div id="videoContainer" >
+            <div id="player"></div>        
+    </div>
+    <script>
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '300',
+            width: '100%',
+            videoId: 'o1CfrsSTRAU',
+            playerVars: {
+                'autoplay': 0,
+                'rel': 0,
+                'cc_load_policy': 1
+            }
+        });
+    }
+
+    function changeYouTubeSource(startTime, endTime) {
+
+        var youtubeIframe = document.getElementById('player');
+
+        var youtubeIframeSrc = document.getElementById('player').getAttribute('src');
+
+        var trimmedIframeUrl = '';
+        var iframeUrlTimeStamp = '';
+
+        if (youtubeIframeSrc.match(/&start=/g)) {
+            var mediaFragmentIndex = youtubeIframeSrc.indexOf('&start=');
+            trimmedIframeUrl = youtubeIframeSrc.slice(0, mediaFragmentIndex);
+
+            if (endTime === 0) {
+                iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime;
+            } else {
+                iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime + '&end=' + endTime;
+            }
+        }
+
+        if (youtubeIframeSrc.match(/&start=/g) === null) {
+            if (endTime === 0) {
+                iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime;
+            } else {
+                iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime + '&end=' + endTime;
+            }
+        }
+
+        setTimeout(function() {
+
+            var iframeAutoplayUrl = iframeUrlTimeStamp.replace('autoplay=0', 'autoplay=1');
+
+            youtubeIframe.setAttribute('src', iframeAutoplayUrl);
+        }, 1000);
+}
+    </script>
+     <br>
+<a href='#player' onclick='changeYouTubeSource(0,0)'> 0:00</a> Introduction
+ <br>
+<a href='#player' onclick='changeYouTubeSource(100,0)'> 1:40</a> Signal processing on graphs
+ <br>
+<a href='#player' onclick='changeYouTubeSource(184,0)'> 3:04</a> Recap on Fourier analysis
+ <br>
+<a href='#player' onclick='changeYouTubeSource(304,0)'> 5:04</a> Spectral graph theory
+ <br>
+<a href='#player' onclick='changeYouTubeSource(824,0)'> 13:44</a> Graph Fourier analysis
+ <br>
+<a href='#player' onclick='changeYouTubeSource(998,0)'> 16:38</a> Filtering
+ <br>
+<a href='#player' onclick='changeYouTubeSource(1113,0)'> 18:33</a> Filtering on graphs
+ <br>
+<a href='#player' onclick='changeYouTubeSource(1321,0)'> 22:01</a> Learning a localized kernel
+ <br>
+<a href='#player' onclick='changeYouTubeSource(1503,0)'> 25:03</a> Chebyshev polynomials
+ <br>
+<a href='#player' onclick='changeYouTubeSource(1828,0)'> 30:28</a> Convolutional neural networks on graphs
+</p>
+<h2 id="slides"><a href="#slides" class="header-anchor">Slides</a></h2>
+<ul>
+<li><p><a href="https://dataflowr.github.io/slides/deep_graph_2.html">slides</a></p>
+</li>
+</ul>
+<h2 id="notebook"><a href="#notebook" class="header-anchor">Notebook</a></h2>
+<ul>
+<li><p><a href="https://github.com/dataflowr/notebooks/blob/master/graphs/spectral_gnn.ipynb">notebook</a> in <a href="https://colab.research.google.com/github/dataflowr/notebooks/blob/master/graphs/spectral_gnn.ipynb">colab</a></p>
+</li>
+</ul>
+<h2 id="posts"><a href="#posts" class="header-anchor">Posts</a></h2>
+<ul>
+<li><p><a href="../extras/GCN_inductivebias_spectral/">Inductive bias in GCN: a spectral perspective</a> &#40;run the <a href="https://github.com/dataflowr/notebooks/blob/master/graphs/GCN_inductivebias_spectral.ipynb">code</a> or open it in <a href="https://colab.research.google.com/github/dataflowr/notebooks/blob/master/graphs/GCN_inductivebias_spectral-colab.ipynb">Colab</a>&#41;</p>
+</li>
+</ul>
+<div class="page-foot">
+  <div class="copyright">
+    <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></img></b></a></br>
+    Last modified: September 12, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+    
+  </body>
+</html>
