@@ -27,6 +27,7 @@ videos = Dict(
               "graph1" => "Ch0Iz8BJn98",
               "graph2" => "o1CfrsSTRAU",
               "graph3" => "ZD0zwjEQhz8",
-              "graphinv" => "J4iYhmXLHrM"
+              "graphinv" => "J4iYhmXLHrM",
+              "noisy-channel" => "zjWXLD_ihOc"
 
 )
