@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/poole_hyde.css">
+  <link rel="icon" type="img/png" href="/assets/emoji.png">
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+   <title>NLPwShiyi - Natural Language Processing with Shiyi</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+    <div class="sidebar-about">
+      <!-- <img src="/assets/robot.png"
+           style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> -->
+      <img src="/assets/nlpwshiyi.png"
+        style="width: 250px;position:relative; height: auto; display: inline">
+      <h1 style="font-size:1em; opacity: 0.95;"><a href="/">Natural Language Processing w Shiyi S.</a></h1>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <div class="week">Introduction</div>
+      <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+      href="/modules/privacy-preserving-ML">
+        <b>Part One - </b><em>Information Theory</em>
+      </a> -->
+
+      <a class="sidebar-nav-item "
+      href="/modules/info-theory.md">
+        <b>Part One - </b><em>Information Theory</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+      href="/modules/">
+        <b>Part Two - </b><em>Computationalism vs Connectionism</em>
+      </a>
+
+
+      <a class="sidebar-nav-item "
+      href="/modules/">
+        <b>Part Three - </b><em>Modern Natural Language Processing</em>
+      </a>
+
+      <!-- Week 1 starts here -->
+
+      <div class="week">NLP before AI</div>
+
+      <a class="sidebar-nav-item "
+         href="/modules/1-intro-general-overview">
+        <b>Topic 1</b> - <em>Introduction & General Overview</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/2a-pytorch-tensors">
+        <b>Topic 2a</b> - <em>PyTorch tensors</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/2b-automatic-differentiation">
+        <b>Topic 2b</b> - <em>Automatic differentiation</em>
+      </a>
+       <a class="sidebar-nav-item "
+         href="/modules/2c-jax">
+        <b>Topic 2c</b> - <em>Automatic differentiation: VJP and intro to JAX</em>
+      </a>
+      <!-- Week 1 ends here -->
+
+      <!-- Week 2 starts here -->
+
+      
+      <div class="week">NLP with AI</div>
+      <a class="sidebar-nav-item "
+      href="/modules/1-intro-general-overview">
+     <b>Topic 1</b> - <em>Introduction & General Overview</em>
+   </a>
+
+   <a class="sidebar-nav-item "
+      href="/modules/2a-pytorch-tensors">
+     <b>Topic 2a</b> - <em>PyTorch tensors</em>
+   </a>
+
+   <a class="sidebar-nav-item "
+      href="/modules/2b-automatic-differentiation">
+     <b>Topic 2b</b> - <em>Automatic differentiation</em>
+   </a>
+    <a class="sidebar-nav-item "
+      href="/modules/2c-jax">
+     <b>Topic 2c</b> - <em>Automatic differentiation: VJP and intro to JAX</em>
+   </a>
+      <a class="sidebar-nav-item "
+         href="/modules/3-loss-functions-for-classification">
+        <b>Topic 3</b> - <em>Loss functions for classification</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/4-optimization-for-deep-learning">
+        <b>Topic 4</b> - <em>Optimization for DL</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/5-stacking-layers">
+        <b>Topic 5</b> - <em>Stacking layers</em>
+      </a>
+
+            <!-- Week 2 ends here -->
+
+      <!-- Week 3 starts here -->
+      <div class="week">Math for DL/ML</div>
+
+      <a class="sidebar-nav-item "
+         href="/modules/6-convolutional-neural-network">
+        <b>Topic 6</b> - <em>Convolutional neural network</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/7-dataloading">
+        <b>Topic 7</b> - <em>Dataloading</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/8a-embedding-layers">
+        <b>Topic 8a</b> - <em>Embedding layers</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/8b-collaborative-filtering">
+        <b>Topic 8b</b> - <em>Collaborative filtering</em>
+      </a>
+      
+      <a class="sidebar-nav-item "
+      href="/modules/8c-word2vec">
+     <b>Topic 8c</b> - <em>Word2vec</em>
+   </a>
+      <!-- Week 3 ends here -->
+      <!-- Week 4 starts here -->
+      <!-- <div class="week">Unit 4</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/9a-autoencoders">
+        <b>Topic 9a</b> - <em>Autoencoders</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/9b-unet">
+        <b>Topic 9b</b> - <em>UNets</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/9c-flows">
+        <b>Topic 9c</b> - <em>Flows</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/10-generative-adversarial-networks">
+        <b>Topic 10</b> - <em>Generative adversarial networks</em>
+      </a>
+      
+      <!-- Week 4 ends here -->
+      <!-- Week 5 starts here -->
+      <!-- <div class="week">Unit 5</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/11a-recurrent-neural-networks-theory">
+        <b>Topic 11a</b> - <em>Recurrent Neural Networks (theory)</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/11b-recurrent-neural-networks-practice">
+        <b>Topic 11b</b> - <em>RNN in practice</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/11c-batches-with-sequences">
+        <b>Topic 11c</b> - <em>Batches with sequences in Pytorch</em>
+      </a>
+      <!-- Week 5 ends here -->
+      <!-- Unit 6 starts here -->
+      <!-- <div class="week">Unit 6</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/12-attention">
+        <b>Topic 12</b> - <em>Attention and Transformers</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/13-siamese">
+        <b>Topic 13</b> - <em>Siamese Networks and Representation Learning</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/14a-depth">
+        <b>Topic 14a</b> - <em>The Benefits of Depth</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/14b-depth">
+      <b>Topic 14b</b> - <em>The Problems with Depth</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/15-dropout">
+      <b>Topic 15</b> - <em>Dropout</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/16-batchnorm">
+      <b>Topic 16</b> - <em>Batchnorm</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/17-resnets">
+      <b>Topic 17</b> - <em>Resnets</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/18a-diffusion">
+      <b>Topic 18a</b> - <em>Denoising Diffusion Probabilistic Models</em>
+      </a>
+
+      <!-- <div class="week">Unit 7</div>-->
+      
+      <!-- Unit 6 ends here -->
+      <!-- Unit 7 starts here -->
+     
+      <div class="week">Homeworks</div>
+
+      <a class="sidebar-nav-item "
+          href="/homework/1-mlp-from-scratch">
+          <b>Homework 1</b> - <em>MLP from scratch</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+          href="/homework/2-CAM-adversarial">
+          <b>Homework 2</b> - <em>Class Activation Map and adversarial examples</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+          href="/homework/3-VAE">
+          <b>Homework 3</b> - <em>VAE for MNIST clustering and generation</em>
+      </a>
+
+      <div class="week">Bonus</div>
+      <a class="sidebar-nav-item "
+      href="/modules/12-intro-julia">
+     <b>Topic</b> - <em>Intro to Julia: Autodiff with dual numbers</em>
+    </a>
+    <a class="sidebar-nav-item "
+         href="/modules/graph0">
+        <b>Topic</b> - <em>Deep learning on graphs</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/graph1">
+        <b>Graph</b> - <em>Node embeddings</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/graph2">
+        <b>Graph</b> - <em>Signal processing on graphs</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/graph3">
+        <b>Graph</b> - <em> Graph embeddings and GNNs</em>
+      </a>
+    
+      <a class="sidebar-nav-item "
+         href="/modules/extras/GCN_inductivebias_spectral">
+        <b>Post</b> - <em>Spectral GCN</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/extras/Convolutions_first">
+        <b>Post</b> - <em>Convolutions from first principles</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/extras/invariant_equivariant">
+        <b>Post</b> - <em>Invariant and equivariant networks</em>
+      </a>
+      
+      <a class="sidebar-nav-item "
+         href="/modules/extras/graph_invariant">
+        <b>Graph</b> - <em>Exploiting Graph Invariants in Deep Learning</em>
+      </a>
+
+      <!-- <div class="week">Guest Lectures</div>
+      
+      <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+      href="/modules/privacy-preserving-ML">
+     <b>Privacy Preserving ML</b> - <em>Daniel Huynh</em> -->
+   </a>
+
+    </nav>
+  </div>
+</div>
+<div class="content container">
+
+<!-- Content appended here -->
+
+<div class="franklin-content"><h1 id="projects_in_julia"><a href="#projects_in_julia" class="header-anchor">Projects in Julia </a></h1>
+<p>Even for a personal project, we recommend to make a simple Julia package &#40;like in python you use virtual environment&#41;. This is a simple tutorial to help you coding an app in Julia.</p>
+<h2 id="prerequisite"><a href="#prerequisite" class="header-anchor">Prerequisite</a></h2>
+<p>You need to have <a href="https://julialang.org/downloads/">Julia</a> installed and a <a href="https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account">GitHub</a> account.</p>
+<h2 id="creating_the_julia_package"><a href="#creating_the_julia_package" class="header-anchor">Creating the Julia Package</a></h2>
+<p>We&#39;ll be using <a href="https://github.com/tpapp/PkgSkeleton.jl">PkgSkeleton.jl</a> which allows to simplify the creation of packages. First check your git configuration &#40;as it will be used to create the package&#41; with:</p>
+<pre><code class="language-julia">git config --list</code></pre>
+<p>You should see your <code>user.name</code>, your <code>user.email</code> and <code>github.user</code>, if not then use for example:</p>
+<pre><code class="language-julia">git config --global user.name &quot;firstname lastname&quot;
+git config --global user.email &quot;bla.bla@domain.ext&quot;
+git config --global github.user &quot;ghuser&quot;</code></pre>
+<p>Now, I describe the steps used to make a package called <a href="https://github.com/mlelarge/KalmanAD.jl">KalmanAD.jl</a>, you need to replace <code>KalmanAD.jl</code> by the name of your package and <code>mlelarge</code> by your <code>github.user</code>&#33; This particular package has nothing specific but since naming &#40;with extension <code>.jl</code> for example&#41; can be a little bit tricky, if you have any doubt, you can have a look at the package on GitHub to see how things are organized...</p>
+<p>Move to the folder where you want to create your package: we will use Julia to create a folder <code>KalmanAD.jl</code> with the right structure. For this, start Julia and enter the package installation mode by typing <code>&#93;</code> then run &#40;to exit the <code>pkg&gt;</code> mode just type on Backspace&#41;</p>
+<pre><code class="language-julia">pkg&gt; add PkgSkeleton
+julia&gt; using PkgSkeleton
+julia&gt; PkgSkeleton.generate&#40;&quot;KalmanAD.jl&quot;&#41;</code></pre>
+<p>Now, when your exit Julia, you should have a folder <code>KalmanAD.jl</code> with some files and folders in it.</p>
+<h2 id="connecting_to_github"><a href="#connecting_to_github" class="header-anchor">Connecting to GitHub</a></h2>
+<p>Go on GitHub.com and create a repository with the same name: <code>KalmanAD.jl</code> by following <a href="https://docs.github.com/en/get-started/quickstart/create-a-repo">these steps</a> &#40;make it public&#41;.</p>
+<p>On your computer, inside your <code>KalmanAD.jl</code> run the following commands:</p>
+<pre><code class="language-julia">git add . &amp;&amp; git commit -m &quot;initial commit&quot;
+git remote add origin git@github.com:mlelarge/KalmanAD.jl.git
+git branch -M main
+git push -u origin main</code></pre>
+<p>The first command add the files created by <code>PkgSkeleton</code> and commit them. The last 3 commands are connecting your git repo to GitHub &#40;of course you need to replace <code>mlelarge</code> and <code>KalmanAD.jl</code> by the appropriate values&#41;. Now, you should see on your GitHub account the repository you created on your computer.</p>
+<h2 id="start_coding"><a href="#start_coding" class="header-anchor">Start coding</a></h2>
+<p>You have 3 sub-folders in your Package <code>docs</code>, <code>src</code> and <code>test</code>. Your code should be in the <code>src</code> subfolder. In particular, in the <code>src</code> folder there should be a file with the same name as the package, &#40;i.e. <code>KalmanAD.jl</code> here&#41; and this file contains:</p>
+<pre><code class="language-julia">module KalmanAD
+end #module</code></pre>
+<p>This file will need to be modified as it will define the <code>module</code> of your package.</p>
+<p>Now, when you start coding, you will use other Julia packages. For example, you can see in <a href="https://github.com/mlelarge/KalmanAD.jl/blob/main/src/KalmanAD.jl">KalmanAD.jl</a> that I am using the package <code>LinearAlgebra</code>. So I need to add it as a dependency of my own package &#40;a bit like a virtual env in python&#41;, to do so you need to run Julia and activate the environment of your package with the command: <code>julia --project</code>. Now if you type <code>&#93;</code>, you should see:</p>
+<pre><code class="language-julia">&#40;KalmanAD&#41; pkg&gt;</code></pre>
+<p>and you can now add the packages you need, for example:</p>
+<pre><code class="language-julia">&#40;KalmanAD&#41; pkg&gt; add LinearAlgebra</code></pre>
+<p>as a result this will modify &#40;automatically&#41; the files <code>Project.toml</code> and <code>Manifest.toml</code>. Next time, you commit, do not forget to add these files.</p>
+<h2 id="start_testing"><a href="#start_testing" class="header-anchor">Start testing</a></h2>
+<p>In the <code>test</code> folder, there is a <code>runtest.jl</code> file that should contain the tests for your package. You need to use the macro <code>@test</code> which will raise an error if the expression does  not evaluate to <code>true</code>. In order to run your tests, you can use:</p>
+<pre><code class="language-julia">julia --project test/runtest.jl</code></pre>
+<h2 id="start_documenting"><a href="#start_documenting" class="header-anchor">Start documenting</a></h2>
+<p>TBD</p>
+<div class="page-foot">
+  <div class="copyright">
+    <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></img></b></a></br>
+    Last modified: September 12, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>

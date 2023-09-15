@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/poole_hyde.css">
+  <link rel="icon" type="img/png" href="/assets/emoji.png">
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+   <title>NLPwShiyi - Natural Language Processing with Shiyi</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+    <div class="sidebar-about">
+      <!-- <img src="/assets/robot.png"
+           style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> -->
+      <img src="/assets/nlpwshiyi.png"
+        style="width: 250px;position:relative; height: auto; display: inline">
+      <h1 style="font-size:1em; opacity: 0.95;"><a href="/">Natural Language Processing w Shiyi S.</a></h1>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <div class="week">Introduction</div>
+      <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+      href="/modules/privacy-preserving-ML">
+        <b>Part One - </b><em>Information Theory</em>
+      </a> -->
+
+      <a class="sidebar-nav-item "
+      href="/modules/info-theory.md">
+        <b>Part One - </b><em>Information Theory</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+      href="/modules/">
+        <b>Part Two - </b><em>Computationalism vs Connectionism</em>
+      </a>
+
+
+      <a class="sidebar-nav-item "
+      href="/modules/">
+        <b>Part Three - </b><em>Modern Natural Language Processing</em>
+      </a>
+
+      <!-- Week 1 starts here -->
+
+      <div class="week">NLP before AI</div>
+
+      <a class="sidebar-nav-item "
+         href="/modules/1-intro-general-overview">
+        <b>Topic 1</b> - <em>Introduction & General Overview</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/2a-pytorch-tensors">
+        <b>Topic 2a</b> - <em>PyTorch tensors</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/2b-automatic-differentiation">
+        <b>Topic 2b</b> - <em>Automatic differentiation</em>
+      </a>
+       <a class="sidebar-nav-item "
+         href="/modules/2c-jax">
+        <b>Topic 2c</b> - <em>Automatic differentiation: VJP and intro to JAX</em>
+      </a>
+      <!-- Week 1 ends here -->
+
+      <!-- Week 2 starts here -->
+
+      
+      <div class="week">NLP with AI</div>
+      <a class="sidebar-nav-item "
+      href="/modules/1-intro-general-overview">
+     <b>Topic 1</b> - <em>Introduction & General Overview</em>
+   </a>
+
+   <a class="sidebar-nav-item "
+      href="/modules/2a-pytorch-tensors">
+     <b>Topic 2a</b> - <em>PyTorch tensors</em>
+   </a>
+
+   <a class="sidebar-nav-item "
+      href="/modules/2b-automatic-differentiation">
+     <b>Topic 2b</b> - <em>Automatic differentiation</em>
+   </a>
+    <a class="sidebar-nav-item "
+      href="/modules/2c-jax">
+     <b>Topic 2c</b> - <em>Automatic differentiation: VJP and intro to JAX</em>
+   </a>
+      <a class="sidebar-nav-item "
+         href="/modules/3-loss-functions-for-classification">
+        <b>Topic 3</b> - <em>Loss functions for classification</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/4-optimization-for-deep-learning">
+        <b>Topic 4</b> - <em>Optimization for DL</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/5-stacking-layers">
+        <b>Topic 5</b> - <em>Stacking layers</em>
+      </a>
+
+            <!-- Week 2 ends here -->
+
+      <!-- Week 3 starts here -->
+      <div class="week">Math for DL/ML</div>
+
+      <a class="sidebar-nav-item "
+         href="/modules/6-convolutional-neural-network">
+        <b>Topic 6</b> - <em>Convolutional neural network</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/7-dataloading">
+        <b>Topic 7</b> - <em>Dataloading</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/8a-embedding-layers">
+        <b>Topic 8a</b> - <em>Embedding layers</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/8b-collaborative-filtering">
+        <b>Topic 8b</b> - <em>Collaborative filtering</em>
+      </a>
+      
+      <a class="sidebar-nav-item "
+      href="/modules/8c-word2vec">
+     <b>Topic 8c</b> - <em>Word2vec</em>
+   </a>
+      <!-- Week 3 ends here -->
+      <!-- Week 4 starts here -->
+      <!-- <div class="week">Unit 4</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/9a-autoencoders">
+        <b>Topic 9a</b> - <em>Autoencoders</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/9b-unet">
+        <b>Topic 9b</b> - <em>UNets</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/9c-flows">
+        <b>Topic 9c</b> - <em>Flows</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/10-generative-adversarial-networks">
+        <b>Topic 10</b> - <em>Generative adversarial networks</em>
+      </a>
+      
+      <!-- Week 4 ends here -->
+      <!-- Week 5 starts here -->
+      <!-- <div class="week">Unit 5</div> -->
+      <a class="sidebar-nav-item "
+         href="/modules/11a-recurrent-neural-networks-theory">
+        <b>Topic 11a</b> - <em>Recurrent Neural Networks (theory)</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/11b-recurrent-neural-networks-practice">
+        <b>Topic 11b</b> - <em>RNN in practice</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/11c-batches-with-sequences">
+        <b>Topic 11c</b> - <em>Batches with sequences in Pytorch</em>
+      </a>
+      <!-- Week 5 ends here -->
+      <!-- Unit 6 starts here -->
+      <!-- <div class="week">Unit 6</div> -->
+      <a class="sidebar-nav-item active"
+         href="/modules/12-attention">
+        <b>Topic 12</b> - <em>Attention and Transformers</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/13-siamese">
+        <b>Topic 13</b> - <em>Siamese Networks and Representation Learning</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/14a-depth">
+        <b>Topic 14a</b> - <em>The Benefits of Depth</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/14b-depth">
+      <b>Topic 14b</b> - <em>The Problems with Depth</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/15-dropout">
+      <b>Topic 15</b> - <em>Dropout</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/16-batchnorm">
+      <b>Topic 16</b> - <em>Batchnorm</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/17-resnets">
+      <b>Topic 17</b> - <em>Resnets</em>
+      </a>
+      <a class="sidebar-nav-item "
+          href="/modules/18a-diffusion">
+      <b>Topic 18a</b> - <em>Denoising Diffusion Probabilistic Models</em>
+      </a>
+
+      <!-- <div class="week">Unit 7</div>-->
+      
+      <!-- Unit 6 ends here -->
+      <!-- Unit 7 starts here -->
+     
+      <div class="week">Homeworks</div>
+
+      <a class="sidebar-nav-item "
+          href="/homework/1-mlp-from-scratch">
+          <b>Homework 1</b> - <em>MLP from scratch</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+          href="/homework/2-CAM-adversarial">
+          <b>Homework 2</b> - <em>Class Activation Map and adversarial examples</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+          href="/homework/3-VAE">
+          <b>Homework 3</b> - <em>VAE for MNIST clustering and generation</em>
+      </a>
+
+      <div class="week">Bonus</div>
+      <a class="sidebar-nav-item "
+      href="/modules/12-intro-julia">
+     <b>Topic</b> - <em>Intro to Julia: Autodiff with dual numbers</em>
+    </a>
+    <a class="sidebar-nav-item "
+         href="/modules/graph0">
+        <b>Topic</b> - <em>Deep learning on graphs</em>
+      </a>
+
+      <a class="sidebar-nav-item "
+         href="/modules/graph1">
+        <b>Graph</b> - <em>Node embeddings</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/graph2">
+        <b>Graph</b> - <em>Signal processing on graphs</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/graph3">
+        <b>Graph</b> - <em> Graph embeddings and GNNs</em>
+      </a>
+    
+      <a class="sidebar-nav-item "
+         href="/modules/extras/GCN_inductivebias_spectral">
+        <b>Post</b> - <em>Spectral GCN</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/extras/Convolutions_first">
+        <b>Post</b> - <em>Convolutions from first principles</em>
+      </a>
+      <a class="sidebar-nav-item "
+         href="/modules/extras/invariant_equivariant">
+        <b>Post</b> - <em>Invariant and equivariant networks</em>
+      </a>
+      
+      <a class="sidebar-nav-item "
+         href="/modules/extras/graph_invariant">
+        <b>Graph</b> - <em>Exploiting Graph Invariants in Deep Learning</em>
+      </a>
+
+      <!-- <div class="week">Guest Lectures</div>
+      
+      <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+      href="/modules/privacy-preserving-ML">
+     <b>Privacy Preserving ML</b> - <em>Daniel Huynh</em> -->
+   </a>
+
+    </nav>
+  </div>
+</div>
+<div class="content container">
+
+<!-- Content appended here -->
+
+<div class="franklin-content"><h1 id="module_12_-_attention_and_transformers"><a href="#module_12_-_attention_and_transformers" class="header-anchor">Module 12 - Attention and Transformers</a></h1>
+<p><strong>Table of Contents</strong></p>
+<div class="franklin-toc"><ol><li><a href="#attention_with_rnns">Attention with RNNs</a></li><li><a href="#pytorch_implementation">PyTorch implementation</a></li><li><a href="#self-attention_in_transformers">&#40;Self-&#41;Attention in Transformers</a></li><li><a href="#transformer_block">Transformer block</a></li><li><a href="#transformers_using_named_tensor_notation">Transformers using Named Tensor Notation</a></li><li><a href="#hacking_a_simple_transformer_block">Hacking a simple Transformer block</a></li></ol></div>
+<h2 id="attention_with_rnns"><a href="#attention_with_rnns" class="header-anchor">Attention with RNNs</a></h2>
+<p>The first attention mechanism was proposed in <a href="https://arxiv.org/abs/1409.0473">Neural Machine Translation by Jointly Learning to Align and Translate</a> by Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio &#40;presented at ICLR 2015&#41;.</p>
+<p>The task considered is English-to-French translation and the attention mechanism is proposed to extend a seq2seq architecture by adding a context vector \(c_i\) in the RNN decoder so that, the hidden states for the decoder are computed recursively as \(s_i = f(s_{i-1}, y_{i-1}, c_i)\) where \(y_{i-1}\) is the previously predicted token and predictions are made in a probabilist manner as \(y_i \sim g(y_{i-1},s_i,c_i)\) where \(s_i\) and \(c_i\) are the current hidden state and context of the decoder.</p>
+<p>Now the main novelty is the introduction of the context \(c_i\) which is a weighted average of all the hidden states of the encoder: \(c_i = \sum_{j=1}^T \alpha_{i,j} h_j\) where \(T\) is the length of the input sequence, \(h_1,\dots, h_T\) are the corresponding hidden states of the decoder and \(\sum_j \alpha_{i,j}=1\). Hence the context allows passing direct information from the &#39;relevant&#39; part of the input to the decoder. The coefficients \((\alpha_{i,j})_{j=1}^T\) are computed from the current hidden state of the decoder \(s_{i-1}\) and all the hidden states from the encoder \((h_1, \dots, h_T)\) as explained below &#40;taken from the original paper&#41;:</p>
+<img src="/modules/extras/attention/attention_bahdanau.png"
+           style="width: 620px; height: auto; display: inline">
+
+<h2 id="pytorch_implementation"><a href="#pytorch_implementation" class="header-anchor">PyTorch implementation</a></h2>
+<p>In <a href="https://github.com/dataflowr/notebooks/blob/master/Module12/12_seq2seq_attention.ipynb">Attention for seq2seq</a>, you can play with a simple model and code the attention mechanism proposed in the paper. For the alignment network \(a\) &#40;used to define the coefficient \(\alpha_{i,j} = softmax_{j}(a(s_{i-1},h_j))\)&#41;, we take a MLP with \(\tanh\) activations. </p>
+<p>You will learn about seq2seq, teacher-forcing for RNNs and build the attention mechanism. To simplify things, we do not deal with batches &#40;see <a href="/modules/11c-batches-with-sequences">Batches with sequences in Pytorch</a> for more on that&#41;. The solution for this practical is provided in <a href="https://github.com/dataflowr/notebooks/blob/master/Module12/12_seq2seq_attention_solution.ipynb">Attention for seq2seq- solution</a></p>
+<p>Note that each \(\alpha_{i,j}\) is a real number so that we can display the matrix of \(\alpha_{i,j}\)&#39;s where \(j\) ranges over the input tokens and \(i\) over the output tokens, see below &#40;taken from the paper&#41;:</p>
+<img src="/modules/extras/attention/attention_translate.jpeg"
+           style="width: 620px; height: auto; display: inline">
+
+<h2 id="self-attention_in_transformers"><a href="#self-attention_in_transformers" class="header-anchor">&#40;Self-&#41;Attention in Transformers</a></h2>
+<p>We now describe the attention mechanism proposed in <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a> by Vaswani et al. First, we recall basic notions from retrieval systems: query/key/value illustrated by an example: search for videos on Youtube. In this example, the query is the text in the search bar, the key is the metadata associated with the videos which are the values. Hence a score can be computed from the query and all the keys. Finally, the matched video with the highest score is returned.</p>
+<p>We see that we can formalize this process as follows: if \(Q_s\) is the current query and \(K_t\) and \(V_t\) are all the keys and values in the database, we return </p>
+\[
+Y_s = \sum_{t=1}^T\text{softmax}_{t}(\text{score}(Q_s, K_t))V_t, 
+\]
+<p>where \(\sum_{t=1}^T\text{softmax}_{t}(\text{score}(Q_s, K_t))=1\).</p>
+<p>Note that this formalism allows us to recover the way contexts were computed above &#40;where the score function was called the alignment network&#41;. Now, we will change the score function and consider dot-product attention: \( \text{score}(Q_s, K_t) = \frac{Q_s^TK_t}{\sqrt{d}}\). Note that for this definition to make sense, both the query \(Q_s\) and the key \(K_t\) need to live in the same space and \(d\) is the dimension of this space.</p>
+<p>Given \(s\) inputs in \(\mathbb{R}^{d_{\text{in}}}\) denoted by a matrix \(X\in \mathbb{R}^{d_{\text{in}}\times s}\) and a database containing \(t\) samples in \(\mathbb{R}^{d'}\) denoted by a matrix \(X'\in \mathbb{R}^{d'\times t}\), we define:</p>
+\[
+\text{the queries: } Q = W_Q X, \text{ with, } W_Q\in \mathbb{R}^{k\times d_{\text{in}}}\\
+\text{the keys: } K = W_K X', \text{ with, } W_K\in \mathbb{R}^{k\times d'}\\
+\text{the values: } V = W_V X', \text{ with, } W_V\in \mathbb{R}^{d_{\text{out}}\times d'}
+\]
+<p>Now self-attention is simply obtained with \(X=X'\) &#40;so that \(d'=d_{\text{in}}\)&#41; and \(d_{\text{in}} = d_{\text{out}} = d\). In summary, self-attention layer can take as input any tensor of the form \(X \in \mathbb{R}^{d\times T}\) &#40;for any \(T\)&#41; has parameters: </p>
+\[
+W_Q\in \mathbb{R}^{k\times d}, W_K\in \mathbb{R}^{k\times d}, W_V\in \mathbb{R}^{d\times d},
+\]
+<p>and produce \(Y \in \mathbb{R}^{d\times T}\) &#40;with same \(d\) and \(t\) as for the input&#41;. \(d\) is the dimension of the input and \(k\) is a hyper-parameter of the self-attention layer:</p>
+\[
+Y_s = \sum_{t=1}^T\text{softmax}_{t}\left(\frac{X_s^TW_Q^TW_KX_t}{\sqrt{k}}\right)W_VX_t,
+\]
+<p>with the convention that \(X_t\in \mathbb{R}^d\) &#40;resp. \(Y_s\in \mathbb{R}^d\)&#41; is the \(t\)-th column of \(X\) &#40;resp. the \(s\)-th column of \(Y\)&#41;. Note that the notation \(\text{softmax}_{t}(.)\) might be a bit confusing. Recall that \(\text{softmax}\) is always taking as input a vector and returning a &#40;normalized&#41; vector. In practice, most of the time, we are dealing with batches so that the \(\text{softmax}\) function is taking as input a matrix &#40;or tensor&#41; and we need to normalize according to the right axis&#33; Named tensor notation see <a href="#transformers_using_named_tensor_notation">below</a> deals with this notational issue. I also find the interpretation given below helpful:</p>
+<p><strong>Mental model for self-attention:</strong> self-attention interpreted as taking expectation</p>
+\[
+y_s = \sum_{t=1}^T p(x_t | x_s) v(x_t) = \mathbb{E}[v(x) | x_s],\\
+\text{with, } p(x_t|x_s) = \frac{\exp(q(x_s)k(x_t))}{\sum_{r}q(x_s)k(x_r)},
+\]
+<p>where the mappings \(q(.), k(.)\) and \(v(.)\) represent query, key and value.</p>
+<p>Multi-head attention combines several such operations in parallel, and \(Y\) is the concatenation of the results along the feature dimension to which is applied one more linear transformation.</p>
+<h2 id="transformer_block"><a href="#transformer_block" class="header-anchor">Transformer block</a></h2>
+<img src="/modules/extras/attention/block_transformer.png"
+           style="width: 320px; height: auto; display: inline">
+
+<p>To finish the description of a transformer block, we need to define two last layers: Layer Norm and Feed Forward Network.</p>
+<p>The Layer Norm used in the transformer block is particularly simple as it acts on vectors and standardizes it as follows: for \(x\in \mathbb{R}^d\), we define</p>
+\[
+\text{mean}(x) =\frac{1}{d}\sum_{i=1}^d x_i\in \mathbb{R}\\
+\text{std}(x)^2 = \frac{1}{d}\sum_{i=1}^d(x_i-\text{mean}(x))^2\in \mathbb{R}
+\]
+<p>and then the Layer Norm has two parameters \(\gamma, \beta\in \mathbb{R}^d\) and </p>
+\[
+LN(x) = \gamma \cdot \frac{x-\text{mean}(x)}{\text{std}(x)}+\beta,
+\]
+<p>where we used the natural broadcasting rule for subtracting the mean and dividing by std and \(\cdot\) is component-wise multiplication.</p>
+<p>A Feed Forward Network is an MLP acting on vectors: for \(x\in \mathbb{R}^d\), we define </p>
+\[
+FFN(x) = \max(0,xW_1+b_1)W_2+b_2,
+\]
+<p>where \(W_1\in \mathbb{R}^{d\times h}\), \(b_1\in \mathbb{R}^h\), \(W_2\in \mathbb{R}^{h\times d}\), \(b_2\in \mathbb{R}^d\).</p>
+<p>Each of these layers is applied on each of the inputs given to the transformer block as depicted below:</p>
+<p><img src="/modules/extras/attention/transformer_block_nocode.png" alt="" /></p>
+<p>Note that this block is equivariant: if we permute the inputs, then the outputs will be permuted with the same permutation. As a result, the order of the input is irrelevant to the transformer block. In particular, this order cannot be used. The important notion of positional encoding allows us to take order into account. It is a deterministic unique encoding for each time step that is added to the input tokens.</p>
+<h2 id="transformers_using_named_tensor_notation"><a href="#transformers_using_named_tensor_notation" class="header-anchor">Transformers using Named Tensor Notation</a></h2>
+<p>In <a href="https://hackmd.io/@mlelarge/HkVlvrc8j">Transformers using Named Tensor Notation</a>, we derive the formal equations for the Transformer block using named tensor notation.</p>
+<h2 id="hacking_a_simple_transformer_block"><a href="#hacking_a_simple_transformer_block" class="header-anchor">Hacking a simple Transformer block</a></h2>
+<p>Now is the time to have fun building a simple transformer block and to <a href="https://github.com/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb">think like transformers</a> &#40;open in <a href="https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb">colab</a>&#41;.</p>
+<img src="/modules/extras/attention/attention_matrix.png"
+           style="width: 320px; height: auto; display: inline">
+
+<img src="/modules/extras/attention/attention_matrix2.png"
+           style="width: 320px; height: auto; display: inline">
+
+<div class="page-foot">
+  <div class="copyright">
+    <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></img></b></a></br>
+    Last modified: September 12, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+  </body>
+</html>
