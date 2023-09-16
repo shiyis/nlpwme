@@ -19,7 +19,7 @@ html, body {
 
 .sidebar {
     z-index: 2;
-    overflow-y: ri;
+    overflow-y: scroll;
     overflow-x: hidden;
     margin-left: auto;
 }
@@ -171,16 +171,16 @@ h2 {
       width:97%;
       display:block;}
     }
-.card { 
+.card {
     .container {
         padding: 3px 15px 3px 10px;
     }
-    box-shadow: 0 4px 8px 0 rgba(144, 134, 134, 0.2); 
+    box-shadow: 0 4px 8px 0 rgba(144, 134, 134, 0.2);
 }
 .card img {
 
     padding-left:0;
-    width: 100%; 
+    width: 100%;
 
 }
 
@@ -188,12 +188,12 @@ h2 {
 .container::after, .row::after{
     content: "";
     clear: both;
-    display: table; 
+    display: table;
 
 }
-.title { 
+.title {
     margin-top: -2em;
-    color: rgb(5, 75, 249); 
+    color: rgb(5, 75, 249);
 
 }
 
