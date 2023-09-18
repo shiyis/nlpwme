@@ -92,8 +92,7 @@ Below are some important notes about the **historical timeline**:
     - [Subtopic 6: Convolutional Neural Network](./modules/6-convolutional-neural-network)
     - [Subtopic 7a: Embedding layers and dataloaders](./modules/7a-embedding-layers-dataloaders)
     - [Subtopic 7b: Collaborative Filtering](./modules/7b-collaborative-filtering)
-    - [Modules 8: Autoencoders](./modules/8-autoencoders)
+    - [Modules 8: Autoencoders and Transformers](./modules/8-autoencoders)
     - [Subtopic 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
     - [Subtopic 10a: Recurrent Neural Networks theory](./modules/10a-recurrent-neural-networks-theory)
     - [Subtopic 10b: Recurrent Neural Networks practice](./modules/10b-recurrent-neural-networks-practice)
-

@@ -5,7 +5,7 @@ The website_* must be defined for the RSS to work
 -->
 @def title = "NLPwShiyi - Natural Language Processing with Shiyi"
 @def website_descr = "Website for documenting my journey of understanding Natural Language Processing"
-@def prepath = "mydocs"
+@def prepath = "nlpwme"
 <!-- @def website_url   = "https://dataflowr.github.io/mydocs/" -->
 @def lang = "julia"
 @def author = "Shiyi S"
