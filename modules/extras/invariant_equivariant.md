@@ -1,4 +1,4 @@
-@def title = "Invariant and Equivariant layers"
+<!-- @def title = "Invariant and Equivariant layers"
 @def hasmath = true
 
 # Invariant and equivariant layers with applications to GNN, PointNet and Transformers
@@ -142,4 +142,4 @@ We are now ready to prove \eqref{eq:inv}. Let $\phi:[0,1] \to \R^n$ be defined b
 
 Follow on [twitter](https://twitter.com/marc_lelarge)!
 
-## Thanks for reading!
+## Thanks for reading! -->
