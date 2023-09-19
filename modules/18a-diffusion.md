@@ -1,4 +1,4 @@
-@def title = "ddpm"
+<!-- @def title = "ddpm"
 @def hasmath = true
 
 
@@ -19,14 +19,14 @@ This module presents the work: [Denoising Diffusion Probabilistic Models](https:
 
 Given a schedule $\beta_1<\beta_2<\dots <\beta_T$,
 \begin{align*}
-q(x_t|x_{t-1}) &= \mathcal{N}(x_t; \sqrt{1-\beta_t}x_{t-1},\beta_t I)\\
+q(x_t|x_{t-1}) &= \mathcal{N}(x_t; \sqrt{1-\beta_t}x_{t-1},\beta_t I)\\\\
 q(x_{1:T}|x_0) &= \prod_{t=1}^T q(x_t|x_{t-1})
 \end{align*}
 
 We define $\alpha_t = 1-\beta_t$ and $\overline{\alpha_t} = \prod_{i=1}^t\alpha_i$, then we have
 \begin{align*}
-x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1-\alpha_t}\epsilon_{t-1},\text{ with }\epsilon_{t-1}\sim\mathcal{N}(0,I)\\
-&= \sqrt{\alpha_t\alpha_{t-1}} x_{t-2} +\sqrt{\alpha_t(1-\alpha_{t-1})}\epsilon_{t-2}+\sqrt{1-\alpha_t}\epsilon_{t-1}\\
+x_t &= \sqrt{\alpha_t} x_{t-1} + \sqrt{1-\alpha_t}\epsilon_{t-1},\text{ with }\epsilon_{t-1}\sim\mathcal{N}(0,I)\\\\
+&= \sqrt{\alpha_t\alpha_{t-1}} x_{t-2} +\sqrt{\alpha_t(1-\alpha_{t-1})}\epsilon_{t-2}+\sqrt{1-\alpha_t}\epsilon_{t-1}\\\\
 &= \sqrt{\alpha_t\alpha_{t-1}} x_{t-2} + \sqrt{1-\alpha_t\alpha_{t-1}}\tilde{\epsilon}_{t}
 \end{align*}
 Hence, we have
@@ -72,7 +72,7 @@ q(x_{t-1}|x_t,x_0) = \mathcal{N}(x_{t-1};\mu(x_t,x_0), \gamma_t I),
 \end{align*}
 with
 \begin{align*}
-\mu(x_t,x_0) &= \frac{\sqrt{\alpha_t}(1-\overline{\alpha}_{t-1})}{1-\overline{\alpha}_{t}}x_t + \frac{\sqrt{\overline{\alpha}_{t-1}\beta_t}}{1-\overline{\alpha}_{t}}x_0\\
+\mu(x_t,x_0) &= \frac{\sqrt{\alpha_t}(1-\overline{\alpha}_{t-1})}{1-\overline{\alpha}_{t}}x_t + \frac{\sqrt{\overline{\alpha}_{t-1}\beta_t}}{1-\overline{\alpha}_{t}}x_0\\\\
 \gamma_t &= \frac{1-\overline{\alpha}_{t-1}}{1-\overline{\alpha}_{t}}\beta_t
 \end{align*}
 but we know that $x_0 = 1/\sqrt{\overline{\alpha}_t}\left( x_t-\sqrt{1-\overline{\alpha}_t}\epsilon\right)$, hence we have
@@ -93,8 +93,8 @@ where $p(x_T) \sim \mathcal{N}(0,I)$. Note that the variance parameter is fixed 
 
 The neural network is trained by maximizing the usual Variational bound:
 \begin{align*}
-\mathbb{E}_{q(x_0)} \ln p_{\theta}(x_0) &\geq \mathbb{E}_{q(x_{0:T})}\left[ \ln\frac{q(x_{1:T}|x_0)}{p_\theta(x_{0:T})}\right]\\
-&=\mathbb{E}_q\left[ \text{KL}\left( q(x_T|x_0)\|p(x_T)\right)+\sum_{t=2}^T\text{KL}\left( q(x_{t-1}|x_t,x_0)\|p_{\theta}(x_{t-1}|x_t)\right)-\ln p_{\theta}(x_0|x_1)\right]\\
+\mathbb{E}_{q(x_0)} \ln p_{\theta}(x_0) &\geq \mathbb{E}_{q(x_{0:T})}\left[ \ln\frac{q(x_{1:T}|x_0)}{p_\theta(x_{0:T})}\right]\\\\
+&=\mathbb{E}_q\left[ \text{KL}\left( q(x_T|x_0)\|p(x_T)\right)+\sum_{t=2}^T\text{KL}\left( q(x_{t-1}|x_t,x_0)\|p_{\theta}(x_{t-1}|x_t)\right)-\ln p_{\theta}(x_0|x_1)\right]\\\\
 &= L_T +\sum_{t=2}^T L_{t-1}+L_0.
 \end{align*}
 Note that $L_T$ does not depend on $\theta$ and for the other terms, they correspond to a KL between Gaussian distributions with an explicit expression:
@@ -239,4 +239,4 @@ With a bit more training (100 epochs), you can get results like this:
 
 Note that the Denoising Diffusion Probabilistic Model is the same for MNIST and CIFAR10, we only change the UNet learning to reverse the noise. For CIFAR10, we adapt the UNet provided in [Module 9b](../9b-unet). Indeed, you can still use the code provided here for DDPM with other architectures like more complex ones with self-attention like this [Unet](https://github.com/lucidrains/denoising-diffusion-pytorch/blob/main/denoising_diffusion_pytorch/denoising_diffusion_pytorch.py#L271) coded by [lucidrains](https://github.com/lucidrains) which is the one used in the original paper.
 
-In the paper, the authors used Exponential Moving Average (EMA) on model parameters with a decay factor of $0.999$. This is not implemented here to keep the code as simple as possible.
+In the paper, the authors used Exponential Moving Average (EMA) on model parameters with a decay factor of $0.999$. This is not implemented here to keep the code as simple as possible. -->

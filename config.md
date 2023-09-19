@@ -4,11 +4,11 @@ website.
 The website_* must be defined for the RSS to work
 -->
 @def title = "NLPwShiyi - Natural Language Processing with Shiyi"
-@def website_descr = "Website for documenting my journey of understanding Natural Language Processing"
+@def website_description = "Website for documenting my journey of understanding Natural Language Processing"
 @def prepath = "nlpwme"
 <!-- @def website_url   = "https://dataflowr.github.io/mydocs/" -->
 @def lang = "julia"
-@def author = "Shiyi S"
+@def author = ""
 
 <!-- HEADER SPECS
   NOTE:
@@ -42,7 +42,7 @@ The website_* must be defined for the RSS to work
 
 @def add_github_view  = true
 @def add_github_star  = true
-@def github_repo      = "shiyis/site"
+@def github_repo      = "https://github.com/shiyis/nlpwme"
 
 <!-- SECTION LAYOUT
 NOTE:
