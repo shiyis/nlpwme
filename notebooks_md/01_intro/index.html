@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/poole_hyde.css">
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+<link rel="icon" type="img/png" href="/assets/emoji.png">
+
+   <title>NLPwShiyi - Natural Language Processing with Shiyi</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+
+    <img src="/assets/nlpwshiyi.png" style="width: 250px;position:sticky; height: auto; display: inline">
+    <nav class="sidebar-nav">
+      <!-- <br></br>
+                                                      <br></br>
+                                                      <br></br> -->
+      <div class="sidebar-about">
+        <!-- <img src="/assets/robot.png"
+                                                                             style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> -->
+        <h1 style="font-size:1em; opacity: 0.95;">
+          <a href="/">Natural Language Processing w Shiyi S.</a>
+        </h1>
+      </div>
+      <div class="week">Introduction</div>
+      <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+                                                      href="/modules/privacy-preserving-ML">
+                                                        <b>Part One</b><em>Information Theory</em>
+                                                      </a> -->
+
+      <a class="sidebar-nav-item " href="/modules/info-theory.md">
+        <b>Part One -
+        </b>
+        <em>Information Theory</em>
+      </a>
+
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>Part Two -
+        </b>
+        <em>Computationalism vs Connectionism</em>
+      </a>
+
+
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>Part Three -
+        </b>
+        <em>Modern Natural Language Processing</em>
+      </a>
+
+      <!-- Week 1 starts here -->
+
+      <div class="week">NLP before AI</div>
+
+      <a class="sidebar-nav-item "
+        href="/modules/1-intro-general-overview">
+        <b>
+          ·
+        </b>
+        <em>
+          The Noisy Channel Model
+        </em>
+      </a>
+
+      <a class="sidebar-nav-item "
+        href="/modules/2a-pytorch-tensors">
+        <b>
+          ·
+        </b>
+        <em>
+          Cryptoy PyTorch tensors</em>
+      </a>
+      <a class="sidebar-nav-item "
+        href="/modules/2b-automatic-differentiation">
+        <b>
+          ·
+        </b>
+        <em>
+          Mutual Information
+        </em>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Markov Processes
+        </em>
+      </a>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Dynamic Programming and Viterbi Algorithm
+        </em>
+      </a>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Finite State Automata and Transducers
+        </em>
+      </a>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Context Free Grammar, CKY Algorithm, and The Chomsky Hierarchy
+        </em>
+      </a></a><a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Syntactic Theory, Taxonomy and Typography
+        </em></a><a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Formal Logic Systems, General Problem Solving, and Philosophy of Language
+        </em></a><!-- Week 1 ends here --><!-- Week 2 starts here -->
+      <div class="week">
+        NLP with AI</div><a class="sidebar-nav-item "
+        href="/modules/1-intro-general-overview">
+        <b>
+          ·
+        </b>
+        <em>
+          General Model Workflow and Technicalities
+        </em></a><a class="sidebar-nav-item " href="/modules/8c-word2vec">
+        <b>
+          ·
+        </b>
+        <em>Word2vec</em></a><a class="sidebar-nav-item "
+        href="/modules/2a-pytorch-tensors">
+        <b>
+          ·
+        </b>
+        <em>PyTorch tensors</em></a><a
+        class="sidebar-nav-item "
+        href="/modules/2b-automatic-differentiation">
+
+        <b>
+          ·
+        </b>
+        <em>Automatic differentiation</em></a><a class="sidebar-nav-item "
+        href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>Automatic differentiation: VJP and intro to JAX</em></a><a
+        class="sidebar-nav-item "
+        href="/modules/3-loss-functions-for-classification">
+        <b>
+          ·
+        </b>
+        <em>Loss functions for classification</em></a><a
+        class="sidebar-nav-item "
+        href="/modules/4-optimization-for-deep-learning">
+        <b>
+          ·
+        </b>
+        <em>Optimization for DL</em></a><a class="sidebar-nav-item "
+        href="/modules/5-stacking-layers">
+        <b>
+          ·
+        </b>
+        <em>Stacking layers</em></a><a class="sidebar-nav-item "
+        href="/modules/7-dataloading">
+        <b>
+          ·
+        </b>
+        <em>Dataloading</em></a><a class="sidebar-nav-item "
+        href="/modules/8a-embedding-layers">
+        <b>
+          ·
+        </b>
+        <em>Embedding layers</em></a>
+
+      <a class="sidebar-nav-item "
+        href="/modules/8b-collaborative-filtering">
+        <b>
+          ·
+        </b>
+        <em>Collaborative
+          filtering</em></a><!-- Week 3 ends here --><!-- Week 4 starts here --><!-- <div class="week">Unit 4</div> -->
+      <a class="sidebar-nav-item " href="/modules/9a-autoencoders"> <b>
+          ·
+        </b>
+        <em>Autoencoders</em>
+
+        <a class="sidebar-nav-item " href="modules/15-dropout">
+
+          <b>
+            · </b><em>Dropout</em></a>
+
+
+        <a class="sidebar-nav-item "
+          href="modules/11c-batches-with-sequences">
+          <b>
+            ·
+          </b>
+          <em>Batches with sequences in Pytorch</em></a>
+
+
+        <a class="sidebar-nav-item "
+          href="/modules/6-convolutional-neural-network">
+
+        </a>
+
+        <a class="sidebar-nav-item " href="/modules/16-batchnorm">
+          <b>
+            ·
+          </b><em>Batchnorm</em>
+
+
+          <a class="sidebar-nav-item " href="/modules/13-siamese">
+            <b>
+              ·
+            </b>
+            <em>The Benefits of Depth</em></a>
+
+
+          <a class="sidebar-nav-item " href="/modules/14b-depth">
+            <b>
+              ·
+            </b>
+            <em>The Problems with Depth</em></a>
+
+          <div class="week">State-Of-The-Art</div>
+
+          <a class="sidebar-nav-item "
+            href="/modules/10-generative-adversarial-networks">
+            <b>
+              ·
+            </b>
+            <em>Generative adversarial networks</em></a>
+
+          <a class="sidebar-nav-item " href="/modules/9c-flows">
+            <b>
+              ·
+            </b>
+            <em>GAN vs
+              VAE</em></a><!-- Week 4 ends here --><!-- Week 5 starts here --><!-- <div class="week">Unit 5</div> -->
+          <a class="sidebar-nav-item "
+            href="/modules/11a-recurrent-neural-networks-theory"> <b>
+              ·
+            </b>
+            <em>Recurrent Neural Networks (theory)</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/modules/11b-recurrent-neural-networks-practice">
+            <b>
+              ·
+            </b>
+            <em>RNN in practice</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/modules/11c-batches-with-sequences">
+
+            <b>
+              ·
+            </b>
+            <em>
+              Convolutional Neural Network
+            </em></a>
+
+          <a class="sidebar-nav-item " href="/modules/12-attention">
+            <b>
+              ·
+            </b>
+            <em>Attention and Transformers</em></a>
+          <!-- <a class="sidebar-nav-item {{ispage /modules/15-dropout}}active{{end}}"href="/modules/15-dropout"> <b>
+            · 
+          </b> <em> Dropout </em></a> -->
+
+          <a class="sidebar-nav-item " href="/modules/18a-diffusion"><b> ·
+            </b><em>Denoising Diffusion Probabilistic
+              Models</em></a><!-- <div class="week">Unit 7</div>--><!-- Unit 6 ends here --><!-- Unit 7 starts here -->
+          <a class="sidebar-nav-item "
+            href="/homework/1-mlp-from-scratch"> <b>
+              · </b><em>MLP from scratch</em></a>
+          
+          <a class="sidebar-nav-item "
+            href="/homework/2-CAM-adversarial"><b>
+              · </b><em>Class Activation Map and adversarial examples</em></a><a
+            class="sidebar-nav-item " href="/homework/3-VAE"><b>
+              · </b><em>VAE for MNIST clustering and generation</em></a>
+        </a>
+    </nav>
+  </div>
+</div>
+<div class="content container">
+<!-- Content appended here -->
+<div class="franklin-content"><p><a href="https://dataflowr.github.io/website/"><img src="https://raw.githubusercontent.com/dataflowr/website/master/_assets/dataflowr_logo.png" alt="Dataflowr" /></a></p>
+<p>You are viewing the static version of the notebook, you can get the <a href="https://github.com/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb">code &#40;GitHub&#41;</a> or run it in <a href="https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb">colab</a></p>
+<h1 id="a_hrefhttpsdataflowrgithubiowebsitemodules1-intro-general-overviewmodule_1_using_cnn_for_dogs_vs_cats"><a href="#a_hrefhttpsdataflowrgithubiowebsitemodules1-intro-general-overviewmodule_1_using_cnn_for_dogs_vs_cats" class="header-anchor"><a href="https://dataflowr.github.io/website/modules/1-intro-general-overview/">Module 1</a>: Using CNN for dogs vs cats</a></h1>
+<p>To illustrate the Deep Learning pipeline seen in <a href="https://dataflowr.github.io/website/modules/1-intro-general-overview/">Module 1</a>, we are going to use a pretrained model to enter the <a href="https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition">Dogs vs Cats</a> competition at Kaggle.</p>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;1175">Video timestamp</a></p>
+<p>There are 25,000 labelled dog and cat photos available for training, and 12,500 in the test set that we have to try to label for this competition. According to the Kaggle web-site, when this competition was launched &#40;end of 2013&#41;: <em>&quot;<strong>State of the art</strong>: The current literature suggests machine classifiers can score above 80&#37; accuracy on this task&quot;</em>. So if you can beat 80&#37;, then you will be at the cutting edge as of 2013&#33;</p>
+<h2 id="imports"><a href="#imports" class="header-anchor">Imports</a></h2>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+import os
+import torch
+import torch.nn as nn
+import torchvision
+from torchvision import models,transforms,datasets
+import time
+&#37;matplotlib inline</code></pre>
+<p>Here you see that the latest version of PyTorch is installed by default.</p>
+<pre><code class="language-python">torch.__version__</code></pre>
+<pre><code class="language-python">import sys
+sys.version</code></pre>
+<p>Check if GPU is available and if not change the <a href="https://jovianlin.io/pytorch-with-gpu-in-google-colab/">runtime</a>.</p>
+<pre><code class="language-python">device &#61; torch.device&#40;&quot;cuda:0&quot; if torch.cuda.is_available&#40;&#41; else &quot;cpu&quot;&#41;
+
+print&#40;&#39;Using gpu: &#37;s &#39; &#37; torch.cuda.is_available&#40;&#41;&#41;</code></pre>
+<h2 id="downloading_the_data"><a href="#downloading_the_data" class="header-anchor">Downloading the data</a></h2>
+<p>You can download the full dataset from Kaggle directly.</p>
+<p>Alternatively, Jeremy Howard &#40;fast.ai&#41; provides a direct link to the catvsdogs <a href="http://files.fast.ai/data/examples/">dataset</a>. He&#39;s separated the cats and dogs into separate folders and created a validation folder as well.</p>
+<p>For test purpose &#40;or if you run on cpu&#41;, you should use the &#40;small&#41; sample directory.</p>
+<pre><code class="language-python">&#37;mkdir data
+# the following line should be modified if you run the notebook on your computer
+# change directory to data where you will store the dataset
+&#37;cd /content/data/
+&#33;wget http://files.fast.ai/data/examples/dogscats.tgz</code></pre>
+<pre><code class="language-python">&#33;tar -zxvf dogscats.tgz</code></pre>
+<pre><code class="language-python">&#37;ls</code></pre>
+<pre><code class="language-python">&#37;cd dogscats/
+&#37;ls</code></pre>
+<p>The structure of the sub-folders inside the folder <code>dogscats</code> will be important for what follows:</p>
+<pre><code class="language-bash">.
+├── test1 # contains 12500 images of cats and dogs
+├── train
+|   └── cats # contains 11500 images of cats
+|   └── dogs # contains 11500 images of dogs
+├── valid
+|   └── cats # contains 1000 images of cats
+|   └── dogs # contains 1000 images of dogs
+├── sample
+|   └── train
+|       └── cats # contains 8 images of cats
+|       └── dogs # contains 8 images of dogs    
+|   └── valid 
+|       └── cats # contains 4 images of cats
+|       └── dogs # contains 4 images of dogs    
+├── models # empty folder</code></pre>
+<p>You see that the 12 500 images of the test are in the <code>test1</code> sub-folder; the dataset of 25 000 labelled images has been split into a train set and a validation set.</p>
+<p>The sub-folder <code>sample</code> is here only to make sure the code is running properly on a very small dataset.</p>
+<h2 id="data_processing"><a href="#data_processing" class="header-anchor">Data processing</a></h2>
+<pre><code class="language-python">&#37;cd ..</code></pre>
+<p>Below, we give the path where the data is stored. If you are running this code on your computer, you should modifiy this cell.</p>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;1550">Video timestamp</a></p>
+<pre><code class="language-python">data_dir &#61; &#39;/content/data/dogscats&#39;</code></pre>
+<p><code>datasets</code> is a class of the <code>torchvision</code>| package &#40;see <a href="http://pytorch.org/docs/master/torchvision/datasets.html">torchvision.datasets</a>&#41; and deals with data loading. It integrates a multi-threaded loader that fetches images from the disk, groups them in mini-batches and serves them continously to the GPU right after each <em>forward</em>/<em>backward</em> pass through the network.</p>
+<p>Images needs a bit of preparation before passing them throught the network. They need to have all the same size \(224\times 224 \times 3\) plus some extra formatting done below by the normalize transform &#40;explained later&#41;.</p>
+<pre><code class="language-python">normalize &#61; transforms.Normalize&#40;mean&#61;&#91;0.485, 0.456, 0.406&#93;, std&#61;&#91;0.229, 0.224, 0.225&#93;&#41;
+
+imagenet_format &#61; transforms.Compose&#40;&#91;
+                transforms.CenterCrop&#40;224&#41;,
+                transforms.ToTensor&#40;&#41;,
+                normalize,
+            &#93;&#41;</code></pre>
+<pre><code class="language-python">dsets &#61; &#123;x: datasets.ImageFolder&#40;os.path.join&#40;data_dir, x&#41;, imagenet_format&#41;
+         for x in &#91;&#39;train&#39;, &#39;valid&#39;&#93;&#125;</code></pre>
+<pre><code class="language-python">os.path.join&#40;data_dir,&#39;train&#39;&#41;</code></pre>
+<p>Interactive help on jupyter notebook thanks to <code>?</code></p>
+<pre><code class="language-python">?datasets.ImageFolder</code></pre>
+<p>We see that <code>datasets.ImageFolder</code> has attributes: classes, class<em>to</em>idx, imgs.</p>
+<p>Let see what they are?</p>
+<pre><code class="language-python">dsets&#91;&#39;train&#39;&#93;.classes</code></pre>
+<p>The name of the classes are directly inferred from the structure of the folder:</p>
+<pre><code class="language-bash">├── train
+|   └── cats
+|   └── dogs</code></pre>
+<pre><code class="language-python">dsets&#91;&#39;train&#39;&#93;.class_to_idx</code></pre>
+<p>The label 0 will correspond to cats and 1 to dogs.</p>
+<p>Below, you see that the first 5 imgs are pairs &#40;location<em>of</em>the_image, label&#41;: </p>
+<pre><code class="language-python">dsets&#91;&#39;train&#39;&#93;.imgs&#91;:5&#93;</code></pre>
+<pre><code class="language-python">dset_sizes &#61; &#123;x: len&#40;dsets&#91;x&#93;&#41; for x in &#91;&#39;train&#39;, &#39;valid&#39;&#93;&#125;
+dset_sizes</code></pre>
+<p>As expected we have 23 000 images in the training set and 2 000 in the validation set.</p>
+<p>Below, we store the classes in the variable <code>dset_classes</code>:</p>
+<pre><code class="language-python">dset_classes &#61; dsets&#91;&#39;train&#39;&#93;.classes</code></pre>
+<p>The <code>torchvision</code> packages allows complex pre-processing/transforms of the input data &#40;<em>e.g.</em> normalization, cropping, flipping, jittering&#41;. A sequence of transforms can be grouped in a pipeline with the help of the <code>torchvision.transforms.Compose</code> function, see <a href="http://pytorch.org/docs/master/torchvision/transforms.html">torchvision.transforms</a></p>
+<p>The magic help <code>?</code> allows you to retrieve function you defined and forgot&#33;</p>
+<pre><code class="language-python">?imagenet_format</code></pre>
+<p>Where is this normalization coming from?</p>
+<p>As explained in the <a href="https://pytorch.org/docs/stable/torchvision/models.html">PyTorch doc</a>, you will use a pretrained model. All pre-trained models expect input images normalized in the same way, i.e. mini-batches of 3-channel RGB images of shape &#40;3 x H x W&#41;, where H and W are expected to be at least 224. The images have to be loaded in to a range of &#91;0, 1&#93; and then normalized using <code>mean &#61; &#91;0.485, 0.456, 0.406&#93;</code> and <code>std &#61; &#91;0.229, 0.224, 0.225&#93;</code>.</p>
+<pre><code class="language-python">loader_train &#61; torch.utils.data.DataLoader&#40;dsets&#91;&#39;train&#39;&#93;, batch_size&#61;64, shuffle&#61;True, num_workers&#61;6&#41;</code></pre>
+<pre><code class="language-python">?torch.utils.data.DataLoader</code></pre>
+<pre><code class="language-python">loader_valid &#61; torch.utils.data.DataLoader&#40;dsets&#91;&#39;valid&#39;&#93;, batch_size&#61;5, shuffle&#61;False, num_workers&#61;6&#41;</code></pre>
+<p>Try to understand what the following cell is doing?</p>
+<pre><code class="language-python">count &#61; 1
+for data in loader_valid:
+    print&#40;count, end&#61;&#39;,&#39;&#41;
+    if count &#61;&#61; 1:
+        inputs_try,labels_try &#61; data
+    count &#43;&#61;1</code></pre>
+<pre><code class="language-python">labels_try</code></pre>
+<pre><code class="language-python">inputs_try.shape</code></pre>
+<p>Got it: the validation dataset contains 2 000 images, hence this is 400 batches of size 5. <code>labels_try</code> contains the labels of the first batch and <code>inputs_try</code> the images of the first batch.</p>
+<p>What is an image for your computer?</p>
+<pre><code class="language-python">inputs_try&#91;0&#93;</code></pre>
+<p>A 3-channel RGB image is of shape &#40;3 x H x W&#41;. Note that entries can be negative because of the normalization.</p>
+<p>A small function to display images:</p>
+<pre><code class="language-python">def imshow&#40;inp, title&#61;None&#41;:
+#   Imshow for Tensor.
+    inp &#61; inp.numpy&#40;&#41;.transpose&#40;&#40;1, 2, 0&#41;&#41;
+    mean &#61; np.array&#40;&#91;0.485, 0.456, 0.406&#93;&#41;
+    std &#61; np.array&#40;&#91;0.229, 0.224, 0.225&#93;&#41;
+    inp &#61; np.clip&#40;std * inp &#43; mean, 0,1&#41;
+    plt.imshow&#40;inp&#41;
+    if title is not None:
+        plt.title&#40;title&#41;</code></pre>
+<pre><code class="language-python"># Make a grid from batch from the validation data
+out &#61; torchvision.utils.make_grid&#40;inputs_try&#41;
+
+imshow&#40;out, title&#61;&#91;dset_classes&#91;x&#93; for x in labels_try&#93;&#41;</code></pre>
+<pre><code class="language-python"># Get a batch of training data
+inputs, classes &#61; next&#40;iter&#40;loader_train&#41;&#41;
+
+n_images &#61; 8
+
+# Make a grid from batch
+out &#61; torchvision.utils.make_grid&#40;inputs&#91;0:n_images&#93;&#41;
+
+imshow&#40;out, title&#61;&#91;dset_classes&#91;x&#93; for x in classes&#91;0:n_images&#93;&#93;&#41;</code></pre>
+<h2 id="creating_vgg_model"><a href="#creating_vgg_model" class="header-anchor">Creating VGG Model</a></h2>
+<p>The torchvision module comes with a zoo of popular CNN architectures which are already trained on <a href="http://www.image-net.org/">ImageNet</a> &#40;1.2M training images&#41;. When called the first time, if <code>pretrained&#61;True</code> the model is fetched over the internet and downloaded to <code>~/.torch/models</code>. For next calls, the model will be directly read from there.</p>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;2451">Video timestamp</a></p>
+<pre><code class="language-python">model_vgg &#61; models.vgg16&#40;pretrained&#61;True&#41;</code></pre>
+<p>We will first use VGG Model without any modification. In order to interpret the results, we need to import the 1000 ImageNet categories, available at: <a href="https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json">https://s3.amazonaws.com/deep-learning-models/image-models/imagenet<em>class</em>index.json</a></p>
+<pre><code class="language-python">&#33;wget https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json</code></pre>
+<pre><code class="language-python">import json
+
+fpath &#61; &#39;/content/data/imagenet_class_index.json&#39;
+
+with open&#40;fpath&#41; as f:
+    class_dict &#61; json.load&#40;f&#41;
+dic_imagenet &#61; &#91;class_dict&#91;str&#40;i&#41;&#93;&#91;1&#93; for i in range&#40;len&#40;class_dict&#41;&#41;&#93;</code></pre>
+<pre><code class="language-python">dic_imagenet&#91;:4&#93;</code></pre>
+<pre><code class="language-python">inputs_try , labels_try &#61; inputs_try.to&#40;device&#41;, labels_try.to&#40;device&#41;
+
+model_vgg &#61; model_vgg.to&#40;device&#41;</code></pre>
+<pre><code class="language-python">outputs_try &#61; model_vgg&#40;inputs_try&#41;</code></pre>
+<pre><code class="language-python">outputs_try</code></pre>
+<pre><code class="language-python">outputs_try.shape</code></pre>
+<p>To translate the outputs of the network into &#39;probabilities&#39;, we pass it through a <a href="https://en.wikipedia.org/wiki/Softmax_function">Softmax function</a></p>
+<pre><code class="language-python">m_softm &#61; nn.Softmax&#40;dim&#61;1&#41;
+probs &#61; m_softm&#40;outputs_try&#41;
+vals_try,preds_try &#61; torch.max&#40;probs,dim&#61;1&#41;</code></pre>
+<p>Let check, that we obtain a probability&#33;</p>
+<pre><code class="language-python">torch.sum&#40;probs,1&#41;</code></pre>
+<pre><code class="language-python">vals_try</code></pre>
+<pre><code class="language-python">print&#40;&#91;dic_imagenet&#91;i&#93; for i in preds_try.data&#93;&#41;</code></pre>
+<pre><code class="language-python">out &#61; torchvision.utils.make_grid&#40;inputs_try.data.cpu&#40;&#41;&#41;
+
+imshow&#40;out, title&#61;&#91;dset_classes&#91;x&#93; for x in labels_try.data.cpu&#40;&#41;&#93;&#41;</code></pre>
+<h3 id="modifying_the_last_layer_and_setting_the_gradient_false_to_all_layers"><a href="#modifying_the_last_layer_and_setting_the_gradient_false_to_all_layers" class="header-anchor">Modifying the last layer and setting the gradient false to all layers</a></h3>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;2755">Video timestamp</a></p>
+<pre><code class="language-python">print&#40;model_vgg&#41;</code></pre>
+<p>We&#39;ll learn about what these different blocks do later in the course. For now, it&#39;s enough to know that:</p>
+<ul>
+<li><p>Convolution layers are for finding small to medium size patterns in images – analyzing the images locally</p>
+</li>
+<li><p>Dense &#40;fully connected&#41; layers are for combining patterns across an image – analyzing the images globally</p>
+</li>
+<li><p>Pooling layers downsample – in order to reduce image size and to improve invariance of learned features</p>
+</li>
+</ul>
+<p><img src="https://dataflowr.github.io/notebooks/Module1/img/vgg16.png" alt="vgg16" /></p>
+<p>In this practical example, our goal is to use the already trained model and just change the number of output classes. To this end we replace the last <code>nn.Linear</code> layer trained for 1000 classes to ones with 2 classes. In order to freeze the weights of the other layers during training, we set the field <code>required_grad&#61;False</code>. In this manner no gradient will be computed for them during backprop and hence no update in the weights. Only the weights for the 2 class layer will be updated.</p>
+<pre><code class="language-python">for param in model_vgg.parameters&#40;&#41;:
+    param.requires_grad &#61; False
+model_vgg.classifier._modules&#91;&#39;6&#39;&#93; &#61; nn.Linear&#40;4096, 2&#41;
+model_vgg.classifier._modules&#91;&#39;7&#39;&#93; &#61; torch.nn.LogSoftmax&#40;dim &#61; 1&#41;</code></pre>
+<p>PyTorch documentation for <a href="https://pytorch.org/docs/stable/nn.html#logsoftmax">LogSoftmax</a></p>
+<pre><code class="language-python">print&#40;model_vgg.classifier&#41;</code></pre>
+<p>We load the model on GPU.</p>
+<pre><code class="language-python">model_vgg &#61; model_vgg.to&#40;device&#41;</code></pre>
+<h2 id="training_the_fully_connected_module"><a href="#training_the_fully_connected_module" class="header-anchor">Training the fully connected module</a></h2>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;2990">Video timestamp</a></p>
+<h3 id="creating_loss_function_and_optimizer"><a href="#creating_loss_function_and_optimizer" class="header-anchor">Creating loss function and optimizer</a></h3>
+<p>PyTorch documentation for <a href="https://pytorch.org/docs/stable/nn.html#nllloss">NLLLoss</a> and the <a href="https://pytorch.org/docs/stable/optim.html#module-torch.optim">torch.optim module</a></p>
+<pre><code class="language-python">criterion &#61; nn.NLLLoss&#40;&#41;
+lr &#61; 0.001
+optimizer_vgg &#61; torch.optim.SGD&#40;model_vgg.classifier&#91;6&#93;.parameters&#40;&#41;,lr &#61; lr&#41;</code></pre>
+<h3 id="training_the_model"><a href="#training_the_model" class="header-anchor">Training the model</a></h3>
+<pre><code class="language-python">def train_model&#40;model,dataloader,size,epochs&#61;1,optimizer&#61;None&#41;:
+    model.train&#40;&#41;
+    
+    for epoch in range&#40;epochs&#41;:
+        running_loss &#61; 0.0
+        running_corrects &#61; 0
+        for inputs,classes in dataloader:
+            inputs &#61; inputs.to&#40;device&#41;
+            classes &#61; classes.to&#40;device&#41;
+            outputs &#61; model&#40;inputs&#41;
+            loss &#61; criterion&#40;outputs,classes&#41;
+            optimizer.zero_grad&#40;&#41;
+            loss.backward&#40;&#41;
+            optimizer.step&#40;&#41;
+            _,preds &#61; torch.max&#40;outputs.data,1&#41;
+            # statistics
+            running_loss &#43;&#61; loss.data.item&#40;&#41;
+            running_corrects &#43;&#61; torch.sum&#40;preds &#61;&#61; classes.data&#41;
+        epoch_loss &#61; running_loss / size
+        epoch_acc &#61; running_corrects.data.item&#40;&#41; / size
+        print&#40;&#39;Loss: &#123;:.4f&#125; Acc: &#123;:.4f&#125;&#39;.format&#40;
+                     epoch_loss, epoch_acc&#41;&#41;</code></pre>
+<pre><code class="language-python">&#37;&#37;time
+train_model&#40;model_vgg,loader_train,size&#61;dset_sizes&#91;&#39;train&#39;&#93;,epochs&#61;2,optimizer&#61;optimizer_vgg&#41;</code></pre>
+<pre><code class="language-python">def test_model&#40;model,dataloader,size&#41;:
+    model.eval&#40;&#41;
+    predictions &#61; np.zeros&#40;size&#41;
+    all_classes &#61; np.zeros&#40;size&#41;
+    all_proba &#61; np.zeros&#40;&#40;size,2&#41;&#41;
+    i &#61; 0
+    running_loss &#61; 0.0
+    running_corrects &#61; 0
+    for inputs,classes in dataloader:
+        inputs &#61; inputs.to&#40;device&#41;
+        classes &#61; classes.to&#40;device&#41;
+        outputs &#61; model&#40;inputs&#41;
+        loss &#61; criterion&#40;outputs,classes&#41;           
+        _,preds &#61; torch.max&#40;outputs.data,1&#41;
+            # statistics
+        running_loss &#43;&#61; loss.data.item&#40;&#41;
+        running_corrects &#43;&#61; torch.sum&#40;preds &#61;&#61; classes.data&#41;
+        predictions&#91;i:i&#43;len&#40;classes&#41;&#93; &#61; preds.to&#40;&#39;cpu&#39;&#41;.numpy&#40;&#41;
+        all_classes&#91;i:i&#43;len&#40;classes&#41;&#93; &#61; classes.to&#40;&#39;cpu&#39;&#41;.numpy&#40;&#41;
+        all_proba&#91;i:i&#43;len&#40;classes&#41;,:&#93; &#61; outputs.data.to&#40;&#39;cpu&#39;&#41;.numpy&#40;&#41;
+        i &#43;&#61; len&#40;classes&#41;
+    epoch_loss &#61; running_loss / size
+    epoch_acc &#61; running_corrects.data.item&#40;&#41; / size
+    print&#40;&#39;Loss: &#123;:.4f&#125; Acc: &#123;:.4f&#125;&#39;.format&#40;
+                     epoch_loss, epoch_acc&#41;&#41;
+    return predictions, all_proba, all_classes</code></pre>
+<pre><code class="language-python">predictions, all_proba, all_classes &#61; test_model&#40;model_vgg,loader_valid,size&#61;dset_sizes&#91;&#39;valid&#39;&#93;&#41;</code></pre>
+<pre><code class="language-python"># Get a batch of training data
+inputs, classes &#61; next&#40;iter&#40;loader_valid&#41;&#41;
+
+out &#61; torchvision.utils.make_grid&#40;inputs&#91;0:n_images&#93;&#41;
+
+imshow&#40;out, title&#61;&#91;dset_classes&#91;x&#93; for x in classes&#91;0:n_images&#93;&#93;&#41;</code></pre>
+<pre><code class="language-python">outputs &#61; model_vgg&#40;inputs&#91;:n_images&#93;.to&#40;device&#41;&#41;
+print&#40;torch.exp&#40;outputs&#41;&#41;</code></pre>
+<pre><code class="language-python">classes&#91;:n_images&#93;</code></pre>
+<h2 id="speeding_up_the_learning_by_precomputing_features"><a href="#speeding_up_the_learning_by_precomputing_features" class="header-anchor">Speeding up the learning by precomputing features</a></h2>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;3460">Video timestamp</a></p>
+<p>Here you are wasting a lot of time computing over and over the same quantities. Indeed, the first part of the VGG model &#40;called <code>features</code> and made of convolutional layers&#41; is frozen and never updated. Hence, we can precompute for each image in the dataset, the output of these convolutional layers as these outputs will always be the same during your training process.</p>
+<p>This is what is done below.</p>
+<pre><code class="language-python">x_try &#61; model_vgg.features&#40;inputs_try&#41;</code></pre>
+<pre><code class="language-python">x_try.shape</code></pre>
+<p>You see that the features computed for an image is of shape 512x7x7 &#40;above we have a batch corresponding to 5 images&#41;.</p>
+<pre><code class="language-python">def preconvfeat&#40;dataloader&#41;:
+    conv_features &#61; &#91;&#93;
+    labels_list &#61; &#91;&#93;
+    for data in dataloader:
+        inputs,labels &#61; data
+        inputs &#61; inputs.to&#40;device&#41;
+        labels &#61; labels.to&#40;device&#41;
+        
+        x &#61; model_vgg.features&#40;inputs&#41;
+        conv_features.extend&#40;x.data.cpu&#40;&#41;.numpy&#40;&#41;&#41;
+        labels_list.extend&#40;labels.data.cpu&#40;&#41;.numpy&#40;&#41;&#41;
+    conv_features &#61; np.concatenate&#40;&#91;&#91;feat&#93; for feat in conv_features&#93;&#41;
+    return &#40;conv_features,labels_list&#41;</code></pre>
+<pre><code class="language-python">&#37;&#37;time
+conv_feat_train,labels_train &#61; preconvfeat&#40;loader_train&#41;</code></pre>
+<pre><code class="language-python">conv_feat_train.shape</code></pre>
+<pre><code class="language-python">&#37;&#37;time
+conv_feat_valid,labels_valid &#61; preconvfeat&#40;loader_valid&#41;</code></pre>
+<h3 id="creating_a_new_data_generator"><a href="#creating_a_new_data_generator" class="header-anchor">Creating a new data generator</a></h3>
+<p>We will not load images anymore, so we need to build our own data loader. If you do not understand the cell below, it is OK&#33; We will come back to it in Lesson 5...</p>
+<pre><code class="language-python">dtype&#61;torch.float
+datasetfeat_train &#61; &#91;&#91;torch.from_numpy&#40;f&#41;.type&#40;dtype&#41;,torch.tensor&#40;l&#41;.type&#40;torch.long&#41;&#93; for &#40;f,l&#41; in zip&#40;conv_feat_train,labels_train&#41;&#93;
+datasetfeat_train &#61; &#91;&#40;inputs.reshape&#40;-1&#41;, classes&#41; for &#91;inputs,classes&#93; in datasetfeat_train&#93;
+loaderfeat_train &#61; torch.utils.data.DataLoader&#40;datasetfeat_train, batch_size&#61;128, shuffle&#61;True&#41;</code></pre>
+<pre><code class="language-python">&#37;&#37;time
+train_model&#40;model_vgg.classifier,dataloader&#61;loaderfeat_train,size&#61;dset_sizes&#91;&#39;train&#39;&#93;,epochs&#61;50,optimizer&#61;optimizer_vgg&#41;</code></pre>
+<pre><code class="language-python">datasetfeat_valid &#61; &#91;&#91;torch.from_numpy&#40;f&#41;.type&#40;dtype&#41;,torch.tensor&#40;l&#41;.type&#40;torch.long&#41;&#93; for &#40;f,l&#41; in zip&#40;conv_feat_valid,labels_valid&#41;&#93;
+datasetfeat_valid &#61; &#91;&#40;inputs.reshape&#40;-1&#41;, classes&#41; for &#91;inputs,classes&#93; in datasetfeat_valid&#93;
+loaderfeat_valid &#61; torch.utils.data.DataLoader&#40;datasetfeat_valid, batch_size&#61;128, shuffle&#61;False&#41;</code></pre>
+<pre><code class="language-python">predictions, all_proba, all_classes &#61; test_model&#40;model_vgg.classifier,dataloader&#61;loaderfeat_valid,size&#61;dset_sizes&#91;&#39;valid&#39;&#93;&#41;</code></pre>
+<h2 id="ol_start4_viewing_model_prediction_qualitative_analysis"><a href="#ol_start4_viewing_model_prediction_qualitative_analysis" class="header-anchor"><ol start="4">
+<li><p>Viewing model prediction &#40;qualitative analysis&#41;</p>
+</li>
+</ol>
+</a></h2>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;3819">Video timestamp</a></p>
+<p>The most important metrics for us to look at are for the validation set, since we want to check for over-fitting.</p>
+<p>With our first model we should try to overfit before we start worrying about how to handle that - there&#39;s no point even thinking about regularization, data augmentation, etc if you&#39;re still under-fitting&#33; &#40;We&#39;ll be looking at these techniques after the 2 weeks break...&#41;</p>
+<p>As well as looking at the overall metrics, it&#39;s also a good idea to look at examples of each of:</p>
+<ol>
+<li><p>A few correct labels at random</p>
+</li>
+<li><p>A few incorrect labels at random</p>
+</li>
+<li><p>The most correct labels of each class &#40;ie those with highest probability that are correct&#41;</p>
+</li>
+<li><p>The most incorrect labels of each class &#40;ie those with highest probability that are incorrect&#41;</p>
+</li>
+<li><p>The most uncertain labels &#40;ie those with probability closest to 0.5&#41;.</p>
+</li>
+</ol>
+<p>In general, these are particularly useful for debugging problems in the model. Since our model is very simple, there may not be too much to learn at this stage...</p>
+<pre><code class="language-python"># Number of images to view for each visualization task
+n_view &#61; 8</code></pre>
+<pre><code class="language-python">correct &#61; np.where&#40;predictions&#61;&#61;all_classes&#41;&#91;0&#93;</code></pre>
+<pre><code class="language-python">len&#40;correct&#41;/dset_sizes&#91;&#39;valid&#39;&#93;</code></pre>
+<pre><code class="language-python">from numpy.random import random, permutation
+idx &#61; permutation&#40;correct&#41;&#91;:n_view&#93;</code></pre>
+<pre><code class="language-python">idx</code></pre>
+<pre><code class="language-python">loader_correct &#61; torch.utils.data.DataLoader&#40;&#91;dsets&#91;&#39;valid&#39;&#93;&#91;x&#93; for x in idx&#93;,batch_size &#61; n_view,shuffle&#61;True&#41;</code></pre>
+<pre><code class="language-python">for data in loader_correct:
+    inputs_cor,labels_cor &#61; data</code></pre>
+<pre><code class="language-python"># Make a grid from batch
+out &#61; torchvision.utils.make_grid&#40;inputs_cor&#41;
+
+imshow&#40;out, title&#61;&#91;l.item&#40;&#41; for l in labels_cor&#93;&#41;</code></pre>
+<pre><code class="language-python">from IPython.display import Image, display
+for x in idx:
+    display&#40;Image&#40;filename&#61;dsets&#91;&#39;valid&#39;&#93;.imgs&#91;x&#93;&#91;0&#93;, retina&#61;True&#41;&#41;</code></pre>
+<pre><code class="language-python">incorrect &#61; np.where&#40;predictions&#33;&#61;all_classes&#41;&#91;0&#93;
+for x in permutation&#40;incorrect&#41;&#91;:n_view&#93;:
+    #print&#40;dsets&#91;&#39;valid&#39;&#93;.imgs&#91;x&#93;&#91;1&#93;&#41;
+    display&#40;Image&#40;filename&#61;dsets&#91;&#39;valid&#39;&#93;.imgs&#91;x&#93;&#91;0&#93;, retina&#61;True&#41;&#41;</code></pre>
+<pre><code class="language-python">#3. The images we most confident were cats, and are actually cats
+correct_cats &#61; np.where&#40;&#40;predictions&#61;&#61;0&#41; &amp; &#40;predictions&#61;&#61;all_classes&#41;&#41;&#91;0&#93;
+most_correct_cats &#61; np.argsort&#40;all_proba&#91;correct_cats,1&#93;&#41;&#91;:n_view&#93;</code></pre>
+<pre><code class="language-python">for x in most_correct_cats:
+    display&#40;Image&#40;filename&#61;dsets&#91;&#39;valid&#39;&#93;.imgs&#91;correct_cats&#91;x&#93;&#93;&#91;0&#93;, retina&#61;True&#41;&#41;</code></pre>
+<pre><code class="language-python">#3. The images we most confident were dogs, and are actually dogs
+correct_dogs &#61; np.where&#40;&#40;predictions&#61;&#61;1&#41; &amp; &#40;predictions&#61;&#61;all_classes&#41;&#41;&#91;0&#93;
+most_correct_dogs &#61; np.argsort&#40;all_proba&#91;correct_dogs,0&#93;&#41;&#91;:n_view&#93;</code></pre>
+<pre><code class="language-python">for x in most_correct_dogs:
+    display&#40;Image&#40;filename&#61;dsets&#91;&#39;valid&#39;&#93;.imgs&#91;correct_dogs&#91;x&#93;&#93;&#91;0&#93;, retina&#61;True&#41;&#41;</code></pre>
+<h1 id="conclusion"><a href="#conclusion" class="header-anchor">Conclusion</a></h1>
+<p>What did we do in the end? A simple logistic regression&#33; If the connection is unclear, we&#39;ll explain it on a much simpler example in the next course. </p>
+<p>We probably killed a fly with a sledge hammer&#33;</p>
+<p>In our case, the sledge hammer is VGG pretrained on Imagenet, a dataset containing a lot of pictures of cats and dogs. Indeed, we saw that without modification the network was able to predict dog and cat breeds. Hence it is not very surprising that the features computed by VGG are very accurate for our classification task. In the end, we need to learn only the parameters of the last linear layer, i.e. 8194 parameters &#40;do not forget the bias \(2\times 4096+2\)&#41;. Indeed, this can be done on CPU without any problem.</p>
+<p>Nevertheless, this example is still instructive as it shows all the necessary steps in a deep learning project. Here we did not struggle with the learning process of a deep network, but we did all the preliminary engineering tasks: dowloading a dataset, setting up the environment to use a GPU, preparing the data, computing the features with a pretrained VGG, saving them on your drive so that you can use them for a later experiment... These steps are essential in any deep learning project and a necessary requirement before having fun playing with network architectures and understanding the learning process.</p>
+<p><a href="https://dataflowr.github.io/website/"><img src="https://raw.githubusercontent.com/dataflowr/website/master/_assets/dataflowr_logo.png" alt="Dataflowr" /></a></p>
+<div class="page-foot">
+  <div class="copyright">
+    <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></img></b></a></br>
+    Last modified: September 15, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>
