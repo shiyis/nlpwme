@@ -1,4 +1,4 @@
-# Inductive bias in GCN: a spectral perspective
+<!-- # Inductive bias in GCN: a spectral perspective
 
 __author: [Marc Lelarge](https://www.di.ens.fr/~lelarge/), course: [dataflowr](https://dataflowr.github.io/website/)__
 
@@ -404,4 +404,4 @@ Here we studied a very simple case but more general statements are possible as w
 Follow on [twitter](https://twitter.com/marc_lelarge)!
 
 ## Thanks for reading!
-
+ -->
