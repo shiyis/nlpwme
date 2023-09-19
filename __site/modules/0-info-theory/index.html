@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/poole_hyde.css">
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+<link rel="icon" type="img/png" href="/assets/emoji.png">
+
+   <title>NLPwShiyi - Natural Language Processing with Shiyi</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+
+    <img src="/assets/nlpwshiyi.png" style="width: 250px;position:sticky; height: auto; display: inline">
+    <nav class="sidebar-nav">
+      <!-- <br></br>
+                                                      <br></br>
+                                                      <br></br> -->
+      <div class="sidebar-about">
+        <!-- <img src="/assets/robot.png"
+                                                                             style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> -->
+        <h1 style="font-size:1em; opacity: 0.95;">
+          <a href="/">Natural Language Processing w Shiyi S.</a>
+        </h1>
+      </div>
+      <div class="week">Introduction</div>
+      <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+                                                      href="/modules/privacy-preserving-ML">
+                                                        <b>Part One</b><em>Information Theory</em>
+                                                      </a> -->
+
+      <a class="sidebar-nav-item " href="/modules/0-info-theory">
+        <b>Part One -
+        </b>
+        <em>Information Theory</em>
+      </a>
+
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>Part Two -
+        </b>
+        <em>Computationalism vs Connectionism</em>
+      </a>
+
+
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>Part Three -
+        </b>
+        <em>Modern Natural Language Processing</em>
+      </a>
+
+      <!-- Week 1 starts here -->
+
+      <div class="week">NLP before AI</div>
+
+      <a class="sidebar-nav-item "
+        href="/modules/1-intro-general-overview">
+        <b>
+          ·
+        </b>
+        <em>
+          The Noisy Channel Model
+        </em>
+      </a>
+
+      <a class="sidebar-nav-item "
+        href="/modules/2a-pytorch-tensors">
+        <b>
+          ·
+        </b>
+        <em>
+          Cryptoy PyTorch tensors</em>
+      </a>
+      <a class="sidebar-nav-item "
+        href="/modules/2b-automatic-differentiation">
+        <b>
+          ·
+        </b>
+        <em>
+          Mutual Information
+        </em>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Markov Processes
+        </em>
+      </a>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Dynamic Programming and Viterbi Algorithm
+        </em>
+      </a>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Finite State Automata and Transducers
+        </em>
+      </a>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Context Free Grammar, CKY Algorithm, and The Chomsky Hierarchy
+        </em>
+      </a></a><a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Syntactic Theory, Taxonomy and Typography
+        </em></a><a class="sidebar-nav-item " href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>
+          Formal Logic Systems, General Problem Solving, and Philosophy of Language
+        </em></a><!-- Week 1 ends here --><!-- Week 2 starts here -->
+      <div class="week">
+        NLP with AI</div><a class="sidebar-nav-item "
+        href="/modules/1-intro-general-overview">
+        <b>
+          ·
+        </b>
+        <em>
+          General Model Workflow and Technicalities
+        </em></a><a class="sidebar-nav-item " href="/modules/8c-word2vec">
+        <b>
+          ·
+        </b>
+        <em>Word2vec</em></a><a class="sidebar-nav-item "
+        href="/modules/2a-pytorch-tensors">
+        <b>
+          ·
+        </b>
+        <em>PyTorch tensors</em></a><a
+        class="sidebar-nav-item "
+        href="/modules/2b-automatic-differentiation">
+
+        <b>
+          ·
+        </b>
+        <em>Automatic differentiation</em></a><a class="sidebar-nav-item "
+        href="/modules/2c-jax">
+        <b>
+          ·
+        </b>
+        <em>Automatic differentiation: VJP and intro to JAX</em></a><a
+        class="sidebar-nav-item "
+        href="/modules/3-loss-functions-for-classification">
+        <b>
+          ·
+        </b>
+        <em>Loss functions for classification</em></a><a
+        class="sidebar-nav-item "
+        href="/modules/4-optimization-for-deep-learning">
+        <b>
+          ·
+        </b>
+        <em>Optimization for DL</em></a><a class="sidebar-nav-item "
+        href="/modules/5-stacking-layers">
+        <b>
+          ·
+        </b>
+        <em>Stacking layers</em></a><a class="sidebar-nav-item "
+        href="/modules/7-dataloading">
+        <b>
+          ·
+        </b>
+        <em>Dataloading</em></a><a class="sidebar-nav-item "
+        href="/modules/8a-embedding-layers">
+        <b>
+          ·
+        </b>
+        <em>Embedding layers</em></a>
+
+      <a class="sidebar-nav-item "
+        href="/modules/8b-collaborative-filtering">
+        <b>
+          ·
+        </b>
+        <em>Collaborative
+          filtering</em></a><!-- Week 3 ends here --><!-- Week 4 starts here --><!-- <div class="week">Unit 4</div> -->
+      <a class="sidebar-nav-item " href="/modules/9a-autoencoders"> <b>
+          ·
+        </b>
+        <em>Autoencoders</em>
+
+        <a class="sidebar-nav-item " href="modules/15-dropout">
+
+          <b>
+            · </b><em>Dropout</em></a>
+
+
+        <a class="sidebar-nav-item "
+          href="modules/11c-batches-with-sequences">
+          <b>
+            ·
+          </b>
+          <em>Batches with sequences in Pytorch</em></a>
+
+
+        <a class="sidebar-nav-item "
+          href="/modules/6-convolutional-neural-network">
+
+        </a>
+
+        <a class="sidebar-nav-item " href="/modules/16-batchnorm">
+          <b>
+            ·
+          </b><em>Batchnorm</em>
+
+
+          <a class="sidebar-nav-item " href="/modules/13-siamese">
+            <b>
+              ·
+            </b>
+            <em>The Benefits of Depth</em></a>
+
+
+          <a class="sidebar-nav-item " href="/modules/14b-depth">
+            <b>
+              ·
+            </b>
+            <em>The Problems with Depth</em></a>
+
+          <div class="week">State-Of-The-Art</div>
+
+          <a class="sidebar-nav-item "
+            href="/modules/10-generative-adversarial-networks">
+            <b>
+              ·
+            </b>
+            <em>Generative adversarial networks</em></a>
+
+          <a class="sidebar-nav-item " href="/modules/9c-flows">
+            <b>
+              ·
+            </b>
+            <em>GAN vs
+              VAE</em></a><!-- Week 4 ends here --><!-- Week 5 starts here --><!-- <div class="week">Unit 5</div> -->
+          <a class="sidebar-nav-item "
+            href="/modules/11a-recurrent-neural-networks-theory"> <b>
+              ·
+            </b>
+            <em>Recurrent Neural Networks (theory)</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/modules/11b-recurrent-neural-networks-practice">
+            <b>
+              ·
+            </b>
+            <em>RNN in practice</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/modules/11c-batches-with-sequences">
+
+            <b>
+              ·
+            </b>
+            <em>
+              Convolutional Neural Network
+            </em></a>
+
+          <a class="sidebar-nav-item " href="/modules/12-attention">
+            <b>
+              ·
+            </b>
+            <em>Attention and Transformers</em></a>
+          <!-- <a class="sidebar-nav-item {{ispage /modules/15-dropout}}active{{end}}"href="/modules/15-dropout"> <b>
+            · 
+          </b> <em> Dropout </em></a> -->
+
+          <a class="sidebar-nav-item " href="/modules/18a-diffusion"><b> ·
+            </b><em>Denoising Diffusion Probabilistic
+              Models</em></a><!-- <div class="week">Unit 7</div>--><!-- Unit 6 ends here --><!-- Unit 7 starts here -->
+          <a class="sidebar-nav-item "
+            href="/homework/1-mlp-from-scratch"> <b>
+              · </b><em>MLP from scratch</em></a>
+          
+          <a class="sidebar-nav-item "
+            href="/homework/2-CAM-adversarial"><b>
+              · </b><em>Class Activation Map and adversarial examples</em></a><a
+            class="sidebar-nav-item " href="/homework/3-VAE"><b>
+              · </b><em>VAE for MNIST clustering and generation</em></a>
+        </a>
+    </nav>
+  </div>
+</div>
+<div class="content container">
+<!-- Content appended here -->
+<div class="franklin-content"><h1 id="information_theory_the_foundation_behind_natural_language_processing"><a href="#information_theory_the_foundation_behind_natural_language_processing" class="header-anchor">Information Theory: The Foundation behind Natural Language Processing</a></h1>
+<p>This blog will touch on the topic of entropy and explain in the simplest and basic language of what Information Theory is about and why it is important. </p>
+<p>❗ This page largely follows the <a href="https://www.analyticsvidhya.com">Analytics Vindya</a> blog on <a href="https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/#h-what-is-a-decision-tree-in-machine-learning">Entropy</a></p>
+<h3 id="what_exactly_is_entropy"><a href="#what_exactly_is_entropy" class="header-anchor"><strong>What Exactly Is Entropy?</strong></a></h3>
+<p>According to wikipedia, it is a scientific concept, as well as a measurable physical property, that is most commonly associated with a state of <code>disorder, randomness, or uncertainty</code>. </p>
+<p>The term and the concept are used in diverse fields, from classical thermodynamics, where it was first recognized, to microscopic description of nature in statistical physics, and the the principles of information theory. </p>
+<p>It&#39;s said to have far-reaching influence of the establishment of many fields including physics, chemistry, and in biological systems. </p>
+<p>In physicist Ludwig Boltzmann explained entropy as the measure of the number of possible microscopic arrangements or states of individual atoms and molecules of a system that comply with the macroscopic condition of the system. </p>
+<p>In 1948, Bell Labs scientist Claude Shannon developed similar statistical concepts of measuring microscopic uncertainty and multiplicity to the problem of random losses of information in telecommunication signals. </p>
+<h3 id="the_origin_of_entropy"><a href="#the_origin_of_entropy" class="header-anchor"><strong>The Origin of Entropy</strong></a></h3>
+<p>Claude E. Shannon&#39;s 1958 paper on <em>A Mathematical Theory of Communication</em> marked the birth of information theory. He aimed to mathematically measure the statistical nature of lost information in phone-line signals and proposed information entropy to estimate uncertainty reduced by a message. </p>
+<p>Entropy measures the amount of surprise and data present in a variable. In information theory, a random variable&#39;s entropy reflects the average uncertainty level in its possible outcomes. </p>
+<p>Events with higher uncertainty have higher entropy information theory finds applications in machine learning models including decision trees. Understanding entropy helps improve data storage, communication, and decision-making. </p>
+<h3 id="the_decision_tree_algorithm"><a href="#the_decision_tree_algorithm" class="header-anchor"><strong>The Decision Tree Algorithm</strong> </a></h3>
+<p>The Decision Tree is a popular supervised learning technique in machine learning, serving as a hierarchical if-else statement based on feature comparison operators. It&#39;s used for regression and classification problems, <code>finding relationships between prediction and response variables</code>. The tree structure includes Root, Branch, and Leaf nodes, representing all possible outcomes based on specific conditions or rules. The algo aims to create <code>homogenous leaf nodes</code> containing records of a single type in the outcome variable. However, sometimes restrictions may lead to mixed outcomes in the Leaf nodes. </p>
+<p>To build the tree, the algo selects features and thresholds by optimizing a loss function, aiming for the most accurate predictions. Decision Trees offer interpretable models and are widely used for various applications, from simple binary classification to complex decision-making.</p>
+<h3 id="the_connections_between_these_two"><a href="#the_connections_between_these_two" class="header-anchor"><strong>The Connections between These Two</strong></a></h3>
+<p>As I have gone over these concepts, it seems to be the case that entropy has to do with the transformation between heterogeneity to homogeneity, and the decision tree algo is doing exactly that. </p>
+<hr />
+<p><img src="../extras/info_theory/out.png" alt="" /></p>
+<hr />
+<p>A general entropic framework is however lacking, especially for decision-making that inevitably involves uncertainty. Shannon&#39;s entropy is based only on probabilistic uncertainty, which makes it quite restrictive in human decision-making that also involves uncertainty due to incompleteness, vagueness, and individualistic attitudes. </p>
+<p>The goal of decision tree is to decrease the uncertainty or the &quot;impurity&quot; of the target data as much as possible at the leaf &#40;or the end-outcome&#41; nodes. </p>
+<p>The objective function, which is the decision tree algo here minimizes the impurity of the data by splitting down the tree further. There are two metrics to estimate this impurity: Entropy and Gini. </p>
+<hr />
+<h3 id="the_chi-square_formula"><a href="#the_chi-square_formula" class="header-anchor"><strong>The Chi-Square Formula</strong></a></h3>
+<p>A Pearson&#39;s Chi-Square test is a statistical test for <code>categorical data</code>. </p>
+<pre><code class="language-julia">💡Categorical data
+
+1. is divided into groups or categories.
+2. is based on qualitative characteristics.
+3. has no order in categorical values and variables.
+4. can take numerical values, but those numbers don’t have any mathematical meaning.
+5. is displayed graphically by bar charts and pie charts.</code></pre>
+<p>It&#39;s used to determine whether your data are significantly different from what you expected. There are two types of Pearson&#39;s Chi-Square tests: </p>
+<p>The Chi-Square goodness of fit test is used to test whether the frequency distribution of a categorical variable is different from your expectations. </p>
+<p>The Chi-Square test of independence is used to test whether two categorical variables are related to each other. </p>
+<p>Chi-Square is often written as \(\text{x}^{2}\) and is pronounce &quot;kai-square&quot;. This is to run non-parametric tests on categorical data. Categorical variables can be nominal or ordinal and represent groupings such as species or nationalities. </p>
+<p>The Chi-Square formula tests use the same formula to calculate the test statistic, Chi-Square &#40;\(\text{X}^{2}\)&#41;:</p>
+\[\text{x}^{2} = \sum_{i} \, \frac{(0_i - \text{E}_{i})^2}{\text{E}_{i}}\]
+<pre><code class="language-julia">where:
+
+    Χ^2 is the Chi-Square test statistic
+    Σ is the summation operator &#40;it means “take the sum of”&#41;
+    O is the observed frequency
+    E is the expected frequency</code></pre>
+<p>The test ultimately serves to understand and answer the question of whether the frequencies appeared between two categorical variables actually have connections or follow some pattern by comparing the observed frequencies to the frequencies that we might expect to obtain purely by chance. </p>
+<h3 id="coming_back_to_decision_trees"><a href="#coming_back_to_decision_trees" class="header-anchor"><strong>Coming Back to Decision Trees</strong></a></h3>
+<p>In decision trees, again entropy is a measure of impurity used to evaluates the homogeneity of a dataset. It helps determine the best split for building an informative decision tree model. </p>
+<pre><code class="language-julia">💡Gain and Entropy
+
+- are related concepts in decision tree algorithms. 
+- Gain measures the reduction in entropy achieved by splitting a dataset, helping to 
+identify the best attribute for partitioning the data.</code></pre>
+<h3 id="example_cost_function_in_a_decision_tree"><a href="#example_cost_function_in_a_decision_tree" class="header-anchor"><strong>Example Cost Function in A Decision Tree</strong></a></h3>
+<p>Say we have a box full of an equal number of coffee pouches of two flavors: Caramel Latte and the regular, Cappuccino. You may choose either of the flavors but with eyes closed. </p>
+<p>The predicament where you would have to decide and this decision of yours that can lead to results with equal probability is nothing else but said to be the state of maximum uncertainty. In case, I had only caramel latte coffee pouches or cappuccino pouches then we know what the outcome would have been and hence the uncertainty&#40;or surprise will be&#41; zero. </p>
+<p>The probability of getting each outcome of a caramel latte pouch or cappuccino pouch is:</p>
+<pre><code class="language-julia">P&#40;Coffee pouch &#61;&#61; Caramel Latte&#41; &#61; 0.50
+P&#40;Coffee pouch &#61;&#61; Cappuccino&#41; &#61; 1 – 0.50 &#61; 0.50</code></pre>
+<p>When we have only one result either caramel latte or cappuccino pouch, then in the absence of uncertainty, the probability of the event is:</p>
+<pre><code class="language-julia">P&#40;Coffee pouch &#61;&#61; Caramel Latte&#41; &#61; 1
+P&#40;Coffee pouch &#61;&#61; Cappuccino&#41; &#61; 1 – 1 &#61; 0</code></pre>
+<p>There is a relationship between heterogeneity and uncertainty; the more heterogeneous the event the more uncertainty. On the other hand, the less heterogeneous, or so to say, the more homogeneous the event, the lesser is the uncertainty. The uncertainty is expressed as Gini or Entropy.</p>
+<h3 id="how_does_entropy_actually_work"><a href="#how_does_entropy_actually_work" class="header-anchor"><strong>How Does Entropy Actually Work?</strong></a></h3>
+<p>Claude E. Shannon had expressed this relationship between the probability and the heterogeneity or impurity in the mathematical form with the help of the following equation:</p>
+\[\text{Entropy(p)} = -\sum_{i=1}^{N} \, \text{P}_{i} \, \text{log}_{2} \, \text{P}_{i}\]
+<p>The uncertainty or the impurity is represented as the log to base 2 of the probability of a category &#40;\(\text{p}_{i}\)&#41;. The index &#40;\(\text{i}\)&#41; refers to the number of possible categories. Here, i &#61; 2 as our problem is a binary classification.</p>
+<p>This equation is graphically depicted by a symmetric curve as shown below. On the x-axis is the probability of the event and the y-axis indicates the heterogeneity or the impurity denoted by \(\text{H(X)}\).</p>
+<hr />
+<p><img src="../extras/info_theory/entropy.jpeg" alt="" /></p>
+<p><hr /> The \(log_2 p_i\) has a very unique property that is when there are only two outcomes say probability of the event \(\text{p}_{i}\) is either 1 or 0.50 then in such scenario \(\text{log}_{2}  \text{p}_{i}\) takes the following values &#40;ignoring the negative term&#41;:</p>
+<table><tr><th align="right">\(\text{p}_{i}\)</th><th align="right">\(\text{p}_{i}=1\)</th><th align="right">\(\text{p}_{i}=0.5\)</th></tr><tr><td align="right">\(\text{log}_{2} \text{p}_{i}\)</td><td align="right">\(\text{log}_{2} (1) = 0 \)</td><td align="right">\(\text{log}_{2} (0.50) = 1\)</td></tr></table>
+<p>Now, the above values of the probability and \(\text{log}_{2} \text{p}_{i}\)  are depicted in the following manner:</p>
+<p><hr /> <img src="../extras/info_theory/resize_1.png" alt="" /></p>
+<hr />
+<p>Entropy in Machine Learning the catch is when the probability, \(\text{p}_{i}\) becomes 0, then the value of \(\text{log}_{2}  \, \text{p}_{0}\) moves towards infinity and the curve changes its shape to:</p>
+<p><hr /> <img src="../extras/info_theory/resize_2.png" alt="" /></p>
+<p><hr /> The entropy or the impurity measure can only take value from 0 to 1 as the probability ranges from 0 to 1 and hence, we do not want the above situation. So, to make the curve and the value of \(\text{log}_{2} \text{p}_{i}\) back to zero, we multiply \(\text{log}_{2}  \text{p}_{i}\) with the probability i.e. with \(\text{p}_{i}\) itself.</p>
+<p>Therefore, the expression becomes &#40;\(\text{p}_{i}*  \text{log}_{2}  \text{p}_{i}\)&#41; and \(\text{log}_{2}  \text{p}_{i}\) returns a negative value and to remove this negativity effect, we multiply the resultant with a negative sign and the equation finally becomes:</p>
+\[\text{H(X)} = – Σ (\text{p}_{i} * \text{log}_{2} \, \text{p}_{i})\]
+<p>Now, this expression can be used to show how the uncertainty changes depending on the likelihood of an event.</p>
+<p>The curve finally becomes and holds the following values:</p>
+<p><hr /> <img src="../extras/info_theory/resize_3.png" alt="" /></p>
+<p><hr /> This scale of entropy from 0 to 1 is for binary classification problems. For a multiple classification problem, the above relationship holds, however, the scale may change.</p>
+<p>Calculation of Entropy in Python We shall estimate the entropy for three different scenarios. The event Y is getting a caramel latte coffee pouch. The heterogeneity or the impurity formula for two different classes is as follows:</p>
+\[ \text{H(X)} = – [(\text{p}_{i} * \text{log}_{2} \, \text{p}_{i}) + (q_i * \text{log}_{2}  \text{q}_{i})]\]
+<p>where,</p>
+<p>p_i &#61; Probability of Y &#61; 1 i.e. probability of success of the event
+q_i &#61; Probability of Y &#61; 0 i.e. probability of failure of the event</p>
+<h4 id="case_1"><a href="#case_1" class="header-anchor"><strong>Case 1</strong></a></h4>
+<table><tr><th align="right">Coffee flavor</th><th align="right">Quantity of Pouches</th><th align="right">Probability</th></tr><tr><td align="right">Caramel Latte</td><td align="right">7</td><td align="right">0.7</td></tr><tr><td align="right">Cappuccino</td><td align="right">3</td><td align="right">0.3</td></tr><tr><td align="right">Total</td><td align="right">10</td><td align="right">1</td></tr></table>
+\[ \text{H(X)} = – [(0.70 * \text{log}_{2} (0.70)) + (0.30 * \text{log}_{2} (0.30))] = 0.88129089 \]
+<p>This value 0.88129089 is the measurement of uncertainty when given the box full of coffee pouches and asked to pull out one of the pouches when there are seven pouches of caramel latte flavor and three pouches of cappuccino flavor.</p>
+<h4 id="case_2"><a href="#case_2" class="header-anchor"><strong>Case 2</strong></a></h4>
+<table><tr><th align="right">Coffee flavor</th><th align="right">Quantity of Pouches</th><th align="right">Probability</th></tr><tr><td align="right">Caramel Latte</td><td align="right">5</td><td align="right">0.5</td></tr><tr><td align="right">Cappuccino</td><td align="right">5</td><td align="right">0.5</td></tr><tr><td align="right">Total</td><td align="right">10</td><td align="right">1</td></tr></table>
+\[ \text{H(X)} = – [(0.50 * \text{log}_{2} (0.50)) + (0.50 * \text{log}_{2} (0.50))] = 1 \]
+<h4 id="case_3"><a href="#case_3" class="header-anchor"><strong>Case 3</strong></a></h4>
+<table><tr><th align="right">Coffee flavor</th><th align="right">Quantity of Pouches</th><th align="right">Probability</th></tr><tr><td align="right">Caramel Latte</td><td align="right">10</td><td align="right">1</td></tr><tr><td align="right">Cappuccino</td><td align="right">0</td><td align="right">0</td></tr><tr><td align="right">Total</td><td align="right">10</td><td align="right">1</td></tr></table>
+\[ \text{H(X)} = – [(1.0 * \text{log}_{2} (1.0)) + (0 * \text{log}_{2} (0))] ~= 0 \]
+<p>In scenarios 2 and 3, can see that the entropy is 1 and 0, respectively. In scenario 3, when we have only one flavor of the coffee pouch, caramel latte, and have removed all the pouches of cappuccino flavor, then the uncertainty or the surprise is also completely removed and the aforementioned entropy is zero. We can then conclude that the information is 100&#37; present.</p>
+<h3 id="use_of_entropy_in_decision_tree"><a href="#use_of_entropy_in_decision_tree" class="header-anchor"><strong>Use of Entropy in Decision Tree</strong></a></h3>
+<p>As we have seen above, in decision trees the cost function is to minimize the heterogeneity in the leaf nodes. Therefore, the aim is to find out the attributes and within those attributes the threshold such that when the data is split into two, we achieve the maximum possible homogeneity or in other words, results in the maximum drop in the entropy within the two tree levels.</p>
+<p>At the root level, the entropy of the target column is estimated via the formula proposed by Shannon for entropy. At every branch, the entropy computed for the target column is the weighted entropy. The weighted entropy means taking the weights of each attribute. The weights are the probability of each of the classes. The more the decrease in the entropy, the more is the information gained.</p>
+<p>Information Gain is the pattern observed in the data and is the reduction in entropy. It can also be seen as the entropy of the parent node minus the entropy of the child node. It is calculated as 1 – entropy. The entropy and information gain for the above three scenarios is as follows:</p>
+<table><tr><th align="right">Entropy</th><th align="right">Information</th><th align="right">Gain</th></tr><tr><td align="right">Case 1</td><td align="right">0.88129089</td><td align="right">0.11870911</td></tr><tr><td align="right">Case 2</td><td align="right">1</td><td align="right">0</td></tr><tr><td align="right">Case 3</td><td align="right">0</td><td align="right">1</td></tr></table>
+<h3 id="estimation_of_entropy_and_information_gain_at_node_level"><a href="#estimation_of_entropy_and_information_gain_at_node_level" class="header-anchor"><strong>Estimation of Entropy and Information Gain at Node Level</strong></a></h3>
+<p>We have the following tree with a total of four values at the root node that is split into the first level having one value in one branch &#40;say, Branch 1&#41; and three values in the other branch &#40;Branch 2&#41;. The entropy at the root node is 1.</p>
+<p>Now, to compute the entropy at the child node 1, the weights are taken as ⅓ for Branch 1 and ⅔ for Branch 2 and are calculated using Shannon’s entropy formula. As we had seen above, the entropy for child node 2 is zero because there is only one value in that child node meaning there is no uncertainty and hence, the heterogeneity is not present.</p>
+\[\text{H(X)} = – [(1/3 * \text{log}_{2} (1/3)) + (2/3 * \text{log}_{2} (2/3))] = 0.9184\]
+<p>The information gain for the above tree is the reduction in the weighted average of the entropy.</p>
+<p>Information </p>
+\[ \text{Gain} = 1 – ( ¾ * 0.9184) – (¼ *0) = 0.3112 \]
+<h3 id="how_is_entropy_important_to_our_discussion"><a href="#how_is_entropy_important_to_our_discussion" class="header-anchor"><strong>How Is Entropy Important to Our Discussion?</strong></a></h3>
+<p>In machine learning, entropy measures the <code>impurity or randomness present in a dataset</code>. It is commonly used in decision tree algorithms to evaluate the homogeneity of data at a particular node. A higher entropy value indicates a more heterogeneous subset of data. </p>
+<p>Decision tree models can use entropy to determine the best plots to make informed decisions and build accurate predictive models. </p>
+<h4 id="conclusion"><a href="#conclusion" class="header-anchor"><strong>Conclusion</strong></a></h4>
+<p>Information Entropy or Shannon’s entropy quantifies the amount of uncertainty &#40;or surprise&#41; involved in the value of a random variable or the outcome of a random process. Its significance in the decision tree is that it allows us to estimate the impurity or heterogeneity of the target variable. Subsequently, to achieve the maximum level of homogeneity in the response variable, the child nodes are created in such a way that the total entropy of these child nodes must be less than the entropy of the parent node.</p>
+<div class="page-foot">
+  <div class="copyright">
+    <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></img></b></a></br>
+    Last modified: September 19, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>
