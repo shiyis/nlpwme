@@ -258,7 +258,7 @@ The information gain for the above tree is the reduction in the weighted average
 
 Information 
 
-$$ \text{Gain} = 1 – ( ¾ * 0.9184) – (¼ *0) = 0.3112 $$
+$$ \text{Gain} = 1 – (3/4 * 0.9184) – (1/4 *0) = 0.3112 $$
 
 ### **How Is Entropy Important to Our Discussion?**
 
