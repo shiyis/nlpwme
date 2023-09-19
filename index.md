@@ -68,12 +68,15 @@ Below are some important notes about the **historical timeline**:
     - [Subtopic 1: Cryptography](./modules/cryptography)
     - [Subtopic 2: Mutual Information](./modules/mutual-info)
     - [Subtopic 3: Information Retrieval](./modules/info-ret)
+    
 - [Topic 1: Math and Physics](./modules/general-overview)
     - [Subtopic 0: Calculus](./modules/calculus)
     - [Subtopic 1: Linear Algebra](./modules/linear-alg)
     - [Subtopic 2: Formal Logic](./modules/logic)
     - [Subtopic 3: Statistics and Probability](./modules/stat-prob)
     - [Subtopic 4: Discrete Math](./modules/disrete-math)
+    - [Subtopic 5: Thermodynamics](./modules/logic)
+
 - [Topic 2a: Computationalism](./modules/symbolic-language-processing)
     - [Subtpoic 0: Chomsky Hierarchy](./modules/chomsky-hierarchy)
     - [Subtopic 1: Context Free Grammar](./modules/context-free-grammar)
@@ -83,6 +86,7 @@ Below are some important notes about the **historical timeline**:
     - [Subtopic 5: Hidden Markov Model](./modules/hidden-markov-model)
     - [Subtopic 6: Word Net](./modules/word-net)
     - [Subtopic 7: Universal Dependencies](./modules/universal-dependencies)
+
 - [Topic 2b: Connectionism](./modules/modern_nlp)
     - [Subtopic 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
     - [Subtopic 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
@@ -94,5 +98,4 @@ Below are some important notes about the **historical timeline**:
     - [Subtopic 7b: Collaborative Filtering](./modules/7b-collaborative-filtering)
     - [Modules 8: Autoencoders and Transformers](./modules/8-autoencoders)
     - [Subtopic 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
-    - [Subtopic 10a: Recurrent Neural Networks theory](./modules/10a-recurrent-neural-networks-theory)
-    - [Subtopic 10b: Recurrent Neural Networks practice](./modules/10b-recurrent-neural-networks-practice)
+    - [Subtopic 10: Recurrent Neural Networks](./modules/10a-recurrent-neural-networks)
