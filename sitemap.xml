@@ -69,7 +69,7 @@
 </url>
 <url>
     <loc>modules/1-mlp-from-scratch/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -129,7 +129,7 @@
 </url>
 <url>
     <loc>modules/02a_basics/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -159,7 +159,7 @@
 </url>
 <url>
     <loc>modules/3-VAE/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -172,12 +172,6 @@
 <url>
     <loc>modules/cryptography/index.html</loc>
     <lastmod>2023-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>modules/9c-flows/index.html</loc>
-    <lastmod>2023-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -249,7 +243,7 @@
 </url>
 <url>
     <loc>modules/2-CAM-adversarial/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -266,14 +260,8 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>modules/9b-unet/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>modules/01_intro/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
