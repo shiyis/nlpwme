@@ -1,4 +1,4 @@
-@def title = "Convolutions from first principles"
+<!-- @def title = "Convolutions from first principles"
 @def hasmath = true
 
 # Convolutions (and Discrete Fourier Transform) from first principles
@@ -291,4 +291,4 @@ By stacking convolutions with kernel of size 3, we obtained a network with a **r
 
 ## Thanks for reading!
 
-Follow on [twitter](https://twitter.com/marc_lelarge)!
+Follow on [twitter](https://twitter.com/marc_lelarge)! -->
