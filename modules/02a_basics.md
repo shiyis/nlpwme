@@ -1,4 +1,4 @@
-[![Dataflowr](https://raw.githubusercontent.com/dataflowr/website/master/_assets/dataflowr_logo.png)](https://dataflowr.github.io/website/)
+<!-- [![Dataflowr](https://raw.githubusercontent.com/dataflowr/website/master/_assets/dataflowr_logo.png)](https://dataflowr.github.io/website/)
 
 You are viewing the static version of the notebook, you can get the [code (GitHub)](https://github.com/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb) or run it in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb)
 
@@ -491,4 +491,4 @@ print(b_t.grad)
 The gradients must be set to zero manually. Otherwise they will cumulate across several _.backward()_ calls. 
 This accumulating behavior is desirable in particular to compute the gradient of a loss summed over several “mini-batches,” or the gradient of a sum of losses.
 
-[![Dataflowr](https://raw.githubusercontent.com/dataflowr/website/master/_assets/dataflowr_logo.png)](https://dataflowr.github.io/website/)
+[![Dataflowr](https://raw.githubusercontent.com/dataflowr/website/master/_assets/dataflowr_logo.png)](https://dataflowr.github.io/website/) -->
