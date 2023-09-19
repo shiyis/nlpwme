@@ -1,4 +1,4 @@
-@def sequence = ["attention"]
+<!-- @def sequence = ["attention"]
 
 # Module 12 - Attention and Transformers
 
@@ -121,4 +121,4 @@ Now is the time to have fun building a simple transformer block and to [think li
 
 ~~~<img src="/modules/extras/attention/attention_matrix2.png"
            style="width: 320px; height: auto; display: inline">
-~~~
+~~~ -->
