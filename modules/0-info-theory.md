@@ -128,12 +128,12 @@ The probability of getting each outcome of a caramel latte pouch or cappuccino p
 
 ```
 P(Coffee pouch == Caramel Latte) = 0.50
-P(Coffee pouch == Cappuccino) = 1 – 0.50 = 0.50
+P(Coffee pouch == Cappuccino) = 1 - 0.50 = 0.50
 ```
 When we have only one result either caramel latte or cappuccino pouch, then in the absence of uncertainty, the probability of the event is:
 ```
 P(Coffee pouch == Caramel Latte) = 1
-P(Coffee pouch == Cappuccino) = 1 – 1 = 0
+P(Coffee pouch == Cappuccino) = 1 - 1 = 0
 ```
 
 There is a relationship between heterogeneity and uncertainty; the more heterogeneous the event the more uncertainty. On the other hand, the less heterogeneous, or so to say, the more homogeneous the event, the lesser is the uncertainty. The uncertainty is expressed as Gini or Entropy.
@@ -178,7 +178,7 @@ The entropy or the impurity measure can only take value from 0 to 1 as the proba
 
 Therefore, the expression becomes ($\text{p}_{i}*  \text{log}_{2}  \text{p}_{i}$) and  $\text{log}_{2}  \text{p}_{i}$ returns a negative value and to remove this negativity effect, we multiply the resultant with a negative sign and the equation finally becomes:
 
-$$\text{H(X)} = – Σ (\text{p}_{i} * \text{log}_{2} \, \text{p}_{i})$$
+$$\text{H(X)} = - Σ (\text{p}_{i} * \text{log}_{2} \, \text{p}_{i})$$
 
 Now, this expression can be used to show how the uncertainty changes depending on the likelihood of an event.
 
@@ -193,7 +193,7 @@ This scale of entropy from 0 to 1 is for binary classification problems. For a m
 Calculation of Entropy in Python
 We shall estimate the entropy for three different scenarios. The event Y is getting a caramel latte coffee pouch. The heterogeneity or the impurity formula for two different classes is as follows:
 
-$$ \text{H(X)} = – [(\text{p}_{i} * \text{log}_{2} \, \text{p}_{i}) + (q_i * \text{log}_{2}  \text{q}_{i})]$$
+$$ \text{H(X)} = - [(\text{p}_{i} * \text{log}_{2} \, \text{p}_{i}) + (q_i * \text{log}_{2}  \text{q}_{i})]$$
 
 where,
 
@@ -207,7 +207,7 @@ where,
 |  Cappuccino | 3  | 0.3  |
 |  Total | 10  | 1  |
 
-$$ \text{H(X)} = – [(0.70 * \text{log}_{2} (0.70)) + (0.30 * \text{log}_{2} (0.30))] = 0.88129089 $$
+$$ \text{H(X)} = - [(0.70 * \text{log}_{2} (0.70)) + (0.30 * \text{log}_{2} (0.30))] = 0.88129089 $$
 
 This value 0.88129089 is the measurement of uncertainty when given the box full of coffee pouches and asked to pull out one of the pouches when there are seven pouches of caramel latte flavor and three pouches of cappuccino flavor.
 #### **Case 2**
@@ -217,7 +217,7 @@ This value 0.88129089 is the measurement of uncertainty when given the box full 
 |  Cappuccino | 5  | 0.5  |
 |  Total | 10  | 1  |
 
-$$ \text{H(X)} = – [(0.50 * \text{log}_{2} (0.50)) + (0.50 * \text{log}_{2} (0.50))] = 1 $$
+$$ \text{H(X)} = - [(0.50 * \text{log}_{2} (0.50)) + (0.50 * \text{log}_{2} (0.50))] = 1 $$
 
 #### **Case 3**
 | Coffee flavor | Quantity of Pouches | Probability |
@@ -226,7 +226,7 @@ $$ \text{H(X)} = – [(0.50 * \text{log}_{2} (0.50)) + (0.50 * \text{log}_{2} (0
 |  Cappuccino | 0  | 0  |
 |  Total | 10  | 1  |
 
-$$ \text{H(X)} = – [(1.0 * \text{log}_{2} (1.0)) + (0 * \text{log}_{2} (0))] ~= 0 $$
+$$ \text{H(X)} = - [(1.0 * \text{log}_{2} (1.0)) + (0 * \text{log}_{2} (0))] ~= 0 $$
 
 
 
@@ -238,7 +238,7 @@ As we have seen above, in decision trees the cost function is to minimize the he
 
 At the root level, the entropy of the target column is estimated via the formula proposed by Shannon for entropy. At every branch, the entropy computed for the target column is the weighted entropy. The weighted entropy means taking the weights of each attribute. The weights are the probability of each of the classes. The more the decrease in the entropy, the more is the information gained.
 
-Information Gain is the pattern observed in the data and is the reduction in entropy. It can also be seen as the entropy of the parent node minus the entropy of the child node. It is calculated as 1 – entropy. The entropy and information gain for the above three scenarios is as follows:
+Information Gain is the pattern observed in the data and is the reduction in entropy. It can also be seen as the entropy of the parent node minus the entropy of the child node. It is calculated as 1 - entropy. The entropy and information gain for the above three scenarios is as follows:
 
 | Entropy |  Information  | Gain|
 | --------| -------- | -------- |
@@ -252,13 +252,13 @@ We have the following tree with a total of four values at the root node that is 
 
 Now, to compute the entropy at the child node 1, the weights are taken as ⅓ for Branch 1 and ⅔ for Branch 2 and are calculated using Shannon’s entropy formula. As we had seen above, the entropy for child node 2 is zero because there is only one value in that child node meaning there is no uncertainty and hence, the heterogeneity is not present.
 
-$$\text{H(X)} = – [(1/3 * \text{log}_{2} (1/3)) + (2/3 * \text{log}_{2} (2/3))] = 0.9184$$
+$$\text{H(X)} = - [(1/3 * \text{log}_{2} (1/3)) + (2/3 * \text{log}_{2} (2/3))] = 0.9184$$
 
 The information gain for the above tree is the reduction in the weighted average of the entropy.
 
 Information 
 
-$$ \text{Gain} = 1 – (3/4 * 0.9184) – (1/4 *0) = 0.3112 $$
+$$ \text{Gain} = 1 - (3/4 * 0.9184) - (1/4 *0) = 0.3112 $$
 
 ### **How Is Entropy Important to Our Discussion?**
 
