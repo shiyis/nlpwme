@@ -45,9 +45,9 @@ jobs:
     # specific arguments, see the documentation or ?optimize in the REPL.
     - run: julia -e '
             using Pkg; Pkg.add(["NodeJS", "JSON", "Franklin"]);
+            Pkg.activate("."); Pkg.instantiate();
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
-            Pkg.activate("."); Pkg.instantiate();
             publish()'
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
