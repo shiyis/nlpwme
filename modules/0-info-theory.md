@@ -153,7 +153,7 @@ This equation is graphically depicted by a symmetric curve as shown below. On th
 ![](../extras/info_theory/entropy.jpeg)
 
 ---
-The $log_2 p_i$ has a very unique property that is when there are only two outcomes say probability of the event $\text{p}_{i}$ is either 1 or 0.50 then in such scenario $\text{log}_{2}  \text{p}_{i}$ takes the following values (ignoring the negative term):
+The $\text{log}_{2} \text{p}_{i}$ has a very unique property that is when there are only two outcomes say probability of the event $\text{p}_{i}$ is either 1 or 0.50 then in such scenario $\text{log}_{2}  \text{p}_{i}$ takes the following values (ignoring the negative term):
 
 
 | $\text{p}_{i}$|$\text{p}_{i}=1$  | $\text{p}_{i}=0.5$           |
@@ -193,13 +193,13 @@ This scale of entropy from 0 to 1 is for binary classification problems. For a m
 Calculation of Entropy in Python
 We shall estimate the entropy for three different scenarios. The event Y is getting a caramel latte coffee pouch. The heterogeneity or the impurity formula for two different classes is as follows:
 
-$$ \text{H(X)} = - [(\text{p}_{i} * \text{log}_{2} \, \text{p}_{i}) + (q_i * \text{log}_{2}  \text{q}_{i})]$$
+$$ \text{H(X)} = - [(\text{p}_{i} * \text{log}_{2} \, \text{p}_{i}) + ( \text{q}_{i} * \text{log}_{2}  \text{q}_{i})]$$
 
 where,
-
-    p_i = Probability of Y = 1 i.e. probability of success of the event
-    q_i = Probability of Y = 0 i.e. probability of failure of the event
-
+```
+p_i = Probability of Y = 1 i.e. probability of success of the event
+q_i = Probability of Y = 0 i.e. probability of failure of the event
+```
 #### **Case 1**
 | Coffee flavor | Quantity of Pouches | Probability |
 | --------| -------- | -------- |
