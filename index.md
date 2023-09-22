@@ -34,7 +34,7 @@ What do we mean by Natural Language Processing?
 ### 
 ### **A Little Bit Of History** 
 
-The history of Computational Linguistics dates back to the 40s to 50s. So, it's not very long ago that the field that has created ChatGPT or any form of AI that is so commonly adopted in every aspect of out lives started to have its very first ancestorial ideation. It's still a fairly new and young field with infinite possibilities up for exploration. 
+The history of Computational Linguistics dates back to the 40s to 50s. So, it's not very long ago that the field that has created ChatGPT or any form of AI that is so commonly adopted in every aspect of out lives started to have its very first ancestral ideation. It's still a fairly new and young field with infinite possibilities up for exploration. 
 
 Before diving in, first we have to ask ourselves what exactly is artificial intelligence (AI)?
 
