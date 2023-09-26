@@ -1,15 +1,16 @@
-# What constitutes as the philosophy of mind? 
+# What Constitutes As The Philosophy of Mind？
 
 \toc
 
-This blog will summarize blogs, articles, and papers I have read about The Computational Theory of Mind. 
+This blog will summarize blogs, articles, and papers I have read about _The Computational Theory of Mind_. 
 
 In this one article that touches on this subject, it's known that the computational theory of mind promises us the abilities of a machine to emulate reasoning, decision-making, problem solving, perception, linguistic comprehension, and other mental processes. Advances in computing raise the prospect known as _the computational theory of mind_ (CTM). Computationalists understand this paradigm as the principle to cognitive science. Then later two schools of thoughts challenged this orthodox position. One pertains to the neurological properties of the mind and body and the other emphasized representational mental states. 
 
 ### Computationalism   
+    641203
 
 The turing machine - or the earliest computational model is a device that assumes unlimited time and storage at its disposal. The device manipulates symbols, much as a human doing type writing and creating characters on a paper. A turing machine is an ultimate machine that idealizes this process with unlimited time and storage space at its disposal. Of course, in actuality this would not be possible. A few important components, 
-```
+```plaintext
 1. memory locations - a linear structure or system where these symbols could be stored, assuming that it has a length of infinity. 
 2. a central processor - which can enter into finitely many machine states. 
 3. basic operations on symbols with the central processor - write and remove symbols; access the next memory location in the 
@@ -36,29 +37,35 @@ As opposed to type-identity theory, mental states are brain states. Putnam propo
 He stresses the importance of _probabilistic automata_, stating that mental states are the machine states of the automaton's central processor. However, the weakness of this thought lies in the fact that human cognition has limitations and couldn't entertain infinite amount of propositions and possibilities. Another important limitation with this is that _probabilistic automata_ doesn't reflect the systematicity inside these mental states.  
 
 
-```
+```plaintext
 Productivity: RTM assumes a finites set of symbols in natural language and the device could entertain a infinite numbers of logic. 
 
 Systematicity: RTM also assumes that there are inherent systematic relations between basic cognitive constitutions. 
 
 ```
-
 Therefore, to reflect such a mental image, the CCTM+RTM must be representational or schematic. This entails that the system will provide an elementary operations with specific rules that's manifested in a plan. For example, in constructing syntax trees, this will be reflected as having a lexicon (which represents the productivity that reflects the natural language which reflects the mental thought processes), part-of-speech tags (the elementary operations that could be used over the lexicon), and the final drawing of a syntax tree (the rules that govern where those tags go so that they will be governed by routine instructions). 
 
+On the other hand, according to CCTM, the mind is a computational system similar in important respects to a Turing machine, and core mental processes (e.g., reasoning, decision-making, and problem solving) are computations similar in important respects to computations executed by a Turing machine. These formulations are imprecise. CCTM is best seen as a family of views, rather than a single well-defined view.[1]
+
+It is common to describe CCTM as embodying “the computer metaphor”. This description is doubly misleading.
+
+First, CCTM is better formulated by describing the mind as a “computing system” or a “computational system” rather than a “computer”. As David Chalmers (2011) notes, describing a system as a “computer” strongly suggests that the system is programmable. As Chalmers also notes, one need not claim that the mind is programmable simply because one regards it as a Turing-style computational system.
+
+Second, CCTM is not intended metaphorically. CCTM does not simply hold that the mind is like a computing system. CCTM holds that the mind literally is a computing system. Of course, the most familiar artificial computing systems are made from silicon chips or similar materials, whereas the human body is made from flesh and blood. But CCTM holds that this difference disguises a more fundamental similarity, which we can capture through a Turing-style computational model. In offering such a model, we prescind from physical details. We attain an abstract computational description that could be physically implemented in diverse ways (e.g., through silicon chips, or neurons, or pulleys and levers). CCTM holds that a suitable abstract computational model offers a literally true description of core mental processes.  
 
 ### Computationalism vs Functionalism 
 
 There is a slight difference between computationalism and functionalism.
 
 
-```
+```plaintext
 As per definition, the mind is the functional organization of the brain, whereas computationalism 
 argues that the function organization of the brain is computable. 
 ```
 
 Hilary Putnam (1967) introduced CCTM into philosophy. His position with _logical behaviorism_ and _type-identity theory_. 
 
-```
+```plaintext
 logical behaviorism: meaning that feelings, perceptions, imaginations, etc could be in the same way put into categories that mathematics 
 can be described in terms of formal logic, using for example set theory, and can be tested and explained scientifically through the 
 methods of behaviorism, whereby everything consists of stimulus-response pairs, with various types of origins and different types of 
@@ -81,7 +88,7 @@ In the paper "The 'Mental' and the 'Physical'", where the re-known philosopher J
 
 The debate about what human beings are really have been going on for centuries. According to the prominent English biologist Thomas Henry Huxley (1825-1895), he believed that sensations and feelings are mere byproduct of mechanics of the brain. An epiphenomenon that is not the cause of any behavior. In his essay, "On the Hypothesis that Animals Are Automata, and Its History" he wrote:
 
-```
+```plaintext
 The consciousness of brutes would appear to be related to the mechanism of their body simply as a collateral product of its working, and 
 to be as completely without any power of modifying that working as the steam-whistle which accompanies the work of a locomotive engine is
 without influence upon its machinery. Their volition, if they have any, is an emotion indicative of physical changes, not a cause of such 
@@ -98,7 +105,7 @@ The primal instincts vs. the unknown. The necessity  of consciousness has been a
 Another objection to the byproduct hypothesis would be that,
 
 
-```
+```plaintext
 
 If pleasure and displeasure have no effects, there would seem to be no reason why we might not abhor the feelings that are caused by activities essential to life, or enjoy the feelings produced by what is detrimental. Thus, if epiphenomenalism […] were true, the felicitous alignment that generally holds between affective valuation of our feelings and the utility of the activities that generally produce them would require a special explanation. Yet on epiphenomenalist assumptions, this alignment could not receive a genuine explanation. The felicitous alignment could not be selected for, because if affective valuation had no behavioral effects, misalignment of affective valuation with utility of the causes of the evaluated feelings could not have any behavioral effects either. Epiphenomenalists would simply have to accept a brute and unscientific view of pre-established harmony of affective valuation of feelings and the utility of their causes.
 
@@ -108,7 +115,7 @@ If pleasure and displeasure have no effects, there would seem to be no reason wh
 
 This is the position that is too good to be true and argued against. As it's not very much plausible that it's the downward causal direction, where the emergence of consciousness caused the microscopic and molecular changes happening at a lower-level. The only justification to this position is that it opens up possibilities for free will. As explained by the physicist Sean Carroll,
 
-```
+```plaintext
 So-called “weak” emergence just says the obvious thing, that higher-level notions like the fluidity or solidity of a material substance emerge out of the properties of its microscopic constituents. In principle, if not in practice, the microscopic description is absolutely complete and comprehensive. A “strong” form of emergence would suggest that something truly new comes into being at the higher levels, something that just isn’t there in the microscopic description.
 
 Downward causation is one manifestation of this strong-emergence attitude. It’s the idea that what happens at lower levels can be directly influenced (causally acted upon) by what is happening at the higher levels. The idea, in other words, that you can’t really understand the microscopic behavior without knowing something about the macroscopic.
@@ -134,7 +141,7 @@ The visual sensor is obviously affecting the behavior of the pupil, yet it doesn
 
 
 
-### Tying Everything Together and Connecting the Dots 
+### Tying Everything Together and Connecting The Dots 
 
 
 Coming back to Computers and its connection with human brain and consciousness. 
