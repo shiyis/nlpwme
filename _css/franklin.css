@@ -25,7 +25,8 @@ html {
 .franklin-content .container img {
     width: auto;
     padding-left: 0;
-    border-radius: 10px; }
+    border-radius: 10px; 
+}
 
 .franklin-content .footnote {
     position: relative;
@@ -136,12 +137,12 @@ html {
 .franklin-content blockquote {
     background: #eeeeee;
     border-left: 7px solid #a8a8a8;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
+    margin: 10px 15px 10px 10px;
+    /* padding: 0.5em 10px 10px 10px; */
     font-style: italic;}
 
 .franklin-content blockquote p {
-    display: inline; }
+    display: block; }
 
 /* ==================================================================
     GENERAL FORMATTING
@@ -193,15 +194,18 @@ html {
 ================================================================== */
 
 .franklin-content img {
-    width: 70%;
+    width: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 30%;  */
     text-align: center;
-    padding-left: 10%; }
+    border-radius: 10px;}
 
 .franklin-content .img-small img {
     width: 50%;
     text-align: center;
-    padding-left: 20%; }
-
+}
 /* ==================================================================
     KATEX
 ================================================================== */
@@ -256,12 +260,14 @@ code {
 
 .franklin-content .colbox-blue {
     background-color: #EEF3F5;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    margin-left: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    /* margin-left: 5px; */
     margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 0 10px 10px 0;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: smaller;
     border-left: 5px solid #4C9CF1; }
