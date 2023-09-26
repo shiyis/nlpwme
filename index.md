@@ -62,14 +62,14 @@ Below are some important notes about the **historical timeline**:
 
 ---
 ### 
-### Topics We Care About
-- [Topic 0: Information Theory](./modules/info-theory)
+### Topics That Might Be Relevant
+- Topic 0: Information Theory
     - [Subtopic 0: Noisy Channel Model](./modules/noisy-channel-model) 
     - [Subtopic 1: Cryptography](./modules/cryptography)
     - [Subtopic 2: Mutual Information](./modules/mutual-info)
     - [Subtopic 3: Information Retrieval](./modules/info-ret)
     
-- [Topic 1: Math and Physics](./modules/general-overview)
+- Topic 1: Math and Physics
     - [Subtopic 0: Calculus](./modules/calculus)
     - [Subtopic 1: Linear Algebra](./modules/linear-alg)
     - [Subtopic 2: Formal Logic](./modules/logic)
@@ -77,7 +77,7 @@ Below are some important notes about the **historical timeline**:
     - [Subtopic 4: Discrete Math](./modules/disrete-math)
     - [Subtopic 5: Thermodynamics](./modules/logic)
 
-- [Topic 2a: Computationalism](./modules/symbolic-language-processing)
+- Topic 2a: Computationalism
     - [Subtpoic 0: Chomsky Hierarchy](./modules/chomsky-hierarchy)
     - [Subtopic 1: Context Free Grammar](./modules/context-free-grammar)
     - [Subtopic 2: Finite State Automata](./modules/finite-stat-automata)
@@ -87,7 +87,7 @@ Below are some important notes about the **historical timeline**:
     - [Subtopic 6: Word Net](./modules/word-net)
     - [Subtopic 7: Universal Dependencies](./modules/universal-dependencies)
 
-- [Topic 2b: Connectionism](./modules/modern_nlp)
+- Topic 2b: Connectionism
     - [Subtopic 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
     - [Subtopic 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
     - [Subtopic 3: Loss functions for classification](./modules/3-loss-functions-for-classification)
