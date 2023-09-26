@@ -1,12 +1,14 @@
 # What constitutes as the philosophy of mind? 
 
+\toc
+
 This blog will summarize blogs, articles, and papers I have read about The Computational Theory of Mind. 
 
 In this one article that touches on this subject, it's known that the computational theory of mind promises us the abilities of a machine to emulate reasoning, decision-making, problem solving, perception, linguistic comprehension, and other mental processes. Advances in computing raise the prospect known as _the computational theory of mind_ (CTM). Computationalists understand this paradigm as the principle to cognitive science. Then later two schools of thoughts challenged this orthodox position. One pertains to the neurological properties of the mind and body and the other emphasized representational mental states. 
 
 ### Computationalism   
 
-The turing machine - or the earliest computational model is a device that assumes unlimited time and storage at its disposal. The device manipulates symbols, much as a human doing type writing and creating characters on a paper. A turing machine is an ultimate machine that idealizes this process with unlimited time and storage space at its disposal. Of course, in actually this would not be possible. A few important components, 
+The turing machine - or the earliest computational model is a device that assumes unlimited time and storage at its disposal. The device manipulates symbols, much as a human doing type writing and creating characters on a paper. A turing machine is an ultimate machine that idealizes this process with unlimited time and storage space at its disposal. Of course, in actuality this would not be possible. A few important components, 
 ```
 1. memory locations - a linear structure or system where these symbols could be stored, assuming that it has a length of infinity. 
 2. a central processor - which can enter into finitely many machine states. 
@@ -89,7 +91,7 @@ It seems to me that in men, as in brutes, there is no proof that any state of co
 the matter of the organism.
 ```
 
-The primal instincts vs. the unknown. The necessity  of consciousness has been a hotly debated topic. A few primal physical responses of humans have indicated that humans could task being an automata without these familiar yet mysterious qualia. For example, humans could drive while talk, have fight-and-flight responses without being aware of the, and blindsight which are sensational responses to visual stimuli without actually experiencing the effects visually. Lastly, onto the discussions about pain. It seems that the presence of pain is superfluous. We need not to have to experience pain to understand to the risk of injury and be avoidance of danger. So why isn't this indication enough for such a phenomenon enough to explain what these "nomologically dangling" ideas? And what exactly is the purpose of and function of consciousness? One answer to the questions argues that they are not merely physical,it's the nature's decision bestowed upon us with free will. It lets us to decide with this warning sign. It's more so a trade-off handed over to our free will. We experience discomfort caused by external stimulation and then we are given the option to consciously decision what we are going to do with it. 
+The primal instincts vs. the unknown. The necessity  of consciousness has been a hotly debated topic. A few primal physical responses of humans have indicated that humans could task being an automata without these familiar yet mysterious qualia. For example, humans could drive while talk, have fight-and-flight responses without being aware of it, and blindsight which are sensational responses to visual stimuli without actually experiencing the effects visually. Lastly, onto the discussions about pain. It seems that the presence of pain is superfluous. We need not to have to experience pain to understand to the risk of injury and be avoidance of danger. So why isn't this indication enough for such a phenomenon enough to explain what these "nomologically dangling" ideas? And what exactly is the purpose of and function of consciousness? One answer to the questions argues that they are not merely physical,it's the nature's decision bestowed upon us with free will. It lets us to decide with this warning sign. It's more so a trade-off handed over to our free will. We experience discomfort caused by external stimulation and then we are given the option to consciously decision what we are going to do with it. 
 
 
 
@@ -119,7 +121,7 @@ In answering the question of why we need consciousness, the proposed answer is t
 
 This is also known as "fundamental property dualism", which, in David Chalmers' definition, "regards conscious mental properties as basic constituents of reality on a par with fundamental physical properties such as electromagnetic charge. They may interact in casual and lay-like ways with other fundamental properties such a those of physics, but ontologically  their existence is not dependent upon nor derivative from any other properties".  According to this [medium article](https://medium.com/curious/are-we-conscious-automata-18ba889af20), this idea is also referred to as panpsychism, which “holds that mind or a mind-like aspect is a fundamental and ubiquitous feature of reality. It is also described as a theory that “the mind is a fundamental feature of the world which exists throughout the universe.”
 
-### Consciousness as normal emergence 
+### Consciousness As Normal Emergence
 
 Instead of being a strong emergence, maybe in reality consciousness might just be a weak emergence instead as proposed. It's proposed in the article, it's important to use language in context when talk about different subjects in question. The example used was when we talk about atoms and other physical properties, it might not be suitable to talk about free will, but under the philosophical discussions about human consciousness, motivation, and behavior, it may be otherwise.
 
