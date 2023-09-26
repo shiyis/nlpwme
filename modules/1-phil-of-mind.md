@@ -7,23 +7,19 @@ In this one article that touches on this subject, it's known that the computatio
 ### Computationalism   
 
 The turing machine - or the earliest computational model is a device that assumes unlimited time and storage at its disposal. The device manipulates symbols, much as a human doing type writing and creating characters on a paper. A turing machine is an ultimate machine that idealizes this process with unlimited time and storage space at its disposal. Of course, in actually this would not be possible. A few important components, 
+```
+1. memory locations - a linear structure or system where these symbols could be stored, assuming that it has a length of infinity. 
+2. a central processor - which can enter into finitely many machine states. 
+3. basic operations on symbols with the central processor - write and remove symbols; access the next memory location in the 
+   linear array. (move to the left or right on the tape). 
+4. the operation relies on two principles to process the information: which symbol is currently inscribed at the present memory location; 
+   and the scanner's own current machine state. 
+5. a machine table dictates which elementary operation the central processor performs, given its current machine state and the symbol 
+   it is currently accessing. The machine table also dictates how the central processor's machine state changes given those same factors. 
+6. finally, due to our cognitive limitations to be able to only produce finite number of outcomes, the symbolic system that turing machine 
+   represents could successfully replicate it. 
 
-    1. memory locations - a linear structure or system where these symbols could be stored, assuming that it has a length of infinity. 
-
-    2. a central processor - which can enter into finitely many machine states. 
-
-
-    3. basic operations on symbols with the central processor - write and remove symbols; access the next memory location in the linear array. (move to the left or right on the tape). 
-
-
-    4. the operation relies on two principles to process the information: which symbol is currently inscribed at the present memory location; and the scanner's own current machine state. 
-
-    5. a machine table dictates which elementary operation the central processor performs, given its current machine state and the symbol it is currently accessing. The machine table also dictates how the central processor's machine state changes given those same factors. 
-
-
-    6. finally, due to our cognitive limitations to be able to only produce finite number of outcomes, the symbolic system that turing machine represents could successfully replicate it. 
-
-
+```
 One important breakthrough invention during the computationalism era was the _Logic Theorist_ computer program (Newell and Simon 1956) which proved 38 of the first 52 theorems from _Principia Mathematica_ (Whitehead and Russell 1925). 
 
 Since the discrete nature of the system, it's concerned with its competency of whether it could model the continuous nature of human cognition. There's between the _digital_ paradigm behind the system with _analog_ system. 
@@ -31,7 +27,7 @@ Since the discrete nature of the system, it's concerned with its competency of w
 The Turing machine also proved the existence of a _universal Turing machine_ (UTM), which results in the ultimate development of current computer logic and system. More importantly, a personal computer can mimic any Turing machine _until it exhausts its limited memory supply_. 
 
 
-### The representational theory of mind vs the classical computational theory of mind
+### The Representational Theory of Mind vs The Classical Computational Theory of Mind
 
 As opposed to type-identity theory, mental states are brain states. Putnam proposed a different view that mental states are [_multiply realizable_](https://plato.stanford.edu/entries/multiple-realizability/): the same mental state can be realized by diverse physical systems, including not only terrestrial creatures but also hypothetical creatures.. Functionalism  therefore is tailor-made to accommodate multiple realizability. 
 
@@ -40,10 +36,7 @@ He stresses the importance of _probabilistic automata_, stating that mental stat
 
 ```
 Productivity: RTM assumes a finites set of symbols in natural language and the device could entertain a infinite numbers of logic. 
-```
 
-
-```
 Systematicity: RTM also assumes that there are inherent systematic relations between basic cognitive constitutions. 
 
 ```
@@ -57,18 +50,23 @@ There is a slight difference between computationalism and functionalism.
 
 
 ```
-As per definition, the mind is the functional organization of the brain, whereas computationalism argues that the function organization of the brain is computable. 
+As per definition, the mind is the functional organization of the brain, whereas computationalism 
+argues that the function organization of the brain is computable. 
 ```
 
 Hilary Putnam (1967) introduced CCTM into philosophy. His position with _logical behaviorism_ and _type-identity theory_. 
 
 ```
-logical behaviorism: meaning that feelings, perceptions, imaginations, etc could be in the same way put into categories that mathematics can be described in terms of formal logic, using for example set theory, and can be tested and explained scientifically through the methods of behaviorism, whereby everything consists of stimulus-response pairs, with various types of origins and different types of reinforcement.
-```
+logical behaviorism: meaning that feelings, perceptions, imaginations, etc could be in the same way put into categories that mathematics 
+can be described in terms of formal logic, using for example set theory, and can be tested and explained scientifically through the 
+methods of behaviorism, whereby everything consists of stimulus-response pairs, with various types of origins and different types of 
+reinforcement.
 
 
-```
-type-identity theory: holds that states and processes of the mind are identical to states and processes of the brain. Type-identity theory considers the experience of something as the brain process itself not merely correlated with the mental state. Identity theorists also argue that brain states are merely physical, so nonetheless denies the irreducible non-physical qualities called "qualia" of the brain, e.x. desires and beliefs. 
+type-identity theory: holds that states and processes of the mind are identical to states and processes of the brain. Type-identity 
+theory considers the experience of something as the brain process itself not merely correlated with the mental state. Identity theorists 
+also argue that brain states are merely physical, so nonetheless denies the irreducible non-physical qualities called "qualia" of the 
+brain, e.x. desires and beliefs. 
 ```
 
 
@@ -84,7 +82,13 @@ In the paper "The 'Mental' and the 'Physical'", where the re-known philosopher J
 The debate about what human beings are really have been going on for centuries. According to the prominent English biologist Thomas Henry Huxley (1825-1895), he believed that sensations and feelings are mere byproduct of mechanics of the brain. An epiphenomenon that is not the cause of any behavior. In his essay, "On the Hypothesis that Animals Are Automata, and Its History" he wrote:
 
 ```
-    The consciousness of brutes would appear to be related to the mechanism of their body simply as a collateral product of its working, and to be as completely without any power of modifying that working as the steam-whistle which accompanies the work of a locomotive engine is without influence upon its machinery. Their volition, if they have any, is an emotion indicative of physical changes, not a cause of such changes. […] It is quite true that, to the best of my judgment, the argumentation which applies to brutes holds equally good of men; and, therefore, that all states of consciousness in us, as in them, are immediately caused by molecular changes of the brain-substance. It seems to me that in men, as in brutes, there is no proof that any state of consciousness is the cause of change in the motion of the matter of the organism.
+The consciousness of brutes would appear to be related to the mechanism of their body simply as a collateral product of its working, and 
+to be as completely without any power of modifying that working as the steam-whistle which accompanies the work of a locomotive engine is
+without influence upon its machinery. Their volition, if they have any, is an emotion indicative of physical changes, not a cause of such 
+changes. […] It is quite true that, to the best of my judgment, the argumentation which applies to brutes holds equally good of men; 
+and, therefore, that all states of consciousness in us, as in them, are immediately caused by molecular changes of the brain-substance.
+It seems to me that in men, as in brutes, there is no proof that any state of consciousness is the cause of change in the motion of 
+the matter of the organism.
 ```
 
 The primal instincts vs. the unknown. The necessity  of consciousness has been a hotly debated topic. A few primal physical responses of humans have indicated that humans could task being an automata without these familiar yet mysterious qulia. For example, humans could drive while talk, have fight-and-flight responses without being aware of the, and blindsight which are sensational responses to visual stimuli without actually experiencing the effects visually. Lastly, onto the discussions about pain. It seems that the presence of pain is superfluous. We need not to have to experience pain to understand to the risk of injury and be avoidance of danger. So why isn't this indication enough for such a phenomenon enough to explain what these "nomologically dangling" ideas? And what exactly is the purpose of and function of consciousness? One answer to the questions argues that they are not merely physical,it's the nature's decision bestowed upon us with free will. It lets us to decide with this warning sign. It's more so a trade-off handed over to our free will. We experience discomfort caused by external stimulation and then we are given the option to consciously decision what we are going to do with it. 
@@ -100,7 +104,7 @@ If pleasure and displeasure have no effects, there would seem to be no reason wh
 
 ```
 
-### Consciousness as strong emergence 
+### Consciousness As Strong Emergence
 
 This is the position that is too good to be true and argued against. As it's not very much plausible that it's the downward causal direction, where the emergence of consciousness caused the microscopic and molecular changes happening at a lower-level. The only justification to this position is that it opens up possibilities for free will. As explained by the physicist Sean Carroll,
 
@@ -111,7 +115,7 @@ Downward causation is one manifestation of this strong-emergence attitude. It’
 
 ```
  
-### Consciousness as the fundamental property of nature
+### Consciousness As The Fundamental Property of Nature
 
 In answering the question of why we need consciousness, the proposed answer is that consciousness is a fundamental property of nature. It's added that “We know that a theory of consciousness requires the addition of something fundamental to our ontology, as everything in physical theory is compatible with the absence of consciousness. We might add some entirely new nonphysical feature, from which experience can be derived […] we will take experience itself as a fundamental feature of the world, alongside mass, charge, and space-time”.
 
