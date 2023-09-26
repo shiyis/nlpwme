@@ -29,7 +29,7 @@ The Turing machine also proved the existence of a _universal Turing machine_ (UT
 
 ### The Representational Theory of Mind vs The Classical Computational Theory of Mind
 
-As opposed to type-identity theory, mental states are brain states. Putnam proposed a different view that mental states are [_multiply realizable_](https://plato.stanford.edu/entries/multiple-realizability/): the same mental state can be realized by diverse physical systems, including not only terrestrial creatures but also hypothetical creatures.. Functionalism  therefore is tailor-made to accommodate multiple realizability. 
+As opposed to type-identity theory, mental states are brain states. Putnam proposed a different view that mental states are [_multiply realizable_](https://plato.stanford.edu/entries/multiple-realizability/): the same mental state can be realized by diverse physical systems, including not only terrestrial creatures but also hypothetical creatures. Functionalism  therefore is tailor-made to accommodate multiple realizability. 
 
 He stresses the importance of _probabilistic automata_, stating that mental states are the machine states of the automaton's central processor. However, the weakness of this thought lies in the fact that human cognition has limitations and couldn't entertain infinite amount of propositions and possibilities. Another important limitation with this is that _probabilistic automata_ doesn't reflect the systematicity inside these mental states.  
 
@@ -70,9 +70,7 @@ brain, e.x. desires and beliefs.
 ```
 
 
-In the paper "The 'Mental' and the 'Physical'", where the re-known philosopher J.J.C. Smart (crediting the term to Herbert Feigl) presented his theories about 'is consciousness a brain process?" He argues a position coined as the "Nomological dangler" about "Sensations and Brain Processes", which refers to the occurrences of something that does not fit into the system of established laws. He argues against the dualists' and [epiphenomenalism](https://en.wikipedia.org/wiki/Epiphenomenalism)'s position on the dichotomy between mind-body, stating that according to Occam's razor seeing a mental process like consciousness as purely physical gets rid of the hassle of not having been able to explain the grey area of trying to explain what these brain processes actually are in a more scientific and established system; to quote him more specifically,
-
-    - Smart believes that it is absurd that everything can be explained by the laws of physics except consciousness. In this case, he identifies consciousness with the broad term "sensations". 
+In the paper "The 'Mental' and the 'Physical'", where the re-known philosopher J.J.C. Smart (crediting the term to Herbert Feigl) presented his theories about 'is consciousness a brain process?" He argues a position coined as the "Nomological dangler" about "Sensations and Brain Processes", which refers to the occurrences of something that does not fit into the system of established laws. He argues against the dualists' and [epiphenomenalism](https://en.wikipedia.org/wiki/Epiphenomenalism)'s position on the dichotomy between mind-body, stating that according to Occam's razor seeing a mental process like consciousness as purely physical gets rid of the hassle of not having been able to explain the grey area of what these brain processes actually are in a more scientific and established system; to quote him more specifically, Smart believes that it is absurd that everything can be explained by the laws of physics except consciousness. In this case, he identifies consciousness with the broad term "sensations". 
 
 
 
@@ -91,7 +89,7 @@ It seems to me that in men, as in brutes, there is no proof that any state of co
 the matter of the organism.
 ```
 
-The primal instincts vs. the unknown. The necessity  of consciousness has been a hotly debated topic. A few primal physical responses of humans have indicated that humans could task being an automata without these familiar yet mysterious qulia. For example, humans could drive while talk, have fight-and-flight responses without being aware of the, and blindsight which are sensational responses to visual stimuli without actually experiencing the effects visually. Lastly, onto the discussions about pain. It seems that the presence of pain is superfluous. We need not to have to experience pain to understand to the risk of injury and be avoidance of danger. So why isn't this indication enough for such a phenomenon enough to explain what these "nomologically dangling" ideas? And what exactly is the purpose of and function of consciousness? One answer to the questions argues that they are not merely physical,it's the nature's decision bestowed upon us with free will. It lets us to decide with this warning sign. It's more so a trade-off handed over to our free will. We experience discomfort caused by external stimulation and then we are given the option to consciously decision what we are going to do with it. 
+The primal instincts vs. the unknown. The necessity  of consciousness has been a hotly debated topic. A few primal physical responses of humans have indicated that humans could task being an automata without these familiar yet mysterious qualia. For example, humans could drive while talk, have fight-and-flight responses without being aware of the, and blindsight which are sensational responses to visual stimuli without actually experiencing the effects visually. Lastly, onto the discussions about pain. It seems that the presence of pain is superfluous. We need not to have to experience pain to understand to the risk of injury and be avoidance of danger. So why isn't this indication enough for such a phenomenon enough to explain what these "nomologically dangling" ideas? And what exactly is the purpose of and function of consciousness? One answer to the questions argues that they are not merely physical,it's the nature's decision bestowed upon us with free will. It lets us to decide with this warning sign. It's more so a trade-off handed over to our free will. We experience discomfort caused by external stimulation and then we are given the option to consciously decision what we are going to do with it. 
 
 
 
@@ -134,3 +132,7 @@ The visual sensor is obviously affecting the behavior of the pupil, yet it doesn
 
 
 
+### Tying Everything Together and Connecting the Dots 
+
+
+Coming back to Computers and its connection with human brain and consciousness. 
