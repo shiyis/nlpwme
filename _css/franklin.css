@@ -136,10 +136,12 @@ html {
 
 .franklin-content blockquote {
     background: #eeeeee;
-    border-left: 7px solid #a8a8a8;
-    margin: 10px 15px 10px 10px;
-    /* padding: 0.5em 10px 10px 10px; */
-    font-style: italic;}
+    border-right: 3px solid #a8a8a8;
+    margin: 0px 100px 30px 50px;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    font-style: italic;
+    font-size: smaller;
+}
 
 .franklin-content blockquote p {
     display: block; }
