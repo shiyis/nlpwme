@@ -21,19 +21,19 @@
 </url>
 <url>
     <loc>modules/8a-embedding-layers/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/11b-recurrent-neural-networks-practice/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/4-optimization-for-deep-learning/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -51,13 +51,7 @@
 </url>
 <url>
     <loc>modules/7-dataloading/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>modules/0_info_theory/index.html</loc>
-    <lastmod>2023-09-26</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -69,7 +63,7 @@
 </url>
 <url>
     <loc>modules/12-attention/index.html</loc>
-    <lastmod>2023-09-19</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81,7 +75,7 @@
 </url>
 <url>
     <loc>modules/1-mlp-from-scratch/index.html</loc>
-    <lastmod>2023-09-19</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -93,13 +87,13 @@
 </url>
 <url>
     <loc>modules/6-convolutional-neural-network/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/10-generative-adversarial-networks/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -111,43 +105,49 @@
 </url>
 <url>
     <loc>modules/2a-pytorch-tensors/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>modules/1a-nn/index.html</loc>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/8c-word2vec/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/0-info-theory/index.html</loc>
-    <lastmod>2023-09-20</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/graph1/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/9a-autoencoders/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/part-two-comp-conn/index.html</loc>
-    <lastmod>2023-09-26</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/02a_basics/index.html</loc>
-    <lastmod>2023-09-19</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -165,19 +165,19 @@
 </url>
 <url>
     <loc>modules/graph2/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/5-stacking-layers/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/3-VAE/index.html</loc>
-    <lastmod>2023-09-19</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -195,7 +195,7 @@
 </url>
 <url>
     <loc>modules/11a-recurrent-neural-networks-theory/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -219,7 +219,7 @@
 </url>
 <url>
     <loc>modules/graph3/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -243,25 +243,19 @@
 </url>
 <url>
     <loc>modules/2c-jax/index.html</loc>
-    <lastmod>2023-09-19</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/8b-collaborative-filtering/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>modules/1-intro-general-overview/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules/2-CAM-adversarial/index.html</loc>
-    <lastmod>2023-09-19</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -278,12 +272,6 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>modules/01_intro/index.html</loc>
-    <lastmod>2023-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>modules/17-resnets/index.html</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -291,7 +279,7 @@
 </url>
 <url>
     <loc>modules/2b-automatic-differentiation/index.html</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
