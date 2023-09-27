@@ -280,7 +280,7 @@ Information Entropy or Shannon’s entropy quantifies the amount of uncertainty 
 
 
 
-<!-- ### Topics That Might Be Relevant To This Blog
+### Topics That Might Be Relevant To This Blog
 
 - Topic 0: Information Theory
     - [Subtopic 0: Noisy Channel Model](./modules/noisy-channel-model) 
@@ -303,7 +303,7 @@ Information Entropy or Shannon’s entropy quantifies the amount of uncertainty 
         - [Concept 3: Formalism](./modules/logic)
     - [Subtopic 3: Statistics and Probability](./modules/stat-prob)
         - [Concept 1: Conditional Probability](./modules/stat-prob)
-        - [Concept 2: Variance Expectation](./modules/stat-prob)
+        - [Concept 2: Variance and Expectation](./modules/stat-prob)
         - [Concept 3: Markov Chain Monte Carlo](./modules/stat-prob)
         - [Concept 4: Principle Component Analysis](./modules/stat-prob)
         - [Concept 5: Bayesian Simulation](./modules/stat-prob)
@@ -313,4 +313,4 @@ Information Entropy or Shannon’s entropy quantifies the amount of uncertainty 
         - [Concept 3: Graph](./modules/disrete-math)
     - [Subtopic 5: Thermodynamics](./modules/therm)
         - [Concept 1: Entropy](./modules/therm)
-        - [Concept 2: Classical Thermodynamics](./modules/therm) -->
+        - [Concept 2: Classical Thermodynamics](./modules/therm)

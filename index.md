@@ -83,7 +83,7 @@ Below are some important notes about the **historical timeline**:
         - [Concept 3: Formalism](./modules/logic)
     - [Subtopic 3: Statistics and Probability](./modules/stat-prob)
         - [Concept 1: Conditional Probability](./modules/stat-prob)
-        - [Concept 2: Variance Expectation](./modules/stat-prob)
+        - [Concept 2: Variance and Expectation](./modules/stat-prob)
         - [Concept 3: Markov Chain Monte Carlo](./modules/stat-prob)
         - [Concept 4: Principle Component Analysis](./modules/stat-prob)
         - [Concept 5: Bayesian Simulation](./modules/stat-prob)
