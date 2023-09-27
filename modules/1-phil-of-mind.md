@@ -53,7 +53,7 @@ Since the discrete nature of the system, it's concerned with its competency of w
 The Turing machine also proved the existence of a _Universal Turing Machine_ (UTM), which results in the ultimate development of current computer logic and system. More importantly, a personal computer can mimic any Turing machine _until it exhausts its limited memory supply_. 
 
 
-### The Representational Theory of Mind vs The Classical Computational Theory of Mind
+#### The Representational Theory of Mind vs The Classical Computational Theory of Mind
 
 As opposed to type-identity theory, mental states are brain states. Putnam proposed a different view that mental states are [_multiply realizable_](https://plato.stanford.edu/entries/multiple-realizability/): the same mental state can be realized by diverse physical systems, including not only terrestrial creatures but also hypothetical creatures. 
 
@@ -79,7 +79,7 @@ For example, in constructing syntax trees, this will be reflected as having a le
 And the final drawing of a syntax tree (the rules that govern where those tags go so that they will be governed by routine instructions). 
 
 
-### Computationalism vs Functionalism 
+#### Computationalism vs Functionalism 
 
 There is a slight difference between computationalism and functionalism.
 
@@ -156,7 +156,7 @@ Another objection to the byproduct hypothesis would be that,
 
 @@colbox-blue
 
-##### The Functionality and Usability of Affective Values
+#### The Functionality and Usability of Affective Values
 
 If pleasure and displeasure have no effects, there would seem to be no reason why we might not abhor the feelings that are caused by activities essential to life, or enjoy the feelings produced by what is detrimental. Thus, if epiphenomenalism […] were true, the felicitous alignment that generally holds between affective valuation of our feelings and the utility of the activities that generally produce them would require a special explanation. Yet on epiphenomenalist assumptions, this alignment could not receive a genuine explanation. The felicitous alignment could not be selected for, because if affective valuation had no behavioral effects, misalignment of affective valuation with utility of the causes of the evaluated feelings could not have any behavioral effects either. Epiphenomenalists would simply have to accept a brute and unscientific view of pre-established harmony of affective valuation of feelings and the utility of their causes.
 
@@ -164,7 +164,7 @@ If pleasure and displeasure have no effects, there would seem to be no reason wh
 
 ---
 
-### Consciousness As Strong Emergence
+#### Consciousness As Strong Emergence
 
 This is the position that is too good to be true and argued against. As it's not very much plausible that it's the downward causal direction, where the emergence of consciousness caused the microscopic and molecular changes happening at a lower-level. The only justification to this position is that it opens up possibilities for free will. As explained by the physicist Sean Carroll,
 
@@ -181,7 +181,7 @@ Downward causation is one manifestation of this strong-emergence attitude. It’
 
 ---
 
-### Consciousness As The Fundamental Property of Nature
+#### Consciousness As The Fundamental Property of Nature
 
 In answering the question of why we need consciousness, the proposed answer is that consciousness is a fundamental property of nature. It's added that 
 
@@ -192,7 +192,7 @@ This is also known as "fundamental property dualism", which, in David Chalmers' 
 
 According to this [medium article](https://medium.com/curious/are-we-conscious-automata-18ba889af20), this idea is also referred to as panpsychism, which “holds that mind or a mind-like aspect is a fundamental and ubiquitous feature of reality. It is also described as a theory that “the mind is a fundamental feature of the world which exists throughout the universe.”
 
-### Consciousness As Normal Emergence
+#### Consciousness As Normal Emergence
 
 Instead of being a strong emergence, maybe in reality consciousness might just be a weak emergence instead as proposed. It's proposed in the article, it's important to use language in context when talk about different subjects in question. 
 
@@ -221,15 +221,16 @@ Coming back to computers and their connections with human brain and consciousnes
 
 The bridging between classicist and connectionist view and the departure from it became that a lot of connectionist view cognitive processing as analog as the computer processing as digital. 
 
-Many connectionists argue that weight units that are dynamic, continuous, and analogous in nature reflect better the way that human brain process information through different mental states. 
+Many connectionists argue that weight units that are dynamic, continuous, and analogous in nature which therefore reflect better the way that human brain processes information through different mental states. 
 
 On the other hand, classicists view information processing done by humans as similar to a computational system where information is stored symbolically and processed systematically through automatons. 
-
 And the storing of information is similar to that of a computer where there's "memory locations" for information access and retrieval. 
 
 However, many connectionists seek to bridge these two paradigms together instead of trying to argue for one over the other. One of the schools - the implementational connectionists - seeks to find a solution that accommodate these two different hypotheses. 
 
-However, it's also argued by radical connectionists that the traditional or the symbolic way of treating human cognitive information processing should be eliminated because how poorly it reflects these dynamics in human consciousness that could otherwise be materialized through connectionism (graceful degradation of function, holistic representation of data, spontaneous generalization, appreciation of context, etc).
+However, it's also argued by radical connectionists that the traditional or the symbolic way of treating human cognitive information processing should be eliminated because how poorly it reflects these dynamics in human consciousness that could otherwise be materialized through connectionism,
+
+> graceful degradation of function, holistic representation of data, spontaneous generalization, appreciation of context, etc.
 
 Yet, hybrid mechanisms were put out by different teams to mediate such clashes. For example, there were papers that drew inspiration from the classical style of information processing (having one module that acts as the memory location or implementing methods that utilize variable binding techniques for symbolic processing that reflects the classical computational way of thinking aka the turing style information processing and storage). 
 
@@ -237,6 +238,32 @@ This hybrid architecture might have had a say to how human brains actually proce
 
 > Also one interesting discovering about the connectionism representation of information processing inside the brain might have a good give away of how brain actually processes information. That is, instead of local representation of an individual or specific informational unit, the learning mechanism is more so universally distributed across different (hidden) units. To top it off, the new way of representing information's sub-symbolic nature - where there were no intrinsic properties of representations that determine their relationships with other symbols - might solve a philosophical conundrum in representations of meaning. In contrast, a distributed representation preserves patterns across the net that could allow comparison and good preservation when parts go amok. 
 
-However, the classicists argue that connectionists approach lack proper explanation to the important intrinsic property of human cognition - systematicity. This brings the conversation back to language processing, different from other types of artificial intelligence tasks such as image and audio processing, because of the associative nature of connectionism, with distributed representation, these tasks could be managed and tackled relatively with ease. Not the case with language due to it's intrinsic nature of systematicity. 
+However, the classicists argue that connectionists approach lack proper explanation to the important intrinsic property of human cognition - systematicity. This brings the conversation back to language processing; different from other types of artificial intelligence tasks such as image and audio processing, because of the associative nature of connectionism, with distributed representation, these tasks could be managed and tackled relatively with ease, language processing needs a more complex system to account for it's intrinsic nature of systematicity. 
 
-This is the hot debate had between these two different schools of thoughts with the conclusion that connectionism might not be able to account for higher human cognition; the success could only come about if it combines the paradigms. 
+This is the hot debate had between these two different schools of thoughts with the conclusion that connectionism might not be able to account for higher human cognition; the success could only come about if the two paradigms combine. 
+
+---
+
+### Topics That Might Be Relevant To This Blog
+
+- Topic 2a: Computationalism
+    - [Subtpoic 0: Chomsky Hierarchy](./modules/chomsky-hierarchy)
+    - [Subtopic 1: Context Free Grammar](./modules/context-free-grammar)
+    - [Subtopic 2: Finite State Automata](./modules/finite-stat-automata)
+    - [Subtopic 3: Linguistic Trees](./modules/linguistic-trees)
+    - [Subtopic 4: Parsing](./modules/parsing)
+    - [Subtopic 5: Hidden Markov Model](./modules/hidden-markov-model)
+    - [Subtopic 6: Word Net](./modules/word-net)
+    - [Subtopic 7: Universal Dependencies](./modules/universal-dependencies)
+- Topic 2b: Connectionism
+    - [Subtopic 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
+    - [Subtopic 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
+    - [Subtopic 3: Loss functions for classification](./modules/3-loss-functions-for-classification)
+    - [Subtopic 4: Optimization for Deep Learning](./modules/4-optimization-for-deep-learning)
+    - [Subtopic 5: Stacking layers](./modules/5-stacking-layers)
+    - [Subtopic 6: Convolutional Neural Network](./modules/6-convolutional-neural-network)
+    - [Subtopic 7a: Embedding layers and dataloaders](./modules/7a-embedding-layers-dataloaders)
+    - [Subtopic 7b: Collaborative Filtering](./modules/7b-collaborative-filtering)
+    - [Modules 8: Autoencoders and Transformers](./modules/8-autoencoders)
+    - [Subtopic 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
+    - [Subtopic 10: Recurrent Neural Networks](./modules/10a-recurrent-neural-networks)

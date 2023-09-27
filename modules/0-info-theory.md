@@ -263,7 +263,8 @@ $$ \text{Gain} = 1 - (3/4 * 0.9184) - (1/4 *0) = 0.3112 $$
 
 ---
 
-![](../extras/info_theory/resize_3.png)
+![](../extras/info_theory/resize_4.png)
+
 ---
 
 ### **How Is Entropy Important to Our Discussion?**
@@ -275,3 +276,41 @@ Decision tree models can use entropy to determine the best plots to make informe
 
 #### **Conclusion**
 Information Entropy or Shannon’s entropy quantifies the amount of uncertainty (or surprise) involved in the value of a random variable or the outcome of a random process. Its significance in the decision tree is that it allows us to estimate the impurity or heterogeneity of the target variable. Subsequently, to achieve the maximum level of homogeneity in the response variable, the child nodes are created in such a way that the total entropy of these child nodes must be less than the entropy of the parent node.
+
+
+
+
+### Topics That Might Be Relevant To This Blog
+
+- Topic 0: Information Theory
+    - [Subtopic 0: Noisy Channel Model](./modules/noisy-channel-model) 
+    - [Subtopic 1: Cryptography](./modules/cryptography)
+    - [Subtopic 2: Mutual Information](./modules/mutual-info)
+    - [Subtopic 3: Information Retrieval](./modules/info-ret)
+- Topic 1: Math and Physics
+    - [Subtopic 0: Calculus](./modules/calculus)
+        - [Concept 1: Derivatives](./modules/calculus)
+        - [Concept 2: Divergence](./modules/calculus)
+        - [Concept 3: Quadratic Approximation](./modules/calculus)
+    - [Subtopic 1: Linear Algebra](./modules/linear-alg)
+        - [Concept 1: Jacobian Matrices](./modules/linear-alg)
+        - [Concept 2: Vector Processing](./modules/linear-alg)
+        - [Concept 3: Single Valued Decomposition](./modules/linear-alg)
+        - [Concept 4: Linear Transformation](./modules/linear-alg)
+    - [Subtopic 2: Formal Logic](./modules/logic)
+        - [Concept 1: Propositional Logic](./modules/logic)
+        - [Concept 2: Lambda Calculus](./modules/logic)
+        - [Concept 3: Formalism](./modules/logic)
+    - [Subtopic 3: Statistics and Probability](./modules/stat-prob)
+        - [Concept 1: Conditional Probability](./modules/stat-prob)
+        - [Concept 2: Variance Expectation](./modules/stat-prob)
+        - [Concept 3: Markov Chain Monte Carlo](./modules/stat-prob)
+        - [Concept 4: Principle Component Analysis](./modules/stat-prob)
+        - [Concept 5: Bayesian Simulation](./modules/stat-prob)
+    - [Subtopic 4: Discrete Math](./modules/disrete-math)
+        - [Concept 1: Turing Machine](./modules/disrete-math)
+        - [Concept 2: Finite State Automata](./modules/disrete-math)
+        - [Concept 3: Graph](./modules/disrete-math)
+    - [Subtopic 5: Thermodynamics](./modules/therm)
+        - [Concept 1: Entropy](./modules/therm)
+        - [Concept 2: Classical Thermodynamics](./modules/therm)
