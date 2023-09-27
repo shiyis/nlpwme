@@ -1,4 +1,4 @@
-<!-- # What Constitutes As The Philosophy of Mind？
+# What Constitutes As The Philosophy of Mind？
 
 
 This blog will summarize blogs, articles, and papers I have read about _The Computational Theory of Mind_. 
@@ -266,4 +266,4 @@ This is the hot debate had between these two different schools of thoughts with 
     - [Subtopic 7b: Collaborative Filtering](./modules/7b-collaborative-filtering)
     - [Modules 8: Autoencoders and Transformers](./modules/8-autoencoders)
     - [Subtopic 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
-    - [Subtopic 10: Recurrent Neural Networks](./modules/10a-recurrent-neural-networks) -->
+    - [Subtopic 10: Recurrent Neural Networks](./modules/10a-recurrent-neural-networks)
