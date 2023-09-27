@@ -15,13 +15,12 @@ Areas that I have dabbled and focused in,
 ```
 
 ---
-###
 ### **The Subject Matter**
-###
-What do we mean by Natural Language Processing? 
-    if we do a little googling and researching, it's very intuitive that natural language processing involves a set of solutions to various natural human language tasks. The most common ones are
-```
-        
+
+What do we mean by Natural Language Processing? If we do a little googling and researching, it's very intuitive that natural language processing involves a set of solutions to various natural human language tasks. The most common ones are
+
+
+```        
 → Sentiment analysis
 → Machine translation 
 → Word-sense disambiguation 
