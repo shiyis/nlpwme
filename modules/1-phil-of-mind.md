@@ -90,7 +90,7 @@ computationalism argues that the functional organization of the brain is computa
 
 Hilary Putnam (1967) introduced CCTM into philosophy. His position with _logical behaviorism_ and _type-identity theory_. 
 
-
+---
 
 @@colbox-blue
 
@@ -126,6 +126,7 @@ To quote him more specifically,
 
 The debate about what human beings are really have been going on for centuries. According to the prominent English biologist Thomas Henry Huxley (1825-1895), he believed that sensations and feelings are mere byproduct of mechanics of the brain. An epiphenomenon that is not the cause of any behavior. In his essay, "On the Hypothesis that Animals Are Automata, and Its History" he wrote:
 
+---
 
 @@colbox-blue
 
@@ -151,6 +152,7 @@ One answer to the questions argues that they are not merely physical,it's the na
 
 Another objection to the byproduct hypothesis would be that,
 
+---
 
 @@colbox-blue
 
@@ -161,6 +163,7 @@ If pleasure and displeasure have no effects, there would seem to be no reason wh
 @@
 
 ---
+
 ### Consciousness As Strong Emergence
 
 This is the position that is too good to be true and argued against. As it's not very much plausible that it's the downward causal direction, where the emergence of consciousness caused the microscopic and molecular changes happening at a lower-level. The only justification to this position is that it opens up possibilities for free will. As explained by the physicist Sean Carroll,
@@ -191,18 +194,49 @@ According to this [medium article](https://medium.com/curious/are-we-conscious-a
 
 ### Consciousness As Normal Emergence
 
-Instead of being a strong emergence, maybe in reality consciousness might just be a weak emergence instead as proposed. It's proposed in the article, it's important to use language in context when talk about different subjects in question. The example used was when we talk about atoms and other physical properties, it might not be suitable to talk about free will, but under the philosophical discussions about human consciousness, motivation, and behavior, it may be otherwise.
+Instead of being a strong emergence, maybe in reality consciousness might just be a weak emergence instead as proposed. It's proposed in the article, it's important to use language in context when talk about different subjects in question. 
+
+The example used was when we talk about atoms and other physical properties, it might not be suitable to talk about free will, but under the philosophical discussions about human consciousness, motivation, and behavior, it may be otherwise.
 
 
-In such sense, explaining what a weak emergence is, we may ask the question: if we take the viw that consciousness does affect our thoughts and behavior, is that view applicable at the level of atoms and particles, or only at the level appropriate for describing human psychology? 
+In such sense, explaining what a weak emergence is, we may ask the question: if we take the view that consciousness does affect our thoughts and behavior, is that view applicable at the level of atoms and particles, or only at the level appropriate for describing human psychology? 
 
 > In answering this question, the article used a different analogy, consider the mechanism that regulates the constriction and dilation of our pupils according to the intensity of the light reaching them. We could say that there's a sort of sensor in our eyes or in our visual processing area in the brain that causes our pupils to behave that way, yet at the fundamental level of physics, the knowledge of such a sensory mechanism is not needed to predict (in principle) the behavior of all the particles composing the eye as they interact among themselves and with all the external particles affecting them. Still, we wouldn't say that the sensor is merely a byproduct that accomplishes nothing. 
 
-The visual sensor is obviously affecting the behavior of the pupil, yet it doesn't follow that it's affecting the behavior of the underlying atoms in a way that contradicts or is incompatible with our understanding of how atoms behave. Without the sensor, the atoms wouldn't behave as they do, and in that sense the sensor is necessary for the pupil to constrict and dilate; it's that it's necessary to know the existence of the sensor to predict what the atoms of the eye will do next. In the domain that deals with how the eye works, it's useful and practical to speak of some  sort of sensory mechanism; in the domain that deals with how atoms behave, it isn't - it isn't even necessary. Perhaps we could understand consciousness in the same way. 
+The visual sensor is obviously affecting the behavior of the pupil, yet it doesn't follow that it's affecting the behavior of the underlying atoms in a way that contradicts or is incompatible with our understanding of how atoms behave. 
+
+Without the sensor, the atoms wouldn't behave as they do, and in that sense the sensor is necessary for the pupil to constrict and dilate; it's that it's necessary to know the existence of the sensor to predict what the atoms of the eye will do next. 
+
+In the domain that deals with how the eye works, it's useful and practical to speak of some  sort of sensory mechanism; in the domain that deals with how atoms behave, it isn't - it isn't even necessary. Perhaps we could understand consciousness in the same way. 
 
 
 
 ### Tying Everything Together and Connecting The Dots 
 
 
-Coming back to Computers and its connection with human brain and consciousness. 
+Coming back to computers and its connection with human brain and consciousness. Philosophers started to become interested in connectionism because it offers an alternative to the classical computational theory of mind. 
+
+
+> Connectionism is a movement that has been put out in the field of cognitive science in hope to explain and extrapolate the mental processes of a brain. It's composed of a simplified emulation of the actual cognitive compositions of a brain, by having connected neurons or units (the analogs of neurons) within which are assigned weights that measure how strongly the connections are there between units. We could picture these weights as a replica of the synapse in our actual biological brain that link one neuron to each other. 
+
+The bridging between classicist and connectionist view and the departure from it became that a lot of connectionist view cognitive processing as analog as the computer processing as digital. 
+
+Many connectionists argue that weight units that are dynamic, continuous, and analogous in nature reflect better the way that human brain process information through different mental states. 
+
+On the other hand, classicists view information processing done by humans as similar to a computational system where information is stored symbolically and processed systematically through automatons. 
+
+And the storing of information is similar to that of a computer where there's "memory locations" for information access and retrieval. 
+
+However, many connectionists seek to bridge these two paradigms together instead of trying to argue for one over the other. One of the schools - the implementational connectionists - seeks to find a solution that accommodate these two different hypotheses. 
+
+However, it's also argued by radical connectionists that the traditional or the symbolic way of treating human cognitive information processing should be eliminated because how poorly it reflects these dynamics in human consciousness that could otherwise be materialized through connectionism (graceful degradation of function, holistic representation of data, spontaneous generalization, appreciation of context, etc).
+
+Yet, hybrid mechanisms were put out by different teams to mediate such clashes. For example, there were papers that drew inspiration from the classical style of information processing (having one module that acts as the memory location or implementing methods that utilize variable binding techniques for symbolic processing that reflects the classical computational way of thinking aka the turing style information processing and storage). 
+
+This hybrid architecture might have had a say to how human brains actually process information, which is symbolic processing might actually be present in the brain. 
+
+> Also one interesting discovering about the connectionism representation of information processing inside the brain might have a good give away of how brain actually processes information. That is, instead of local representation of an individual or specific informational unit, the learning mechanism is more so universally distributed across different (hidden) units. To top it off, the new way of representing information's sub-symbolic nature - where there were no intrinsic properties of representations that determine their relationships with other symbols - might solve a philosophical conundrum in representations of meaning. In contrast, a distributed representation preserves patterns across the net that could allow comparison and good preservation when parts go amok. 
+
+However, the classicists argue that connectionists approach lack proper explanation to the important intrinsic property of human cognition - systematicity. This brings the conversation back to language processing, different from other types of artificial intelligence tasks such as image and audio processing, because of the associative nature of connectionism, with distributed representation, these tasks could be managed and tackled relatively with ease. Not the case with language due to it's intrinsic nature of systematicity. 
+
+This is the hot debate had between these two different schools of thoughts with the conclusion that connectionism might not be able to account for higher human cognition; the success could only come about if it combines the paradigms. 
