@@ -260,6 +260,12 @@ Information
 
 $$ \text{Gain} = 1 - (3/4 * 0.9184) - (1/4 *0) = 0.3112 $$
 
+
+---
+
+![](../extras/info_theory/resize_3.png)
+---
+
 ### **How Is Entropy Important to Our Discussion?**
 
 In machine learning, entropy measures the `impurity or randomness present in a dataset`. It is commonly used in decision tree algorithms to evaluate the homogeneity of data at a particular node. A higher entropy value indicates a more heterogeneous subset of data. 
