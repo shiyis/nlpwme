@@ -214,7 +214,7 @@ In the domain that deals with how the eye works, it's useful and practical to sp
 ### Tying Everything Together and Connecting The Dots 
 
 
-Coming back to computers and its connection with human brain and consciousness. Philosophers started to become interested in connectionism because it offers an alternative to the classical computational theory of mind. 
+Coming back to computers and their connections with human brain and consciousness. Philosophers started to become interested in connectionism because it offers an alternative to the classical computational theory of mind. 
 
 
 > Connectionism is a movement that has been put out in the field of cognitive science in hope to explain and extrapolate the mental processes of a brain. It's composed of a simplified emulation of the actual cognitive compositions of a brain, by having connected neurons or units (the analogs of neurons) within which are assigned weights that measure how strongly the connections are there between units. We could picture these weights as a replica of the synapse in our actual biological brain that link one neuron to each other. 
