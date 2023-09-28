@@ -283,7 +283,7 @@ Information Entropy or Shannon’s entropy quantifies the amount of uncertainty 
 ### Topics That Might Be Relevant To This Blog
 
 - Topic 0: Information Theory
-    - [Subtopic 0: Noisy Channel Model](./modules/noisy-channel-model) 
+    - [Subtopic 0: Noisy Channel Model](./modules/noisy-channel-model.md) 
     - [Subtopic 1: Cryptography](./modules/cryptography)
     - [Subtopic 2: Mutual Information](./modules/mutual-info)
     - [Subtopic 3: Information Retrieval](./modules/info-ret)
