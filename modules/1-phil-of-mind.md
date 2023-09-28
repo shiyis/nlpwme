@@ -226,7 +226,7 @@ Many connectionists argue that weight units that are dynamic, continuous, and an
 On the other hand, classicists view information processing done by humans as similar to a computational system where information is stored symbolically and processed systematically through automatons. 
 And the storing of information is similar to that of a computer where there's "memory locations" for information access and retrieval. 
 
-However, many connectionists seek to bridge these two paradigms together instead of trying to argue for one over the other. One of the schools - the implementational connectionists - seeks to find a solution that accommodate these two different hypotheses. 
+However, many connectionists seek to bridge these two paradigms together instead of trying to argue for one over the other. One of the schools - the implementational connectionists - seeks to find a solution that accommodates these two different hypotheses. 
 
 However, it's also argued by radical connectionists that the traditional or the symbolic way of treating human cognitive information processing should be eliminated because how poorly it reflects these dynamics in human consciousness that could otherwise be materialized through connectionism,
 
