@@ -14,7 +14,7 @@ Continuing the discussion LOTH or the _The Language Of Thought Hypothesis_, agai
 
 The exactness of a mental language is yet unknown. However, these propositional attitudes are a direct reflection and serve a distinctive function to these mental images, in case the locutionary intends that the proposition A* gets assign to these mental states S. This might be fundamental for inferential reasoning, assuming the importance of how it's tied to relevant actions. 
 
-To talk about the actualization of a mental image, the downtream flow goes as,
+To talk about the actualization of a mental image, the downstream flow goes as,
 
 > first, the occurrence where I have an intention of doing something; and then second the enduring state which is reflected as my long standing belief of something. With deductive reasoning and inference (I transition from believing* the premises to believing the conclusion) together as a package, I postulate the RTT or the representational theory of mind. And the propositional attitudes reflect these mental images which are the direct objects borne out and constitute the scope of a thought process. 
 
