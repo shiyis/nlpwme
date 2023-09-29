@@ -50,8 +50,10 @@ In the modern era, CCTM is however excluded in the discussion. only RTT + COMP i
 
 Now we could finally come back to discuss deep learning and the neural network models. In the 1980s, connectionism gained traction as an alternative to the turing style computational model. The idea is that instead of treating the mental states as having memory access locations with a central processor and a bunch of strings and symbols ready to be manipulated, the connectionist approach treats them as more primitive. That said, under such condition, there are activations of neurons or so called "weight units" distributed and connected across the system, functioning analogously to the real synapses to our brain. 
 
-These newer and modern systems were built in hope that they could emulate the actual brain activity, dwelling on proving the important hypotheses that,
+These newer and modern systems were built in hope that they could emulate the actual brain activity and could appreciate that
 
-> 
+> brain states are representational, so a good explanatory model should be able to capture that; second, thought processes are productive and systematic, which is manifested in the ability to conduct inferential reasoning.
+
+
 
 
