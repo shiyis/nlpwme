@@ -20,14 +20,19 @@ Another important point to bring up here pertaining to the discussion of systema
 
 > the type is the mental representation itself (repeatable), and the tokens are reflected as the mental events or could be neurological. And thought processes are casual sequences of tokenings of mental representations.
 
-So, to talk about the actualization of a mental image in such case, the downstream flow goes as,
+So, to talk about the actualization of a mental image in such case, the process goes as,
 
-> first, the occurrence where I have an intention of doing something; and then second the enduring state which is reflected as my long standing belief of something. With deductive reasoning and inference (I transition from believing* the premises to believing the conclusion) together as a package, I postulate the RTT or the representational theory of mind. And the propositional attitudes reflect these mental images which are the direct objects and constitute the scope of a thought process. 
+@@colbox-blue
+First, the occurrence where I have an intention of doing something; 
+And then second the enduring state which is reflected as my long standing belief of something. 
+With deductive reasoning and inference (I transition from believing* the premises to believing the conclusion) together as a package, I postulate the RTT or the representational theory of mind. And the propositional attitudes reflect these mental images which are the direct objects and constitute the scope of a thought process. 
+@@
 
 However, it's also brought to attention that according to discussion, RTT requires qualification, meaning it needs context to be thoroughly discussed. Put simply, the mind could postulate an infinite amount of thoughts, but the important ones are qualified or vetted through propositional attitudes that are able to have an effect. Or intentional causation could only come about where there's an explicit representation.
 
-> In a nutshell, to discuss in more seriousness, it's important to distinguish sharply between mental representations and rules governing the manipulation of mental representations. Similarly applicable to deductive reasoning where we often follow rules of deductive inference without explicitly representing the rules. Or we often as native speakers of a language often follow its inherent syntax without explicitly stating the rules that govern it.  
-
+@@colbox-blue
+In a nutshell, to discuss in more seriousness, it's important to distinguish sharply between mental representations and rules governing the manipulation of mental representations. Similarly applicable to deductive reasoning where we often follow rules of deductive inference without explicitly representing the rules. Or we often as native speakers of a language often follow its inherent syntax without explicitly stating the rules that govern it.  
+@@
 
 ### How Are Above Premises Important To Our Discussions of Current Natural Language Processing Research? 
 
