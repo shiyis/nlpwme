@@ -33,7 +33,7 @@ However, it's also brought to attention that according to discussion, RTT requir
 
 Natural languages are compositional meaning that complex sentences are formed through simple linguistic expressions. In the same light, a mental language could be compositional and consist of symbols amenable to semantic analysis. This would be introduced as the COMP or _The Compositionality of Mental Processes_. 
 
-LOT claims that mental states typically have constiuent structure. That said, the mental state of intending something bears weight and complexity on its own not including their propositional objects or mental representations. Combined together the RTT + COMP, LOTH serves as a whole.  
+LOT claims that mental states typically have constiuent structure. That said, the mental state of intending something bears weight and complexity on its own not including their propositional objects or mental representations. Combined together the RTT + COMP builds the foundation for LOTH.  
 
 Ancient LOT proponents used syllogism and propositional logic to analyze the semantics of _Mentalese_. Current researchers instead use predicate calculus, which was established in the late 18th century and optimized in the 30s. The premise was that,
 
