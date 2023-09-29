@@ -48,8 +48,6 @@ In the modern era, CCTM is however excluded in the discussion. only RTT + COMP i
 
 ### Deep Learning and Neural Networks Continued
 
-❗ Continuing the discussions on the origin of tackling Natural Language Processing related topics, in this blog deep learning and more modern subjects relevant will be the main focus. 
-
 Now we could finally come back to discuss deep learning and the neural network models. In the 1980s, connectionism gained traction as an alternative to the turing style computational model. The idea is instead of treating the mental states as having memory access locations with a central processor and a bunch of strings and symbols ready to be manipulated, the connectionist approach treats them as more primitive. That said, under such condition, there are activations of neurons or so called "weight units" distributed and connected across the system, functioning analogously to the real synapses to our brain. 
 
 These newer and modern systems were built in hope that they could emulate the actual brain activity, dwelling on proving the important hypotheses that,
