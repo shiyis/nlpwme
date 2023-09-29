@@ -44,7 +44,7 @@ Logical structure only constitutes partly the complex representations, accompani
 
 However illogical these perceptual mental representations are compositional and complex. They also display systematicity. Supporters of LOT will posit that _The Computational Theory of Mind_ serves to produce the language of thought. Together RTT + COMP + CCTM (The Representational Theory of Mind, The Compositionality of Mental Processes, and The Classical Computational Theory of Mind) forges the LOTH.  And our cognitive inferential systematicities provide the space for the above hypothesis to stand. However, the system considers only the syntactic importance without the presence of semantic significance. 
 
-In the modern era, CCTM is however excluded in the discussion. only RTT + COMP is included in the discussion. This is the original spawning of a new school of computational theory of mind grounded in connectionism. 
+In the modern era, CCTM is however excluded in the discussion. only RTT + COMP is included. This is the original spawning of a new school of computational theory of mind grounded in connectionism. 
 
 ### Deep Learning and Neural Networks Continued
 
