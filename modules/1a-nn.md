@@ -72,6 +72,19 @@ The connectionists contend that instead of a concatenated structure, distributed
 This part of the discussion is very important as it's pertaining to the origins and departures of these two schools of LOTH: rationalism vs empiricism or the classism vs the connectionism. 
 The argument ties back to researches conducted around _concept acquisition_, and the innateness of toddlers to be able to adopt new things into their _Mentalese_. The hypothesis formulation and model testing done around the argument has suffered two logic fallacies: _ad infinitum_ and _the pain of circularity_, as children could not possibly develop a meta-meta-language to explain a meta-language nor could they have the ability to represent something unless the concept is already known, which is through the required inductive reasoning in a hypothesis formulation about the denotation of _Mentalese_. Therefore, it bears that there's no such thing as concept learning. And the conclusion was that concepts are unlearned in fact they are innate. 
 
+In such a case, it's very important to understand what does it mean to understand a natural language?  The conclusion was that,
+
+> a Mentalese is a direct medium of the thought process and not the object of interpretation, as we face the conundrum of having to represent it through a meta-language which suffers the logic fallacy of ad infinitum or put differently "we face the infinite regress of a meta-language". Therefore, it's not perceived or interpreted. One cannot say that they understood the mental language the same way as they understood a natural language. 
+
+
+
+
+
+
+
+
+
+
 
 #### Transformers and Self-attention mechanism 
 
