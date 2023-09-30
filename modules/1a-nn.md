@@ -31,14 +31,14 @@ With deductive reasoning and inference (I transition from believing* the premise
 However, it's also brought to attention that according to discussion, RTT requires qualification, meaning it needs context to be thoroughly discussed. Put simply, the mind could postulate an infinite amount of thoughts, but the important ones are qualified or vetted through propositional attitudes that are able to have an effect. Or intentional causation could only come about where there's an explicit representation.
 
 @@colbox-blue
-In a nutshell, to discuss in more seriousness, it's important to distinguish sharply between mental representations and rules governing the manipulation of mental representations. Similarly applicable to deductive reasoning where we often follow rules of deductive inference without explicitly representing the rules. Or we often as native speakers of a language often follow its inherent syntax without explicitly stating the rules that govern it.  
+In a nutshell, to discuss in more seriousness, it's important to distinguish sharply between mental representations and rules governing the manipulation of mental representations. Similarly applicable to deductive reasoning where we often follow rules of deductive inference without explicitly representing the rules. Or we often as native speakers of a language follow its inherent syntax without explicitly stating the rules that govern it.  
 @@
 
 ### How Are Above Premises Important To Our Discussions of Current Natural Language Processing Research? 
 
 Natural languages are compositional meaning that complex sentences are formed through simple linguistic expressions. In the same light, a mental language could be compositional and consist of symbols amenable to semantic analysis. This would be introduced as the COMP or _The Compositionality of Mental Processes_. 
 
-LOT claims that mental states typically have constiuent structure. That said, the mental state of intending something bears weight and complexity on its own not including their propositional objects or mental representations. Combined together the RTT + COMP builds the foundation for LOTH.  
+LOT claims that mental states typically have constiuent structures. That said, the mental state of intending something bears weight and complexity on its own not including their propositional objects or mental representations. Combined together the RTT + COMP builds the foundation for LOTH.  
 
 Ancient LOT proponents used syllogism and propositional logic to analyze the semantics of _Mentalese_. Current researchers instead use predicate calculus, which was established in the late 18th century and optimized in the 30s. The premise was that,
 
@@ -53,12 +53,25 @@ In the modern era, CCTM is however excluded in the discussion. only RTT + COMP i
 
 ### Deep Learning and Neural Networks Continued
 
-Now we could finally come back to discuss deep learning and the neural network models. In the 1980s, connectionism gained traction as an alternative to the turing style computational model. The idea is that instead of treating the mental states as having memory access locations with a central processor and a bunch of strings and symbols ready to be manipulated, the connectionist approach treats them as more primitive. That said, under such condition, there are activations of neurons or so called "weight units" distributed and connected across the system, functioning analogously to the real synapses to our brain. 
+Now we could finally come back to discuss deep learning and the neural network models. In the 1980s, connectionism gained traction as an alternative to the Turing style computational model. The idea is that instead of treating the mental states as having memory access locations with a central processor and a bunch of strings and symbols ready to be manipulated, the connectionist approach treats them as more primitive. That said, under such condition, there are activations of neurons or so called "weight units" distributed and connected across the system, functioning analogously to the real synapses to our brain. 
 
 These newer and modern systems were built in hope that they could emulate the actual brain activity and could appreciate that
 
 > brain states are representational, so a good explanatory model should be able to capture that; second, thought processes are productive and systematic, which is manifested in the ability to conduct inferential reasoning.
 
+To accept this position, connectionism has to accept RTT + COMP. Eliminativist connectionists might completely reject this position, and on the other hand implementationist connectionism might accept it in order to endorse the Turing style computational model. 
+
+Some literature later has spawned up around it, debating around the necessity of the commitment to productivity and systematicity of thoughts. Supporters still seek to illuminate the traditional style of computational system. However, objections in entirety go against  the need of adopting the representational theory. Another stream of objections go against the fact that the productivity and systematicity nature of language of though have been greatly exaggerated. The last objections posit that one can still create models that reflect the compositionality and the internal structures without adopting the Turing style model.
+
+The connectionists contend that instead of a concatenated structure, distributed representations could well capture the integral parts of LOT. However, doubt was raised around the idea that if we consider concatenative constituency structure is only one of the realizations of the _productivity_ and _systematicity_ of the LOT, then these schools of neural models would still be considered as part of the classical. 
+
+> broadly speaking, classicists would appreciate the structural representations while the connectionists would appreciate the more distributed representations. 
+
+#### Naturalizing Intentionality Through HF Over Natural Language _Learning_ vs _Understanding_
+
+This part of the discussion is very important as it's pertaining to the origins and departures of these two schools of LOTH: rationalism vs empiricism or the classism vs the connectionism. 
+The argument ties back to researches conducted around _concept acquisition_, and the innateness of toddlers to be able to adopt new things into their _Mentalese_. The hypothesis formulation and model testing done around the argument has suffered two logic fallacies: _ad infinitum_ and _the pain of circularity_, as children could not possibly develop a meta-meta-language to explain a meta-language nor could they have the ability to represent something unless the concept is already known, which is through the required inductive reasoning in a hypothesis formulation about the denotation of _Mentalese_. Therefore, it bears that there's no such thing as concept learning. And the conclusion was that concepts are unlearned in fact they are innate. 
 
 
+#### Transformers and Self-attention mechanism 
 
