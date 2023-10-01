@@ -106,7 +106,7 @@ In a nutshell, above individuation theories might not be adequate to account for
 
 #### How Are The Above Premises Important to Establishing the Framework of Natural Language Understanding? 
 
-This has to draw the importance researches done in the realm of cognitive linguistics. This second of discussion will also bring up some importance principles and ideas in the Chomskyan Transformation Grammar Theory we now call it TG for convenience of going into it in more depth. 
+This has to draw the importance researches done in the realm of cognitive linguistics. This second of discussion will also bring up some importance principles and ideas in the Chomskyan Transformation Grammar Theory we now call it TG. 
 
 In order to capture more complex syntactic structures that lie in a natural language sentence, the researchers of LOTH have put a great deal of effort in developing distributed representational models with endowment of some kind of compositionality abide to the COMP law (the Compositionality of Mental Processes).   
  
