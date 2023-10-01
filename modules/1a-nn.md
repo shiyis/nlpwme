@@ -91,14 +91,22 @@ This is the process of naturalizing intentionality and individuating it through 
 
 The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": molecular and holist. 
 
-> Molecular theory  treats separately the relations borne out between symbols; on the other hand, the holist theory is more fine-grained. In other words, e and e* belong to the same primitive Mentalese type iff they have the same (canonical if adopted) functional role under MT and iff they have the same total functional role under HT.
+> Molecular theory treats separately the relations borne out between symbols; on the other hand, the holist theory is more fine-grained. In other words, e and e* belong to the same primitive Mentalese type iff they have the same (canonical if adopted) functional role under MT and iff they have the same total functional role under HT.
 
-To explain in simpler terms as I understood it, looking at a natural language say we have the simple term _word_ and _words_ in English serving as a basic unit or lexical item; they would belong to the same primitive type WORD as the same token under MT and different under HT.
+To explain in simpler terms as I understood it, looking at a natural language say we have the simple term _word_ and _words_ in English serving as a basic unit or lexical item; they would belong to the same primitive type WORD as the same token under MT and different under HT. However it's concerned under HT that it might violate the _publicity constraint_ as propositional attitudes are shareable. And in contemporary literature through the inferential judgement that in a natural language, there's a vague and arbitrary sense of denotation (The English word "cat" denotes cats, but could denote something had the linguistic convention presumes so), one can also conclude that in a _Mentalese_, such a case is applicable.  
 
+Yet, historical literature suggests an alternative view that addresses an distinction that _Mentalese_ is essentially semantically permeated meaning that they are not arbitrary as a natural language is and at least to some extent they have a fixed denotation. This view is confirmed by the fact that different from a natural language, their intrinsic attribute is schematic and typical, meaning that they are types (if one may ask what ensures such a fixed position?) Therefore, CAT in a _Mentalese_ would have denoted cat by its inherent nature and this _semantically permeated approach_ adopts a classificatory scheme that allows the tokens getting categorized adopt semantic values. Finally, the denotation individuation approach goes as,
+
+
+> e and e* are the same primitive types iff they bear the same denotation. 
+
+However, this approach also faces some challenge. First, it violates the original LOTH's aim to naturalize intentionality in non-representational computational models, as this approach does not take into account the formal-syntactic types manipulated during mental computation (carried out in the FSC's provided explanation of semantic integrity). On top of it, this approach merely prevents the formal-syntactic _Mentalese_ types while executing a reduction in naturalization of intentionality. 
+
+In a nutshell, above individuation theories might not be adequate to account for the entirety of LOTH. More investigation is needed. 
 
 #### How Are The Above Premises Important to Establishing the Framework of Natural Language Understanding? 
 
-
+This has to draw the importance researches done in the realm of cognitive linguistics. Though importance the framework that has been done in the realm of theoretical linguistics namely the Chomskyan model will not be the major focus here, In lieu, the subject will be mainly focused in CNLP or the connectionist natural language processing research conducted to address the issues will incorporating syntactic information into distributed semantic models.  
 
 
 
