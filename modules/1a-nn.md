@@ -89,7 +89,7 @@ This is the process of naturalizing intentionality and individuating it through 
 
 > e and e* are tokens of the same primitive Mentalese type iff e and e* have the same functional role. 
 
-The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": molecular and holist. 
+**The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": molecular and holist.**
 
 > Molecular theory treats separately the relations borne out between symbols; on the other hand, the holist theory is more fine-grained. In other words, e and e* belong to the same primitive Mentalese type iff they have the same (canonical if adopted) functional role under MT and iff they have the same total functional role under HT.
 
