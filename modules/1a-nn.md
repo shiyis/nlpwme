@@ -106,7 +106,7 @@ In a nutshell, above individuation theories might not be adequate to account for
 
 #### How Are The Above Premises Important to Establishing the Framework of Natural Language Understanding? 
 
-This has to draw the importance researches done in the realm of cognitive linguistics. Though importance the framework that has been done in the realm of theoretical linguistics namely the Chomskyan model will not be the major focus here, In lieu, the subject will be mainly focused in CNLP or the connectionist natural language processing research conducted to address the issues will incorporating syntactic information into distributed semantic models.  
+This has to draw the importance researches done in the realm of cognitive linguistics. Though importance the framework that has been done in the realm of theoretical linguistics namely the Chomskyan model will not be the major focus here, In lieu, the subject will be mainly focused in CNLP or the connectionist natural language processing research conducted to address the issues will incorporate syntactic information into distributed semantic models.  
 
 
 
