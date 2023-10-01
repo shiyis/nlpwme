@@ -76,7 +76,27 @@ In such a case, it's very important to understand what does it mean to understan
 
 > a Mentalese is a direct medium of the thought process and not the object of interpretation, as we face the conundrum of having to represent it through a meta-language which suffers the logic fallacy of ad infinitum or put differently "we face the infinite regress of a meta-language". Therefore, it's not perceived or interpreted. One cannot say that they understood the mental language the same way as they understood a natural language. 
 
+similarly to words (lexical items in a natural language), we can hardly define what a primitive expression's semantic properties exactly are. Though it's easy to illustrate the relations between complex expressions formed from these primitive expressions, researchers sought to create paradigms that could well capture the semantic properties of them. Here the strategy was to adopt functionalism (where _mind is the functional organization of the brain_). Therefore,  the effort of categorizing what exactly it means by saying "X A's that p iff there is a mental representation S such that X bears A* to S and S means that P" gets broken down into two steps,
 
+
+> 1. to explain in naturalistically acceptable terms what it is to bear psychological relation A* to mental representation S. 2. to explain in naturalistically acceptable terms what it is for mental representation S to mean that p.
+
+By treating these mental processes as type-token relations, we are able to provide a solution. 
+
+> e and e* are tokens of the same _Mentalese_ type iff R(e,e*). And individuated in neurological terms it becomes that e and e* are the tokens of the same primitive Mentalese type iff  e and e* are tokens of the same neural type. 
+
+This is the process of naturalizing intentionality and individuating it through pure neurology. However above schema faces a challenge as it could not address the issue of _multiple realizability_, as it is defined heterogeneously in the realm of neuroscience, physics, and biology. In lieu of which, a functional definition is carried out and goes as,
+
+> e and e* are tokens of the same primitive Mentalese type iff e and e* have the same functional role. 
+
+The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": molecular and holist. 
+
+> Molecular theory  treats separately the relations borne out between symbols; on the other hand, the holist theory is more fine-grained. In other words, e and e* belong to the same primitive Mentalese type iff they have the same (canonical if adopted) functional role under MT and iff they have the same total functional role under HT.
+
+To explain in simpler terms as I understood it, looking at a natural language say we have the simple term _word_ and _words_ in English serving as a basic unit or lexical item; they would belong to the same primitive type WORD as the same token under MT and different under HT.
+
+
+#### How Are The Above Premises Important to Establishing the Framework of Natural Language Understanding? 
 
 
 
