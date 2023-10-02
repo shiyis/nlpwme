@@ -1,5 +1,7 @@
 # What Is Modern Natural Language Processing About? 
 
+\toc
+
 To answer this major question, it's important to draw inference from some of the important concepts in psychology. The first one is _The Language of Thought Hypothesis_ and the second one _The Representational Theory Of Mind_. The first one touches on the importance of how our brain has a schema when it comes to producing language of thought, or called _Mentalese_. The _Representational Theory of Mind_ on the other hand touches on our cognitive abilities to be able to have volition manifested in natural language through propositional attitudes. The schema goes as,
 
 > X believes that p iff X believes that S which is a mental representation and p is the actual manifestation of S. 
@@ -8,7 +10,7 @@ To answer this major question, it's important to draw inference from some of the
 That being said, the language that we used to describe our mental experience is only a representation of what in actuality the thing is inside our brain. This representation could bear a semantic property, be it a denotation or a truth-condition.
 
     
-#### What Does It Mean To Have A Mental Language?
+### What Does It Mean To Have A Mental Language?
 
 Continuing the discussion LOTH or the _The Language Of Thought Hypothesis_, again one can postulate that it's closely correlated with the mental representation (drawing reference from  _the representational theory of mind_), and also as per the context of current discussions around understanding how the brain actually works (at least w.r.t the folk psychology) it confirms that _Mentalese_ exists within the scope of research. These "mental representations" are called propositional attitudes and borne out in the form of a natural language as beliefs, desires, intentions, and fears. 
 
@@ -91,7 +93,9 @@ This is the process of naturalizing intentionality and individuating it through 
 
 **The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": molecular and holist.**
 
-> Molecular theory treats separately the relations borne out between symbols; on the other hand, the holist theory is more fine-grained. In other words, e and e* belong to the same primitive Mentalese type iff they have the same (canonical if adopted) functional role under MT and iff they have the same total functional role under HT.
+Molecular theory treats separately the relations borne out between symbols; on the other hand, the holist theory is more fine-grained. In other words,
+
+> e and e* belong to the same primitive Mentalese type iff they have the same (canonical if adopted) functional role under MT and iff they have the same total functional role under HT.
 
 To explain in simpler terms as I understood it, looking at a natural language say we have the simple term _word_ and _words_ in English serving as a basic unit or lexical item; they would belong to the same primitive type WORD as the same token under MT and different under HT. However it's concerned under HT that it might violate the _publicity constraint_ as propositional attitudes are shareable. And in contemporary literature through the inferential judgement that in a natural language, there's a vague and arbitrary sense of denotation (The English word "cat" denotes cats, but could denote something had the linguistic convention presumes so), one can also conclude that in a _Mentalese_, such a case is applicable.  
 
@@ -106,12 +110,44 @@ In a nutshell, above individuation theories might not be adequate to account for
 
 #### How Are The Above Premises Important to Establishing the Framework of Natural Language Understanding? 
 
-This has to draw the importance researches done in the realm of cognitive linguistics. This second of discussion will also bring up some importance principles and ideas in the Chomskyan Transformation Grammar Theory we now call it TG. 
+To answer this question, we might need to discuss the important researches done in the realm of cognitive linguistics. This section will also bring up principles and ideas in the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language processing tasks 
 
-In order to capture more complex syntactic structures that lie in a natural language sentence, the researchers of LOTH have put a great deal of effort in developing distributed representational models with endowment of some kind of compositionality abide to the COMP law (the Compositionality of Mental Processes).   
+In order to capture more complex syntactic structures that lie in a natural language sentence, the researchers of LOTH have put a great deal of effort in developing distributed representational models with endowment of some kind of compositionality abide to the COMP law (the Compositionality of Mental Processes).  
+
+##### A simple introduction to the TG Theory and GB Law
+
+_Deep vs. Surface Phrasal Structure_ - below is an example of a "passive transformation" changing a phrase's deep structure by moving the phrase's noun phrase from object position to subject position 
+
+
+> a. d-structure: [$_{NP}$] INFL see-en BILL
+
+> b. s-structure: Bill INFL seen-en e
+
+
+Here the letter _e_ represents the empty category that fulfills the empty category principle constraint
+
+
+_Government Binding_ - essentially what we see in above example is that in GB there are two phases in generation
+
+```
+1. will still require the phrase structure rules. 
+2. the change from d-structure to s-structure.
+```
+
+_The Empty Category Principle_
+
+_Case Filtering_
+
+_Movement-$\alpha$_
+
+_Non-overlapping_   
+
+##### A connectionist approach to addressing these constraints under a connectionist non-overlapping map 
+
+In fact, a few papers accomplished in the 1980s put effort into addressing this compositionality through coding the syntactic elements of the inputs at a higher level with a simple MLP neural network to train such a model and accomplish subsequent lower level parsing tasks.  
  
 
-
+#### 
 
 
 

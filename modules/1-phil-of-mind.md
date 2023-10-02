@@ -234,13 +234,14 @@ However, it's also argued by radical connectionists that the traditional or the 
 
 Yet, hybrid mechanisms were put out by different teams to mediate such clashes. For example, there were papers that drew inspiration from the classical style of information processing (having one module that acts as the memory location or implementing methods that utilize variable binding techniques for symbolic processing that reflects the classical computational way of thinking aka the turing style information processing and storage). 
 
-This hybrid architecture might have had a say to how human brains actually process information, which is symbolic processing might actually be present in the brain. 
+This hybrid architecture might have had a say to how human brains actually process information, which is that symbolic processing might actually be present in the brain. 
 
 > Also one interesting discovering about the connectionism representation of information processing inside the brain might have a good give away of how brain actually processes information. That is, instead of local representation of an individual or specific informational unit, the learning mechanism is more so universally distributed across different (hidden) units. To top it off, the new way of representing information's sub-symbolic nature - where there were no intrinsic properties of representations that determine their relationships with other symbols - might solve a philosophical conundrum in representations of meaning. In contrast, a distributed representation preserves patterns across the net that could allow comparison and good preservation when parts go amok. 
 
 However, the classicists argue that connectionists approach lack proper explanation to the important intrinsic property of human cognition - systematicity. This brings the conversation back to language processing; different from other types of artificial intelligence tasks such as image and audio processing, because of the associative nature of connectionism, with distributed representations, these tasks could be managed and tackled relatively with ease, language processing needs a more complex system to account for its intrinsic nature of systematicity. 
 
 This is the hot debate between these two different schools of thoughts with the conclusion that connectionism might not be able to account for higher human cognition; the success could only come about if the two paradigms combine. 
+
 
 ---
 
