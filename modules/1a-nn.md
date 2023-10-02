@@ -74,14 +74,18 @@ The connectionists contend that instead of a concatenated structure, distributed
 This part of the discussion is very important as it's pertaining to the origins and departures of these two schools of LOTH: rationalism vs empiricism or the classism vs the connectionism. 
 The argument ties back to researches conducted around _concept acquisition_, and the innateness of toddlers to be able to adopt new things into their _Mentalese_. The hypothesis formulation and model testing done around the argument has suffered two logic fallacies: _ad infinitum_ and _the pain of circularity_, as children could not possibly develop a meta-meta-language to explain a meta-language nor could they have the ability to represent something unless the concept is already known, which is through the required inductive reasoning in a hypothesis formulation about the denotation of _Mentalese_. Therefore, it bears that there's no such thing as concept learning. And the conclusion was that concepts are unlearned in fact they are innate. 
 
-In such a case, it's very important to understand what does it mean to understand a natural language?  The conclusion was that,
+In such a case, it's very important to explain what it means by understanding a natural language?  The conclusion was that,
 
-> a Mentalese is a direct medium of the thought process and not the object of interpretation, as we face the conundrum of having to represent it through a meta-language which suffers the logic fallacy of ad infinitum or put differently "we face the infinite regress of a meta-language". Therefore, it's not perceived or interpreted. One cannot say that they understood the mental language the same way as they understood a natural language. 
+@@colbox-blue
+a Mentalese is a direct medium of the thought process and not the object of interpretation, as we face the conundrum of having to represent it through a meta-language which suffers the logic fallacy of ad infinitum; put differently, "we face the infinite regress of a meta-language". Therefore, it's not perceived or interpreted. One cannot say that they understood the mental language the same way as they understood a natural language. 
+@@
 
 similarly to words (lexical items in a natural language), we can hardly define what a primitive expression's semantic properties exactly are. Though it's easy to illustrate the relations between complex expressions formed from these primitive expressions, researchers sought to create paradigms that could well capture the semantic properties of them. Here the strategy was to adopt functionalism (where _mind is the functional organization of the brain_). Therefore,  the effort of categorizing what exactly it means by saying "X A's that p iff there is a mental representation S such that X bears A* to S and S means that P" gets broken down into two steps,
 
-
-> 1. to explain in naturalistically acceptable terms what it is to bear psychological relation A* to mental representation S. 2. to explain in naturalistically acceptable terms what it is for mental representation S to mean that p.
+```
+1. to explain in naturalistically acceptable terms what it is to bear psychological relation A* to mental representation S.
+2. to explain in naturalistically acceptable terms what it is for mental representation S to mean that p.
+```
 
 By treating these mental processes as type-token relations, we are able to provide a solution. 
 
@@ -110,13 +114,13 @@ In a nutshell, above individuation theories might not be adequate to account for
 
 #### How Are The Above Premises Important to Establishing the Framework of Natural Language Understanding? 
 
-To answer this question, we might need to discuss the important researches done in the realm of cognitive linguistics. This section will also bring up principles and ideas in the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language processing tasks 
+To answer this question, we might need to discuss the important researches done in the realm of cognitive linguistics. As we have mentioned in previous paragraphs of the scientists endeavor to address the issues with representing a _Mentales_ in the realm of cognitive science. In the same light, around the 90s emerging researches under the name _Connection Science_ has sparked a unique route to pointing issues on representation in a natural language (e.g. distributed vs. localist representations, classical vs. uniquely connectionist representation, type/token vs. part/whole hierarchies). This section will also bring up principles and ideas in the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language modeling and understanding tasks often want to seek solutions that extract the underlying complex syntactic structure of a natural language. And oftentimes at least in _Connection Science_ this is done through a more generally functionalism approach, which we will get into more detail later.
 
 In order to capture more complex syntactic structures that lie in a natural language sentence, the researchers of LOTH have put a great deal of effort in developing distributed representational models with endowment of some kind of compositionality abide to the COMP law (the Compositionality of Mental Processes).  
 
 ##### A simple introduction to the TG Theory and GB Law
 
-_Deep vs. Surface Phrasal Structure_ - below is an example of a "passive transformation" changing a phrase's deep structure by moving the phrase's noun phrase from object position to subject position 
+_Deep vs. Surface Phrasal Structure_ - below is an example of a "passive transformation" changing a phrase's deep structure by moving the phrase's noun phrase from object position to subject position. For example,
 
 
 > a. d-structure: [$_{NP}$] INFL see-en BILL
@@ -127,30 +131,54 @@ _Deep vs. Surface Phrasal Structure_ - below is an example of a "passive transfo
 Here the letter _e_ represents the empty category that fulfills the empty category principle constraint
 
 
-_Government Binding_ - essentially what we see in above example is that in GB there are two phases in generation
+_Government Binding_ - essentially what we see in above example is that in GB there are two phases in generation:
 
 ```
 1. will still require the phrase structure rules. 
 2. the change from d-structure to s-structure.
 ```
 
-_The Empty Category Principle_
+_The Empty Category Principle_ - which is the constraint that whenever there's an empty category left behind by some sort of motion forced by case-filtering needs to be properly governed. 
 
-_Case Filtering_
 
-_Movement-$\alpha$_
+_D-Structure_ - the d-structure is the product of phrasal structural rules that are derived from X-bar syntax, which provides a template for the structure of phrases (NP, VP, etc). 
 
-_Non-overlapping_   
 
-##### A connectionist approach to addressing these constraints under a connectionist non-overlapping map 
+_Case Filtering_ - Case is a grammatical marking which is assigned to phrase with specific structural relationships to various lexical items, such as verbs. 
+
+
+_The $\theta$-Role_ - similar constraint is the $\theta$-criterion. In addition to case, a verb assigns some $\theta$-roles ('thematic roles' such as agent, patient, goal). The $\theta$-criterion says that a chain must have one and only one $\theta$-role attached to it. 
+
+
+_Movement-$\alpha$_ - During transformation, the d-structure turns into the s-structure which reflects (more or less) the actual form of the generated sentence. This movement is constrained by restrictions on the positions, items moved, and other properties of a chain. This is very crucial to pay attention to if a language modeling task needs to done addressing such a movement. 
+
+Why is this important to bring up here? As I have understood it, this is exactly a functionalism reductionism approach of mapping a natural language, in the sense that the constituent parts of an entire phrasal structure is the simpler reduction of the entire sentence as a whole. Together under the Chomskyan schema below, we are able to produce and map sentences with ease,
+
+
+
+
+#### Addressing The Issues with Non-Autonomy of Syntax
+
+
+
+
+
+
+
+
+##### A connectionist approach to addressing these constraints with a non-overlapping mapping mechanism 
+
+![](./extras/connectionism/cnnctnst-mapping.jpg)
+
+This is an important introduction to bridging these two different schools of LOTH theory development. At a simpler level, a breath-first representation as a mapping was provided to capture the d-structure of a phrasal structure to a row and column representation with constituent parts highlighted (where the constituents preceding a constituent form the elements of the column above it as demonstrated in the graph above). This mapping also needs to satisfy the above constraints, which we will go into more depth in the subsequent sections.
 
 In fact, a few papers accomplished in the 1980s put effort into addressing this compositionality through coding the syntactic elements of the inputs at a higher level with a simple MLP neural network to train such a model and accomplish subsequent lower level parsing tasks.  
  
 
-#### 
+#### Distributed Representation To Map Syntactic 
 
 
 
 
-#### Transformers and Self-attention mechanism 
+#### Transformers and Self-Attention Mechanism 
 
