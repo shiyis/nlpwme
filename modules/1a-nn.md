@@ -195,7 +195,7 @@ On the other hand, the non-compositionality of semantics indicate that the meani
 Traditional attempts to understand the meaning of natural language utterances have typically divided the problem into two parts: 
 
 ```
-(1) how can the meanings of words characterized.
+(1) how can the meanings of words be characterized.
 (2) how are word meaning combined to yield sentence meaning. 
 ```
 
@@ -249,5 +249,5 @@ For example, the RAAM model developed back in the 90s was developed fundamentall
 
 
 
-#### Extending to Transformers and Self-Attention Mechanism 
+#### Extending to Recurrent Neural Network and Self-Attention Mechanism 
 
