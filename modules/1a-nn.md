@@ -95,7 +95,7 @@ This is the process of naturalizing intentionality and individuating it through 
 
 > e and e* are tokens of the same primitive Mentalese type iff e and e* have the same functional role. 
 
-**The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": molecular and holist.**
+The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": molecular and holist.
 
 Molecular theory treats separately the relations borne out between symbols; on the other hand, the holist theory is more fine-grained. In other words,
 
@@ -117,6 +117,9 @@ In a nutshell, above individuation theories might not be adequate to account for
 To answer this question, we might need to discuss the important researches done in the realm of cognitive linguistics. As we have mentioned in previous paragraphs of the scientists endeavor to address the issues with representing a _Mentales_ in the realm of cognitive science. In the same light, around the 90s emerging researches under the name _Connection Science_ has sparked a unique route to pointing issues on representation in a natural language (e.g. distributed vs. localist representations, classical vs. uniquely connectionist representation, type/token vs. part/whole hierarchies). This section will also bring up principles and ideas in the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language modeling and understanding tasks often want to seek solutions that extract the underlying complex syntactic structure of a natural language. And oftentimes at least in _Connection Science_ this is done through a more generally functionalism approach, which we will get into more detail later.
 
 In order to capture more complex syntactic structures that lie in a natural language sentence, the researchers of LOTH have put a great deal of effort in developing distributed representational models with endowment of some kind of compositionality abide to the COMP law (the Compositionality of Mental Processes). 
+
+
+❗In subsequent sections, two of the researches will be introduced to dive a little deeper in this part of the conversation. TL;DR here, one utilizes mapping mechanism to try to capture Chomskyan phenomenon and another uses a simple neural network back-propagation architect to try to model the conceptual activation in different propositions (The major proposition modeled here is 'Over'). 
 
 ##### A simple introduction to the TG Theory and GB Law
 
@@ -216,7 +219,11 @@ Although Jackendoff works within the compositionality framework, he takes seriou
 
 ##### Non-overlapping Mapping Mechanism: A Connectionism Approach To Representing Complex Phrasal/Syntactic Structures 
 
+---
+
 ![](../extras/connectionism/cnnctnst-mapping.jpg)
+
+---
 
 This is another important attempt at bridging these two different schools of LOTH theory development together - the non-overlapping mapping mechanism (Rager and Berg, 1992). At a simpler level, a breath-first representation as a mapping was provided to capture the d-structure of a phrasal structure to a row and column representation with constituent parts highlighted (where the constituents preceding a constituent form the elements of the column above it as demonstrated in the graph above). This mapping also needs to satisfy the above constraints, which we will go into more depth in the subsequent sections.
 
@@ -227,16 +234,24 @@ A breakdown of such a structure in depth goes as,
 _Using Maps to Model Constraints on Move-$\alpha$_ 
 Maps are either used for input and output or to enforce the structural constraints on the sentences. The input to the system consists of several rows representing different features of the constituents ($\theta$-marking, case-making, VP, NP, lexical-NP and maximal projection) and the structure map. The structure map shows, for each constituent in the sentence, which other constituent is its parent (i.e. immediately dominates it) in the structure. This is indicated by activating the unit representing the parent in the column above the constituent in the map. On the left in above figure is the tree representation of the d-structure of the sentence "Bill was seen". The map in this figure is the structure map, which is equivalent to the d-structure tree. The row is the case-marking row. Active units are indicated by the heavier lines.
 
-The output of the system is the _chain map_. The chain map shows the chains created (if any) by movements in the transition from d-structure to s-structure. If a constituent began a chain there will be an activated unit in the column above it to indicate the constituent which is the new location after the movement. If there were intermediate steps in the movement, multiple units will be active in the column. From this map and the structure map, the s-structure of the sentence can be determined. The cahin map of the passive movement from sentence (1) is given in blow figure. The map tells us that the children of the second NP are moved to be the children of the first NP, while a trace is left behind. 
+The output of the system is the _chain map_. The chain map shows the chains created (if any) by movements in the transition from d-structure to s-structure. If a constituent began a chain, there will be an activated unit in the column above it to indicate the constituent which is the new location after the movement. If there were intermediate steps in the movement, multiple units will be active in the column. From this map and the structure map, the s-structure of the sentence can be determined. The chain map of the passive movement from sentence (1) is given in blow figure. The map tells us that the children of the second NP are moved to be the children of the first NP, while a trace is left behind. 
 
 
 @@
 
-Most of the maps in the system are not used to represent sentence structure; rather, they are used to enforce the constraints on movement. They do this through their excitatory and inhibotory links to other maps. The remainder of this section describes the use of maps to enforce four constraints: the non-overlap constraint, the case filter, the $\theta$-role, and the empty category principle. 
+Most of the maps in the system are not used to represent sentence structure; rather, they are used to enforce the constraints on movement. They do this through their excitatory and inhibitory links to other maps. The remainder of this section describes the use of maps to enforce four constraints: the non-overlap constraint, the case filter, the $\theta$-role, and the empty category principle. 
 
-_The non-overlap constraint_ The non-overlap constraint says that chains may not overlap. Every unit in the chain map has an excitatory link to the corresponding unit in the non-overlap map. (This type of linking between the units in two maps is called lateral linking.) Thus, the units active in the cahin map will activate their counterparts in the non-overlap map. The units in the non-overlap map have inhibitory diagnal, non-lateral links to their counterparts in the chain map. In diagonal linking every unit in the source map is linked to its counter part in each column of the target(i.e. to the corresponding diagnal). A diagonal, non-lateral connection is the same as a diagnonal connection except that the link ot the directly corresponding unit in a map to another map. (In this and subsequent figures, excitatory links are shown with arrow heads and inhibitory links with dotted heads.)
+_The non-overlap constraint_ - The non-overlap constraint says that chains may not overlap. Every unit in the chain map has an excitatory link to the corresponding unit in the non-overlap map. (This type of linking between the units in two maps is called lateral linking.) Thus, the units active in the chain map will activate their counterparts in the non-overlap map. 
 
-The enforcement of the other stipulation, that all lexical NPs be case-marked, relies on the interaction between the flood row and the Case-A map. The units in the flood row which correspond to lexical NPs are initially active and through their columnar connectins to the chain map they try to activate units in the cahin map (they may not succeed). This has the effect of promoting movement of lexical NPs. As connections from it to the flood  row turn off the corresponding units in the row. This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.
+In diagonal linking every unit in the source map is linked to its counter part in each column of the target(i.e. to the corresponding diagonal). A diagonal, non-lateral connection is the same as a diagonal connection except that the link to the directly corresponding unit in a map to another map. 
+
+---
+
+![](../extras/connectionism/map-w-ll.png)
+
+---
+
+The enforcement of the other stipulation, that all lexical NPs be case-marked, relies on the interaction between the flood row and the Case-A map. The units in the flood row which correspond to lexical NPs are initially active and through their columnar connections to the chain map they try to activate units in the chain map (they may not succeed). This has the effect of promoting movement of lexical NPs. As connections from it to the flood  row turn off the corresponding units in the row. This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.
 
 
      
@@ -245,9 +260,14 @@ In fact, a few papers accomplished in the 1980s put effort into addressing this 
 
 ##### Simple Distributed Representations (Such As A Simple MLP Network) To Map Syntactic Structures.
 
-For example, the RAAM model developed back in the 90s was developed fundamentally deemed to be able to have distributed representation of fixed valence tree structures of arbitrary depth. 
+This section will introduce one of the many researches that has put in such an endeavour to dive deeper and make the connection happen. In the paper that has conducted _Hybrid Noun Phrase Analysis_, under section 3 _Learning Semantic Prepositional Relationships in Distributed Connnectionist Networks_, the net work was built as such that for each preposition there is one back-propagation network that determines the plausibility of the propositional relationships(see below figure). One network consists of three layers of units. The input layer consists of 32 binary units (value 0 and 1; and probably the earliest vectorization of words or word2vec) representing 15 features for each of the two nouns. The single real-valued output unit determines whether the prepositional relationship is plausible (value 1) or implausible (value 0). Twelve real-valued hidden units encode the mapping from the input units to the output units from a training set. All levels in the back-propagation network are fully connected. The graph of such a simple network is demonstrated below.
 
+---
 
+![](../extras/connectionism/a-simple-bp.png)
 
+---
+
+This was one of the earliest models built around the idea of a connectionist approach. 
 #### Extending to Recurrent Neural Network and Self-Attention Mechanism 
 
