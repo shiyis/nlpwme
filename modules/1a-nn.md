@@ -95,7 +95,9 @@ This is the process of naturalizing intentionality and individuating it through 
 
 > e and e* are tokens of the same primitive Mentalese type iff e and e* have the same functional role. 
 
-The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": molecular and holist.
+The below strategy gains popularity as it facilitates the Turing style model treating mental processes as a "computational role" subscribing the "functional role" to Turing style computationalism formalism. And there are two categories that represent such a "functional role": 
+
+❗ _MOLECULAR_ vs _HOLIST_. 
 
 Molecular theory treats separately the relations borne out between symbols; on the other hand, the holist theory is more fine-grained. In other words,
 
@@ -114,12 +116,13 @@ In a nutshell, above individuation theories might not be adequate to account for
 
 #### How Are The Above Premises Important to Establishing the Framework of Natural Language Understanding? 
 
-To answer this question, we might need to discuss the important researches done in the realm of cognitive linguistics. As we have mentioned in previous paragraphs of the scientists endeavor to address the issues with representing a _Mentales_ in the realm of cognitive science. In the same light, around the 90s emerging researches under the name _Connection Science_ has sparked a unique route to pointing issues on representation in a natural language (e.g. distributed vs. localist representations, classical vs. uniquely connectionist representation, type/token vs. part/whole hierarchies). This section will also bring up principles and ideas in the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language modeling and understanding tasks often want to seek solutions that extract the underlying complex syntactic structure of a natural language. And oftentimes at least in _Connection Science_ this is done through a more generally functionalism approach, which we will get into more detail later.
+To answer this question, we might need to discuss the important researches done in the realm of  around the 80s to 90s. As we have mentioned in previous paragraphs of the scientists' attempts to address the issues with representing a _Mentalese_ in the realm of cognitive science. 
+
+In the same light, around the 90s emerging researches under the name _Connection Science_ has sparked a unique route to pointing issues on representation in a natural language (e.g. distributed vs. localist representations, classical vs. uniquely connectionist representation, type/token vs. part/whole hierarchies). 
+
+This section and the subsequent sections, I will go through the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language modeling and understanding tasks often want to seek solutions that extract the underlying complex syntactic structure of a natural language. And oftentimes at least in _Connection Science_ this is done through a more generally functionalism approach, which we will get into more detail later.
 
 In order to capture more complex syntactic structures that lie in a natural language sentence, the researchers of LOTH have put a great deal of effort in developing distributed representational models with endowment of some kind of compositionality abide to the COMP law (the Compositionality of Mental Processes). 
-
-
-❗In subsequent sections, two of the researches will be introduced to dive a little deeper in this part of the conversation. TL;DR here, one utilizes mapping mechanism to try to capture Chomskyan phenomenon and another uses a simple neural network back-propagation architect to try to model the conceptual activation in different propositions (The major proposition modeled here is 'Over'). 
 
 ##### A simple introduction to the TG Theory and GB Law
 
@@ -172,7 +175,7 @@ _The $\theta$-Role_ - similar constraint is the $\theta$-criterion. In addition 
 
 _Movement-$\alpha$_ - During transformation, the d-structure turns into the s-structure which reflects (more or less) the actual form of the generated sentence. This movement is constrained by restrictions on the positions, items moved, and other properties of a chain. This is very crucial to pay attention to if a language modeling task needs to done addressing such a movement. 
 
-Why is this important to bring up here? As I have understood it, this is exactly a functionalism reductionism approach of mapping a natural language, in the sense that the constituent parts of an entire phrasal structure is the simpler reduction of the entire sentence as a whole. 
+❓Why is this important to bring up here? As I have understood it, this is exactly a functionalism reductionism approach of mapping a natural language, in the sense that the constituent parts of an entire phrasal structure is the simpler reduction of the entire sentence as a whole. 
 
 And The correspondences between cognitive linguistics and connectionism are intriguing. Cognitive linguists view grammar as a schematic coding system that is induced from a very large number of pairings of form with meaning. The account of polysemy points to the need for a mechanism that can induce categories from a set of examples, learn to extract rules from rule-governed data, and resolve conflicts in rules by constraint satisfaction. 
 
@@ -193,7 +196,11 @@ One typical example will be to use "peripheral constructions" to cover idiosyncr
 
 
 ###### The Intuitive Imposition in Semantics 
-On the other hand, the non-compositionality of semantics indicate that the meaning of an utterance is the mental conceptualization it evokes, how can we describe this evoked conceptualization in a useful manner? Cognitive linguists emphasize the search for principles which will facilitate an explanation of the range of form-meaning pairs in a given language. Why does a specific combinations of words evoke one particular schematic conception rather than another? Why are some word-combinations regarded as ill-formed?
+On the other hand, the non-compositionality of semantics indicate that the meaning of an utterance is the mental conceptualization it evokes.
+
+Cognitive linguists emphasize the search for principles which will facilitate an explanation of the range of form-meaning pairs in a given language. 
+
+(❓Why does a specific combinations of words evoke one particular schematic conception rather than another? Why are some word-combinations regarded as ill-formed? How can we describe this evoked conceptualization in a useful manner? )
 
 Traditional attempts to understand the meaning of natural language utterances have typically divided the problem into two parts: 
 
@@ -202,20 +209,21 @@ Traditional attempts to understand the meaning of natural language utterances ha
 (2) how are word meaning combined to yield sentence meaning. 
 ```
 
-One early and conceptually simple approach was that the meaning of a word is _the set of semantic features a language use_ would use to determine its real-world referent. 
+One early and conceptually simple approach was that the meaning of a word is _the set of semantic features a language use_ would use to determine its real-world referent. Under this interpretation, the meaning of _bachelor_ would be equated with features such as [HUMAN, MALE. UNMARRIED]. 
 
-Under this interpretation, the meaning of _bachelor_ would be equated with features such as [HUMAN, MALE. UNMARRIED]. The meaning of a sentence can thus be understood to be an aggregation of the meanings the words in the sentence. This view of word and sentence meaning is a composition of semantic features and sentence meaning is a composition of the meanings of words. 
+The meaning of a sentence can thus be understood to be an aggregation of the meanings the words in the sentence. This view of word and sentence meaning is a composition of semantic features and sentence meaning is a composition of the meanings of words. 
+
+A great deal of linguistic and psychological research has profited from adopting the compositional view. However, problems with the _compositional view_ have been that identifying the set of _primitive features_ works best for concrete nouns and some verbs but less well for words in other form classes. Another obstacle is polysemy: the apparent meaning of words shifts according to context, sometimes radically. 
+
+It was argued that the compositionality thesis can be saved by viewing the composite parts of a word to be rules (conditions on use) rather than inert features. Some of the rules may specify necessary conditions (for example, a necessary feature of red is COLOR) but many will only be types. In addition, some of the features might have fluid attributes that shift according to context, therefore a focal or central value as a constraint to model such an attribute might be important, if that attribute continuously shifts in the semantic space.
+
+Research has shown that people gave intuitive categorizations of containers as either cups, bowls or vases is a graded function of these object's height to width ratio, together with the presence or absence of a handle. This type of categorization data, ubiquitous in psychology, compelled researchers to argue that the conditions on word meanings should be understood as '**preferences rules**' - rules which form interactive systems operating according to principles of constraint satisfaction and violation. 
+
+   
+Although it was taken seriously the idea that cognition is central to semantics, it was argued that there is only an arbitrary distinction between the concepts which we take to define the meaning of a word and our complete encyclopedic knowledge about the referent of that word. The approach is limited, however, in that it focuses on the first step of the problem of meaning and ignores sentence-level integration. Yet, it's still non-trivial in our discussion in the sense that from this point on, there is a new route in the discovery of better connectionist researches to address such issues. 
 
 
-A great deal of linguistic and psychological research has profited from adopting the compositional view (d. Miller & Johnson-Laird, 1976). In addition, some headway has been made into such problems as story summarization and question answering with computer programs using approaches which are essentially compositional (Schank, 1975). However, problems with the compositional view have been noted since its inception (Bolinger, 1965). Identifying the set of primitive features works best for concrete nouns and some verbs but less well for words in other form classes. Another obstacle is polysemy: the apparent meaning of words shifts according to context, sometimes radically (Miller, 1978; Miller & Johnson-Laird, 1976). 
-
-It was argued that the compositionality thesis can be saved by viewing the composite parts of a word to be rules (conditions on use) rather than inert features. Some of the rules may specify necessary conditions (for example, a necessary feature of red is COLOR) but many will only be typical (Jackendoff, 1983). In addition, if an attribute is continuously variable, then the representation of the word may need to include a focal or central value for that attribute.
-
-Research has shown that people gave intuitive categorizations of containers as either cups, bowls or vases is a graded function of these object's height to width ratio, together with the presence or absence of a handle. This type of categorization data, ubiquitous in psychology, compelled researchers to argue that the conditions on word meanings should be understood as 'preferences rules'-rules which form interactive systems operating according to principles of reinforcement and conflict. 
-
-Some preference rules appear to be global in application (e.g. the height to width ratio for categorizing an object as a bowl, base or cup) and some local (the presence of a handle). Furthermore, global evidence appears to be used to reduce local ambiguity. 
-  
-Although Jackendoff works within the compositionality framework, he takes seriously the idea that cognition is central to semantics. Like Langacker (1987a) and Lakoff (1987a) he argues that there is only an arbitrary distinction between the concepts which we take to define the meaning of a word and our complete encyclopedic knowledge about the referent of that word. Jackendoff's approach is limited, however, in that it focuses on the first step of the problem of meaning and ignores sentence-level integration. 
+❗Two of the researches will be introduced to dive a little deeper in this part of the conversation. TL;DR here, one utilizes mapping mechanism to try to capture Chomskyan phenomenon and another uses a simple neural network back-propagation architect to try to model the conceptual activation in the preposition '_over_'. 
 
 ##### Non-overlapping Mapping Mechanism: A Connectionism Approach To Representing Complex Phrasal/Syntactic Structures 
 
@@ -254,13 +262,31 @@ In diagonal linking every unit in the source map is linked to its counter part i
 The enforcement of the other stipulation, that all lexical NPs be case-marked, relies on the interaction between the flood row and the Case-A map. The units in the flood row which correspond to lexical NPs are initially active and through their columnar connections to the chain map they try to activate units in the chain map (they may not succeed). This has the effect of promoting movement of lexical NPs. As connections from it to the flood  row turn off the corresponding units in the row. This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.
 
 
+---
+
+![](../extras/connectionism/case-marking-prohibition.png)
+
+---
+```
+#todo 
+
+put the picture of the entire mapping here
+and summarize the part
+```
+The resulting model is highly complex. 
+
+---
+
+![](../extras/connectionism/schema-entire-model.png)
+
+---
      
 In fact, a few papers accomplished in the 1980s put effort into addressing this compositionality through coding the syntactic elements of the inputs at a higher level with a simple MLP neural network to train such a model and accomplish subsequent lower level parsing tasks. 
  
 
 ##### Simple Distributed Representations (Such As A Simple MLP Network) To Map Syntactic Structures.
 
-This section will introduce one of the many researches that has put in such an endeavour to dive deeper and make the connection happen. In the paper that has conducted _Hybrid Noun Phrase Analysis_, under section 3 _Learning Semantic Prepositional Relationships in Distributed Connnectionist Networks_, the net work was built as such that for each preposition there is one back-propagation network that determines the plausibility of the propositional relationships(see below figure). One network consists of three layers of units. The input layer consists of 32 binary units (value 0 and 1; and probably the earliest vectorization of words or word2vec) representing 15 features for each of the two nouns. The single real-valued output unit determines whether the prepositional relationship is plausible (value 1) or implausible (value 0). Twelve real-valued hidden units encode the mapping from the input units to the output units from a training set. All levels in the back-propagation network are fully connected. The graph of such a simple network is demonstrated below.
+This section will introduce one of the many researches that has put in such an endeavour to dive deeper and make the connection happen. In the paper that has conducted _Hybrid Noun Phrase Analysis_, under section 3 _Learning Semantic Prepositional Relationships in Distributed Connnectionist Networks_, the net work was built as such that for each preposition there is one back-propagation network that determines the plausibility of the prepositional relationships(see below figure). One network consists of three layers of units to cover the schema 'Sun (Trajector) rises-_over_ (Locative-PREPOSITION) the sea (Landmark)'. The input layer consists of 32 binary units (value 0 and 1; and probably the earliest vectorization of words or word2vec) representing 15 features for each of the two nouns. The single real-valued output unit determines whether the prepositional relationship is plausible (value 1) or implausible (value 0). Twelve real-valued hidden units encode the mapping from the input units to the output units from a training set. All levels in the back-propagation network are fully connected. The graph of such a simple network is demonstrated below.
 
 ---
 
@@ -268,6 +294,33 @@ This section will introduce one of the many researches that has put in such an e
 
 ---
 
-This was one of the earliest models built around the idea of a connectionist approach. 
-#### Extending to Recurrent Neural Network and Self-Attention Mechanism 
 
+Such a network was introduced to cover the conceptual experience and idiosyncrasy raised in prepositions, here the example used is OVER as in '_sun rises over the ocean_'. Because of the polysemous nature of the preposition, through some visualized investigation, it was decided to assign three main categories of spacial relationships for _over_: the simple 'above', the 'above-cross', and the 'cover' relationship. Inferring the intended relationship from a give _over_ expression appears to involve constraint satisfaction: not all the component words in the utterance are compatible with all the major spatial meanings, and the interaction of these constraints typically results int he selection of a single meaning. The second reason presented by the paper was as described above that to model the polysemies of _over_ is to explore the parallels between the 'linguist's task of rule induction and the input-output mappings that back propagation networks can solve. This was one of the pioneer models built around the idea of using a connectionist approach to solve more structured syntactic problems. 
+
+---
+
+![](../extras/connectionism/back-prop-over.png)
+
+---
+
+The architect of the network could be broken down as such,
+
+@@colbox-blue
+
+The network was given the task of mapping input patterns of the form "trajector verb(over) landmark" as we have already demonstrated in previous sections. The above figure shows the entirety, including # layers, connections between layers, and the contents of the input and output layers. 
+
+_The output layer_. The output layer consists of six units, one for each of the three schemas, and three to indicate whether the landmark and trajector make 'contact', meaning whether if the path has an 'end-point' or 'upward' component. 
+
+_The input layer_. The input layer is reduced to only cover the necessary schema for the network, so a vocab of 18 trajectors, 15 verbs, and 15 landmarks. Also, notably no semantic information was given to the model of the sentence that could be constructed under the schema as a whole (represented in a localist fashion). That being said, they were preprocessed as separate units (activated in the vector) in hope that the model could capture some independent inference. 
+
+@@
+
+
+The details introduced here is very important, as it's required to discuss how the model learning the patterns gets postulated. In the paper, it was described that in order for the model to use the same set of weighted connections to map a large number of input patterns to their target outputs, then the network would have to learn, from the distributional regularities in the mapping between trajector-verb-landmark combinations and their output features, that
+
+> some input items are similar to others in some contexts but not in other contexts.
+
+For example, some hidden units might learn to adapt to the similarities between a _plane_ and a _car_, and the differences between a _plane_ and a _person_. This architecture, in conclusion, had a relatively simple makeup in hope that the function of these hidden units (self-regulate, self-organize, and feature-detect) could be apparent, as they serve a specific functional role in the mapping from input to output layers (i.e. trajector role-specific hidden units will only receive input activated from the trajector vector). It was done in this style in hope that some inherent properties of the units in these schemas could be well captured. 
+
+
+### Extending to Large Language Models and ChatGPT in the 20th Century
