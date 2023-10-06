@@ -63,7 +63,7 @@ These newer and modern systems were built in hope that they could emulate the ac
 
 To accept this position, connectionism has to accept RTT + COMP. Eliminativist connectionists might completely reject this position, and on the other hand implementationist connectionism might accept it in order to endorse the Turing style computational model. 
 
-Some literature later has spawned up around it, debating around the necessity of the commitment to productivity and systematicity of thoughts. Supporters still seek to illuminate the traditional style of computational system. However, objections in entirety go against the need of adopting the representational theory. Another stream of objections go against the fact that the productivity and systematicity nature of language of though have been greatly exaggerated. The last objections posit that one can still create models that reflect the compositionality and the internal structures without adopting the Turing style model.
+Some literature later debated around the necessity of commitment to productivity and systematicity of thoughts. Supporters still seek to illuminate the traditional style of computational system. However, objections in entirety go against the need of adopting the representational theory. Another stream of objections go against the fact that the productivity and systematicity nature of language of thought had been greatly exaggerated. The last steak of objections posits that one can still create models that reflect the compositionality and the internal structures without adopting the Turing style model.
 
 The connectionists contend that instead of a concatenated structure, distributed representations could well capture the integral parts of LOT. However, doubt was raised around the idea that if we consider concatenative constituency structure is only one of the realizations of the _productivity_ and _systematicity_ of the LOT, then these schools of neural models would still be considered as part of the classicism. 
 
@@ -107,10 +107,9 @@ To explain in simpler terms as I understood it, looking at a natural language sa
 
 Yet, historical literature suggests an alternative view that addresses an distinction that _Mentalese_ is essentially semantically permeated meaning that they are not arbitrary as a natural language is and at least to some extent they have a fixed denotation. This view is confirmed by the fact that different from a natural language, their intrinsic attribute is schematic and typical, meaning that they are types (if one may ask what ensures such a fixed position?) Therefore, CAT in a _Mentalese_ would have denoted cat by its inherent nature and this _semantically permeated approach_ adopts a classificatory scheme that allows the tokens getting categorized adopt semantic values. Finally, the denotation individuation approach goes as,
 
-
 > e and e* are the same primitive types iff they bear the same denotation. 
 
-However, this approach also faces some challenge. First, it violates the original LOTH's aim to naturalize intentionality in non-representational computational models, as this approach does not take into account the formal-syntactic types manipulated during mental computation (carried out in the FSC's provided explanation of semantic integrity). On top of it, this approach merely prevents the formal-syntactic _Mentalese_ types while executing a reduction in naturalization of intentionality. 
+However, this approach also faces some challenge. First, it violates the original LOTH's aim to naturalize intentionality in non-representational computational models, as this approach does not take into account the formal-syntactic types manipulated during mental computation (carried out in the FSC's provided explanation of semantic integrity). On top of it, this approach merely prevents the formal-syntactic _Mentalese_ types while executing a reduction in the naturalization of intentionality. 
 
 In a nutshell, above individuation theories might not be adequate to account for the entirety of LOTH. More investigation is needed. 
 
@@ -118,9 +117,9 @@ In a nutshell, above individuation theories might not be adequate to account for
 
 To answer this question, we might need to discuss the important researches done in the realm of  around the 80s to 90s. As we have mentioned in previous paragraphs of the scientists' attempts to address the issues with representing a _Mentalese_ in the realm of cognitive science. 
 
-In the same light, around the 90s emerging researches under the name _Connection Science_ has sparked a unique route to pointing issues on representation in a natural language (e.g. distributed vs. localist representations, classical vs. uniquely connectionist representation, type/token vs. part/whole hierarchies). 
+In the same light, around the 90s emerging researches under the name _Connection Science_ has sparked a unique route to addressing issues with representation (e.g. distributed vs. localist representations, classical vs. uniquely connectionist representation, type/token vs. part/whole hierarchies). 
 
-This section and the subsequent sections, I will go through the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language modeling and understanding tasks often want to seek solutions that extract the underlying complex syntactic structure of a natural language. And oftentimes at least in _Connection Science_ this is done through a more generally functionalism approach, which we will get into more detail later.
+In this section and the subsequent sections, I will go through the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language modeling and understanding tasks often want to seek solutions that extract the underlying complex syntactic structure of a natural language. And oftentimes at least in _Connection Science_ this is done through a more generally functionalism approach (we will get into this in more detail later).
 
 In order to capture more complex syntactic structures that lie in a natural language sentence, the researchers of LOTH have put a great deal of effort in developing distributed representational models with endowment of some kind of compositionality abide to the COMP law (the Compositionality of Mental Processes). 
 
@@ -228,8 +227,9 @@ Although it was taken seriously the idea that cognition is central to semantics,
 ##### Non-overlapping Mapping Mechanism: A Connectionism Approach To Representing Complex Phrasal/Syntactic Structures 
 
 ---
-
-![](../extras/connectionism/cnnctnst-mapping.jpg)
+chain map with activated units on the right and d-structure on the left|
+:-------------------------:|
+![](../extras/connectionism/structure-map.jpg)|
 
 ---
 
@@ -244,42 +244,43 @@ Maps are either used for input and output or to enforce the structural constrain
 
 The output of the system is the _chain map_. The chain map shows the chains created (if any) by movements in the transition from d-structure to s-structure. If a constituent began a chain, there will be an activated unit in the column above it to indicate the constituent which is the new location after the movement. If there were intermediate steps in the movement, multiple units will be active in the column. From this map and the structure map, the s-structure of the sentence can be determined. The chain map of the passive movement from sentence (1) is given in blow figure. The map tells us that the children of the second NP are moved to be the children of the first NP, while a trace is left behind. 
 
+![]()
+
 
 @@
 
 Most of the maps in the system are not used to represent sentence structure; rather, they are used to enforce the constraints on movement. They do this through their excitatory and inhibitory links to other maps. The remainder of this section describes the use of maps to enforce four constraints: the non-overlap constraint, the case filter, the $\theta$-role, and the empty category principle. 
 
-_The non-overlap constraint_ - The non-overlap constraint says that chains may not overlap. Every unit in the chain map has an excitatory link to the corresponding unit in the non-overlap map. (This type of linking between the units in two maps is called lateral linking.) Thus, the units active in the chain map will activate their counterparts in the non-overlap map. 
+_The non-overlap constraint_ - The non-overlap constraint says that chains may not overlap. Every unit in the chain map has an excitatory link to the corresponding unit in the non-overlap map. (This type of linking between the units in two maps is called lateral linking). Thus, the units active in the chain map will activate their counterparts in the non-overlap map. The units in the non-overlap map will in turn have inhibitory diagonal, non-lateral links to their counterparts in the chain map.  
 
-In diagonal linking every unit in the source map is linked to its counter part in each column of the target(i.e. to the corresponding diagonal). A diagonal, non-lateral connection is the same as a diagonal connection except that the link to the directly corresponding unit in a map to another map. 
+In diagonal linking every unit in the source map is linked to its counter part in each column of the target (i.e. to the corresponding diagonal). A diagonal, non-lateral connection is the same as a diagonal connection except that the link to the directly corresponding unit in a map to another map. The connections from an active unit in the non-overlap map to the chain map prevent the activation of any other node in the corresponding diagonal in the chain map, enforcing the constraint. (Nodes in the same diagonal represent the same syntactic marker and if two units both get activated and had moved to the same place, it will violate the non-overlap constraint). 
 
 ---
 
-![](../extras/connectionism/map-w-ll.png)
 
+
+
+non-overlap constraints satisfactory map | case-marking prohibition activation map
+:-------------------------:|:-------------------------:
+![](../extras/connectionism/case-filter-map-annotated.jpg)  |  ![](../extras/connectionism/case-marking-prohibition.png) 
 ---
 
 The enforcement of the other stipulation, that all lexical NPs be case-marked, relies on the interaction between the flood row and the Case-A map. The units in the flood row which correspond to lexical NPs are initially active and through their columnar connections to the chain map they try to activate units in the chain map (they may not succeed). This has the effect of promoting movement of lexical NPs. As connections from it to the flood  row turn off the corresponding units in the row. This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.
 
 
 ---
+The resulting schema of the entire model | 
+:-------------------------:|
+ ![](../extras/connectionism/schema-entire-model.png) |
 
-![](../extras/connectionism/case-marking-prohibition.png)
-
----
-```
-#todo 
-
-put the picture of the entire mapping here
-and summarize the part
-```
-The resulting model is highly complex. 
 
 ---
 
-![](../extras/connectionism/schema-entire-model.png)
+The resulting model is highly complex. However, the implementation and evaluation decision is far from arbitrary. In fact, it's highly regular and generalized to be applied to other example sentences (though not tested on wh-questions). 
 
----
+
+
+In the discussion section, it was noted that AI connectionist approaches seldom think of syntax as being constraint-based, they describe it in terms of high-level rules. However, GB theory imposes constraints globally on resulting structures and can provide insight into ways to model syntax in connectionist systems. Therefore, this research serves as a steppingstone to more interesting approaches and discoveries. 
      
 In fact, a few papers accomplished in the 1980s put effort into addressing this compositionality through coding the syntactic elements of the inputs at a higher level with a simple MLP neural network to train such a model and accomplish subsequent lower level parsing tasks. 
  
@@ -323,4 +324,6 @@ The details introduced here is very important, as it's required to discuss how t
 For example, some hidden units might learn to adapt to the similarities between a _plane_ and a _car_, and the differences between a _plane_ and a _person_. This architecture, in conclusion, had a relatively simple makeup in hope that the function of these hidden units (self-regulate, self-organize, and feature-detect) could be apparent, as they serve a specific functional role in the mapping from input to output layers (i.e. trajector role-specific hidden units will only receive input activated from the trajector vector). It was done in this style in hope that some inherent properties of the units in these schemas could be well captured. 
 
 
-### Extending to Large Language Models and ChatGPT in the 20th Century
+### Extending to Large Language Models and Deep Neural Networks in the 20th Century
+
+#### Attention Is All You Need 
