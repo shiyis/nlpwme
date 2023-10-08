@@ -254,12 +254,18 @@ _Rescorla, Michael, "The Computational Theory of Mind", The Stanford Encyclopedi
 - Topic 2a: Computationalism
     - [Subtpoic 0: Chomsky Hierarchy](./modules/chomsky-hierarchy)
     - [Subtopic 1: Context Free Grammar](./modules/context-free-grammar)
-    - [Subtopic 2: Finite State Automata](./modules/finite-stat-automata)
+    - [Subtopic 2: Finite State Automata and Transducers](./modules/finite-stat-automata)
     - [Subtopic 3: Linguistic Trees](./modules/linguistic-trees)
     - [Subtopic 4: Parsing](./modules/parsing)
     - [Subtopic 5: Hidden Markov Model](./modules/hidden-markov-model)
     - [Subtopic 6: Word Net](./modules/word-net)
-    - [Subtopic 7: Universal Dependencies](./modules/universal-dependencies)
+    - [Subtopic 7: Heuristics](./modules/universal-dependencies)
+    - [Subtopic 8: Continuous BOW And Skip-gram](./modules/universal-dependencies)
+    - [Subtopic 9: Mutual Information](./modules/universal-dependencies)
+    - [Subtopic 10: Viterbi Dynamic Programming](./modules/universal-dependencies)
+    - [Subtopic 11: Formal Logic Systems, General Problem Solving, and Philosophy of Language](./modules/universal-dependencies)
+    - [Subtopic 12: Syntactic Theory, Taxonomy, and Orthography](./modules/universal-dependencies)
+
 - Topic 2b: Connectionism
     - [Subtopic 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
     - [Subtopic 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
