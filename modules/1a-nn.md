@@ -212,19 +212,9 @@ Traditional attempts to understand the meaning of natural language utterances ha
 (2) how are word meaning combined to yield sentence meaning. 
 ```
 
-One early and conceptually simple approach was that the meaning of a word is _the set of semantic features a language use_ would use to determine its real-world referent. Under this interpretation, the meaning of _bachelor_ would be equated with features such as [HUMAN, MALE. UNMARRIED]. 
+The meaning of a word is a set of semantic features used to determine its real-world referent, and sentence meaning is an aggregation of these meanings;the meaning of _bachelor_ would be equated with features such as [HUMAN, MALE. UNMARRIED]. This view has been beneficial in linguistic and psychological research, but has faced challenges such as identifying prime features for concrete nouns and some verbs, and polysemy.
 
-The meaning of a sentence can thus be understood to be an aggregation of the meanings the words in the sentence. This view of word and sentence meaning is a composition of semantic features and sentence meaning is a composition of the meanings of words. 
-
-A great deal of linguistic and psychological research has profited from adopting the compositional view. However, problems with the _compositional view_ have been that identifying the set of _primitive features_ works best for concrete nouns and some verbs but less well for words in other form classes. Another obstacle is polysemy: the apparent meaning of words shifts according to context, sometimes radically. 
-
-It was argued that the compositionality thesis can be saved by viewing the composite parts of a word to be rules (conditions on use) rather than inert features. Some of the rules may specify necessary conditions (for example, a necessary feature of red is COLOR) but many will only be types. In addition, some of the features might have fluid attributes that shift according to context, therefore a focal or central value as a constraint to model such an attribute might be important, if that attribute continuously shifts in the semantic space.
-
-Research has shown that people gave intuitive categorizations of containers as either cups, bowls or vases is a graded function of these object's height to width ratio, together with the presence or absence of a handle. This type of categorization data, ubiquitous in psychology, compelled researchers to argue that the conditions on word meanings should be understood as '**preferences rules**' - rules which form interactive systems operating according to principles of constraint satisfaction and violation. 
-
-   
-Although it was taken seriously the idea that cognition is central to semantics, it was argued that there is only an arbitrary distinction between the concepts which we take to define the meaning of a word and our complete encyclopedic knowledge about the referent of that word. The approach is limited, however, in that it focuses on the first step of the problem of meaning and ignores sentence-level integration. Yet, it's still non-trivial in our discussion in the sense that from this point on, there is a new route in the discovery of better connectionist researches to address such issues. 
-
+ Researchers have proposed viewing the composite parts of a word as rules, which can be fluid attributes that shift according to context. Cognitive categorization data in psychology suggests that the conditions on word meanings should be understood as '**preferences rules**', operating according to constraints satisfaction and violation. While cognition is central to semantics, this approach is limited in that it's ignoring sentence-level integration.
 
 ❗Two of the researches will be introduced to dive a little deeper in this part of the conversation. TL;DR here, one utilizes mapping mechanism to try to capture Chomskyan phenomenon and another uses a simple neural network back-propagation architect to try to model the conceptual activation in the preposition '_over_'. 
 
@@ -272,13 +262,13 @@ non-overlap constraints satisfactory map | case-marking prohibition activation m
 The enforcement of the other stipulation, that all lexical NPs be case-marked, relies on the interaction between the flood row and the Case-A map. The units in the flood row which correspond to lexical NPs are initially active and through their columnar connections to the chain map they try to activate units in the chain map (they may not succeed). This has the effect of promoting movement of lexical NPs. As connections from it to the flood  row turn off the corresponding units in the row. This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.
 
 
----
+<!-- ---
 The resulting schema of the entire model | 
 :-------------------------:|
  ![](../extras/connectionism/schema-entire-model.png) |
 
 
----
+--- -->
 
 The resulting model is highly complex. However, the implementation and evaluation decision is far from arbitrary. In fact, it's highly regular and generalized to be applied to other example sentences (though not tested on wh-questions). 
 
@@ -404,16 +394,7 @@ Large-scale relational extraction:
 
 Text and document classification involves normalizing functions based on frequency and punctuation of words, including discrete features like 0,1-valued functions. Documents are represented as numeric vectors, with separate classes forming independent clusters. Classical pattern recognition techniques are used to assign new documents to appropriate classes. A simple Bayesian approach assumes each class generates independent feature values, with the highest-performing class selected. A common generative model of real-valued features allows feature interactions, treating known members as multivariate normal random variables.
 
-Other methods used：
-
-Text and document classification uses features like word frequency, punctuation, and discrete functions. Classical pattern recognition techniques like 
-
-Naïve Bayesian;
-Generative models;
-Discriminative approaches;
-Perceptrons, and k-nearest neighbors;
-
-methods are used. Each method has advantages and disadvantages, depending on parameter selection and probabilistic model development. Traditional discriminative approaches partition clusters, such as perceptrons linearly determine class membership and can learn incrementally with more training data.
+Each method has advantages and disadvantages, depending on parameter selection and probabilistic model development. Traditional discriminative approaches partition clusters, such as perceptrons linearly determine class membership and can learn incrementally with more training data.
 
 The k-Nearest Neighbor (kNN) method is a persistent discriminative method that assigns a vector space of unknowns to the text or document of the class most prevalent among its k nearest neighbors. It is nonparametric and does not rely on parameter estimation. Decision trees, another non-parametric discriminative method, use information theoretic techniques to select classes and branches, providing insight into important features. However, decision trees tend to converge to a non-global optimum, which can be mitigated by decision forests.
 
@@ -425,9 +406,9 @@ Classification of selected words or phrases involves a block of words or phrases
 
 Sequence markers play a crucial role in text classification, as they influence the classification of neighboring words. For instance, the presence of "don't" in a sentence might favor classifying "fish" as a verb, which in turn would favor "like" as a preposition. This cascading influence motivates generative sequence models like HMMs. For POS tagging, a large training corpus can estimate the probability of the next POS word, "emitting," and "emission" for most words in the text. Correlation algorithms, forward and backward, can be used to derive possible tags for each word at position _i_, which may be more useful for high-level processing than the "best" tag sequence.
 
-### Extending to Large Language Models and Deep Neural Networks in the 20th Century
+<!-- ### Extending to Large Language Models and Deep Neural Networks in the 20th Century
 
-#### Attention Is All You Need 
+#### Attention Is All You Need  -->
 
 
 
