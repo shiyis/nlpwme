@@ -1,6 +1,9 @@
-# What Is Modern Natural Language Processing About? 
+
+# What Is Modern Natural Language Processing About?
 
 \toc 
+
+### What Is Modern Natural Language Processing About?
 
 To answer this major question, it's important to draw inference from some of the important concepts in psychology. The first one is _The Language of Thought Hypothesis_ and the second one _The Representational Theory Of Mind_. The first one touches on the importance of how our brain has a schema when it comes to producing language of thought, or called _Mentalese_. The _Representational Theory of Mind_ on the other hand touches on our cognitive abilities to be able to have volition manifested in natural language through propositional attitudes. The schema goes as,
 
@@ -9,7 +12,6 @@ To answer this major question, it's important to draw inference from some of the
 
 That being said, the language that we used to describe our mental experience is only a representation of what in actuality the thing is inside our brain. This representation could bear a semantic property, be it a denotation or a truth-condition.
 
- 
 ### What Does It Mean To Have A Mental Language?
 
 Continuing the discussion LOTH or the _The Language Of Thought Hypothesis_, again one can postulate that it's closely correlated with the mental representation (drawing reference from _the representational theory of mind_), and also as per the context of current discussions around understanding how the brain actually works (at least w.r.t the folk psychology) it confirms that _Mentalese_ exists within the scope of research. These "mental representations" are called propositional attitudes and borne out in the form of a natural language as beliefs, desires, intentions, and fears. 
@@ -27,7 +29,7 @@ So, to talk about the actualization of a mental image in such case, the process 
 @@colbox-blue
 First, the occurrence where I have an intention of doing something; 
 And then second the enduring state which is reflected as my long standing belief of something. 
-With deductive reasoning and inference (I transition from believing* the premises to believing the conclusion) together as a package, I postulate the RTT or the representational theory of mind. And the propositional attitudes reflect these mental images which are the direct objects and constitute the scope of a thought process. 
+With deductive reasoning and inference (I transition from believing* the premises to believing the conclusion) together as a package, It was postulated that the RTT or the representational theory of mind. And the propositional attitudes reflect these mental images which are the direct objects and constitute the scope of a thought process. 
 @@
 
 However, it's also brought to attention that according to discussion, RTT requires qualification, meaning it needs context to be thoroughly discussed. Put simply, the mind could postulate an infinite amount of thoughts, but the important ones are qualified or vetted through propositional attitudes that are able to have an effect. Or intentional causation could only come about where there's an explicit representation.
@@ -53,6 +55,8 @@ However illogical these perceptual mental representations are compositional and 
 
 In the modern era, CCTM is however excluded in the discussion. only RTT + COMP is included. This is the original spawning of a new school of computational theory of mind grounded in connectionism. 
 
+
+
 ### Deep Learning and Neural Networks Continued
 
 Now we could finally come back to discuss deep learning and the neural network models. In the 1980s, connectionism gained traction as an alternative to the Turing style computational model. The idea is that instead of treating the mental states as having memory access locations with a central processor and a bunch of strings and symbols ready to be manipulated, the connectionist approach treats them as more primitive. That said, under such condition, there are activations of neurons or so called "weight units" distributed and connected across the system, functioning analogously to the real synapses to our brain. 
@@ -71,7 +75,7 @@ The connectionists contend that instead of a concatenated structure, distributed
 
 #### Naturalizing Intentionality Through HF Over Natural Language _Learning_ vs _Understanding_
 
-This part of the discussion is very important as it's pertaining to the origins and departures of these two schools of LOTH: rationalism vs empiricism or the classism vs the connectionism. 
+This part of the discussion is very important as it's pertaining to the origins and departures of these two schools of LOTH: rationalism vs empiricism or the classicism vs the connectionism. 
 The argument ties back to researches conducted around _concept acquisition_, and the innateness of toddlers to be able to adopt new things into their _Mentalese_. The hypothesis formulation and model testing done around the argument has suffered two logic fallacies: _ad infinitum_ and _the pain of circularity_, as children could not possibly develop a meta-meta-language to explain a meta-language nor could they have the ability to represent something unless the concept is already known, which is through the required inductive reasoning in a hypothesis formulation about the denotation of _Mentalese_. Therefore, it bears that there's no such thing as concept learning. And the conclusion was that concepts are unlearned in fact they are innate. 
 
 In such a case, it's very important to explain what it means by understanding a natural language? The conclusion was that,
@@ -324,49 +328,102 @@ The details introduced here is very important, as it's required to discuss how t
 For example, some hidden units might learn to adapt to the similarities between a _plane_ and a _car_, and the differences between a _plane_ and a _person_. This architecture, in conclusion, had a relatively simple makeup in hope that the function of these hidden units (self-regulate, self-organize, and feature-detect) could be apparent, as they serve a specific functional role in the mapping from input to output layers (i.e. trajector role-specific hidden units will only receive input activated from the trajector vector). It was done in this style in hope that some inherent properties of the units in these schemas could be well captured. 
 
 
+
 ### Statistical Semantics and NLP Techniques
 
-Statistical Natural Language Processing
-"all The end-of-sentence auxiliaries you've heard a thousand times Uncontracted verbs increase the likelihood of disallowance Contractions. -Jeff Plummer (2011)
+Beginning at the end of the 1980s and continuing until the end of 1995, almost every aspect of natural language processing underwent a major transformation: the transition to statistical, corpus-based approaches (as indicated by two special issues on this topic published in the quarterly Computational linguistics in 1993). This shift was made possible by the growing availability and volume of machine-readable text and speech data. 
 
-We have already mentioned miscellaneous statistical models and techniques for various computational tasks such as (in Section 2) HMM in POS tagging, probabilistic grammar modeling and parsing, statistical semantics, semantic disambiguation (lexical meanings, quantifier ranges, etc.), plan recognition, discourse modeling, and knowledge extraction texting. Here we try to provide a short, but slightly more systematic classification of the types of tasks handled in statistical NLP, as well as some insights into the most common modeling techniques and algorithms used in recent years and which have made statistical NLP so dominant, challenging the traditional view of computational linguistics.
 
-This traditional view focuses on the derivation of meaning and is based on the assumption that syntactic, semantic, pragmatic, and world knowledge are used in this derivation to be "explicit" rather than probabilistic; i.e., that the distributional properties of a language are only essential to linguistic communication, not to the understanding, use, or even learning of the language. Thus, it is emphasized, in this view, that the formulation of non-probabilistic syntactic, semantic, pragmatic and KR theories will be deployed in language understanding and use. Of course, the problem of ambiguity has been a focal issue in the construction of parsers and language understanding systems, but the prevailing assumption has been that ambiguity resolution can be accomplished by supplementing it with some interpretive procedures to elaborate heuristics for expressing syntactic and semantic preferences.
+@@colbox-blue
 
-However, experience has shown that the ambiguities that bother us require too many mappings, are too subtle, and are not amenable to heuristic arbitration. Instead, linguistic phenomena need to be treated as valid indicators of stochastic oscillations, and the properties of distributions generated by these stochastic processes need to be systematically exploited to derive reasonably reliable hypotheses about the underlying structure. (The Geoff Pullum quote above is relevant up to this point: the first occurrence of the inadmissibility of me to me in "I would rather be hated for who I am than loved for who I am not" is not readily attributable to any grammatical principle, and yet - based on hard evidence alone - has become the basis of our English usage. "I'd rather be hated than loved. Thus, at least for the time being, the emphasis has shifted to viewing NLP as a stochastic oscillator in the setting of uncertain reasoning and learning problems.
+Statistical Natural Language Processing (NLP) challenges traditional computational linguistics views, revealing that ambiguities are too numerous and interrelated to resolve by heuristic arbitration. Language phenomena need to be treated as stochastic, and distributional properties systematically exploited for reliable hypotheses. 
 
-From a philosophical point of view, this shift is important, not just a practical one: it suggests that traditional thinking about language may rely too much on introspection. The limitations of introspection are that very little of what happens in our brains as we understand or think about language is approached consciously (see, for example, the discussion of the "two-channel" experiment in Baars 1997). We consciously register the results of our understanding and thinking, apparently in symbolic form, but not in the process of understanding and thinking itself; and these symbolic abstractions, which to some extent lack a quantitative or probabilistic dimension, can lead us to assume that the underlying processing is also non-quantitative. But the success of statistical NLP, as well as recent developments in cognitive science (e.g., Fine et al. 2013; Tenenbaum et al. 2011; Chater and Oxford 2008), has argued that language and thought are not only symbolic, but deeply quantitative, and especially probabilistic.
+This shift suggests that language and thinking are not only symbolic but also quantitative and probabilistic.
+Statistical Natural Language Processing (NLP) aims to assign labels, sequences, syntax trees, or translations to linguistic inputs using statistical language models trained on large corpora of observed language use.
+
+Tasks addressed in NLP include text/document classification, word sense disambiguation, sentence transduction, structure assignment to sentences, discourse relations, anaphora, plan recognition, and large-scale relation extraction. Techniques and distinctions are common in these tasks, including modeling, learning from data, supervised versus unsupervised learning, and output computation.
+
+
+@@
+
+
+#### In A Nutshell 
+
+The traditional view of language understanding emphasizes the **explicit** use of syntactic, semantic, pragmatic, and world knowledge in deriving meaning, rather than probabilistic methods. It suggests that non-probabilistic formulations are crucial for language understanding and use, and that ambiguity resolution can be achieved through interpretive procedures that elaborate on heuristics to facilitate syntactic and semantic interpretations.
+
+From a philosophical point of view, this shift is important, not just a practical one: it suggests that traditional thinking about language may rely too much on introspection. The limitations of introspection are that very little of what happens in our brains as we understand or think about language is approached consciously. 
+
+We consciously register the results of our understanding and thinking, apparently in symbolic form, but not in the process of understanding and thinking itself; and these symbolic abstractions, which to some extent lack a quantitative or probabilistic dimension, can lead us to assume that the underlying processing is also non-quantitative. But the success of statistical NLP, as well as recent developments in cognitive science has argued that language and thought are not only symbolic, but **deeply quantitative, and especially probabilistic**.
+
+It was also stimulated by the growing recognition of the distributional nature of language, the emergence of powerful new statistical-based learning methods, and the expectation that these techniques could overcome the scalability issues that had plagued computational linguistics and, more generally, AI from its early days.
+
+The corpus-based approach has indeed been quite successful in producing comprehensive, moderately accurate `speech recognizers, part-of-speech (POS) taggers, parsers for learned probabilistic phrase-structure grammars, and even MT and text-based QA systems and summarization systems`. However, semantic processing has been restricted to rather shallow aspects, such as extraction of specific data concerning specific kinds of events from text or extraction of clusters of argument types, relational tuples, or paraphrase sets from text corpora.
+
+Currently, the corpus-based, statistical approaches are still dominant, but there appears to be a growing movement towards integration of formal logical approaches to language with corpus-based statistical approaches in order to achieve deeper understanding and more intelligent behavior in language comprehension and dialogue systems. There are also efforts to **combine connectionist and neural-net approaches with symbolic and logical ones**.
+
+
+@@colbox-blue
+In modeling: 
+Discrete features, vector models, log-linear models, Markov models; 
+Generative vs. generative discriminant models;
+Parametric vs. nonparametric models; 
+
+Learning from data: 
+Maximum likelihood estimation;
+Maximum entropy and expectation maximization;
+Dynamic programming; 
+Supervised versus unsupervised learning; 
+
+In output computation: 
+Dynamic programming; 
+Unique output vs. distribution of output.
+
+In all cases, the three main requirements are the development of probabilistic models (aided by learning) to relate linguistic inputs to desired outputs, and the use of algorithms to assign labels or structures to previously invisible model inputs.
+@@
+
+#### Different Kinds of NLU/NLP Tasks Summarized 
 
 For the first two decades or so, the main goal of statistical NLP has been to assign tags, tag sequences, syntactic trees, or use statistical language translations as linguistic inputs to models trained on large corpora of observed linguistic usage. More fully, the types of tasks addressed can be roughly grouped as follows (where additional keywords indicate typical applications):
 
-Text/document categorization: authorship, Reuters news categories, sentiment analysis.
-Categorization of selected words or phrases Broader contexts: lexical disambiguation, named entity recognition, multi-word expression recognition.
-Sequence tagging: cell phones → acoustic features → phonemes → words → POS tags ;
-Structural assignment of sentences: parsing, semantic role labeling, quantifier scoping;
-Sentence transduction: mt, low-frequency computation;
-Structural assignment of multisentence texts: discourse Relationships, recall, plan recognition;
-Large-scale relational extraction: knowledge extraction, paraphrase and implication relations.
-These groups may seem arbitrarily different, but as we will discuss further, certain techniques and distinctions are common to many of them, notably
+```plaintext
+Text and document categorization: 
+    - authorship, news categories, sentiment analysis.
+Categorization of selected words or phrases Broader contexts: 
+    - lexical disambiguation, named entity recognition, multi-word expression recognition.
+Sequence tagging: 
+    - cell phones → acoustic features → phonemes → words → POS tags;
+Structural assignment of sentences: 
+    - parsing, semantic role labeling, quantifier scoping;
+Sentence transduction: 
+    - machine translation, low-frequency computation;
+Structural assignment of multi-sentence texts: 
+    - discourse relationships, recall, plan recognition;
+Large-scale relational extraction: 
+    - knowledge extraction, paraphrase and implication relations;
+```
 
-In modeling: numerical and discrete features, vector models, log-linear models, Markov models; generative vs. generative discriminant models, parametric vs. nonparametric models; learning from data: maximum likelihood, maximum likelihood, and the ability to learn from data.
-Learning from data: maximum likelihood estimation, maximum entropy, expectation maximization, dynamic programming; supervised versus unsupervised learning; and
-In output computation: dynamic programming; unique output vs. distribution of output.
-We now try to provide some intuitive insights into the most important techniques involved in the seven groups and the differences between the above tasks. For this reason, we do not need to comment further on the range of quantifiers (in Group IV) or on Groups VI and VII, as most of these are covered elsewhere in the paper. In all cases, the two main requirements are the development of probabilistic models (aided by learning) to relate linguistic inputs to desired outputs, and the use of algorithms to assign labels or structures to previously invisible model inputs.
+Text and document classification involves normalizing functions based on frequency and punctuation of words, including discrete features like 0,1-valued functions. Documents are represented as numeric vectors, with separate classes forming independent clusters. Classical pattern recognition techniques are used to assign new documents to appropriate classes. A simple Bayesian approach assumes each class generates independent feature values, with the highest-performing class selected. A common generative model of real-valued features allows feature interactions, treating known members as multivariate normal random variables.
 
-Text and document classification: In classifying substantive documents, the functions used may be normalized with respect to the frequency and punctuation of particular words (or classes of words). Especially for shorter texts, various discrete features may also be included, such as 0,1-valued functions indicating the presence of certain keywords or structural features. In this way, documents are represented as numeric vectors, where values in a high-dimensional space, with separate classes, presumably form a number of independent clusters in that space. A wide variety of classical pattern recognition techniques are applicable to learning to assign new documents (as vectors) to appropriate classes (e.g., Sebestyen 1962; Duda and Hart 1973). Perhaps the simplest approach (and the easiest to apply when the features are binary) is a simple Bayesian approach, which assumes that each class generates feature values that are independent of each other. The generative frequencies are estimated from the training data and class membership The probability of unknown documents (vectors) is computed by Bayesian rules (the probability can be accomplished using successive updates of the previous class). The class with the highest result is selected. The posterior probability then provides a decision criterion. A common generative model of real-valued features allows feature interactions, treating known members of any given class as example multivariate normal (Gaussian) random variables. The learning case here consists of estimating the mean and covariance matrix for each class (an example of maximum likelihood estimation).
+Other methods used：
 
-The traditional discriminative approach, which does not presuppose any Generating a model that involves the computation of hyperplanes Partitioning clusters of instances of a known class with respect to each other (optimization involves certain metrics of variance within and between classes); new instances are assigned to their partitions and they fall down. Perceptrons provide a related technique, as long as they linearly determine class membership based on a combination of feature values; their particular advantage is that they can learn incrementally (by adjusting feature weights) as more and more training data becomes available. Another persistent discriminative method (that does not rely on the linear separability of classes) is the k-Nearest Neighbor (kNN) method, which assigns a vector space of unknowns to the text or document of the class most prevalent among its k (e.g., 1-5) nearest neighbors. While all of the previously mentioned methods rely on parameter estimation (e.g., generative probabilities, Gaussian parameters, or coefficient separation planes), kNN does not use such parameters-it is nonparametric; however, finding a suitable measure of proximity or similarity can be challenging and errors due to arbitrary local data point configurations in the functional space are difficult to avoid. Another non-parametric discriminative method worth mentioning is the use of decision trees, which can use information theoretic techniques; they allow classes to be selected by following root-to-leaf paths, and branches to be selected by testing the characteristics of a given input vector. A potentially useful property of learned decision trees is that they can provide insight into the most important features (this insight can also be provided by dimensionality reduction methods). However, decision trees tend to converge to a non-global optimum (global optimization is NP-hard) by splitting the data, which tends to prevent the modeling of feature interactions; this shortcoming can be mitigated to some extent by using decision forests.
+Text and document classification uses features like word frequency, punctuation, and discrete functions. Classical pattern recognition techniques like 
 
-Having mentioned some of the traditional classification methods, we now sketch two approaches in statistical NLP since the 1990s. the first, which has mathematical roots dating back to the 1950s, is MaxEnt, also known as (polynomial) logistic regression (e.g., Ratnaparkhi 1997). The features in this case are any desired 0, 1 values (binary) given a linguistic input and a function of possible classes. Continuous features, supervised or unsupervised discretization methods, such as entropy-based partitioning into a certain number of intervals, can be applied. Provide training data The frequency of occurrence of these features, distributed as the conditional probability derivation of the class, given the linguistic input. (Thus, this is a discriminative method. As the name implies, this conditional probability function is a maximum entropy distribution constrained to match the binary frequency of features observed in the training data. Its form (separated from the constant multiplier) is an exponential whose exponent is a linear combination of the binary eigenvalues of the given input and the given class. Thus it is a log-linear model (a distribution whose logarithm is linear in its elements) - a model that is now common in many statistical NLP tasks. Note that since the logarithm is any linear combination of binary eigenvalues given the inputs and any given class, choosing the class with maximum probability given the inputs is equivalent to linear decision making, as in some classical approaches; however, MaxEnt usually provides better classification performance, and the probabilities provided by the classification can be useful in further computations (e.g., anticipatory utilities).
+Naïve Bayesian;
+Generative models;
+Discriminative approaches;
+Perceptrons, and k-nearest neighbors;
 
-Another important approach to the emergence and success of statistical NLP is the support vector machine (SVM) approach (Boser et al., 1992; Cortes and Wapnick 1995). The great advantage of this method is that it is in principle possible to distinguish between arbitrary configurations of classes by implicitly projecting the original class vectors into a higher (or infinite) dimensional space, where the classes are linearly divisible. The projection is mediated by a kernel function - a similarity measure on pairs of vectors, e.g. a polynomial in the dot product of two vectors. Approximately, the components of higher dimensional vectors correspond to the terms of the kernel function, which, if extended to the product are characterized by the original, unexpanded pair of vectors. However, there is no actual expansion, and the classification criteria obtained only from a given training corpus require the computation of a kernel function vector (representing the document to be categorized) for a given function with some special "support vectors", and a linear comparison of the resulting values combined to a threshold value. The support vectors belong to the training corpus and define two parallel hyperplanes (in an extended space) that separate the relevant classes as much as possible. (Thus, this is a "maximum margin" discrimination method. Support vector machines typically provide excellent accuracy, partly because they allow nonlinear feature interactions (in the original space), and partly because the maximal margin approach focuses on class separation rather than conditional probability modeling of classes. On the other hand, MaxEnt classifiers are faster to train than SVMs and often provide satisfactory accuracy. General references covering the classification methods we outline are (Duda et al. 2001; Bishop 2006).
+methods are used. Each method has advantages and disadvantages, depending on parameter selection and probabilistic model development. Traditional discriminative approaches partition clusters, such as perceptrons linearly determine class membership and can learn incrementally with more training data.
 
-Classification of selected words or phrases Broader context: as mentioned earlier, examples include WSD, named entity recognition and sentence boundary detection. The only point of difference with text/document categorization is that it is not the entire block of text that is to be categorized, but rather such a block of words or phrases in the context that is to be categorized. Therefore features are chosen to reflect the characteristics of the target word or phrase (e.g. as morphology) and the way it relates to its context, in terms of e.g. surrounding words or word classes, (possibly) local syntactic dependencies, as well as a wider range of features such as Word frequencies or document classes. In addition to such differences in how features are selected, the same (supervised) learning and classification methods discussed above can be applied. However, sufficiently large training corpora may be difficult to build. For example, in statistical WSD (e.g., Yarowsky 1992; Chen et al. 2009), since thousands of words can be used in a single corpus, it may be difficult to construct a large enough training corpus. For example, in statistical WSD (e.g., Yarowsky 1992; Chen et al. 2009), where thousands of words have multiple meanings in a source such as WordNet, it is difficult to construct a training corpus that contains enough perceptually annotated training corpora with all of these sensory occurrences to allow for statistical learning. As a result, annotations are usually limited to the senses of a few polysemous words, Statistical WSD has been shown to be feasible for selected words, but broad coverage of WSD tools remains elusive.
+The k-Nearest Neighbor (kNN) method is a persistent discriminative method that assigns a vector space of unknowns to the text or document of the class most prevalent among its k nearest neighbors. It is nonparametric and does not rely on parameter estimation. Decision trees, another non-parametric discriminative method, use information theoretic techniques to select classes and branches, providing insight into important features. However, decision trees tend to converge to a non-global optimum, which can be mitigated by decision forests.
 
-Sequence markers: There is a somewhat arbitrary line between the front task and sequence markers. For example, it is quite possible to think of POS tagging as a task of categorizing words in a text with respect to their context. However, this approach fails to take advantage of the fact that the classification of neighboring words is interdependent. For example, in the sentence (from the web) "I don't fish like most people", the presence of don't should favor classifying fish as a verb, which in turn should favor classifying like as a preposition. (In At least this preference makes sense for declarative clauses; replacing "I" by "why" would change things - see below. Such cascading influences are not readily passed through successive independent classifications, and they motivate generative sequence models such as HMMs. for POS tagging, the tagged training corpus can provide an estimate of the probability of the next POS word, given the POS of the current word. if the corpus is large enough, it can also provide an estimate of the probability of the word "emitting". If the corpus is large enough, it can also provide an estimate of the probability of word "emission" for most of the words typically seen in the text, i.e., the likelihood that they will occur given the POS label. (Smoothing techniques are used to fill in the unknown non-zero probabilities given a POS. we have previously mentioned the Viterbi algorithm as an efficient dynamic planning algorithm that applies the HMM (trained as just described) to the task of assigning the maximum probability of the POS labeling sequence of words to the text. Bicorrelation algorithms, i.e., forward and backward algorithms, can be used to derive the possible tags for each word at position i, which may be more useful for subsequent high-level processing than the "best" tag sequence. Effective forward algorithms (through dynamic programming) sum the probabilities of all label sequences up to and including the position i at a word ending with a specified label X and generate input up to and including the word. The inverse algorithm sums the probabilities over all tag sequences, starting with tag X at position I, and generates inputs from position I+1 to the end. The forward product and reverse probability, normalized so that the alternative labels at probability position i sum to 1, give the probability of X at position i for the entire input.
+Two approaches in statistical Natural Language Processing (NLP) since the 1990s are MaxEnt, also known as polynomial logistic regression, and continuous features. MaxEnt uses binary values given a linguistic input and a function of possible classes. Continuous features, supervised or unsupervised discretization methods, and training data are used to determine the frequency of features. This discriminative method uses a log-linear model, which is now common in many NLP tasks. MaxEnt typically provides better classification performance and can be useful in further computations.
 
-Translated with www.DeepL.com/Translator (free version)
+The support vector machine (SVM) approach is a crucial method in statistical natural language processing (NLP). It allows for the distinction of arbitrary class configurations by projecting original class vectors into a higher-dimensional space where the classes are linearly divisible. This method is mediated by a kernel function, which measures similarity between pairs of vectors. However, it does not expand the classification criteria, and classification criteria are obtained from a training corpus. MaxEnt classifiers are faster to train and often provide satisfactory accuracy.
 
+Classification of selected words or phrases involves a block of words or phrases in the context, rather than the entire block of text. Features are chosen based on the target word or phrase's characteristics and its relation to its context. The same supervised learning and classification methods can be applied. However, large training corpora may be difficult to build, especially in statistical word disambiguation tasks, where thousands of words can be used in a single corpus. As a result, annotations are usually limited to a few polysemous words.
+
+Sequence markers play a crucial role in text classification, as they influence the classification of neighboring words. For instance, the presence of "don't" in a sentence might favor classifying "fish" as a verb, which in turn would favor "like" as a preposition. This cascading influence motivates generative sequence models like HMMs. For POS tagging, a large training corpus can estimate the probability of the next POS word, "emitting," and "emission" for most words in the text. Correlation algorithms, forward and backward, can be used to derive possible tags for each word at position _i_, which may be more useful for high-level processing than the "best" tag sequence.
 
 ### Extending to Large Language Models and Deep Neural Networks in the 20th Century
 
