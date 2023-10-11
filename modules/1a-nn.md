@@ -412,11 +412,34 @@ Sequence markers play a crucial role in text classification, as they influence t
 
 ### Extending to Large Language Models and Deep Neural Networks in the 20th Century
 
+We have talked so much about the statistical methods in dealing with natural language processing tasks. With respect to parsing, there's also the development of different neural networks (GAN, ANN, RNNs, etc). Traditionally recurrent neural networks and their variants have been used extensively for Natural Language Processing problems. In recent years, transformers have outperformed most RNN models. Before looking at transformers, let's first introduce recurrent neural networks, how they work, and where they fall behind.
 
+Recurrent Neural Networks (RNN) operate on sequential data, including time-series data and language translation. Recurrent neural networks come in several forms.
 
+_Vector to Sequence_: takes in a vector and output a sequence of any length.
+_Sequence to Vector_: These models accept a sequence as input and output a vector. These models, for instance, are frequently applied to sentiment analysis issues.
+_Sequence To Sequence_: Models take one sequence as input and produce another sequence. Applications for language translation frequently use them.
+
+#### The Encoder-Decoder Architect
+
+All of the information from the input sentence will be summarized by encoders, and the decoder will use the encoder's output to produce the desired output. The encoder's final state transmits information needed to begin decoding. The decoder calculates a new hidden state and word using the previous state and the output. Both the encoder and decoder layers employ a number of RNNs.
+
+But there are drawbacks to recurrent neural networks.
+
+First off, they take a long time to train—extremely long time—and frequently we have to cut training short using methods like truncated back propagation in time.
+
+Second, and more frequently, RNNs have disappearing and ballooning gradient issues. The information at the beginning of the sentence is lost when used to solve NLP issues.
+
+❗In a separate blog, these different architects will be introduced in more detail. 
 #### Attention Is All You Need 
 
-#### The Philosophy behind Attention 
+To address some of the issues with conventional RNNs and LSTMs, an attention mechanism was introduced to them. The context vector, which contains the weighted sum of each hidden state in the encoder, served as the basis for the attention mechanism.
+
+The context vector describes the relationship between the global input sequence and the decoder's current state. While the attention method addressed some of the RNN's intrinsic problems, we were still feeding words one at a time and processing them sequentially, which prevented us from using the parallel processing capabilities of modern hardware.
+
+#### The Philosophy Behind Attention 
+
+
 
 
 

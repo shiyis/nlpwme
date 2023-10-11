@@ -95,16 +95,9 @@ Hilary Putnam (1967) introduced CCTM into philosophy. His position with _logical
 @@colbox-blue
 
 ####  Logical Behaviorism vs Type-Identity Theory
-logical behaviorism: meaning that feelings, perceptions, imaginations, etc could be in the same way put into categories that mathematics 
-can be described in terms of formal logic, using for example set theory, and can be tested and explained scientifically through the 
-methods of behaviorism, whereby everything consists of stimulus-response pairs, with various types of origins and different types of 
-reinforcement.
+Logical behaviorism holds that all thoughts, perceptions, and other mental processes can be classified in the same way that mathematics can be explained in terms of formal logic, using concepts like set theory, and can then be tested and scientifically explained using behaviorist principles, according to which everything is made up of stimulus-response pairs with various types of origins and reinforcement.
 
-
-type-identity theory: holds that states and processes of the mind are identical to states and processes of the brain. Type-identity 
-theory considers the experience of something as the brain process itself not merely correlated with the mental state. Identity theorists 
-also argue that brain states are merely physical, so nonetheless denies the irreducible non-physical qualities called "qualia" of the 
-brain, e.x. desires and beliefs. 
+According to type-identity theory, the experience of something is considered to be a brain process that is occurring not merely as a mental state. Identity theorists additionally contend that brain states are just physical, which contradicts the irreducible non-physical aspects known as "qualia" of the brain, such as desires and beliefs.
 @@
 
 ---
@@ -117,7 +110,7 @@ He argues against the dualists' and [epiphenomenalism](https://en.wikipedia.org/
 
 To quote him more specifically, 
 
-> Smart believes that it is absurd that everything can be explained by the laws of physics except consciousness. In this case, he identifies consciousness with the broad term "sensations". 
+> It was believed that it is absurd that everything can be explained by the laws of physics except consciousness. In this case, he identifies consciousness with the broad term "sensations". 
 
 
 
