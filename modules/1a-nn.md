@@ -203,7 +203,7 @@ On the other hand, the non-compositionality of semantics indicate that the meani
 
 Cognitive linguists emphasize the search for principles which will facilitate an explanation of the range of form-meaning pairs in a given language. 
 
-(❓Why does a specific combinations of words evoke one particular schematic conception rather than another? Why are some word-combinations regarded as ill-formed? How can we describe this evoked conceptualization in a useful manner? )
+❓Why does a specific combinations of words evoke one particular schematic conception rather than another? Why are some word-combinations regarded as ill-formed? How can we describe this evoked conceptualization in a useful manner? 
 
 Traditional attempts to understand the meaning of natural language utterances have typically divided the problem into two parts: 
 
@@ -354,22 +354,26 @@ Currently, the corpus-based, statistical approaches are still dominant, but ther
 
 @@colbox-blue
 In modeling: 
-Discrete features, vector models, log-linear models, Markov models; 
-Generative vs. generative discriminant models;
-Parametric vs. nonparametric models; 
+
+- Discrete features, vector models, log-linear models, Markov models; 
+- Generative vs. generative discriminant models;
+- Parametric vs. nonparametric models; 
 
 Learning from data: 
-Maximum likelihood estimation;
-Maximum entropy and expectation maximization;
-Dynamic programming; 
-Supervised versus unsupervised learning; 
+
+- Maximum likelihood estimation;
+- Maximum entropy and expectation maximization;
+- Dynamic programming; 
+- Supervised versus unsupervised learning; 
 
 In output computation: 
-Dynamic programming; 
-Unique output vs. distribution of output.
+
+- Dynamic programming; 
+- Unique output vs. distribution of output.
+
+@@
 
 In all cases, the three main requirements are the development of probabilistic models (aided by learning) to relate linguistic inputs to desired outputs, and the use of algorithms to assign labels or structures to previously invisible model inputs.
-@@
 
 #### Different Kinds of NLU/NLP Tasks Summarized 
 
@@ -378,7 +382,7 @@ For the first two decades or so, the main goal of statistical NLP has been to as
 ```plaintext
 Text and document categorization: 
     - authorship, news categories, sentiment analysis.
-Categorization of selected words or phrases Broader contexts: 
+Categorization of selected words or phrases' broader contexts: 
     - lexical disambiguation, named entity recognition, multi-word expression recognition.
 Sequence tagging: 
     - cell phones → acoustic features → phonemes → words → POS tags;
@@ -404,11 +408,15 @@ The support vector machine (SVM) approach is a crucial method in statistical nat
 
 Classification of selected words or phrases involves a block of words or phrases in the context, rather than the entire block of text. Features are chosen based on the target word or phrase's characteristics and its relation to its context. The same supervised learning and classification methods can be applied. However, large training corpora may be difficult to build, especially in statistical word disambiguation tasks, where thousands of words can be used in a single corpus. As a result, annotations are usually limited to a few polysemous words.
 
-Sequence markers play a crucial role in text classification, as they influence the classification of neighboring words. For instance, the presence of "don't" in a sentence might favor classifying "fish" as a verb, which in turn would favor "like" as a preposition. This cascading influence motivates generative sequence models like HMMs. For POS tagging, a large training corpus can estimate the probability of the next POS word, "emitting," and "emission" for most words in the text. Correlation algorithms, forward and backward, can be used to derive possible tags for each word at position _i_, which may be more useful for high-level processing than the "best" tag sequence.
+Sequence markers play a crucial role in text classification, as they influence the classification of neighboring words. For instance, the presence of "don't" in a sentence might favor classifying "fish" as a verb, which in turn would favor "like" as a preposition. This cascading influence motivates generative sequence models like HMMs. For POS tagging, a large training corpus can estimate the probability of the next POS word, "emitting," and "emission" for most words in the text. Correlation algorithms, forward and backward, can be used to derive possible tags for each word at position _i_, which may be more useful for high-level processing.
 
-<!-- ### Extending to Large Language Models and Deep Neural Networks in the 20th Century
+### Extending to Large Language Models and Deep Neural Networks in the 20th Century
 
-#### Attention Is All You Need  -->
+
+
+#### Attention Is All You Need 
+
+#### The Philosophy behind Attention 
 
 
 
