@@ -3,8 +3,6 @@
 
 \toc 
 
-### What Is Modern Natural Language Processing About?
-
 To answer this major question, it's important to draw inference from some of the important concepts in psychology. The first one is _The Language of Thought Hypothesis_ and the second one _The Representational Theory Of Mind_. The first one touches on the importance of how our brain has a schema when it comes to producing language of thought, or called _Mentalese_. The _Representational Theory of Mind_ on the other hand touches on our cognitive abilities to be able to have volition manifested in natural language through propositional attitudes. The schema goes as,
 
 > X believes that p iff X believes that S which is a mental representation and p is the actual manifestation of S. 
@@ -76,7 +74,12 @@ The connectionists contend that instead of a concatenated structure, distributed
 #### Naturalizing Intentionality Through HF Over Natural Language _Learning_ vs _Understanding_
 
 This part of the discussion is very important as it's pertaining to the origins and departures of these two schools of LOTH: rationalism vs empiricism or the classicism vs the connectionism. 
-The argument ties back to researches conducted around _concept acquisition_, and the innateness of toddlers to be able to adopt new things into their _Mentalese_. The hypothesis formulation and model testing done around the argument has suffered two logic fallacies: _ad infinitum_ and _the pain of circularity_, as children could not possibly develop a meta-meta-language to explain a meta-language nor could they have the ability to represent something unless the concept is already known, which is through the required inductive reasoning in a hypothesis formulation about the denotation of _Mentalese_. Therefore, it bears that there's no such thing as concept learning. And the conclusion was that concepts are unlearned in fact they are innate. 
+
+The argument ties back to researches conducted around _concept acquisition_, and the innateness of toddlers to be able to adopt new things into their _Mentalese_. 
+
+The hypothesis formulation and model testing done around the argument has suffered two logic fallacies: _ad infinitum_ and _the pain of circularity_, as children could not possibly develop a meta-meta-language to explain a meta-language nor could they have the ability to represent something unless the concept is already known, which is through the required inductive reasoning in a hypothesis formulation about the denotation of _Mentalese_. 
+
+Therefore, it bears that there's no such thing as concept learning. And the conclusion was that concepts are unlearned in fact they are innate. 
 
 In such a case, it's very important to explain what it means by understanding a natural language? The conclusion was that,
 
@@ -390,7 +393,7 @@ Large-scale relational extraction:
 
 
 
-Text and document classification involves **normalizing functions based on frequency and punctuation of words (i.e. the measure of _tfidf_)**, including discrete features like 0,1-valued functions. Documents are represented as numeric vectors, with separate classes forming independent clusters. Classical pattern recognition techniques are used to assign new documents to appropriate classes. A simple Bayesian approach assumes each class generates independent feature values, with the highest-performing class selected. A common generative model of real-valued features allows feature interactions, treating known members as multivariate normal random variables.
+Text and document classification involves **normalizing functions based on frequency and punctuation of words (i.e. the measure of _tfidf_)**, including discrete features like 0, 1-valued functions. Documents are represented as numeric vectors, with separate classes forming independent clusters. Classical pattern recognition techniques are used to assign new documents to appropriate classes. A simple Bayesian approach assumes each class generates independent feature values, with the highest-performing class selected. A common generative model of real-valued features allows feature interactions, treating known members as multivariate normal random variables.
 
 Each method has advantages and disadvantages, depending on parameter selection and probabilistic model development. Traditional discriminative approaches partition clusters, such as **perceptrons** linearly determine class membership and can learn incrementally with more training data.
 
