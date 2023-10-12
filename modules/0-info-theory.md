@@ -6,36 +6,35 @@ This blog will touch on the topic of entropy and explain in the simplest and bas
 ❗ This page largely follows the [Analytics Vindya](https://www.analyticsvidhya.com) blog on [Entropy](https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/#h-what-is-a-decision-tree-in-machine-learning)
 
 ### **What Exactly Is Entropy?**
-According to wikipedia, it is a scientific concept, as well as a measurable physical property, that is most commonly associated with a state of `disorder, randomness, or uncertainty`. 
+The word and notion are used in a number of contexts, from classical thermodynamics, where it was first discovered, to the foundations of information theory, to the microscopic descriptions of nature in statistical physics.
 
-The term and the concept are used in diverse fields, from classical thermodynamics, where it was first recognized, to microscopic description of nature in statistical physics, and the the principles of information theory. 
+It is thought to have significantly influenced the advancement of a number of fields, including physics, chemistry, and biological systems.
 
-It's said to have far-reaching influence of the establishment of many fields including physics, chemistry, and in biological systems. 
+Ludwig Boltzmann, a physicist, defined entropy as the quantity of microscopic configurations or states of individual atoms and molecules inside a system that are compatible with the macroscopic requirements of the system.
 
-In physicist Ludwig Boltzmann explained entropy as the measure of the number of possible microscopic arrangements or states of individual atoms and molecules of a system that comply with the macroscopic condition of the system. 
-
-In 1948, Bell Labs scientist Claude Shannon developed similar statistical concepts of measuring microscopic uncertainty and multiplicity to the problem of random losses of information in telecommunication signals. 
-
+In order to solve the problem of random information losses in telecommunication communications, Bell Labs scientist Claude Shannon developed comparable statistical approaches for estimating microscopic uncertainty and multiplicity in 1948.
 
 ### **The Origin of Entropy**
+A _Mathematical Theory of Communication_, written by Claude E. Shannon in 1958, is where information theory first made its appearance. In an effort to properly quantify the stochastic nature of lost information in phone-line transmissions, he invented information entropy to measure the amount of uncertainty that a message eliminated. 
 
-Claude E. Shannon's 1958 paper on _A Mathematical Theory of Communication_ marked the birth of information theory. He aimed to mathematically measure the statistical nature of lost information in phone-line signals and proposed information entropy to estimate uncertainty reduced by a message. 
+Entropy is a measure of how much surprise and data are included in a variable. Information theory defines a random variable's entropy as the average level of uncertainty over all of its possible outcomes. 
 
-Entropy measures the amount of surprise and data present in a variable. In information theory, a random variable's entropy reflects the average uncertainty level in its possible outcomes. 
-
-Events with higher uncertainty have higher entropy information theory finds applications in machine learning models including decision trees. Understanding entropy helps improve data storage, communication, and decision-making. 
+Events with more uncertainty have larger entropies, according to the entropy information theory, which also applies to decision trees and other machine learning models. The idea of entropy can be applied to improve communication, decision-making, and data storage. 
 
 ### **The Decision Tree Algorithm** 
 
-The Decision Tree is a popular supervised learning technique in machine learning, serving as a hierarchical if-else statement based on feature comparison operators. It's used for regression and classification problems, `finding relationships between prediction and response variables`. The tree structure includes Root, Branch, and Leaf nodes, representing all possible outcomes based on specific conditions or rules. The algo aims to create `homogenous leaf nodes` containing records of a single type in the outcome variable. However, sometimes restrictions may lead to mixed outcomes in the Leaf nodes. 
+A common supervised learning method in machine learning is the decision tree, which functions as a hierarchical if-then statement based on feature comparison operators. '
 
-To build the tree, the algo selects features and thresholds by optimizing a loss function, aiming for the most accurate predictions. Decision Trees offer interpretable models and are widely used for various applications, from simple binary classification to complex decision-making.
+Finding links between prediction and response variables is what it's utilized for in regression and classification challenges. The Root, Branch, and Leaf nodes of the tree structure depict all outcomes based on particular conditions or rules. 
 
+The algorithm seeks to produce 'homogenous leaf nodes' with only records of that type in the output variable. However, constraints can occasionally provide contradictory results in the Leaf nodes. 
+
+The algorithm chooses features and thresholds for the tree by maximizing a loss function with the goal of making the most precise predictions. Decision trees are frequently used for a wide range of applications, from straightforward binary classification to complex decision-making.
 
 
 ### **The Connections between These Two**
 
-As I have gone over these concepts, it seems to be the case that entropy has to do with the transformation between heterogeneity to homogeneity, and the decision tree algo is doing exactly that. 
+After reviewing these ideas, it appears that entropy has something to do with the conversion of heterogeneity to homogeneity, and the decision tree algorithm is doing just that. 
 
 ---
 
@@ -45,11 +44,13 @@ As I have gone over these concepts, it seems to be the case that entropy has to 
 
 ---
 
-A general entropic framework is however lacking, especially for decision-making that inevitably involves uncertainty. Shannon's entropy is based only on probabilistic uncertainty, which makes it quite restrictive in human decision-making that also involves uncertainty due to incompleteness, vagueness, and individualistic attitudes. 
+However, a general framework for entropy is not sufficient enough, particularly for decision-making that invariably incorporates uncertainty. 
 
-The goal of decision tree is to decrease the uncertainty or the "impurity" of the target data as much as possible at the leaf (or the end-outcome) nodes. 
+The fact that Shannon's entropy only considers statistical uncertainty limits its applicability to human decision-making, which also contains uncertainty arising from incompleteness, ambiguity, and individualistic attitudes. 
 
-The objective function, which is the decision tree algo here minimizes the impurity of the data by splitting down the tree further. There are two metrics to estimate this impurity: Entropy and Gini. 
+The aim of a decision tree is to as much as possible reduce the uncertainty or "impurity" of the target data at the leaf (or end-outcome) nodes. 
+
+By further breaking down the tree, the objective function, which in this case is the decision tree algorithm, reduces the data impurity. Entropy and Gini are two metrics used to quantify this impurity. 
 
 
 
@@ -80,11 +81,11 @@ A Pearson's Chi-Square test is a statistical test for `categorical data`.
 
 ```
 
-It's used to determine whether your data are significantly different from what you expected. There are two types of Pearson's Chi-Square tests: 
+It is employed to ascertain whether your data significantly depart from your expectations. The Pearson's Chi-Square test comes in two varieties: 
 
-The Chi-Square goodness of fit test is used to test whether the frequency distribution of a categorical variable is different from your expectations. 
+To determine whether the frequency distribution of a categorical variable deviates from your expectations, apply the Chi-Square goodness of fit test. 
 
-The Chi-Square test of independence is used to test whether two categorical variables are related to each other. 
+When determining whether two categorical variables are connected to one another, the Chi-Square test of independence is utilized.  
 
 Chi-Square is often written as $\text{x}^{2}$ and is pronounce "kai-square". This is to run non-parametric tests on categorical data. Categorical variables can be nominal or ordinal and represent groupings such as species or nationalities. 
 
@@ -120,9 +121,9 @@ identify the best attribute for partitioning the data.
 
 ### **Example Cost Function in A Decision Tree**
 
-Say we have a box full of an equal number of coffee pouches of two flavors: Caramel Latte and the regular, Cappuccino. You may choose either of the flavors but with eyes closed. 
+Let's imagine that we have a box full of equal quantities of coffee pouches in two flavors: caramel latte and normal cappuccino. You may select either flavor, but only if your eyes are closed. 
 
-The predicament where you would have to decide and this decision of yours that can lead to results with equal probability is nothing else but said to be the state of maximum uncertainty. In case, I had only caramel latte coffee pouches or cappuccino pouches then we know what the outcome would have been and hence the uncertainty(or surprise will be) zero. 
+The situation in which you would have to select is known as the state of maximum uncertainty since your choice may result in outcomes with an equal likelihood. If I had just had caramel latte or cappuccino coffee pouches, the result would have been known, and there would be no uncertainty (or surprise). 
 
 The probability of getting each outcome of a caramel latte pouch or cappuccino pouch is:
 
@@ -234,11 +235,12 @@ In scenarios 2 and 3, can see that the entropy is 1 and 0, respectively. In scen
 
 ### **Use of Entropy in Decision Tree**
 
-As we have seen above, in decision trees the cost function is to minimize the heterogeneity in the leaf nodes. Therefore, the aim is to find out the attributes and within those attributes the threshold such that when the data is split into two, we achieve the maximum possible homogeneity or in other words, results in the maximum drop in the entropy within the two tree levels.
+As we have seen above, the cost function for decision trees is to reduce heterogeneity in the leaf nodes. In order to obtain the greatest possible homogeneity—or, to put it another way, the greatest reduction in entropy inside the two tree levels—when the data is split into two, we must identify the attributes and within those attributes the threshold.
 
-At the root level, the entropy of the target column is estimated via the formula proposed by Shannon for entropy. At every branch, the entropy computed for the target column is the weighted entropy. The weighted entropy means taking the weights of each attribute. The weights are the probability of each of the classes. The more the decrease in the entropy, the more is the information gained.
+The Shannon entropy formula is used to estimate the entropy of the target column at the root level. The entropy calculated for the target column at each branch is the weighted entropy. Taking the weights of each attribute results in the weighted entropy. The probabilities of each class make up the weights. The amount of information gained increases with the amount of entropy decrease.
 
-Information Gain is the pattern observed in the data and is the reduction in entropy. It can also be seen as the entropy of the parent node minus the entropy of the child node. It is calculated as 1 - entropy. The entropy and information gain for the above three scenarios is as follows:
+The pattern in the data is known as information gain, which is also known as entropy reduction. It can alternatively be thought of as the parent node's entropy less the child node's entropy. The formula is 1 - entropy. For the three cases mentioned above, the entropy and information gain are as follows:
+
 
 | Entropy |  Information  | Gain|
 | --------| -------- | -------- |
@@ -269,13 +271,13 @@ $$ \text{Gain} = 1 - (3/4 * 0.9184) - (1/4 *0) = 0.3112 $$
 
 ### **How Is Entropy Important to Our Discussion?**
 
-In machine learning, entropy measures the `impurity or randomness present in a dataset`. It is commonly used in decision tree algorithms to evaluate the homogeneity of data at a particular node. A higher entropy value indicates a more heterogeneous subset of data. 
+Entropy evaluates the "impurity or randomness present in a dataset" in machine learning. In decision tree methods, it is frequently used to assess the homogeneity of data at a specific node. A more varied group of data is indicated by a higher entropy score. 
 
-Decision tree models can use entropy to determine the best plots to make informed decisions and build accurate predictive models. 
+Entropy can be used by decision tree models to choose the optimal plots for making knowledgeable judgments and creating precise predictive models. 
 
 
 #### **Conclusion**
-Information Entropy or Shannon’s entropy quantifies the amount of uncertainty (or surprise) involved in the value of a random variable or the outcome of a random process. Its significance in the decision tree is that it allows us to estimate the impurity or heterogeneity of the target variable. Subsequently, to achieve the maximum level of homogeneity in the response variable, the child nodes are created in such a way that the total entropy of these child nodes must be less than the entropy of the parent node.
+The amount of surprise (or uncertainty) associated with the value of a random variable or the result of a random process is measured by information entropy, often known as Shannon's entropy. Its importance in the decision tree comes from the fact that it enables us to calculate the heterogeneity or impurity of the target variable. The child nodes are then formed in such a way that their combined entropy must be lower than that of the parent node in order to obtain the highest possible level of homogeneity in the response variable.
 
 
 

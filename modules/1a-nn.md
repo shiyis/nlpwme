@@ -281,7 +281,11 @@ In fact, a few papers accomplished in the 1980s put effort into addressing this 
 
 ##### Simple Distributed Representations (Such As A Simple MLP Network) To Map Syntactic Structures.
 
-This section will introduce one of the many researches that has put in such an endeavour to dive deeper and make the connection happen. In the paper that has conducted _Hybrid Noun Phrase Analysis_, under section 3 _Learning Semantic Prepositional Relationships in Distributed Connnectionist Networks_, the net work was built as such that for each preposition there is one back-propagation network that determines the plausibility of the prepositional relationships(see below figure). One network consists of three layers of units to cover the schema 'Sun (Trajector) rises-_over_ (Locative-PREPOSITION) the sea (Landmark)'. The input layer consists of 32 binary units (value 0 and 1; and probably the earliest vectorization of words or word2vec) representing 15 features for each of the two nouns. The single real-valued output unit determines whether the prepositional relationship is plausible (value 1) or implausible (value 0). Twelve real-valued hidden units encode the mapping from the input units to the output units from a training set. All levels in the back-propagation network are fully connected. The graph of such a simple network is demonstrated below.
+This section will introduce one of the many researches that has put in such an endeavour to dive deeper and make the connection happen. In the paper that has conducted _Hybrid Noun Phrase Analysis_, under section 3 _Learning Semantic Prepositional Relationships in Distributed Connnectionist Networks_, the net work was built as such that for each preposition there is one back-propagation network that determines the plausibility of the prepositional relationships (see below figure). 
+
+One network consists of three layers of units to cover the schema 'Sun (Trajector) rises-_over_ (Locative-PREPOSITION) the sea (Landmark)'. The input layer consists of 32 binary units (value 0 and 1; and probably the earliest vectorization of words or word2vec) representing 15 features for each of the two nouns. 
+
+The single real-valued output unit determines whether the prepositional relationship is plausible (value 1) or implausible (value 0). Twelve real-valued hidden units encode the mapping from the input units to the output units from a training set. All levels in the back-propagation network are fully connected. The graph of such a simple network is demonstrated below.
 
 ---
 
@@ -290,7 +294,11 @@ This section will introduce one of the many researches that has put in such an e
 ---
 
 
-Such a network was introduced to cover the conceptual experience and idiosyncrasy raised in prepositions, here the example used is OVER as in '_sun rises over the ocean_'. Because of the polysemous nature of the preposition, through some visualized investigation, it was decided to assign three main categories of spacial relationships for _over_: the simple 'above', the 'above-cross', and the 'cover' relationship. Inferring the intended relationship from a give _over_ expression appears to involve constraint satisfaction: not all the component words in the utterance are compatible with all the major spatial meanings, and the interaction of these constraints typically results int he selection of a single meaning. The second reason presented by the paper was as described above that to model the polysemies of _over_ is to explore the parallels between the 'linguist's task of rule induction and the input-output mappings that back propagation networks can solve. This was one of the pioneer models built around the idea of using a connectionist approach to solve more structured syntactic problems. 
+Such a network was introduced to cover the conceptual experience and idiosyncrasy raised in prepositions, here the example used is OVER as in '_sun rises over the ocean_'. Because of the polysemous nature of the preposition, through some visualized investigation, it was decided to assign three main categories of spacial relationships for _over_: the simple 'above', the 'above-cross', and the 'cover' relationship. 
+
+Inferring the intended relationship from a give _over_ expression appears to involve constraint satisfaction: not all the component words in the utterance are compatible with all the major spatial meanings, and the interaction of these constraints typically results int he selection of a single meaning. 
+
+The second reason presented by the paper was as described above that to model the polysemies of _over_ is to explore the parallels between the 'linguist's task of rule induction and the input-output mappings that back propagation networks can solve. This was one of the pioneer models built around the idea of using a connectionist approach to solve more structured syntactic problems. 
 
 ---
 
@@ -303,7 +311,7 @@ The architect of the network could be broken down as such,
 @@colbox-blue
 
 The network was given the task of mapping input patterns of the form "trajector verb(over) landmark" as we have already demonstrated in previous sections. The above figure shows the entirety, including # layers, connections between layers, and the contents of the input and output layers. 
-
+    
 _The output layer_. The output layer consists of six units, one for each of the three schemas, and three to indicate whether the landmark and trajector make 'contact', meaning whether if the path has an 'end-point' or 'upward' component. 
 
 _The input layer_. The input layer is reduced to only cover the necessary schema for the network, so a vocab of 18 trajectors, 15 verbs, and 15 landmarks. Also, notably no semantic information was given to the model of the sentence that could be constructed under the schema as a whole (represented in a localist fashion). That being said, they were preprocessed as separate units (activated in the vector) in hope that the model could capture some independent inference. 
@@ -315,7 +323,11 @@ The details introduced here is very important, as it's required to discuss how t
 
 > some input items are similar to others in some contexts but not in other contexts.
 
-For example, some hidden units might learn to adapt to the similarities between a _plane_ and a _car_, and the differences between a _plane_ and a _person_. This architecture, in conclusion, had a relatively simple makeup in hope that the function of these hidden units (self-regulate, self-organize, and feature-detect) could be apparent, as they serve a specific functional role in the mapping from input to output layers (i.e. trajector role-specific hidden units will only receive input activated from the trajector vector). It was done in this style in hope that some inherent properties of the units in these schemas could be well captured. 
+For example, some hidden units might learn to adapt to the similarities between a _plane_ and a _car_, and the differences between a _plane_ and a _person_. 
+
+This architecture, in conclusion, had a relatively simple makeup in hope that the function of these hidden units (self-regulate, self-organize, and feature-detect) could be apparent, as they serve a specific functional role in the mapping from input to output layers (i.e. trajector role-specific hidden units will only receive input activated from the trajector vector). 
+
+It was done in this style in hope that some inherent properties of the units in these schemas could be well captured. 
 
 
 
@@ -323,36 +335,15 @@ For example, some hidden units might learn to adapt to the similarities between 
 
 Beginning at the end of the 1980s and continuing until the end of 1995, almost every aspect of natural language processing underwent a major transformation: the transition to statistical, corpus-based approaches (as indicated by two special issues on this topic published in the quarterly Computational linguistics in 1993). This shift was made possible by the growing availability and volume of machine-readable text and speech data. 
 
+Statistical Natural Language Processing (NLP) challenges traditional computational linguistics views, revealing that ambiguities are too numerous and interrelated to be resolved by heuristic arbitration. Language phenomena need to be treated as stochastic, and distributional properties systematically exploited for reliable hypotheses. 
 
-@@colbox-blue
+This shift suggests that language and thinking are not only symbolic but also quantitative and probabilistic. 
 
-Statistical Natural Language Processing (NLP) challenges traditional computational linguistics views, revealing that ambiguities are too numerous and interrelated to resolve by heuristic arbitration. Language phenomena need to be treated as stochastic, and distributional properties systematically exploited for reliable hypotheses. 
-
-This shift suggests that language and thinking are not only symbolic but also quantitative and probabilistic.
-Statistical Natural Language Processing (NLP) aims to assign labels, sequences, syntax trees, or translations to linguistic inputs using statistical language models trained on large corpora of observed language use.
-
-Tasks addressed in NLP include text/document classification, word sense disambiguation, sentence transduction, structure assignment to sentences, discourse relations, anaphora, plan recognition, and large-scale relation extraction. Techniques and distinctions are common in these tasks, including modeling, learning from data, supervised versus unsupervised learning, and output computation.
-
-
-@@
-
-
-#### In A Nutshell 
-
-The traditional view of language understanding emphasizes the **explicit** use of syntactic, semantic, pragmatic, and world knowledge in deriving meaning, rather than probabilistic methods. It suggests that non-probabilistic formulations are crucial for language understanding and use, and that ambiguity resolution can be achieved through interpretive procedures that elaborate on heuristics to facilitate syntactic and semantic interpretations.
-
-From a philosophical point of view, this shift is important, not just a practical one: it suggests that traditional thinking about language may rely too much on introspection. The limitations of introspection are that very little of what happens in our brains as we understand or think about language is approached consciously. 
-
-We consciously register the results of our understanding and thinking, apparently in symbolic form, but not in the process of understanding and thinking itself; and these symbolic abstractions, which to some extent lack a quantitative or probabilistic dimension, can lead us to assume that the underlying processing is also non-quantitative. But the success of statistical NLP, as well as recent developments in cognitive science has argued that language and thought are not only symbolic, but **deeply quantitative, and especially probabilistic**.
-
-It was also stimulated by the growing recognition of the distributional nature of language, the emergence of powerful new statistical-based learning methods, and the expectation that these techniques could overcome the scalability issues that had plagued computational linguistics and, more generally, AI from its early days.
-
-The corpus-based approach has indeed been quite successful in producing comprehensive, moderately accurate `speech recognizers, part-of-speech (POS) taggers, parsers for learned probabilistic phrase-structure grammars, and even MT and text-based QA systems and summarization systems`. However, semantic processing has been restricted to rather shallow aspects, such as extraction of specific data concerning specific kinds of events from text or extraction of clusters of argument types, relational tuples, or paraphrase sets from text corpora.
-
-Currently, the corpus-based, statistical approaches are still dominant, but there appears to be a growing movement towards integration of formal logical approaches to language with corpus-based statistical approaches in order to achieve deeper understanding and more intelligent behavior in language comprehension and dialogue systems. There are also efforts to **combine connectionist and neural-net approaches with symbolic and logical ones**.
+In all cases, the three main requirements below are the development of probabilistic models (aided by learning) to relate linguistic inputs to desired outputs, and the use of algorithms to assign labels or structures to previously invisible model inputs.
 
 
 @@colbox-blue
+
 In modeling: 
 
 - Discrete features, vector models, log-linear models, Markov models; 
@@ -373,11 +364,11 @@ In output computation:
 
 @@
 
-In all cases, the three main requirements are the development of probabilistic models (aided by learning) to relate linguistic inputs to desired outputs, and the use of algorithms to assign labels or structures to previously invisible model inputs.
+#### Different Kinds of Statistical NLU/NLG Tasks Summarized 
 
-#### Different Kinds of NLU/NLP Tasks Summarized 
+For the first two decades or so, the main goal of statistical NLP has been to assign tags, tag sequences, syntactic trees, or use statistical language translations as linguistic inputs to models trained on large corpora of observed linguistic usage. 
 
-For the first two decades or so, the main goal of statistical NLP has been to assign tags, tag sequences, syntactic trees, or use statistical language translations as linguistic inputs to models trained on large corpora of observed linguistic usage. More fully, the types of tasks addressed can be roughly grouped as follows (where additional keywords indicate typical applications):
+More fully, the types of tasks addressed can be roughly grouped as follows (where additional keywords indicate typical applications):
 
 ```plaintext
 Text and document categorization: 
@@ -396,19 +387,25 @@ Large-scale relational extraction:
     - knowledge extraction, paraphrase and implication relations;
 ```
 
-Text and document classification involves normalizing functions based on frequency and punctuation of words, including discrete features like 0,1-valued functions. Documents are represented as numeric vectors, with separate classes forming independent clusters. Classical pattern recognition techniques are used to assign new documents to appropriate classes. A simple Bayesian approach assumes each class generates independent feature values, with the highest-performing class selected. A common generative model of real-valued features allows feature interactions, treating known members as multivariate normal random variables.
 
-Each method has advantages and disadvantages, depending on parameter selection and probabilistic model development. Traditional discriminative approaches partition clusters, such as perceptrons linearly determine class membership and can learn incrementally with more training data.
 
-The k-Nearest Neighbor (kNN) method is a persistent discriminative method that assigns a vector space of unknowns to the text or document of the class most prevalent among its k nearest neighbors. It is nonparametric and does not rely on parameter estimation. Decision trees, another non-parametric discriminative method, use information theoretic techniques to select classes and branches, providing insight into important features. However, decision trees tend to converge to a non-global optimum, which can be mitigated by decision forests.
 
-Two approaches in statistical Natural Language Processing (NLP) since the 1990s are MaxEnt, also known as polynomial logistic regression, and continuous features. MaxEnt uses binary values given a linguistic input and a function of possible classes. Continuous features, supervised or unsupervised discretization methods, and training data are used to determine the frequency of features. This discriminative method uses a log-linear model, which is now common in many NLP tasks. MaxEnt typically provides better classification performance and can be useful in further computations.
+Text and document classification involves **normalizing functions based on frequency and punctuation of words (i.e. the measure of _tfidf_)**, including discrete features like 0,1-valued functions. Documents are represented as numeric vectors, with separate classes forming independent clusters. Classical pattern recognition techniques are used to assign new documents to appropriate classes. A simple Bayesian approach assumes each class generates independent feature values, with the highest-performing class selected. A common generative model of real-valued features allows feature interactions, treating known members as multivariate normal random variables.
 
-The support vector machine (SVM) approach is a crucial method in statistical natural language processing (NLP). It allows for the distinction of arbitrary class configurations by projecting original class vectors into a higher-dimensional space where the classes are linearly divisible. This method is mediated by a kernel function, which measures similarity between pairs of vectors. However, it does not expand the classification criteria, and classification criteria are obtained from a training corpus. MaxEnt classifiers are faster to train and often provide satisfactory accuracy.
+Each method has advantages and disadvantages, depending on parameter selection and probabilistic model development. Traditional discriminative approaches partition clusters, such as **perceptrons** linearly determine class membership and can learn incrementally with more training data.
 
-Classification of selected words or phrases involves a block of words or phrases in the context, rather than the entire block of text. Features are chosen based on the target word or phrase's characteristics and its relation to its context. The same supervised learning and classification methods can be applied. However, large training corpora may be difficult to build, especially in statistical word disambiguation tasks, where thousands of words can be used in a single corpus. As a result, annotations are usually limited to a few polysemous words.
+**The k-Nearest Neighbor (kNN) method** - is a persistent discriminative method that assigns a vector space of unknowns to the text or document of the class most prevalent among its k nearest neighbors. It is nonparametric and does not rely on parameter estimation. Decision trees, another non-parametric discriminative method, use information theoretic techniques to select classes and branches, providing insight into important features. However, decision trees tend to converge to a non-global optimum, which can be mitigated by decision forests.
 
-Sequence markers play a crucial role in text classification, as they influence the classification of neighboring words. For instance, the presence of "don't" in a sentence might favor classifying "fish" as a verb, which in turn would favor "like" as a preposition. This cascading influence motivates generative sequence models like HMMs. For POS tagging, a large training corpus can estimate the probability of the next POS word, "emitting," and "emission" for most words in the text. Correlation algorithms, forward and backward, can be used to derive possible tags for each word at position _i_, which may be more useful for high-level processing.
+Two approaches in statistical Natural Language Processing (NLP) since the 1990s are **MaxEnt**, also known as polynomial logistic regression, and continuous features. MaxEnt uses binary values given a linguistic input and a function of possible classes. Continuous features, supervised or unsupervised discretization methods, and training data are used to determine the frequency of features. This discriminative method uses a log-linear model, which is now common in many NLP tasks. MaxEnt typically provides better classification performance and can be useful in further computations.
+
+**The support vector machine (SVM) approach** - is a crucial method in statistical natural language processing (NLP). It allows for the distinction of arbitrary class configurations by projecting original class vectors into a higher-dimensional space where the classes are linearly divisible. This method is mediated by a kernel function, which measures similarity between pairs of vectors. However, it does not expand the classification criteria, and classification criteria are obtained from a training corpus. MaxEnt classifiers are faster to train and often provide satisfactory accuracy.
+
+
+**Sequence markers**  - play a crucial role in text classification, as they influence the classification of neighboring words. For instance, the presence of "don't" in a sentence might favor classifying "fish" as a verb, which in turn would favor "like" as a preposition. This cascading influence motivates generative sequence models like HMMs. For POS tagging, a large training corpus can estimate the probability of the next POS word, "emitting," and "emission" for most words in the text. Correlation algorithms, forward and backward, can be used to derive possible tags for each word at position _i_, which may be more useful for high-level processing.
+
+**Annotation Limitations** - classification of selected words or phrases involves a block of words or phrases in the context, rather than the entire block of text. Features are chosen based on the target word or phrase's characteristics and its relation to its context. The same supervised learning and classification methods can be applied. However, large training corpora may be difficult to build, especially in statistical word disambiguation tasks, where thousands of words can be used in a single corpus. As a result, annotations are usually limited to a few polysemous words.
+
+
 
 ### Extending to Large Language Models and Deep Neural Networks in the 20th Century
 
@@ -416,10 +413,11 @@ We have talked so much about the statistical methods in dealing with natural lan
 
 Recurrent Neural Networks (RNN) operate on sequential data, including time-series data and language translation. Recurrent neural networks come in several forms.
 
-_Vector to Sequence_: takes in a vector and output a sequence of any length.
-_Sequence to Vector_: These models accept a sequence as input and output a vector. These models, for instance, are frequently applied to sentiment analysis issues.
-_Sequence To Sequence_: Models take one sequence as input and produce another sequence. Applications for language translation frequently use them.
-
+```plaintext
+Vector to Sequence: takes in a vector and output a sequence of any length.
+Sequence to Vector: accepts a sequence as input and output a vector (frequently used for semantic analysis).
+Sequence To Sequence: Models take one sequence as input and produce another sequence (mostly used for machine translation).
+```
 #### The Encoder-Decoder Architect
 
 All of the information from the input sentence will be summarized by encoders, and the decoder will use the encoder's output to produce the desired output. The encoder's final state transmits information needed to begin decoding. The decoder calculates a new hidden state and word using the previous state and the output. Both the encoder and decoder layers employ a number of RNNs.
@@ -433,16 +431,45 @@ Second, and more frequently, RNNs have disappearing and ballooning gradient issu
 ❗In a separate blog, these different architects will be introduced in more detail. 
 #### Attention Is All You Need 
 
+
 To address some of the issues with conventional RNNs and LSTMs, an attention mechanism was introduced to them. The context vector, which contains the weighted sum of each hidden state in the encoder, served as the basis for the attention mechanism.
 
 The context vector describes the relationship between the global input sequence and the decoder's current state. While the attention method addressed some of the RNN's intrinsic problems, we were still feeding words one at a time and processing them sequentially, which prevented us from using the parallel processing capabilities of modern hardware.
 
-#### The Philosophy Behind Attention 
+_Self-Attention_, or how each word in a sequence is related to other words in the same sequence, is the main emphasis of the multi-headed attention block. An attention vector created within the attention block serves as a representation for the self-attention. The goal is to identify the contextual connections between the sentence's words.
+
+❓How does that function? By using the scaled dot products, we may determine the relationship between two vectors.
+
+The Transformer Model Architect | 
+:-------------------------:|
+![](../extras/connectionism/trnsfmr.png) |
+
+
+
+The mathematical dot product determines how similar two vectors are. In conclusion, two vectors have no correlation if the dot product is 0 and are tightly associated if the dot product is 1 (or -1 in the case of negative correlation).
+
+Our transformer model calculates the attention using a scaled dot-product function. The entire model architect will be detailed in a separate blog, and here it's only introduced briefly to support our discussion. Also other model extensions will be introduced as well such as BERT, GPT, Elmo, CNN, LSTM, VAE, GAN, etc. 
+
+---
+#### In A Nutshell 
+
+The traditional view of language understanding emphasizes the **explicit** use of syntactic, semantic, pragmatic, and world knowledge in deriving meaning, rather than probabilistic methods. It suggests that non-probabilistic formulations are crucial for language understanding and use, and that ambiguity resolution can be achieved through procedures that elaborate on heuristics to facilitate syntactic and semantic interpretations.
+
+From a philosophical point of view, this shift is important, not just a practical one: it suggests that traditional thinking about language may rely too much on introspection. The limitations of introspection are that very little of what happens in our brains as we understand or think about language is approached consciously. 
+
+We consciously register the results of our understanding and thinking, apparently in symbolic form, but not in the process of understanding and thinking itself; and these symbolic abstractions, which to some extent lack a quantitative or probabilistic dimension, can lead us to assume that the underlying processing is also non-quantitative. But the success of statistical NLP, as well as recent developments in cognitive science has argued that language and thought are not only symbolic, but **deeply quantitative, and especially probabilistic**.
+
+It was also stimulated by the growing recognition of the distributional nature of language, the emergence of powerful new statistical-based learning methods, and the expectation that these techniques could overcome the scalability issues that had plagued computational linguistics and, more generally, AI from its early days.
+
+The corpus-based approach has indeed been quite successful in producing comprehensive, moderately accurate `speech recognizers, part-of-speech (POS) taggers, parsers for learned probabilistic phrase-structure grammars, and even MT and text-based QA systems and summarization systems`. However, semantic processing has been restricted to rather shallow aspects, such as extraction of specific data concerning specific kinds of events from text or extraction of clusters of argument types, relational tuples, or paraphrase sets from text corpora.
+
+Currently, the corpus-based, statistical approaches are still dominant, but there appears to be a growing movement towards integration of formal logical approaches to language with corpus-based statistical approaches in order to achieve deeper understanding and more intelligent behavior in language comprehension and dialogue systems. There are also efforts to **combine connectionist and neural-net approaches with symbolic and logical ones**.
 
 
 
 
 
+---
 
 - Topic 1: Math and Physics
     - [Subtopic 0: Calculus](./modules/calculus)
