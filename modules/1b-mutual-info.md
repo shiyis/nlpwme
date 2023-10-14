@@ -17,11 +17,16 @@ Robert Fano first proposed the idea in 1961 under the label "mutual information,
 
 #### Why Is It Important To Our Discussion? 
 
+When discussing information theory in relation to language processing. It is a method of quantifying communication or message transmission through mathematics. Associations between messages are therefore crucial.
 
 
 #### Mutual Information and Pointwise Mutual Information 
 
+Mutual information is theoretically plagued by two issues: In contrast to conventional assessment measures that do not differentiate between long and short texts, it assumes independent word variables and gives longer documents more weights in the estimate of the feature scores. 
 
+a different version of mutual information is provided that gets over both issues: Weighted Average Pointwise Mutual Information (WAPMI). We offer both strong theoretical and empirical support for WAPMI. 
+
+Additionally, it's demonstrated that WAPMI possesses a useful quality that other feature metrics do not, namely the ability to automatically choose the appropriate feature set size by maximizing an objective function. This can be accomplished using a straightforward heuristic rather than requiring expensive techniques like EM and model selection.
 
 #### The Pseudocode of WAPMI 
 
