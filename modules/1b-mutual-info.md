@@ -1,5 +1,5 @@
 
-### What is Mutual Information? 
+# What is Mutual Information? 
 
 A non-negative metric known as mutual information (MI) is used to assess how closely two random variables depend on one another. The reciprocal information measures how much we can learn about a second variable by looking at the values of the first.
 
