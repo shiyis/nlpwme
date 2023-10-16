@@ -496,7 +496,6 @@ Currently, the corpus-based, statistical approaches are still dominant, but ther
 
 **Reference**
 
-
 _Schubert, Lenhart, "Computational Linguistics", The Stanford Encyclopedia of Philosophy (Spring 2020 Edition), Edward N. Zalta (ed.)_
 
 _Muntilde;oz, Eduardo. “Attention Is All You Need: Discovering the Transformer Paper.” Medium, Towards Data Science, 11 Feb. 2021, towardsdatascience.com/attention-is-all-you-need-discovering-the-transformer-paper-73e5ff5e0634._ 
