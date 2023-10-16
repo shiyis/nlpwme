@@ -44,7 +44,7 @@ LOT claims that mental states typically have constiuent structures. That said, t
 
 Ancient LOT proponents used syllogism and propositional logic to analyze the semantics of _Mentalese_. Current researchers instead use predicate calculus, which was established in the late 18th century and optimized in the 30s. The premise was that,
 
-> Mentalese contains primitive words - including predicates, singular terms, and logical connectives - and these words combine to form complex sentences governed by something like the semantics of the predicate calculus.
+> a Mentalese contains primitive words - including predicates, singular terms, and logical connectives - and these words combine to form complex sentences governed by something like the semantics of the predicate calculus.
 
 
 Logical structure only constitutes partly the complex representations, accompanied with other non-sentential formats including graphs, maps, diagrams, etc. They could also be manifested as ideas and imagistic forms. In fact, logic plays no role in such constructions only loosely connected structures did. Schematic mental maps in relation to actual concrete maps best describe these kinds of mental images and representations. Therefore, pluralism was adopted by some to analyze thoughts, including but not limited to those non-sentential formats mentioned above. 
@@ -120,7 +120,7 @@ This view is confirmed by the fact that different from a natural language, their
 
 > e and e* are the same primitive types iff they bear the same denotation. 
 
-However, this approach also faces some challenge. First, it violates the original LOTH's aim to naturalize intentionality in non-representational computational models, as this approach does not take into account the formal-syntactic types manipulated during mental computation (carried out in the FSC's provided explanation of semantic integrity). 
+However, this approach also faces some challenge. First, it violates the original LOTH's aim to naturalize intentionality in non-representational computational models, as this approach does not take into account the formal-syntactic types manipulated during mental computation (carried out in the FCS or the formal-syntactic concept of computation's provided explanation of formalism and semantic integrity; which holds that mental computational is sensitive to syntax independent of semantics). 
 
 On top of it, this approach merely prevents the formal-syntactic _Mentalese_ types while executing a reduction in the naturalization of intentionality. 
 
@@ -420,7 +420,7 @@ Large-scale relational extraction:
 
 
 Text and document classification involves **normalizing functions based on frequency and punctuation of words (i.e. the measure of _tfidf_)**, including discrete features like 0, 1-valued functions. Documents are represented as numeric vectors, with separate classes forming independent clusters. Classical pattern recognition techniques are used to assign new documents to appropriate classes. A simple Bayesian approach assumes each class generates independent feature values, with the highest-performing class selected. A common generative model of real-valued features allows feature interactions, treating known members as multivariate normal random variables.
-
+   
 Each method has advantages and disadvantages, depending on parameter selection and probabilistic model development. Traditional discriminative approaches partition clusters, such as **perceptrons** linearly determine class membership and can learn incrementally with more training data.
 
 **The k-Nearest Neighbor (kNN) method** - is a discriminative method that assigns a vector space of unknowns to the text or document of the class most prevalent among its k nearest neighbors. It is nonparametric and does not rely on parameter estimation. Decision trees, another non-parametric discriminative method, use information theoretic techniques to select classes and branches, providing insight into important features. However, decision trees tend to converge to a non-global optimum, which can be mitigated by decision forests.
