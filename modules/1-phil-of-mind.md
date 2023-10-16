@@ -20,11 +20,11 @@ On the other hand, according to CCTM, the mind is a computational system similar
 
 First, CCTM is better formulated by describing the mind as a “computing system” or a “computational system” rather than a “computer”. As David Chalmers - an Australian philosopher and cognitive scientist specializing in the areas of philosophy of mind and philosophy of language - (2011) notes, describing a system as a “computer” strongly suggests that the system is programmable. As Chalmers also notes, one need not claim that the mind is programmable simply because one regards it as a Turing-style computational system.
 
-Second, CCTM is not intended metaphorically. CCTM does not simply hold that the mind is like a computing system. CCTM holds that the mind `literally is a computing system`. Of course, the most familiar artificial computing systems are made from silicon chips or similar materials, whereas the human body is made from flesh and blood. But CCTM holds that this difference disguises a more fundamental similarity, which we can capture through a Turing-style computational model. 
+Second, CCTM is not intended metaphorically. CCTM does not simply hold that the mind is like a computing system. CCTM holds that the mind `literally is a computing system`. The most familiar artificial computing systems are made from silicon chips or similar materials, whereas the human body is made from flesh and blood. But CCTM holds that this difference disguises a more fundamental similarity, which we can capture through a Turing-style computational model. 
 
 In offering such a model, we prescind from physical details. We attain an abstract computational description that could be physically implemented in diverse ways (e.g., through silicon chips, or neurons, or pulleys and levers). CCTM holds that a `suitable abstract computational model offers a literally true description of core mental processes`.  
 
-The turing machine - or the earliest computational model is a device that assumes unlimited time and storage at its disposal. The device manipulates symbols, much as a human doing type-writing and creating characters on a paper.  Of course, in actuality this would not be possible. A few important components and limitations, 
+The turing machine - or the earliest computational model is a device that assumes unlimited time and storage at its disposal. The device manipulates symbols, much as a human doing type-writing and creating characters on a paper.  In actuality, this would not be possible. A few important components and limitations, 
 
 ---
 
