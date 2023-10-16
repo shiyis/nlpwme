@@ -30,18 +30,13 @@ The turing machine - or the earliest computational model is a device that assume
 
 @@colbox-blue
 ####  A Turing Style Computational System or The Human Cognition Actualization Machine 
-1. memory locations - a linear structure or system where these symbols could be stored, assuming that it has a length of infinity. (In reality the implementation could not assume infinity so there's always way to optimize memory locations and storage space; e.x. techniques like hashing)
-2. a central processor - which can enter into finitely many machine states. 
-3. basic operations on symbols with the central processor - write and remove symbols; access the next memory location in the 
-   linear array. (move to the left or right on the tape). 
-4. two important principles - the operation relies on two principles to process the information: which symbol is currently inscribed at the present memory location; 
-   and the scanner's own current machine state. 
-5. a machine table - dictates which elementary operation the central processor performs, given its current machine state and the symbol 
-   it is currently accessing. 
-   It also dictates how the central processor's machine state changes given those same factors. 
-6. human cognitive limitations - finally, due to our cognitive limitations to be able to only produce finite number of outcomes, the symbolic system that turing machine 
-   represents could successfully replicate it. 
-
+1. memory locations: assuming an infinitely long linear structure or system, here is where these symbols might be kept. There are always ways to optimize memory locations and storage space, including through the use of techniques like hashing (because the implementation could not realistically assume infinity).
+2. a central processor, which has a limited number of machine states it can enter. 
+3. The central processor's basic actions on symbols include writing and deleting symbols as well as accessing the next memory position in the linear array. (On the tape, veer to the left or right). 
+4. Two key principles are used in the operation to process the data: the current symbol that is stored at the current memory address, and the scanner's own current machine state. 
+5. A machine table, which, based on the central processor's present machine state and the symbol it is currently accessing, determines which elementary operation it will carry out. 
+   It also determines how those same circumstances affect the machine state of the central processor. 
+6. Human cognitive constraints - lastly, the symbolic system that the Turing computer symbolizes could effectively duplicate it due to our cognitive constraints, which can only yield a certain number of possibilities. 
 @@
 
 ---
@@ -87,7 +82,7 @@ There is a slight difference between computationalism and functionalism.
 As per definition, the mind is the functional organization of the brain, whereas 
 computationalism argues that the functional organization of the brain is computable. 
 ```
-
+    
 Hilary Putnam (1967) introduced CCTM into philosophy. His position with _logical behaviorism_ and _type-identity theory_. 
 
 ---
