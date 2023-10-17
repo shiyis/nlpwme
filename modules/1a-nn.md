@@ -383,7 +383,6 @@ Learning from data:
 
 - Maximum likelihood estimation;
 - Maximum entropy and expectation maximization;
-- Dynamic programming; 
 - Supervised versus unsupervised learning; 
 
 In output computation: 
