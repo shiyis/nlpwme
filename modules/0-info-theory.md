@@ -6,31 +6,30 @@ This blog will touch on the topic of entropy and explain in the simplest and bas
 ❗ This page largely follows the [Analytics Vindya](https://www.analyticsvidhya.com) blog on [Entropy](https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/#h-what-is-a-decision-tree-in-machine-learning)
 
 ### **What Exactly Is Entropy?**
-The word and notion are used in a number of contexts, from classical thermodynamics, where it was first discovered, to the foundations of information theory, to the microscopic descriptions of nature in statistical physics.
+The term and idea are employed in a variety of contexts, including the foundations of information theory, the microscopic explanations of nature in statistical physics, and classical thermodynamics, where they were initially discovered.
 
-It is thought to have significantly influenced the advancement of a number of fields, including physics, chemistry, and biological systems.
+It is believed to have had a big impact on the development of a lot of disciplines, such physics, chemistry, and biological systems.
 
-Ludwig Boltzmann, a physicist, defined entropy as the quantity of microscopic configurations or states of individual atoms and molecules inside a system that are compatible with the macroscopic requirements of the system.
+Entropy is the number of microscopic configurations or states of individual atoms and molecules inside a system that are consistent with the macroscopic requirements of the system, according to physicist Ludwig Boltzmann.
 
-In order to solve the problem of random information losses in telecommunication communications, Bell Labs scientist Claude Shannon developed comparable statistical approaches for estimating microscopic uncertainty and multiplicity in 1948.
+Similar statistical methods for assessing microscopic uncertainty and multiplicity were developed by Bell Labs scientist Claude Shannon in 1948 to address the issue of random information losses in telecommunication communications.
 
 ### **The Origin of Entropy**
-A _Mathematical Theory of Communication_, written by Claude E. Shannon in 1958, is where information theory first made its appearance. In an effort to properly quantify the stochastic nature of lost information in phone-line transmissions, he invented information entropy to measure the amount of uncertainty that a message eliminated. 
+Information theory initially appeared in Claude E. Shannon's 1958 book A _Mathematical Theory of Communication_. He created information entropy, a unit of measure for the amount of uncertainty a message eliminates, in an effort to accurately quantify the stochastic nature of lost information in phone-line transfers. 
 
-Entropy is a measure of how much surprise and data are included in a variable. Information theory defines a random variable's entropy as the average level of uncertainty over all of its possible outcomes. 
+How much surprise and data are there in a variable is measured by entropy. The average degree of uncertainty across all of a random variable's potential outcomes is referred to as entropy in information theory. 
 
-Events with more uncertainty have larger entropies, according to the entropy information theory, which also applies to decision trees and other machine learning models. The idea of entropy can be applied to improve communication, decision-making, and data storage. 
+The entropy information theory, which also holds for decision trees and other machine learning models, states that events with greater uncertainty have larger entropies. Entropy theory can be used to enhance data storage, decision-making, and communication. 
 
 ### **The Decision Tree Algorithm** 
 
-A common supervised learning method in machine learning is the decision tree, which functions as a hierarchical if-then statement based on feature comparison operators. '
+The decision tree, which operates as a hierarchical if-then statement based on feature comparison operators, is a popular supervised learning technique in machine learning.
 
-Finding links between prediction and response variables is what it's utilized for in regression and classification challenges. The Root, Branch, and Leaf nodes of the tree structure depict all outcomes based on particular conditions or rules. 
+It is used to identify relationships between prediction and response variables in regression and classification problems. The tree structure's root, branch, and leaf nodes show all outcomes based on specific conditions or rules. 
 
-The algorithm seeks to produce 'homogenous leaf nodes' with only records of that type in the output variable. However, constraints can occasionally provide contradictory results in the Leaf nodes. 
+'Homogenous leaf nodes' are what the method aims to create when the output variable contains only records of that kind. Constraints occasionally produce results in the Leaf nodes that are in conflict, though. 
 
-The algorithm chooses features and thresholds for the tree by maximizing a loss function with the goal of making the most precise predictions. Decision trees are frequently used for a wide range of applications, from straightforward binary classification to complex decision-making.
-
+In order to produce the best accurate predictions, the algorithm maximizes a loss function when selecting the features and thresholds for the tree. From simple binary categorization to complicated decision-making, decision trees are often utilized for a variety of purposes.
 
 ### **The Connections between These Two**
 

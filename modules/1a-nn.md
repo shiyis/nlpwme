@@ -494,7 +494,7 @@ The corpus-based approach has indeed been quite successful in producing comprehe
 
 Currently, the corpus-based, statistical approaches are still dominant, but there appears to be a growing movement towards integration of formal logical approaches to language with corpus-based statistical approaches in order to achieve deeper understanding and more intelligent behavior in language comprehension and dialogue systems. There are also efforts to **combine connectionist and neural-net approaches with symbolic and logical ones**.
 
-**Reference**
+**References**
 
 _Schubert, Lenhart, "Computational Linguistics", The Stanford Encyclopedia of Philosophy (Spring 2020 Edition), Edward N. Zalta (ed.)_
 
