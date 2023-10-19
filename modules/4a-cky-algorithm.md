@@ -85,7 +85,7 @@ A `well-formed substring table is a data structure containing partial consituten
 _**Example**_
 
 
-> $ \textbf{The brown dog} \\ \\ -------- \\ \\ \text{NP}\to  \text{DT} \, \, \text{Nom} \\ \text{Nom}\to \text{JJ} \,\,  \text{NN} \\ \text{DT}\to \, etc$
+> $ \textbf{The} \textbf{brown} \textbf{dog} \\ \\ -------- \\ \\ \text{NP}\to  \text{DT} \, \, \text{Nom} \\ \text{Nom}\to \text{JJ} \,\,  \text{NN} \\ \text{DT}\to \, etc$
 
 Put into a chart,
 
