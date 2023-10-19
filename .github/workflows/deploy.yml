@@ -51,7 +51,6 @@ jobs:
             using Franklin;
             publish()'
   
-      env: GKSwstype: "100"
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
