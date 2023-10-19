@@ -283,6 +283,8 @@ Most of the maps in the system are not used to represent sentence structure; rat
 
 The remainder of this section describes the use of maps to enforce four constraints: the non-overlap constraint, the case filter, the $\theta$-role, and the empty category principle. 
 
+---
+
 _The non-overlap constraint_ - The non-overlap constraint says that chains may not overlap. Every unit in the chain map has an excitatory link to the corresponding unit in the non-overlap map. (This type of linking between the units in two maps is called lateral linking). 
 
 Thus, the units active in the chain map will activate their counterparts in the non-overlap map. The units in the non-overlap map will in turn have inhibitory diagonal, non-lateral links to their counterparts in the chain map.  
@@ -320,6 +322,7 @@ This has the effect of promoting movement of lexical NPs. As connections from it
 
 This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.
 
+---
 
 <!-- ---
 The resulting schema of the entire model | 
@@ -482,9 +485,9 @@ All of the information from the input sentence will be summarized by encoders, a
 
 But there are drawbacks to recurrent neural networks.
 
-First off, they take a long time to train—extremely long time—and frequently we have to cut training short using methods like truncated back propagation in time.
+> First off, they take a long time to train—extremely long time—and frequently we have to cut training short using methods like truncated back propagation in time.
 
-Second, and more frequently, RNNs have disappearing and ballooning gradient issues. The information at the beginning of the sentence is lost when used to solve NLP issues.
+> Second, and more frequently, RNNs have disappearing and ballooning gradient issues. The information at the beginning of the sentence is lost when used to solve NLP issues.
 
 ❗In a separate blog, these different architects will be introduced in more detail. 
 #### Attention Is All You Need 
