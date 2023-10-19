@@ -49,8 +49,8 @@ figure(figsize=(<span class=hljs-number >8</span>, <span class=hljs-number >6</s
 x = range(<span class=hljs-number >0</span>,<span class=hljs-number >0.5</span>,length=<span class=hljs-number >1000</span>)
 y = range(<span class=hljs-number >0.5</span>,<span class=hljs-number >1</span>,length=<span class=hljs-number >1000</span>)
 
-f(x) =  (x .* log2.(x) .+ (<span class=hljs-number >1</span> .- x) .* log2.(<span class=hljs-number >1</span> .- x)) .+ <span class=hljs-number >0.6661</span>
-g(y) = (.- f(y)) .- <span class=hljs-number >0.6661</span>
+f(x) =  (x .* log2.(x) .+ (<span class=hljs-number >1</span> .- x) .* log2.(<span class=hljs-number >1</span> .- x)) 
+g(y) = (.- f(y)) 
 
 plot(x, f(x) , y, g(y))
 
