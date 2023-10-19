@@ -308,7 +308,7 @@ _The Case Filter Constraint_ - Two major requirements need to be addressed to sa
 
 The chain map and the case-marked row both have excitatory lateral and diagonal priming links respectively to the case-A map. Together they activate the corresponding units in case-A map.
 
-case-A map has columnar excitatory non-lateral links to case-B map as indicated in the second graph above. The case-marked row also has excitatory diagonal connections to the case-B map to show all the case-marked positions.
+Case-A map has columnar excitatory non-lateral links to case-B map as indicated in the second graph above. The case-marked row also has excitatory diagonal connections to the case-B map to show all the case-marked positions.
 
 Case-B map has inhibitory links to the chain map in order to turn off the second case-marked unit/node in the column which already contains one (as indicated in the second graph above).
 
