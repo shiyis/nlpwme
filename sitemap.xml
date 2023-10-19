@@ -87,7 +87,7 @@
 </url>
 <url>
     <loc>index.html</loc>
-    <lastmod>2023-09-27</lastmod>
+    <lastmod>2023-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -104,14 +104,20 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>modules\4a-cky-algorithm\index.html</loc>
+    <lastmod>2023-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>modules\noisy-channel-model\index.html</loc>
-    <lastmod>2023-09-27</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules\1-phil-of-mind\index.html</loc>
-    <lastmod>2023-10-16</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -194,12 +200,6 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>modules\cryptography\index.html</loc>
-    <lastmod>2023-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>modules\mutual-info\index.html</loc>
     <lastmod>2023-09-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -207,13 +207,13 @@
 </url>
 <url>
     <loc>modules\1a-nn\index.html</loc>
-    <lastmod>2023-10-17</lastmod>
+    <lastmod>2023-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>modules\0-info-theory\index.html</loc>
-    <lastmod>2023-10-17</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -249,7 +249,7 @@
 </url>
 <url>
     <loc>modules\1b-mutual-info\index.html</loc>
-    <lastmod>2023-10-15</lastmod>
+    <lastmod>2023-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
