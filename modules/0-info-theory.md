@@ -1,11 +1,14 @@
 @def sequence=["info_theory"]
 
 # Information Theory: The Foundation behind Natural Language Processing
+
 This blog will touch on the topic of entropy and explain in the simplest and basic language of what Information Theory is about and why it is important. 
+
+\toc
 
 ❗ This page largely follows the [Analytics Vindya](https://www.analyticsvidhya.com) blog on [Entropy](https://www.analyticsvidhya.com/blog/2020/11/entropy-a-key-concept-for-all-data-science-beginners/#h-what-is-a-decision-tree-in-machine-learning)
 
-### **What Exactly Is Entropy?**
+### What Exactly Is Entropy?
 The term and idea are employed in a variety of contexts, including the foundations of information theory, the microscopic explanations of nature in statistical physics, and classical thermodynamics, where they were initially discovered.
 
 It is believed to have had a big impact on the development of a lot of disciplines, such physics, chemistry, and biological systems.
@@ -14,14 +17,14 @@ Entropy is the number of microscopic configurations or states of individual atom
 
 Similar statistical methods for assessing microscopic uncertainty and multiplicity were developed by Bell Labs scientist Claude Shannon in 1948 to address the issue of random information losses in telecommunication communications.
 
-### **The Origin of Entropy**
+### The Origin of Entropy
 Information theory initially appeared in Claude E. Shannon's 1958 book A _Mathematical Theory of Communication_. He created information entropy, a unit of measure for the amount of uncertainty a message eliminates, in an effort to accurately quantify the stochastic nature of lost information in phone-line transfers. 
 
 How much surprise and data are there in a variable is measured by entropy. The average degree of uncertainty across all of a random variable's potential outcomes is referred to as entropy in information theory. 
 
 The entropy information theory, which also holds for decision trees and other machine learning models, states that events with greater uncertainty have larger entropies. Entropy theory can be used to enhance data storage, decision-making, and communication. 
 
-### **The Decision Tree Algorithm** 
+### The Decision Tree Algorithm 
 
 The decision tree, which operates as a hierarchical if-then statement based on feature comparison operators, is a popular supervised learning technique in machine learning.
 
@@ -31,7 +34,7 @@ It is used to identify relationships between prediction and response variables i
 
 In order to produce the best accurate predictions, the algorithm maximizes a loss function when selecting the features and thresholds for the tree. From simple binary categorization to complicated decision-making, decision trees are often utilized for a variety of purposes.
 
-### **The Connections between These Two**
+### The Connections between These Two
 
 After reviewing these ideas, it appears that entropy has something to do with the conversion of heterogeneity to homogeneity, and the decision tree algorithm is doing just that. 
 
@@ -53,7 +56,7 @@ By further breaking down the tree, the objective function, which in this case is
 
 
 
-<!-- {{<details title="**Entropy, Gini, and Chi-Square**" open="True">}}
+<!-- {{<details title="Entropy, Gini, and Chi-Square" open="True">}}
 
 As mentioned above, entropy is about the `uncertainty in information`. Refering back to the decision tree, it is a measure of a mixture of different calsses or in our case a mix of different car types in the Y variable. 
 
@@ -65,7 +68,7 @@ Chi-Square: is a statistical test to determine if there is a `significant associ
 
 ---
 
-### **The Chi-Square Formula**
+### The Chi-Square Formula
 A Pearson's Chi-Square test is a statistical test for `categorical data`. 
 
 
@@ -105,7 +108,7 @@ where:
 
 The test ultimately serves to understand and answer the question of whether the frequencies appeared between two categorical variables actually have connections or follow some pattern by comparing the observed frequencies to the frequencies that we might expect to obtain purely by chance. 
 
-### **Coming Back to Decision Trees**
+### Coming Back to Decision Trees
 
 In decision trees, again entropy is a measure of impurity used to evaluates the homogeneity of a dataset. It helps determine the best split for building an informative decision tree model. 
 
@@ -118,7 +121,7 @@ identify the best attribute for partitioning the data.
 
 ```
 
-### **Example Cost Function in A Decision Tree**
+### Example Cost Function in A Decision Tree
 
 Let's imagine that we have a box full of equal quantities of coffee pouches in two flavors: caramel latte and normal cappuccino. You may select either flavor, but only if your eyes are closed. 
 
@@ -138,7 +141,7 @@ P(Coffee pouch == Cappuccino) = 1 - 1 = 0
 
 There is a relationship between heterogeneity and uncertainty; the more heterogeneous the event the more uncertainty. On the other hand, the less heterogeneous, or so to say, the more homogeneous the event, the lesser is the uncertainty. The uncertainty is expressed as Gini or Entropy.
 
-### **How Does Entropy Actually Work?**
+### How Does Entropy Actually Work?
 Claude E. Shannon had expressed this relationship between the probability and the heterogeneity or impurity in the mathematical form with the help of the following equation:
 
 
@@ -148,9 +151,36 @@ The uncertainty or the impurity is represented as the log to base 2 of the proba
 
 This equation is graphically depicted by a symmetric curve as shown below. On the x-axis is the probability of the event and the y-axis indicates the heterogeneity or the impurity denoted by $\text{H(X)}$.
 
+A derived proof is listed [here](http://premmi.github.io/bernoulli-distribution-mean-variance-entropy#:~:text=Proposition%204%20The%20entropy%20H,n(1%E2%88%92%CE%B8))
+
 ---
 
-![](../extras/info_theory/entropy.jpeg)
+
+```
+using PyPlot
+figure(figsize=(8, 6))
+
+x = range(0, 1, length=1000)
+f(x) = .- x .* log2.(x) .- (1 .- x) .* log2.(1 .- x)
+
+xticks(range(0,1,length=5))
+yticks(range(0,1,length=5))
+
+plot(x, f(x))
+xlabel("Pr(x)=1")
+ylabel("H(x)")
+grid("on")
+scatter([0.5],[1])
+savefig(joinpath(@OUTPUT, "ent1.svg")) # hide
+```
+
+
+Below is the graph for a Bernoulli trial (X={0,1}) the graph of entropy vs. Pr(X=1). The highest H(X) = 1 = log(2) 
+
+
+\fig{ent1}
+
+
 
 ---
 The $\text{log}_{2} \text{p}_{i}$ has a very unique property that is when there are only two outcomes say probability of the event $\text{p}_{i}$ is either 1 or 0.50 then in such scenario $\text{log}_{2}  \text{p}_{i}$ takes the following values (ignoring the negative term):
@@ -162,16 +192,57 @@ The $\text{log}_{2} \text{p}_{i}$ has a very unique property that is when there 
 
 Now, the above values of the probability and $\text{log}_{2} \text{p}_{i}$  are depicted in the following manner:
 
----
-![](../extras/info_theory/resize_1.png)
+
+
+```
+using PyPlot
+figure(figsize=(8, 6))
+
+x = range(0.5, 1, length=1000)
+f(x) = .- x .* log2.(x) .- (1 .- x) .* log2.(1 .- x)
+
+
+xticks(range(0.5,1,length=5))
+yticks(range(0,1,length=5))
+
+plot(x, f(x))
+
+ylabel("H(x)")
+grid("on")
+savefig(joinpath(@OUTPUT, "ent2.svg")) # hide
+
+
+```
 
 ---
 
-Entropy in Machine Learning
-the catch is when the probability, $\text{p}_{i}$ becomes 0, then the value of $\text{log}_{2}  \, \text{p}_{0}$ moves towards infinity and the curve changes its shape to:
+\fig{ent2}
+
 
 ---
-![](../extras/info_theory/resize_2.png)
+
+Due to the properties of log, When the probability, $\text{p}_{i}$ becomes 0, then the value of $\text{log}_{2}  \, \text{p}_{0}$ moves towards infinity and the curve changes its shape to:
+
+
+
+```
+using PyPlot
+figure(figsize=(8, 6))
+
+x = range(0,0.5,length=1000)
+y = range(0.5,1,length=1000)
+
+f(x) =  (x .* log2.(x) .+ (1 .- x) .* log2.(1 .- x)) .+ 0.6661
+g(y) = (.- f(y)) .- 0.6661
+
+plot(x, f(x) , y, g(y))
+
+yticks([])
+ylabel("H(x)")
+savefig(joinpath(@OUTPUT, "ent3.svg")) # hide
+
+```
+\fig{ent3}
 
 ---
 The entropy or the impurity measure can only take value from 0 to 1 as the probability ranges from 0 to 1 and hence, we do not want the above situation. So, to make the curve and the value of  $\text{log}_{2} \text{p}_{i}$ back to zero, we multiply $\text{log}_{2}  \text{p}_{i}$ with the probability i.e. with $\text{p}_{i}$ itself.
@@ -182,12 +253,8 @@ $$\text{H(X)} = - Σ (\text{p}_{i} * \text{log}_{2} \, \text{p}_{i})$$
 
 Now, this expression can be used to show how the uncertainty changes depending on the likelihood of an event.
 
-The curve finally becomes and holds the following values:
+The curve finally becomes the first graph.
 
----
-![](../extras/info_theory/resize_3.png)
-
----
 This scale of entropy from 0 to 1 is for binary classification problems. For a multiple classification problem, the above relationship holds, however, the scale may change.
 
 Calculation of Entropy in Python
@@ -200,7 +267,7 @@ where,
 p_i = Probability of Y = 1 i.e. probability of success of the event
 q_i = Probability of Y = 0 i.e. probability of failure of the event
 ```
-#### **Case 1**
+#### Case 1
 | Coffee flavor | Quantity of Pouches | Probability |
 | --------| -------- | -------- |
 |  Caramel Latte | 7   | 0.7   |
@@ -210,7 +277,7 @@ q_i = Probability of Y = 0 i.e. probability of failure of the event
 $$ \text{H(X)} = - [(0.70 * \text{log}_{2} (0.70)) + (0.30 * \text{log}_{2} (0.30))] = 0.88129089 $$
 
 This value 0.88129089 is the measurement of uncertainty when given the box full of coffee pouches and asked to pull out one of the pouches when there are seven pouches of caramel latte flavor and three pouches of cappuccino flavor.
-#### **Case 2**
+#### Case 2
 | Coffee flavor | Quantity of Pouches | Probability |
 | --------| -------- | -------- |
 |  Caramel Latte | 5   | 0.5   |
@@ -219,7 +286,7 @@ This value 0.88129089 is the measurement of uncertainty when given the box full 
 
 $$ \text{H(X)} = - [(0.50 * \text{log}_{2} (0.50)) + (0.50 * \text{log}_{2} (0.50))] = 1 $$
 
-#### **Case 3**
+#### Case 3
 | Coffee flavor | Quantity of Pouches | Probability |
 | --------| -------- | -------- |
 |  Caramel Latte | 10   | 1   |
@@ -232,7 +299,7 @@ $$ \text{H(X)} = - [(1.0 * \text{log}_{2} (1.0)) + (0 * \text{log}_{2} (0))] ~= 
 
 In scenarios 2 and 3, can see that the entropy is 1 and 0, respectively. In scenario 3, when we have only one flavor of the coffee pouch, caramel latte, and have removed all the pouches of cappuccino flavor, then the uncertainty or the surprise is also completely removed and the aforementioned entropy is zero. We can then conclude that the information is 100% present.
 
-### **Use of Entropy in Decision Tree**
+### Use of Entropy in Decision Tree
 
 As we have seen above, the cost function for decision trees is to reduce heterogeneity in the leaf nodes. In order to obtain the greatest possible homogeneity—or, to put it another way, the greatest reduction in entropy inside the two tree levels—when the data is split into two, we must identify the attributes and within those attributes the threshold.
 
@@ -247,7 +314,7 @@ The pattern in the data is known as information gain, which is also known as ent
 |  Case 2 | 1  | 0  |
 |  Case 3 | 0  | 1  |
 
-### **Estimation of Entropy and Information Gain at Node Level**
+### Estimation of Entropy and Information Gain at Node Level
 
 We have the following tree with a total of four values at the root node that is split into the first level having one value in one branch (say, Branch 1) and three values in the other branch (Branch 2). The entropy at the root node is 1.
 
@@ -268,14 +335,14 @@ $$ \text{Gain} = 1 - (3/4 * 0.9184) - (1/4 *0) = 0.3112 $$
 
 ---
 
-### **How Is Entropy Important to Our Discussion?**
+### How Is Entropy Important to Our Discussion?
 
 Entropy evaluates the "impurity or randomness present in a dataset" in machine learning. In decision tree methods, it is frequently used to assess the homogeneity of data at a specific node. A more varied group of data is indicated by a higher entropy score. 
 
 Entropy can be used by decision tree models to choose the optimal plots for making knowledgeable judgments and creating precise predictive models. 
 
 
-#### **Conclusion**
+#### Conclusion
 The amount of surprise (or uncertainty) associated with the value of a random variable or the result of a random process is measured by information entropy, often known as Shannon's entropy. Its importance in the decision tree comes from the fact that it enables us to calculate the heterogeneity or impurity of the target variable. The child nodes are then formed in such a way that their combined entropy must be lower than that of the parent node in order to obtain the highest possible level of homogeneity in the response variable.
 
 

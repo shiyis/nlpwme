@@ -230,13 +230,17 @@ Yet, hybrid mechanisms were put out by different teams to mediate such clashes. 
 
 This hybrid architecture might have had a say to how human brains actually process information, which is that symbolic processing might actually be present in the brain. 
 
-> Also one interesting discovery about the connectionism representation of information processing inside the brain might have a good give away of how brain actually processes information. That is, instead of a local representation of an individual or specific informational unit, the learning mechanism is more so universally distributed across different (hidden) units. To top it off, the new way of representing information's sub-symbolic nature - where there were no intrinsic properties of representations that determine their relationships with other symbols - might solve a philosophical conundrum in representations of meaning. In contrast, a distributed representation preserves patterns across the net that could allow comparison and good preservation when parts go amok. 
+> Also one interesting discovery about the connectionism representation of information processing inside the brain might have a good give away of how brain actually processes information. 
+
+> That is, instead of a local representation of an individual or specific informational unit, the learning mechanism is more so universally distributed across different (hidden) units. To top it off, the new way of representing information's sub-symbolic nature - where there were no intrinsic properties of representations that determine their relationships with other symbols - might solve a philosophical conundrum in representations of meaning. 
+
+> In contrast, a distributed representation preserves patterns across the net that could allow comparison and good preservation when parts go amok. 
 
 However, the classicists argue that connectionists approach lack proper explanation to the important intrinsic property of human cognition - **systematicity** and **productivity**. This brings the conversation back to language processing; different from other types of artificial intelligence tasks such as image and audio processing, because of the associative nature of connectionism, with distributed representations, these tasks could be managed and tackled relatively with ease, language processing needs a more complex system to account for its intrinsic nature of systematicity. 
 
 This is the hot debate between these two different schools of thoughts with the conclusion that connectionism might not be able to account for higher human cognition; the success could only come about if the two paradigms combine. 
 
-**Reference**
+**References**
 
 _Rescorla, Michael, "The Computational Theory of Mind", The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.)_
 

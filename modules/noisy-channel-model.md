@@ -23,11 +23,11 @@ Hi there, if you have come across this blog and have the patience to go through 
 
 It's a system designed to capture how information gets trasmitted.  It's also a mathematical or probabilistic model developed to capture the way signals get transmitted. 
 
-### THE Most Important Master's Thesis In The 20ieth Century
+### One of The Most Important Master's Theses In The 20th Century
 
 A Symbolic Analysis of Relay and Switching Circuits. Shannon's paper examines symbolic logic of 19th century English mathematician George Boole, and presents how the boolean logic could have a profound impact on electronic circuit design. Which is the entropy equation 
 
-$$\text{H} = -\sum p_i \text{log}_{i}  p_i$$
+$$\text{H} = -\sum \text{p}_{i} \text{log}_{i}  \text{p}_{i}$$
 
 The equation we have discussed in another blog defines the information source in terms of the probability distribution of symbols being produced by that information source. 
 

@@ -201,4 +201,8 @@ h2 {
     margin-left: 0.5em;
 }
 
-  /* .button:hover{ background-color: #555; }
+  /* .button:hover{ background-color: #555; }*/
+
+
+img[alt=cky] { width: 360px; }
+img[alt=cky_tbl] { width: 360px; }

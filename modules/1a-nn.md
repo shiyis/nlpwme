@@ -12,29 +12,37 @@ That being said, the language that we used to describe our mental experience is 
 
 ### What Does It Mean To Have A Mental Language?
 
-Continuing the discussion LOTH or the _The Language Of Thought Hypothesis_, again one can postulate that it's closely correlated with the mental representation (drawing reference from _the representational theory of mind_), and also as per the context of current discussions around understanding how the brain actually works (at least w.r.t the folk psychology) it confirms that _Mentalese_ exists within the scope of research. These "mental representations" are called propositional attitudes and borne out in the form of a natural language as beliefs, desires, intentions, and fears. 
+Continuing the discussion LOTH or the _The Language Of Thought Hypothesis_, again one can postulate that it's closely correlated with the mental representation (drawing reference from _the representational theory of mind_), and also as per the context of current discussions around understanding how the brain actually works (at least w.r.t the folk psychology).
 
-The exactness of a mental language or a mental state is yet unknown. However, in folk psychology, these propositional attitudes are a direct reflection and serve a distinctive function to these mental images, in case the locutionary intends that the proposition A* gets assign to these mental states S. This might be fundamental for inferential reasoning, assuming the importance of how it's tied to relevant actions. The mental representations S here are put into "boxes" (a "belief box" or a "desire box"). That being said,
+It confirms that _Mentalese_ exists within the scope of research. These "mental representations" are called propositional attitudes and borne out in the form of a natural language as beliefs, desires, intentions, and fears. 
+
+The exactness of a mental language or a mental state is yet unknown. However, in folk psychology, these propositional attitudes are a direct reflection and serve a distinctive function to these mental images, in case the locutionary intends that the proposition A* gets assign to these mental states S. 
+
+This might be fundamental for inferential reasoning, assuming the importance of how it's tied to relevant actions. The mental representations S here are put into "boxes" (a "belief box" or a "desire box"). That being said,
 
 > Someone who *believes* S stands in a psychologically important relation to the proposition expressed by S. 
 
 Another important point to bring up here pertaining to the discussion of systematically theorizing the representational theory of mind or what constitutes as a mental language is that token-and-type has to come into play. To be more specific,
 
-> the type is the mental representation itself (repeatable), and the tokens are reflected as the mental events or could be neurological. And thought processes are casual sequences of tokenings of mental representations.
+> the **type** is the mental representation itself (repeatable), and the tokens are reflected as the mental events or could be neurological. And thought processes are casual sequences of **tokenings** of mental representations.
 
 So, to talk about the actualization of a mental image in such case, the process goes as,
 
 @@colbox-blue
-First, the occurrence where I have an intention of doing something; 
-And then second the enduring state which is reflected as my long standing belief of something. 
-With deductive reasoning and inference (I transition from believing* the premises to believing the conclusion) together as a package, It was postulated that the RTT or the representational theory of mind. And the propositional attitudes reflect these mental images which are the direct objects and constitute the scope of a thought process. 
+- First, the occurrence where I have an intention of doing something; 
+
+- And then second the enduring state which is reflected as my long standing belief of something. 
+
+- With deductive reasoning and inference (I transition from believing* the premises to believing the conclusion) together as a package, the propositional attitudes reflect these mental images which are the direct objects and constitute the scope of a thought process. 
+
 @@
 
 However, it's also brought to attention that according to discussion, RTT requires qualification, meaning it needs context to be thoroughly discussed. Put simply, the mind could postulate an infinite amount of thoughts, but the important ones are qualified or vetted through propositional attitudes that are able to have an effect. Or intentional causation could only come about where there's an explicit representation.
 
-@@colbox-blue
+
 In a nutshell, to discuss in more seriousness, it's important to distinguish sharply between mental representations and rules governing the manipulation of mental representations. Similarly applicable to deductive reasoning where we often follow rules of deductive inference without explicitly representing the rules. Or we often as native speakers of a language follow its inherent syntax without explicitly stating the rules that govern it. 
-@@
+
+---
 
 ### How Are Above Premises Important To Our Discussions of Current Natural Language Processing Research? 
 
@@ -57,7 +65,11 @@ In the modern era, CCTM is however excluded in the discussion. only RTT + COMP i
 
 ### Deep Learning and Neural Networks Continued
 
-Now we could finally come back to discuss deep learning and the neural network models. In the 1980s, connectionism gained traction as an alternative to the Turing style computational model. The idea is that instead of treating the mental states as having memory access locations with a central processor and a bunch of strings and symbols ready to be manipulated, the connectionist approach treats them as more primitive. That said, under such condition, there are activations of neurons or so called "weight units" distributed and connected across the system, functioning analogously to the real synapses to our brain. 
+Now we could finally come back to discuss deep learning and the neural network models. In the 1980s, connectionism gained traction as an alternative to the Turing style computational model. 
+
+> The idea is that instead of treating the mental states as having memory access locations with a central processor and a bunch of strings and symbols ready to be manipulated, the connectionist approach treats them as more primitive. 
+
+That said, under such condition, there are activations of neurons or so called "weight units" distributed and connected across the system, functioning analogously to the real synapses to our brain. 
 
 These newer and modern systems were built in hope that they could emulate the actual brain activity and could appreciate that
 
@@ -65,11 +77,15 @@ These newer and modern systems were built in hope that they could emulate the ac
 
 To accept this position, connectionism has to accept RTT + COMP. Eliminativist connectionists might completely reject this position, and on the other hand implementationist connectionism might accept it in order to endorse the Turing style computational model. 
 
-Some literature later debated around the necessity of commitment to productivity and systematicity of thoughts. Supporters still seek to illuminate the traditional style of computational system. However, objections in entirety go against the need of adopting the representational theory. Another stream of objections go against the fact that the productivity and systematicity nature of language of thought had been greatly exaggerated. The last steak of objections posits that one can still create models that reflect the compositionality and the internal structures without adopting the Turing style model.
+Some literature later debated around the necessity of commitment to productivity and systematicity of thoughts. Supporters still seek to illuminate the traditional style of computational system.
+
+     However, objections in entirety go against the need of adopting the representational theory. Another stream of objections go against the fact that the productivity and systematicity nature of language of thought had been greatly exaggerated. The last steak of objections posits that one can still create models that reflect the compositionality and the internal structures without adopting the Turing style model.
 
 The connectionists contend that instead of a concatenated structure, distributed representations could well capture the integral parts of LOT. However, doubt was raised around the idea that if we consider concatenative constituency structure is only one of the realizations of the _productivity_ and _systematicity_ of the LOT, then these schools of neural models would still be considered as part of the classicism. 
 
 > broadly speaking, classicists would appreciate the structural representations while the connectionists would appreciate the more distributed representations. 
+
+---
 
 #### Naturalizing Intentionality Through HF Over Natural Language _Learning_ vs _Understanding_
 
@@ -93,6 +109,9 @@ similarly to words (lexical items in a natural language), we can hardly define w
 1. to explain in naturalistically acceptable terms what it is to bear psychological relation A* to mental representation S.
 2. to explain in naturalistically acceptable terms what it is for mental representation S to mean that p.
 ```
+---
+
+#### On the Type-Token Relation of Mental Representations
 
 By treating these mental processes as type-token relations, we are able to provide a solution. 
 
@@ -187,9 +206,11 @@ _The $\theta$-Role_ - similar constraint is the $\theta$-criterion. In addition 
 
 _Movement-$\alpha$_ - During transformation, the d-structure turns into the s-structure which reflects (more or less) the actual form of the generated sentence. This movement is constrained by restrictions on the positions, items moved, and other properties of a chain. This is very crucial to pay attention to if a language modeling task needs to done addressing such a movement. 
 
-❓Why is this important to bring up here? As I have understood it, this is exactly a functionalism reductionism approach of mapping a natural language, in the sense that the constituent parts of an entire phrasal structure is the simpler reduction of the entire sentence as a whole. 
+❓Why is this important to bring up here? 
 
-And The correspondences between cognitive linguistics and connectionism are intriguing. Cognitive linguists view grammar as a schematic coding system that is induced from a very large number of pairings of form with meaning. The account of polysemy points to the need for a mechanism that can induce categories from a set of examples, learn to extract rules from rule-governed data, and resolve conflicts in rules by constraint satisfaction. 
+As I have understood it, this is exactly a functionalism reductionism approach of mapping a natural language, in the sense that the constituent parts of an entire phrasal structure is the simpler reduction of the entire sentence as a whole. 
+
+And the correspondences between cognitive linguistics and connectionism are intriguing. Cognitive linguists view grammar as a schematic coding system that is induced from a very large number of pairings of form with meaning. The account of polysemy points to the need for a mechanism that can induce categories from a set of examples, learn to extract rules from rule-governed data, and resolve conflicts in rules by constraint satisfaction. 
 
 
 ##### Addressing The Issues with Non-Autonomy Of Syntax And Non-compositionality of Semantics
@@ -197,9 +218,9 @@ And The correspondences between cognitive linguistics and connectionism are intr
 The grammar of a language is conceived by cognitive linguistics to be a pair of utterances and their meanings, where 'meaning' is broadly conceived to encompass all evoked conceptualization, including communicative function and extralinguistic aspects of the speech act. 
 
 
-Form-meaning pairs (also called 'grammatical constructions' or 'constructional schemas') can be highly specific, as happens with `idiosyncratic expressions` whose conditions of form and usage must be learned on a case-by-case basis, or they can be schematizations over large numbers of individual pairings. 
+_Form-meaning pairs_ (also called 'grammatical constructions' or 'constructional schemas') can be highly specific, as happens with `idiosyncratic expressions` whose conditions of form and usage must be learned on a case-by-case basis, or they can be schematizations over large numbers of individual pairings. 
 
-These constructional schemas are the fundamental descriptive and explanatory device in cognitive linguistics; discovering the principles which constrain regularities in the form-meaning pairs of a language is understood to be the goal of linguistic research. 
+These constructional schemas are the fundamental descriptive and explanatory device in cognitive linguistics; discovering the principles which constrain regularities in the _form-meaning pairs_ of a language is understood to be the goal of linguistic research. 
 
 
 Under this interpretation of a grammar, all grammatical forms have a conceptual basis, although often a highly _abstract one_. There is thus no clear separation between grammar, semantics, and pragmatics, since semantic and pragmatic structures are included in the constructional schemas. 
@@ -210,7 +231,7 @@ One typical example will be to use "peripheral constructions" to cover idiosyncr
 ###### The Intuitive Imposition in Semantics 
 On the other hand, the non-compositionality of semantics indicate that the meaning of an utterance is the mental conceptualization it evokes.
 
-Cognitive linguists emphasize the search for principles which will facilitate an explanation of the range of form-meaning pairs in a given language. 
+Cognitive linguists emphasize the search for principles which will facilitate an explanation of the range of _form-meaning pairs_ in a given language. 
 
 ❓Why does a specific combinations of words evoke one particular schematic conception rather than another? Why are some word-combinations regarded as ill-formed? How can we describe this evoked conceptualization in a useful manner? 
 

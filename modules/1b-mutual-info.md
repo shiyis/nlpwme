@@ -10,7 +10,9 @@ Because it can assess non-linear relationships as well as linear ones, the mutua
 
 Pointwise mutual information (PMI), sometimes known as point mutual information, is a measure of association used in statistics, probability theory, and information theory. It contrasts the likelihood of two events happening simultaneously with the likelihood of the same events occurring independently.
 
-PMI, particularly in its positive pointwise mutual information variant, has been referred to as "one of the most important concepts in NLP" because it "draws on the intuition that the best way to weigh the association between two words is to ask how much more the two words co-occur in a corpus than we would have a priori expected them to appear by chance."
+PMI, particularly in its positive pointwise mutual information variant, has been referred to as `one of the most important concepts in NLP` sbecause it draws on the intuition that
+
+> the best way to weigh the association between two words is to ask how much more the two words co-occur in a corpus than we would have expected them to appear by chance.
 
 Robert Fano first proposed the idea in 1961 under the label "mutual information," however the phrase is now more commonly used to refer to a related measure of reliance between random variables: The average PMI of all potential events is referred to as the mutual information (MI) of two discrete random variables.
 
@@ -26,7 +28,7 @@ Mutual information is theoretically plagued by two issues: In contrast to conven
 
 a different version of mutual information is provided that gets over both issues: Weighted Average Pointwise Mutual Information (WAPMI). We offer both strong theoretical and empirical support for WAPMI. 
 
-Additionally, it's demonstrated that WAPMI possesses a useful quality that other feature metrics do not, namely the ability to automatically choose the appropriate feature set size by maximizing an objective function. This can be accomplished using a straightforward heuristic rather than requiring expensive techniques like EM and model selection.
+Additionally, it's demonstrated that WAPMI possesses a useful quality that other feature metrics do not, more specifically _the ability to automatically choose the appropriate feature set size by maximizing an objective function_. This can be accomplished using a straightforward heuristic rather than requiring expensive techniques like EM and model selection.
 
 #### The Pseudocode of WAPMI 
 
