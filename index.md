@@ -8,10 +8,9 @@ Hi, I’m Shiyi. Welcome to my technical blog. I will be documenting my journey 
 Areas that I have dabbled and focused in, 
 ```
 → General Linguistics
-→ Sociolinguistics
 → Symbolic Computational Linguistics
 → Statistical Natural Language Processing
-→ State of the Art Language Modeling Tasks Benchmarking
+→ State of the Art Large Language Modeling
 ```
 
 ---
