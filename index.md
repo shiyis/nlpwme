@@ -104,7 +104,7 @@ Below are some important notes about the **historical timeline**:
     - [Subtopic 6: Word Net](./modules/word-net)
     - [Subtopic 7: Universal Dependencies](./modules/universal-dependencies)
 - Topic 2b: Connectionism
-    - [Subtopic 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
+    - [Subtopic 2a: Tensors](./modules/2a-pytorch-tensors)
     - [Subtopic 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
     - [Subtopic 3: Loss functions for classification](./modules/3-loss-functions-for-classification)
     - [Subtopic 4: Optimization for Deep Learning](./modules/4-optimization-for-deep-learning)
