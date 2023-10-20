@@ -44,8 +44,27 @@ Therefore, this can be written as the weighted average KL-divergence between the
 
 $$I(W:C) = \sum_{j=1}^{|C|} \text{p}({c}_{j}) \text{D} (\text{p}(\text{W}|\text{c}_{j})|| {\text{p} (\text{W})})$$
 
+Now we just need a binary feature to indicate whether the next word in a document is $w_{t}$, namely $p(W_{t} = 1) = p(W = w_{t})$
 
-#### The Pseudo Code of WAPMI
+$$ MI(w_{t}) := I(W_{t}; C) = \sum_{j=1}^{|C|} \sum_{x=0,1} p(W_{t} = x, c_{j}) log \frac{p(W_{t} = x | c_{j})}{p(W_{t} = x)} $$
+
+However, the problem with above formula is that contrary to its assumption of $w_{t}$ as an independent random variable, in fact $\sum_{t=1}^{|V|} p(W_{t}=1)=1$, so to avoid this problem point-wise mutual information is introduced where the formula (2) sums over word scores instead; demonstrated as follows,
+
+$$PMI(w_{t}) := \sum_{j=1}^{|C|} p(w_{t}, c_{j}) \text{log} \frac{p(w_{t} | c_{t})}{p(w_{t})}$$
+
+Another problem arises where all training documents in one class is treated according to class-conditional probabilities as one big document, so the formula is impacted by individual document length especially the larger ones. To resolve this problem, instead using class-conditional distribution, the document-conditional probabilities ($p(w_{t}, c_{j}) = n(w_{t},d_{i})/|d_{i}|$)  
+are in leu used. Together as a whole, 
 
 
-#### The Actual Code of WAPMI 
+$$ WAPMI(w_{t}) := \sum_{j=1}^{|C|} \sum_{d_{i} \in c_{j}} \alpha_{i} p(w_{t} | d_{i}) log \frac{p(w_{t}|c_{j})}{p(w_{t})}$$
+
+where the weight coefficient $\alpha_{i}$ could be calibrated to account for 
+
+- $\alpha_{i} = p(c_{j}) · |d_{i}|/\sum{d_{i} \in c_{j}} |d_{i}|$. This gives each document a weight proportional to its lengths. 
+
+- $\alpha_{i} = 1/ \sum_{j=1}^{|C|} |c_{j}|$. This gives equal weight to all documents. This corresponds to an evaluation measure that counts each misclassified document as the same error.
+
+- $a_{i} = 1/(|c_{j}| · |C|)$ where $d_{i} \in c_{j}$. This gives equal weight to the classes by normalizing for class size, i.e. documents from small categories receive higher weights.
+
+
+Here is an example of the [Naive Bayes Mutual Information Classifier](https://towardsdatascience.com/multinomial-na%C3%AFve-bayes-classifier-using-pointwise-mutual-information-9ade011fcbd0)

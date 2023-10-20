@@ -111,7 +111,6 @@ Below are some important notes about the **historical timeline**:
     - [Subtopic 5: Stacking layers](./modules/5-stacking-layers)
     - [Subtopic 6: Convolutional Neural Network](./modules/6-convolutional-neural-network)
     - [Subtopic 7a: Embedding layers and dataloaders](./modules/7a-embedding-layers-dataloaders)
-    - [Subtopic 7b: Collaborative Filtering](./modules/7b-collaborative-filtering)
     - [Modules 8: Autoencoders and Transformers](./modules/8-autoencoders)
     - [Subtopic 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
     - [Subtopic 10: Recurrent Neural Networks](./modules/10a-recurrent-neural-networks)
