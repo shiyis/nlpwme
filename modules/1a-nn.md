@@ -239,7 +239,7 @@ Traditional attempts to understand the meaning of natural language utterances ha
 
 ```
 (1) how can the meanings of words be characterized.
-(2) how are word meaning combined to yield sentence meaning. 
+(2) how are word meanings combined to yield sentence meaning. 
 ```
 
 The meaning of a word is a set of semantic features used to determine its real-world referent, and sentence meaning is an aggregation of these meanings;the meaning of _bachelor_ would be equated with features such as [HUMAN, MALE. UNMARRIED]. This view has been beneficial in linguistic and psychological research, but has faced challenges such as identifying prime features for concrete nouns and some verbs, and polysemy.
