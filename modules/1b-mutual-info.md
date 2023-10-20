@@ -30,8 +30,22 @@ a different version of mutual information is provided that gets over both issues
 
 Additionally, it's demonstrated that WAPMI possesses a useful quality that other feature metrics do not, more specifically _the ability to automatically choose the appropriate feature set size by maximizing an objective function_. This can be accomplished using a straightforward heuristic rather than requiring expensive techniques like EM and model selection.
 
-#### The Pseudocode of WAPMI 
+#### The Formula of MI
+
+$$I(W:C) = \sum_{t=1}^{|V|} \sum_{j=1}^{|C|} \text{p}(\text{w}_{t}, \text{c}_{j}) \text{log} \frac{\text{p}(\text{w}_{t}|\text{c}_{j})} {\text{p} (\text{w}_{t})}$$
 
 
-    
+
+This could be written as a weighted sum of Kullback-Leibler or KL divergences, because this is the measure of information gain between two probability disitributions. _p_ and _q_ is defined as $D(p || q) = \sum_{x} p(x) \text{log} \frac{p(x)}{q(x)}$. 
+
+Therefore, this can be written as the weighted average KL-divergence between the class-conditional distribution of words and the global (unconditioned) distribution in the entire corpus: 
+
+
+
+$$I(W:C) = \sum_{j=1}^{|C|} \text{p}({c}_{j}) \text{D} (\text{p}(\text{W}|\text{c}_{j})|| {\text{p} (\text{W})})$$
+
+
+#### The Pseudo Code of WAPMI
+
+
 #### The Actual Code of WAPMI 

@@ -48,7 +48,7 @@ Since the discrete nature of the system, it's concerned with its competency of w
 The Turing machine also proved the existence of a _Universal Turing Machine_ (UTM), which results in the ultimate development of current computer logic and system. More importantly, a personal computer can mimic any Turing machine _until it exhausts its limited memory supply_. 
 
 
-#### The Representational Theory of Mind vs The Classical Computational Theory of Mind
+### The Representational Theory of Mind vs The Classical Computational Theory of Mind
 
 As opposed to type-identity theory, mental states are brain states. Putnam proposed a different view that mental states are [_multiply realizable_](https://plato.stanford.edu/entries/multiple-realizability/): the same mental state can be realized by diverse physical systems, including not only terrestrial creatures but also hypothetical creatures. 
 
@@ -80,7 +80,7 @@ There is a slight difference between computationalism and functionalism.
 
 ```
 As per definition, the mind is the functional organization of the brain, whereas 
-computationalism argues that the functional organization of the brain is computable. 
+computationalism argues that the functional organization of the brain is computable so namely the mind is computable.
 ```
     
 Hilary Putnam (1967) introduced CCTM into philosophy. His position with _logical behaviorism_ and _type-identity theory_. 
@@ -90,9 +90,9 @@ Hilary Putnam (1967) introduced CCTM into philosophy. His position with _logical
 @@colbox-blue
 
 ####  Logical Behaviorism vs Type-Identity Theory
-Logical behaviorism holds that all thoughts, perceptions, and other mental processes can be classified in the same way that mathematics can be explained in terms of formal logic, using concepts like set theory, and can then be tested and scientifically explained using behaviorist principles, according to which everything is made up of stimulus-response pairs with various types of origins and reinforcement.
+Logical behaviorism holds that all thoughts, perceptions, and other mental processes can be classified in the same way that mathematics can be explained in terms of formal logic, using concepts like set theory, and can then be **tested and scientifically explained using behaviorist principles**, according to which everything is made up of **stimulus-response** pairs with various types of origins and reinforcement.
 
-According to type-identity theory, the experience of something is considered to be a brain process that is occurring not merely as a mental state. Identity theorists additionally contend that brain states are just physical, which contradicts the irreducible non-physical aspects known as "qualia" of the brain, such as desires and beliefs.
+According to type-identity theory, the experience of something is considered to be a brain process that is occurring not merely as a mental state. Identity theorists additionally contend that brain states are just **physical**, which contradicts the irreducible non-physical aspects known as "qualia" of the brain, such as desires and beliefs.
 @@
 
 ---
@@ -121,8 +121,12 @@ The debate about what human beings are really have been going on for centuries. 
 ####  What Does It Mean By Consciousness? 
 The consciousness of brutes would appear to be related to the mechanism of their body simply as a collateral product of its working, and 
 to be as completely without any power of modifying that working as the steam-whistle which accompanies the work of a locomotive engine is
-without influence upon its machinery. Their volition, if they have any, is an emotion indicative of physical changes, not a cause of such 
-changes. […] It is quite true that, to the best of my judgment, the argumentation which applies to brutes holds equally good of men; 
+without influence upon its machinery. 
+
+_Their volition, if they have any, is an emotion indicative of physical changes, not a cause of such 
+changes. […]_
+
+It is quite true that, to the best of my judgment, the argumentation which applies to brutes holds equally good of men; 
 and, therefore, that all states of consciousness in us, as in them, are immediately caused by molecular changes of the brain-substance.
 It seems to me that in men, as in brutes, there is no proof that any state of consciousness is the cause of change in the motion of 
 the matter of the organism.
@@ -132,7 +136,9 @@ the matter of the organism.
 
 The primal instincts vs. the unknown. The necessity  of consciousness has been a hotly debated topic. A few primal physical responses of humans have indicated that humans could task being an automata without these familiar yet mysterious qualia. For example, humans could drive while talk, have fight-and-flight responses without being aware of it, and blindsight which are sensational responses to visual stimuli without actually experiencing the effects visually. 
 
-Lastly, onto the discussions about pain. It seems that the presence of pain is superfluous. We need not to have to experience pain to understand to the risk of injury and be avoidance of danger. So why isn't this indication enough for such a phenomenon enough to explain what these "nomologically dangling" ideas? And what exactly is the purpose of and function of consciousness? 
+Lastly, onto the discussions about pain. It seems that the presence of pain is superfluous. We need not to have to experience pain to understand to the risk of injury and be avoidance of danger. 
+
+❓ So why isn't this indication enough for such a phenomenon enough to explain what these "nomologically dangling" ideas? And what exactly is the purpose of and function of consciousness? 
 
 One answer to the questions argues that they are not merely physical,it's the nature's decision bestowed upon us with free will. It lets us to decide with this warning sign. It's more so a trade-off handed over to our free will. We experience discomfort caused by external stimulation and then we are given the option to consciously decide what we are going to do with it. 
 
