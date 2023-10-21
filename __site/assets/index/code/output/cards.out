@@ -32,26 +32,14 @@ _Artificial Intelligence_: In the summer of 1956, researchers were called togeth
   These were simple systems that worked in single domains mainly by a combinations of pattern matching and keybord search with simple heuristics for reasoning and question-answering. By the late 60s more formal logical systems were developed.
 
   }
-
-  \card{Paradigms Develop}{Baysian method was beginning to be applied to the problem of optical character recognition.
-
-Bledsoe and Browning (1959) built a Bayesian system for text-recognition that used a large dictionary and computed the likelihood of each observed letter sequence given each word in the dictionary by multiplying the likelihoods for each letter.
-
-Mosteller and Wallace (1964) applied Bayesian methods to the problem of authorship attribution on the Federalist papers.
-
-The work on logic and reasoning, exemplified by Newell and Simon's work on the Logic Theorist and the General Problem Solver, was the primary emphasis of the new area.
-
-_Early systems for comprehending natural language were developed at this era._
-
-These were straightforward systems that operated in a single domain primarily using a combination of pattern matching, keyboard search, and basic heuristics for inference and problem-solving. More formal logical systems had been created by the late 1960s.
-}
 @@
 
 
 
 @@row
 \card{Paradigms Develop}{
-The Baysian approach was starting to be used to tackle the optical character recognition issue.
+The Baysian approach was starting to be used to tackle the optical character recognition issues.
+
 By multiplying the likelihoods for each letter, Bledsoe and Browning (1959) created a Bayesian text-recognition system that made use of a large dictionary to compute the likelihood of each observed letter sequence given each word in the dictionary.
 Bayesian techniques were used by Mosteller and Wallace (1964) to address the issue of authorship attribution on the Federalist papers.
 
