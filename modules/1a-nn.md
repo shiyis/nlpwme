@@ -57,7 +57,7 @@ Ancient LOT proponents used syllogism and propositional logic to analyze the sem
 
 Logical structure only constitutes partly the complex representations, accompanied with other non-sentential formats including graphs, maps, diagrams, etc. They could also be manifested as ideas and imagistic forms. In fact, logic plays no role in such constructions only loosely connected structures did. Schematic mental maps in relation to actual concrete maps best describe these kinds of mental images and representations. Therefore, pluralism was adopted by some to analyze thoughts, including but not limited to those non-sentential formats mentioned above. 
 
-However illogical these perceptual mental representations are compositional and complex. They also display systematicity. Supporters of LOT will posit that _The Computational Theory of Mind_ serves to produce the language of thought. Together RTT + COMP + CCTM (The Representational Theory of Mind, The Compositionality of Mental Processes, and The Classical Computational Theory of Mind) forges the LOTH. And our cognitive inferential systematicities provide the space for the above hypothesis to stand. However, the system considers only the syntactic importance without the presence of semantic significance. 
+However illogical these perceptual mental representations are compositional and complex. They also display systematicity. Supporters of LOT will posit that _The Computational Theory of Mind_ serves to produce the language of thought. Together RTT + COMP + CCTM (The Representational Theory of Thought, The Compositionality of Mental Processes, and The Classical Computational Theory of Mind) forges the LOTH. And our cognitive inferential systematicities provide the space for the above hypothesis to stand. However, the system considers only the syntactic importance without the presence of semantic significance. 
 
 In the modern era, CCTM is however excluded in the discussion. only RTT + COMP is included. This is the original spawning of a new school of computational theory of mind grounded in connectionism. 
 
@@ -139,7 +139,7 @@ This view is confirmed by the fact that different from a natural language, their
 
 > e and e* are the same primitive types iff they bear the same denotation. 
 
-However, this approach also faces some challenge. First, it violates the original LOTH's aim to naturalize intentionality in non-representational computational models, as this approach does not take into account the formal-syntactic types manipulated during mental computation (carried out in the FCS or the formal-syntactic concept of computation's provided explanation of formalism and semantic integrity; which holds that mental computational is sensitive to syntax independent of semantics). 
+However, this approach also faces some challenge. First, it violates the original LOTH's aim to naturalize intentionality in non-representational computational models, as this approach does not take into account the formal-syntactic types manipulated during mental computation (carried out in the FCS or the formal-syntactic concept of computation's provided explanation of formalism and semantic integrity; which holds that mental computational is sensitive to syntax independent of semantics or mind is practically speaking a "syntactic machine"). 
 
 On top of it, this approach merely prevents the formal-syntactic _Mentalese_ types while executing a reduction in the naturalization of intentionality. 
 
