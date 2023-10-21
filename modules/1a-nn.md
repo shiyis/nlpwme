@@ -534,6 +534,8 @@ _Muntilde;oz, Eduardo. “Attention Is All You Need: Discovering the Transformer
 
 _Catherine L. Harris (Auth.), Noel Sharkey (Eds.). (n.d.). Connectionist Natural Language Processing Readings from Connection Science-Springer Netherlands._
 
+_Rescorla, Michael, "The Language of Thought Hypothesis", The Stanford Encyclopedia of Philosophy (Winter 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), https://plato.stanford.edu/archives/win2023/entries/language-thought._
+
 ---
 
 - Topic 1: Math and Physics
