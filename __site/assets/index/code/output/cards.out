@@ -11,11 +11,11 @@ Instrumental phonetics and the development of the sound spectrograph established
   \card{Foundational Insights: 1940s - 1950s}{### **Formal language theory**
  Using Shannon's work as inspiration, Chomsky (1956) originally studied finite-state machines as a way to characterize a grammar before defining a finite-state language as a language produced by a finite-state grammar.
 
-These pioneering theories paved the way for formal language theory, which defines formal languages as sequences of symbols using algebra and set theory. This includes the context-free grammar, which Chomsky (1956) originally described for natural languages and on which we shall later elaborate in a separate article.
+These pioneering theories paved the way for formal language theory, which defines formal languages as sequences of symbols using algebra and set theory. Meanwhile, in the realm of theoretical linguistics, Chomsky (1956) postulated transformational and context free grammar which helped establish paradigms for describing natural language syntax.
 
-The work of Turing, the father of computer science, first resulted in the development of a computing component that was more akin to propositional logic. After that, regular expressions and finite state automata were created by Kleene in 1951 and 1956.
+The work of Turing, the founding father of computer science, first resulted in the development of a computing component that was more close to propositional logic. After that, regular expressions and finite state automata were created by Kleene in 1951 and 1956.
 
-Then, using probabilistic models of discrete Markov processes, Shannon (1948) automated language.}
+Then, probabilistic models of Markov processes also helped the automation and formalization of natural language.}
 @@
 
 
