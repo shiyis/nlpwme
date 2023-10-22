@@ -1,0 +1,44 @@
+@@cards @@column
+
+@@row
+\card{}{_The non-overlap constraint_ - says that chains may not overlap. Every unit in the chain map has an excitatory link to the corresponding unit in the non-overlap map. (This type of linking between the units in two maps is called lateral linking). 
+
+Thus, the units active in the chain map will activate their counterparts in the non-overlap map. The units in the non-overlap map will in turn have inhibitory diagonal, non-lateral links to their counterparts in the chain map.  
+
+In diagonal linking every unit in the source map is linked to its counter part in each column of the target (i.e. to the corresponding diagonal). 
+
+A diagonal, non-lateral connection is the same as a diagonal connection except that the link to the directly corresponding unit is absent. 
+
+The connections from an active unit in the non-overlap map to the chain map prevent the activation of any other node in the corresponding diagonal in the chain map, enforcing the constraint. (Nodes in the same diagonal represent the same syntactic marker and if two units both get activated and had moved to the same place, it will violate the non-overlap constraint).}
+@@
+
+
+
+
+@@row
+\card{}{chain map with activated units on the right and d-structure on the left |  non-overlap constraints satisfactory map | case-marking prohibition activation map
+  :-------------------------:|:-------------------------: |:-------------------------:
+ ![](../extras/connectionism/structure-map.jpg) | ![](../extras/connectionism/case-filter-map-annotated.jpg) | ![](../extras/connectionism/case-marking-prohibition.png) }
+
+@@
+
+@@row
+\card{}{_The Case Filter Constraint_ - Two major requirements need to be addressed to satisfy fully this constraint: All lexical NPs be case-marked and no multiply case-marked NPs meaning they can only be case-marked once. 
+
+The chain map and the case-marked row both have excitatory lateral and diagonal priming links respectively to the case-A map. Together they activate the corresponding units in case-A map.
+
+Case-A map has columnar excitatory non-lateral links to case-B map as indicated in the second graph above. The case-marked row also has excitatory diagonal connections to the case-B map to show all the case-marked positions.
+
+Case-B map has inhibitory links to the chain map in order to turn off the second case-marked unit/node in the column which already contains one (as indicated in the second graph above).
+
+The enforcement of the other stipulation, that all lexical NPs be case-marked, relies on the interaction between the "flood" row and the case-A map. 
+
+The units in the case-marked row which correspond to lexical NPs are initially active and through their columnar connections to the chain map they try to activate units in the chain map (they may not succeed). 
+
+This has the effect of promoting movement of lexical NPs. As connections from it to the flood row turn off the corresponding units in the row. 
+
+This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.}
+
+@@
+
+@@ @@
