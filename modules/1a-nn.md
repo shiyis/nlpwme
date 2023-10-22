@@ -10,6 +10,7 @@ To answer this major question, it's important to draw inference from some of the
 
 That being said, the language that we used to describe our mental experience is only a representation of what in actuality the thing is inside our brain. This representation could bear a semantic property, be it a denotation or a truth-condition.
 
+---
 ### What Does It Mean To Have A Mental Language?
 
 Continuing the discussion LOTH or the _The Language Of Thought Hypothesis_, again one can postulate that it's closely correlated with the mental representation (drawing reference from _the representational theory of mind_), and also as per the context of current discussions around understanding how the brain actually works (at least w.r.t the folk psychology).
@@ -62,7 +63,7 @@ However illogical these perceptual mental representations are compositional and 
 In the modern era, CCTM is however excluded in the discussion. only RTT + COMP is included. This is the original spawning of a new school of computational theory of mind grounded in connectionism. 
 
 
-
+---
 ### Deep Learning and Neural Networks Continued
 
 Now we could finally come back to discuss deep learning and the neural network models. In the 1980s, connectionism gained traction as an alternative to the Turing style computational model. 
@@ -250,13 +251,6 @@ The meaning of a word is a set of semantic features used to determine its real-w
 
 ##### Non-overlapping Mapping Mechanism: A Connectionism Approach To Representing Complex Phrasal/Syntactic Structures 
 
----
-chain map with activated units on the right and d-structure on the left|
-:-------------------------:|
-![](../extras/connectionism/structure-map.jpg)|
-
----
-
 This is another important attempt at bridging these two different schools of LOTH theory development together - the non-overlapping mapping mechanism (Rager and Berg, 1992). At a simpler level, a breath-first representation as a mapping was provided to capture the d-structure of a phrasal structure to a row and column representation with constituent parts highlighted (where the constituents preceding a constituent form the elements of the column above it as demonstrated in the graph above). This mapping also needs to satisfy the above constraints, which we will go into more depth in the subsequent sections.
 
 A breakdown of such a structure in depth goes as,
@@ -283,9 +277,10 @@ Most of the maps in the system are not used to represent sentence structure; rat
 
 The remainder of this section describes the use of maps to enforce four constraints: the non-overlap constraint, the case filter, the $\theta$-role, and the empty category principle. 
 
----
+<!-- @@cards @@column
 
-_The non-overlap constraint_ - The non-overlap constraint says that chains may not overlap. Every unit in the chain map has an excitatory link to the corresponding unit in the non-overlap map. (This type of linking between the units in two maps is called lateral linking). 
+@@row
+\card{_The non-overlap constraint_}{The non-overlap constraint says that chains may not overlap. Every unit in the chain map has an excitatory link to the corresponding unit in the non-overlap map. (This type of linking between the units in two maps is called lateral linking). 
 
 Thus, the units active in the chain map will activate their counterparts in the non-overlap map. The units in the non-overlap map will in turn have inhibitory diagonal, non-lateral links to their counterparts in the chain map.  
 
@@ -293,20 +288,21 @@ In diagonal linking every unit in the source map is linked to its counter part i
 
 A diagonal, non-lateral connection is the same as a diagonal connection except that the link to the directly corresponding unit is absent. 
 
-The connections from an active unit in the non-overlap map to the chain map prevent the activation of any other node in the corresponding diagonal in the chain map, enforcing the constraint. (Nodes in the same diagonal represent the same syntactic marker and if two units both get activated and had moved to the same place, it will violate the non-overlap constraint). 
-
----
-
+The connections from an active unit in the non-overlap map to the chain map prevent the activation of any other node in the corresponding diagonal in the chain map, enforcing the constraint. (Nodes in the same diagonal represent the same syntactic marker and if two units both get activated and had moved to the same place, it will violate the non-overlap constraint).}
+@@
 
 
 
-non-overlap constraints satisfactory map | case-marking prohibition activation map
-:-------------------------:|:-------------------------:
-![](../extras/connectionism/case-filter-map-annotated.jpg)  |  ![](../extras/connectionism/case-marking-prohibition.png) 
----
 
+@@row
+\card{demo}{chain map with activated units on the right and d-structure on the left |  non-overlap constraints satisfactory map | case-marking prohibition activation map
+  :-------------------------:|:-------------------------: |:-------------------------:
+ ![](../extras/connectionism/structure-map.jpg) | ![](../extras/connectionism/case-filter-map-annotated.jpg) | ![](../extras/connectionism/case-marking-prohibition.png) }
 
-_The Case Filter Constraint_ - Two major requirements need to be addressed to satisfy fully this constraint: All lexical NPs be case-marked and no multiply case-marked NPs meaning they can only be case-marked once. 
+@@
+
+@@row
+\card{_The Case Filter Constraint_}{Two major requirements need to be addressed to satisfy fully this constraint: All lexical NPs be case-marked and no multiply case-marked NPs meaning they can only be case-marked once. 
 
 The chain map and the case-marked row both have excitatory lateral and diagonal priming links respectively to the case-A map. Together they activate the corresponding units in case-A map.
 
@@ -320,10 +316,14 @@ The units in the case-marked row which correspond to lexical NPs are initially a
 
 This has the effect of promoting movement of lexical NPs. As connections from it to the flood row turn off the corresponding units in the row. 
 
-This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.
+This has the effect of removing the incentive to movement of case-marked units, which is in accordance with the principle of the case filter.}
 
----
+@@
 
+@@ -->
+
+
+\textoutput{cards}
 <!-- ---
 The resulting schema of the entire model | 
 :-------------------------:|
@@ -392,6 +392,7 @@ This architecture, in conclusion, had a relatively simple makeup in hope that th
 It was done in this style in hope that some inherent properties of the units in these schemas could be well captured. 
 
 
+---
 
 ### Statistical Semantics and NLP Techniques
 
@@ -466,8 +467,7 @@ Two approaches in statistical Natural Language Processing (NLP) since the 1990s 
 
 **Annotation Limitations** - classification of selected words or phrases involves a block of words or phrases in the context, rather than the entire block of text. Features are chosen based on the target word or phrase's characteristics and its relation to its context. The same supervised learning and classification methods can be applied. However, large training corpora may be difficult to build, especially in statistical word disambiguation tasks, where thousands of words can be used in a single corpus. As a result, annotations are usually limited to a few polysemous words.
 
-
-
+---
 ### Extending to Large Language Models and Deep Neural Networks in the 20th Century
 
 We have talked so much about the statistical methods in dealing with natural language processing tasks. With respect to parsing, there's also the development of different neural networks (GAN, ANN, RNNs, etc). Traditionally recurrent neural networks and their variants have been used extensively for Natural Language Processing problems. In recent years, transformers have outperformed most RNN models. Before looking at transformers, let's first introduce recurrent neural networks, how they work, and where they fall behind.
