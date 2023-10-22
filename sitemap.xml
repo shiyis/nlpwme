@@ -116,6 +116,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>modules\5a-finite-automata\index.html</loc>
+    <lastmod>2023-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>modules\1-phil-of-mind\index.html</loc>
     <lastmod>2023-10-22</lastmod>
     <changefreq>monthly</changefreq>
