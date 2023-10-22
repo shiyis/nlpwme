@@ -238,7 +238,9 @@ This hybrid architecture might have had a say to how human brains actually proce
 
 > Also one interesting discovery about the connectionism representation of information processing inside the brain might have a good give away of how brain actually processes information. 
 
-> That is, instead of a local representation of an individual or specific informational unit, the learning mechanism is more so universally distributed across different (hidden) units. To top it off, the new way of representing information's sub-symbolic nature - where there were no intrinsic properties of representations that determine their relationships with other symbols - might solve a philosophical conundrum in representations of meaning. 
+> That is, instead of a local representation of an individual or specific informational unit, the learning mechanism is more so universally distributed across different (hidden) units. 
+
+>To top it off, the new way of representing information's sub-symbolic nature - where there were no intrinsic properties of representations that determine their relationships with other symbols - might solve a philosophical conundrum in representations of meaning. 
 
 > In contrast, a distributed representation preserves patterns across the net that could allow comparison and good preservation when parts go amok. 
 
