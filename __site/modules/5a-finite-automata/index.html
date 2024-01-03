@@ -1,27 +1,443 @@
-<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/nlpwme/libs/highlight/github.min.css"> <link rel=stylesheet  href="/nlpwme/css/franklin.css"> <link rel=stylesheet  href="/nlpwme/css/custom.css"> <link rel=stylesheet  href="/nlpwme/css/poole_hyde.css"> <link rel=stylesheet  href="/nlpwme/css/franklin.css"> <link rel=stylesheet  href="/nlpwme/css/poole_hyde.css"> <link rel=stylesheet  href="/nlpwme/css/custom.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  type="img/png" href="/nlpwme/assets/emoji.png"> <title>NLPwShiyi - Natural Language Processing with Shiyi</title> <div class=sidebar > <div class="container sidebar-sticky"> <img src="/nlpwme/assets/nlpwshiyi.png" style="width: 250px;position:sticky; height: auto; display: inline"> <nav class=sidebar-nav > <!-- <br> <br> <br> --> <div class=sidebar-about > <!-- <img src="/nlpwme/assets/robot.png" style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> --> <h1 style="font-size:1em; opacity: 0.95;"> <a href="/nlpwme/">Natural Language Processing w Shiyi S.</a> </h1> </div> <div class=week >Introduction</div> <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}" href="/nlpwme/modules/privacy-preserving-ML"> <b>Part One</b><em>Information Theory</em> </a> --> <a class="sidebar-nav-item " href="/nlpwme/modules/0-info-theory"> <b> · </b> <em>Information Theory</em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/1-phil-of-mind"> <b> · </b> <em>Computationalism vs Connectionism</em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/1a-nn"> <b> · </b> <em>Modern Natural Language Processing</em> </a> <div class=week >NLP before AI</div> <a class="sidebar-nav-item active" href="/nlpwme/modules/5a-finite-automata"> <b> · </b> <em> Finite State Automata and Transducers </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/noisy-channel-model"> <b> · </b> <em> The Noisy Channel Model </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/4a-cky-algorithm"> <b> · </b> <em> The CKY Algorithm </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/1b-mutual-info"> <b> · </b> <em> Mutual Information </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Markov Processes </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Dynamic Programming and Viterbi Algorithm </em> </a> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Formal Logic Systems and General Problem Solving </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Cryptography</em> </a> <div class=week > NLP with AI</div><a class="sidebar-nav-item " href="/nlpwme/modules/1-intro-general-overview"> <b> · </b> <em> General Model Workflow and Technicalities </em></a><a class="sidebar-nav-item " href="/nlpwme/modules/8c-word2vec"> <b> · </b> <em>Word2vec</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Continuous BOW And Skip-gram</em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/2a-pytorch-tensors"> <b> · </b> <em>Forward and Backward Propagation</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/2b-automatic-differentiation"> <b> · </b> <em>Automatic differentiation</em></a><a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em>Automatic differentiation: Jacobian Matrices</em></a><a class="sidebar-nav-item " href="/nlpwme/modules/3-loss-functions-for-classification"> <b> · </b> <em>Loss functions for classification</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/5-stacking-layers"> <b> · </b> <em>Stochastic Gradient Decent</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/4-optimization-for-deep-learning"> <b> · </b> <em>Optimization for DL</em></a> <!-- <a class="sidebar-nav-item {{ispage /modules/7-dataloading}}active{{end}}" href="/nlpwme/modules/7-dataloading"> <b> · </b> <em>Dataloading</em></a> --> <a class="sidebar-nav-item " href="/nlpwme/modules/8a-embedding-layers"> <b> · </b> <em>Embedding layers</em></a> <!-- <a class="sidebar-nav-item {{ispage /modules/8b-collaborative-filtering}}active{{end}}" href="/nlpwme/modules/8b-collaborative-filtering"> <b> · </b> <em>Collaborative filtering And Max Pooling</em></a>Week 3 ends hereWeek 4 starts here<div class=week >Unit 4</div> --> <a class="sidebar-nav-item " href="/nlpwme/modules/9a-autoencoders"> <b> · </b> <em>Autoencoders</em> <a class="sidebar-nav-item " href="modules/15-dropout"> <b> · </b><em>Dropout</em></a> <a class="sidebar-nav-item " href="modules/11c-batches-with-sequences"> <b> · </b> <em>Batches with sequences in Pytorch</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/6-convolutional-neural-network"> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/16-batchnorm"> <b> · </b><em>Batchnorm</em> <a class="sidebar-nav-item " href="/nlpwme/modules/13-siamese"> <b> · </b> <em>The Benefits of Depth</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/14b-depth"> <b> · </b> <em>The Problems with Depth</em></a> <div class=week >Large Language Models</div> <a class="sidebar-nav-item " href="/nlpwme/modules/10-generative-adversarial-networks"> <b> · </b> <em>Generative adversarial networks</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/9c-flows"> <b> · </b> <em>GAN vs VAE</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/11a-recurrent-neural-networks-theory"> <b> · </b> <em>Recurrent Neural Networks (theory)</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/11b-recurrent-neural-networks-practice"> <b> · </b> <em>RNN in practice</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/11c-batches-with-sequences"> <b> · </b> <em> Convolutional Neural Network </em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/12-attention"> <b> · </b> <em>Attention and Transformers</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/18a-diffusion"><b> · </b><em> Denoising Diffusion Probabilistic Models</em></a> <div class=week >Hands-On</div> <a class="sidebar-nav-item " href="/nlpwme/homework/1-mlp-from-scratch"> <b> · </b><em>MLP from scratch</em></a> <a class="sidebar-nav-item " href="/nlpwme/homework/2-CAM-adversarial"><b> · </b><em>Class Activation and Adversarial Examples</em></a> <a class="sidebar-nav-item " href="/nlpwme/homework/3-VAE"><b> · </b><em>VAE for MNIST clustering and generation</em></a> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/18a-diffusion"><b> · </b><em>BI-LSTM CRF SEMIEVAL Task8 Coreference Resolution</em> </a> <a class="sidebar-nav-item " href="/nlpwme/homework/1-mlp-from-scratch"> <b> · </b><em>Exploring The TMNT Package for Seq2Seq Processing</em> </a> <a class="sidebar-nav-item " href="/nlpwme/homework/2-CAM-adversarial"><b> · </b><em>Text-based Ideal Points and Topic Modeling over 2021 Election Candidates' Twitter Data</em> </a> <a class="sidebar-nav-item " href="/nlpwme/homework/3-VAE"><b> · </b><em>ETL Data Pipeline And Serverless Application Example</em></a> </a> </nav> </div> </div> <div class="content container"> <div class=franklin-content ><h1 id=finite_state_machine_and_automata ><a href="#finite_state_machine_and_automata" class=header-anchor >Finite state machine and automata</a></h1> <p>The simplest machine to recognize patterns is a finite automaton &#40;FA&#41;. As in /baa&#43;&#33;/, it is used to describe a Regular Language. Additionally, it is employed to identify and analyze Natural Language Expressions. The abstract machine known as the finite automata or finite state machine has five components, or tuples. It has a number of states and a set of guidelines for changing between them, but these depend on the input symbol used. The input string can be accepted or rejected depending on the states and the set of rules. In essence, it is a model of an abstract digital computer that reads an input string and modifies its internal state according to the current input symbol. </p> <p><img src="./extras/connectionism/automata-300x240.png" alt="" /></p> <p>The above figure shows the following features of automata:</p> <p>Input Output States of automata State relation Output relation A Finite Automata consists of the following:</p> <pre><code class="julia hljs">Q : Finite set of states.
-        Σ : set of Input Symbols.
-        q : Initial state.
-        F : set of Final States.
-        δ : Transition <span class=hljs-built_in >Function</span>.</code></pre> <p>Formal specification of machine is</p> <pre><code class="julia hljs">{ Q, Σ, q, F, δ }</code></pre>
-<p>1&#41; Deterministic Finite Automata &#40;DFA&#41;:</p>
-<pre><code class="julia hljs">DFA consists of <span class=hljs-number >5</span> tuples {Q, Σ, q, F, δ}. 
-    Q : set of all states.
-    Σ : set of input symbols. ( Symbols which machine takes as input )
-    q : Initial state. ( Starting state of a machine )
-    F : set of final state.
-    δ : Transition <span class=hljs-built_in >Function</span>, defined as δ : Q X Σ --&gt; Q.</code></pre>
-<p>In a DFA, the machine only enters one state for a specific input character. For every input symbol, a transition function is defined for each state. Additionally, DFA does not support null &#40;or&#41; moves, meaning that it cannot change its state without an input character. 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/poole_hyde.css">
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+<link rel="icon" type="img/png" href="/assets/emoji.png">
+
+   <title>NLPwShiyi - Natural Language Processing with Shiyi</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+
+    <img src="/assets/nlpwshiyi.png" style="width: 250px;position:sticky; height: auto; display: inline">
+    <nav class="sidebar-nav">
+      <!-- <br></br>
+                                                      <br></br>
+                                                      <br></br> -->
+      <div class="sidebar-about">
+        <!-- <img src="/assets/robot.png"
+                                                                             style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> -->
+        <h1 style="font-size:1em; opacity: 0.95;">
+          <a href="/">Natural Language Processing w Shiyi S.</a>
+        </h1>
+      </div>
+      <div class="week">Introduction</div>
+      <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+                                                      href="/modules/privacy-preserving-ML">
+                                                        <b>Part One</b><em>Information Theory</em>
+                                                      </a> -->
+
+      <a class="sidebar-nav-item " href="/modules/0-info-theory">
+        <b>
+          ·
+        </b>
+        <em>Information Theory</em>
+      </a>
+
+      <a class="sidebar-nav-item " href="/modules/1-phil-of-mind">
+        <b>
+          ·
+        </b>
+        <em>Computationalism vs Connectionism</em>
+      </a>
+
+
+      <a class="sidebar-nav-item " href="/modules/1a-nn">
+        <b>
+          ·
+        </b>
+        <em>Modern Natural Language Processing</em>
+      </a>
+
+      <!-- Week 1 starts here -->
+
+      <div class="week">NLP before AI</div>
+
+      <a class="sidebar-nav-item active" href="/modules/5a-finite-automata">
+        <b>
+          ·
+        </b>
+        <em>
+          Finite State Automata and Transducers
+        </em>
+      </a>
+
+      <a class="sidebar-nav-item "
+        href="/modules/noisy-channel-model">
+        <b>
+          ·
+        </b>
+        <em>
+          The Noisy Channel Model
+        </em>
+      </a>
+
+      <a class="sidebar-nav-item " href="/modules/4a-cky-algorithm">
+        <b>
+          ·
+        </b>
+        <em>
+          The CKY Algorithm
+        </em>
+      </a>
+
+      <a class="sidebar-nav-item " href="/modules/1b-mutual-info">
+        <b>
+          ·
+        </b>
+        <em>
+          Mutual Information
+        </em>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>
+          Markov Processes
+        </em>
+      </a>
+
+
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>
+          Dynamic Programming and Viterbi Algorithm
+        </em>
+      </a>
+      </a>
+
+      
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>
+          Formal Logic Systems and General Problem Solving
+        </em>
+      </a><!-- Week 1 ends here --><!-- Week 2 starts here -->
+
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>
+          Cryptography</em>
+      </a>
+
+
+
+      <div class="week">
+        NLP with AI</div><a class="sidebar-nav-item "
+        href="/modules/1-intro-general-overview">
+        <b>
+          ·
+        </b>
+        <em>
+          General Model Workflow and Technicalities
+        </em></a><a class="sidebar-nav-item " href="/modules/8c-word2vec">
+        <b>
+          ·
+        </b>
+        <em>Word2vec</em></a>
+        
+        <a class="sidebar-nav-item " href="/modules/">
+          <b>
+            ·
+          </b>
+          <em>
+            Continuous BOW And Skip-gram</em>
+        </a>
+        
+        <a class="sidebar-nav-item "
+        href="/modules/2a-pytorch-tensors">
+        <b>
+          ·
+        </b>
+        <em>Forward and Backward Propagation</em></a>
+        
+        
+        <a class="sidebar-nav-item "
+        href="/modules/2b-automatic-differentiation">
+
+        <b>
+          ·
+        </b>
+        <em>Automatic differentiation</em></a><a class="sidebar-nav-item "
+        href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>Automatic differentiation: Jacobian Matrices</em></a><a
+        class="sidebar-nav-item "
+        href="/modules/3-loss-functions-for-classification">
+        <b>
+          ·
+        </b>
+        <em>Loss functions for classification</em></a>
+        
+
+        <a class="sidebar-nav-item "
+        href="/modules/5-stacking-layers">
+        <b>
+          ·
+        </b>
+        <em>Stochastic Gradient Decent</em></a>
+
+
+        <a
+        class="sidebar-nav-item "
+        href="/modules/4-optimization-for-deep-learning">
+        <b>
+          ·
+        </b>
+        <em>Optimization for DL</em></a>
+        
+
+        
+        <!-- <a class="sidebar-nav-item {{ispage /modules/7-dataloading}}active{{end}}"
+        href="/modules/7-dataloading">
+        <b>
+          ·
+        </b>
+        <em>Dataloading</em></a>
+         -->
+        <a class="sidebar-nav-item "
+        href="/modules/8a-embedding-layers">
+        <b>
+          ·
+        </b>
+        <em>Embedding layers</em></a>
+<!-- 
+      <a class="sidebar-nav-item {{ispage /modules/8b-collaborative-filtering}}active{{end}}"
+        href="/modules/8b-collaborative-filtering">
+        <b>
+          ·
+        </b>
+        <em>Collaborative
+          filtering And Max Pooling</em></a>Week 3 ends hereWeek 4 starts here<div class="week">Unit 4</div> -->
+
+
+      <a class="sidebar-nav-item " href="/modules/9a-autoencoders"> <b>
+          ·
+        </b>
+        <em>Autoencoders</em>
+
+        <a class="sidebar-nav-item " href="modules/15-dropout">
+
+          <b>
+            · </b><em>Dropout</em></a>
+
+
+        <a class="sidebar-nav-item "
+          href="modules/11c-batches-with-sequences">
+          <b>
+            ·
+          </b>
+          <em>Batches with sequences in Pytorch</em></a>
+
+
+        <a class="sidebar-nav-item "
+          href="/modules/6-convolutional-neural-network">
+
+        </a>
+
+        <a class="sidebar-nav-item " href="/modules/16-batchnorm">
+          <b>
+            ·
+          </b><em>Batchnorm</em>
+
+
+          <a class="sidebar-nav-item " href="/modules/13-siamese">
+            <b>
+              ·
+            </b>
+            <em>The Benefits of Depth</em></a>
+
+
+          <a class="sidebar-nav-item " href="/modules/14b-depth">
+            <b>
+              ·
+            </b>
+            <em>The Problems with Depth</em></a>
+
+          <div class="week">Large Language Models</div>
+
+          <a class="sidebar-nav-item "
+            href="/modules/10-generative-adversarial-networks">
+            <b>
+              ·
+            </b>
+            <em>Generative adversarial networks</em></a>
+
+          <a class="sidebar-nav-item " href="/modules/9c-flows">
+            <b>
+              ·
+            </b>
+            <em>GAN vs
+              VAE</em></a><!-- Week 4 ends here --><!-- Week 5 starts here --><!-- <div class="week">Unit 5</div> -->
+          <a class="sidebar-nav-item "
+            href="/modules/11a-recurrent-neural-networks-theory"> <b>
+              ·
+            </b>
+            <em>Recurrent Neural Networks (theory)</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/modules/11b-recurrent-neural-networks-practice">
+            <b>
+              ·
+            </b>
+            <em>RNN in practice</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/modules/11c-batches-with-sequences">
+
+            <b>
+              ·
+            </b>
+            <em>
+              Convolutional Neural Network
+            </em></a>
+
+          <a class="sidebar-nav-item " href="/modules/12-attention">
+            <b>
+              ·
+            </b>
+            <em>Attention and Transformers</em></a>
+          
+
+            
+          <a class="sidebar-nav-item " href="/modules/18a-diffusion"><b> ·
+          </b><em> Denoising Diffusion Probabilistic
+            Models</em></a>
+
+          <div class="week">Hands-On</div>
+
+          <a class="sidebar-nav-item "
+            href="/homework/1-mlp-from-scratch"> <b>
+              · </b><em>MLP from scratch</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/homework/2-CAM-adversarial"><b>
+              · </b><em>Class Activation and Adversarial Examples</em></a>
+
+          <a class="sidebar-nav-item " href="/homework/3-VAE"><b>
+              · </b><em>VAE for MNIST clustering and generation</em></a>
+          </a>
+
+          <a class="sidebar-nav-item " href="/modules/18a-diffusion"><b> ·
+            </b><em>BI-LSTM CRF SEMIEVAL Task8 Coreference Resolution</em>
+          </a><!-- <div class="week">Unit 7</div>--><!-- Unit 6 ends here --><!-- Unit 7 starts here -->
+
+
+          <a class="sidebar-nav-item "
+            href="/homework/1-mlp-from-scratch"> <b>
+              · </b><em>Exploring The TMNT Package for Seq2Seq Processing</em>
+          </a>
+
+          <a class="sidebar-nav-item "
+            href="/homework/2-CAM-adversarial"><b>
+              · </b><em>Text-based Ideal Points and Topic Modeling over 2021 Election Candidates' Twitter Data</em>
+          </a>
+
+          <a class="sidebar-nav-item " href="/homework/3-VAE"><b>
+              · </b><em>ETL Data Pipeline And Serverless Application Example</em></a>
+        </a>
+
+
+
+    </nav>
+  </div>
+</div>
+<div class="content container">
+<!-- Content appended here -->
+<div class="franklin-content"><h1 id="finite_state_machine_and_automata"><a href="#finite_state_machine_and_automata" class="header-anchor">Finite state machine and automata</a></h1>
+<p>The simplest machine to recognize patterns is a finite automaton &#40;FA&#41;. As in /baa&#43;&#33;/, it is used to describe a Regular Language. Additionally, it is employed to identify and analyze Natural Language Expressions. The abstract machine known as the finite automata or finite state machine has five components, or tuples. It has a number of states and a set of guidelines for changing between them, but these depend on the input symbol used. The input string can be accepted or rejected depending on the states and the set of rules. In essence, it is a model of an abstract digital computer that reads an input string and modifies its internal state according to the current input symbol. </p>
+<p><img src="./extras/connectionism/automata-300x240.png" alt="" /></p>
+<p>The above figure shows the following features of automata:</p>
+<p>Input
+Output
+States of automata
+State relation
+Output relation
+A Finite Automata consists of the following: 
+
+
+&#96;&#96;&#96;
+    Q : Finite set of states.
+    Σ : set of Input Symbols.
+    q : Initial state.
+    F : set of Final States.
+    δ : Transition Function.
+&#96;&#96;&#96;
+
+
+Formal specification of machine is 
+
+&#96;&#96;&#96;
+&#123; Q, Σ, q, F, δ &#125;
+
+&#96;&#96;&#96;
+
+
+1&#41; Deterministic Finite Automata &#40;DFA&#41;:
+
+
+&#96;&#96;&#96;
+DFA consists of 5 tuples &#123;Q, Σ, q, F, δ&#125;. 
+Q : set of all states.
+Σ : set of input symbols. &#40; Symbols which machine takes as input &#41;
+q : Initial state. &#40; Starting state of a machine &#41;
+F : set of final state.
+δ : Transition Function, defined as δ : Q X Σ --&gt; Q.
+    
+&#96;&#96;&#96;
+
+In a DFA, the machine only enters one state for a specific input character. For every input symbol, a transition function is defined for each state. Additionally, DFA does not support null &#40;or&#41; moves, meaning that it cannot change its state without an input character. 
 
 Create a DFA that, for instance, only accepts strings that end in &#39;a&#39;.
     Assumed: Σ &#61; &#123;a,b&#125;, q &#61; &#123;q0&#125;, F&#61;&#123;q1&#125;, Q &#61; &#123;q0, q1&#125;
 If you want to create a state transition diagram that is accurate, you should first take into account a language set of all the potential acceptable strings.
     L &#61; &#123;a, a, a, a, a, aa, aaa, aaaa, ba, bba, bbbaa, aba, abba, aaba, abaa&#125;
 The list above is just a small portion of all possible acceptable strings; there are many other strings that contain the letters &quot;a&quot; and &quot;b.&quot;</p>
-<div class=page-foot >
-  <div class=copyright >
-    <a href="https://github.com/shiyis/nlpwme/tree/master"><b> This page is hosted on <img class=github-logo  src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></b></a>
-     ©️Last modified: October 22, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+<div class="page-foot">
+  <div class="copyright">
+    <a href="https://github.com/shiyis/nlpwme/tree/master"><b> This page is hosted on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></img></b></a></br>
+     ©️Last modified: January 03, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
   </div>
 </div>
-</div>
-    </div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>

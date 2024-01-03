@@ -1,31 +1,478 @@
-<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/nlpwme/libs/katex/katex.min.css"> <link rel=stylesheet  href="/nlpwme/libs/highlight/github.min.css"> <link rel=stylesheet  href="/nlpwme/css/franklin.css"> <link rel=stylesheet  href="/nlpwme/css/custom.css"> <link rel=stylesheet  href="/nlpwme/css/poole_hyde.css"> <link rel=stylesheet  href="/nlpwme/css/franklin.css"> <link rel=stylesheet  href="/nlpwme/css/poole_hyde.css"> <link rel=stylesheet  href="/nlpwme/css/custom.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  type="img/png" href="/nlpwme/assets/emoji.png"> <title>NLPwShiyi - Natural Language Processing with Shiyi</title> <div class=sidebar > <div class="container sidebar-sticky"> <img src="/nlpwme/assets/nlpwshiyi.png" style="width: 250px;position:sticky; height: auto; display: inline"> <nav class=sidebar-nav > <!-- <br> <br> <br> --> <div class=sidebar-about > <!-- <img src="/nlpwme/assets/robot.png" style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> --> <h1 style="font-size:1em; opacity: 0.95;"> <a href="/nlpwme/">Natural Language Processing w Shiyi S.</a> </h1> </div> <div class=week >Introduction</div> <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}" href="/nlpwme/modules/privacy-preserving-ML"> <b>Part One</b><em>Information Theory</em> </a> --> <a class="sidebar-nav-item " href="/nlpwme/modules/0-info-theory"> <b> · </b> <em>Information Theory</em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/1-phil-of-mind"> <b> · </b> <em>Computationalism vs Connectionism</em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/1a-nn"> <b> · </b> <em>Modern Natural Language Processing</em> </a> <div class=week >NLP before AI</div> <a class="sidebar-nav-item " href="/nlpwme/modules/5a-finite-automata"> <b> · </b> <em> Finite State Automata and Transducers </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/noisy-channel-model"> <b> · </b> <em> The Noisy Channel Model </em> </a> <a class="sidebar-nav-item active" href="/nlpwme/modules/4a-cky-algorithm"> <b> · </b> <em> The CKY Algorithm </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/1b-mutual-info"> <b> · </b> <em> Mutual Information </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Markov Processes </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Dynamic Programming and Viterbi Algorithm </em> </a> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Formal Logic Systems and General Problem Solving </em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Cryptography</em> </a> <div class=week > NLP with AI</div><a class="sidebar-nav-item " href="/nlpwme/modules/1-intro-general-overview"> <b> · </b> <em> General Model Workflow and Technicalities </em></a><a class="sidebar-nav-item " href="/nlpwme/modules/8c-word2vec"> <b> · </b> <em>Word2vec</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em> Continuous BOW And Skip-gram</em> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/2a-pytorch-tensors"> <b> · </b> <em>Forward and Backward Propagation</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/2b-automatic-differentiation"> <b> · </b> <em>Automatic differentiation</em></a><a class="sidebar-nav-item " href="/nlpwme/modules/"> <b> · </b> <em>Automatic differentiation: Jacobian Matrices</em></a><a class="sidebar-nav-item " href="/nlpwme/modules/3-loss-functions-for-classification"> <b> · </b> <em>Loss functions for classification</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/5-stacking-layers"> <b> · </b> <em>Stochastic Gradient Decent</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/4-optimization-for-deep-learning"> <b> · </b> <em>Optimization for DL</em></a> <!-- <a class="sidebar-nav-item {{ispage /modules/7-dataloading}}active{{end}}" href="/nlpwme/modules/7-dataloading"> <b> · </b> <em>Dataloading</em></a> --> <a class="sidebar-nav-item " href="/nlpwme/modules/8a-embedding-layers"> <b> · </b> <em>Embedding layers</em></a> <!-- <a class="sidebar-nav-item {{ispage /modules/8b-collaborative-filtering}}active{{end}}" href="/nlpwme/modules/8b-collaborative-filtering"> <b> · </b> <em>Collaborative filtering And Max Pooling</em></a>Week 3 ends hereWeek 4 starts here<div class=week >Unit 4</div> --> <a class="sidebar-nav-item " href="/nlpwme/modules/9a-autoencoders"> <b> · </b> <em>Autoencoders</em> <a class="sidebar-nav-item " href="modules/15-dropout"> <b> · </b><em>Dropout</em></a> <a class="sidebar-nav-item " href="modules/11c-batches-with-sequences"> <b> · </b> <em>Batches with sequences in Pytorch</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/6-convolutional-neural-network"> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/16-batchnorm"> <b> · </b><em>Batchnorm</em> <a class="sidebar-nav-item " href="/nlpwme/modules/13-siamese"> <b> · </b> <em>The Benefits of Depth</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/14b-depth"> <b> · </b> <em>The Problems with Depth</em></a> <div class=week >Large Language Models</div> <a class="sidebar-nav-item " href="/nlpwme/modules/10-generative-adversarial-networks"> <b> · </b> <em>Generative adversarial networks</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/9c-flows"> <b> · </b> <em>GAN vs VAE</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/11a-recurrent-neural-networks-theory"> <b> · </b> <em>Recurrent Neural Networks (theory)</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/11b-recurrent-neural-networks-practice"> <b> · </b> <em>RNN in practice</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/11c-batches-with-sequences"> <b> · </b> <em> Convolutional Neural Network </em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/12-attention"> <b> · </b> <em>Attention and Transformers</em></a> <a class="sidebar-nav-item " href="/nlpwme/modules/18a-diffusion"><b> · </b><em> Denoising Diffusion Probabilistic Models</em></a> <div class=week >Hands-On</div> <a class="sidebar-nav-item " href="/nlpwme/homework/1-mlp-from-scratch"> <b> · </b><em>MLP from scratch</em></a> <a class="sidebar-nav-item " href="/nlpwme/homework/2-CAM-adversarial"><b> · </b><em>Class Activation and Adversarial Examples</em></a> <a class="sidebar-nav-item " href="/nlpwme/homework/3-VAE"><b> · </b><em>VAE for MNIST clustering and generation</em></a> </a> <a class="sidebar-nav-item " href="/nlpwme/modules/18a-diffusion"><b> · </b><em>BI-LSTM CRF SEMIEVAL Task8 Coreference Resolution</em> </a> <a class="sidebar-nav-item " href="/nlpwme/homework/1-mlp-from-scratch"> <b> · </b><em>Exploring The TMNT Package for Seq2Seq Processing</em> </a> <a class="sidebar-nav-item " href="/nlpwme/homework/2-CAM-adversarial"><b> · </b><em>Text-based Ideal Points and Topic Modeling over 2021 Election Candidates' Twitter Data</em> </a> <a class="sidebar-nav-item " href="/nlpwme/homework/3-VAE"><b> · </b><em>ETL Data Pipeline And Serverless Application Example</em></a> </a> </nav> </div> </div> <div class="content container"> <div class=franklin-content ><h1 id=chomsky_hierarchy_cfg_and_cky_algorithm ><a href="#chomsky_hierarchy_cfg_and_cky_algorithm" class=header-anchor >Chomsky Hierarchy, CFG, and CKY Algorithm</a></h1> <p>According to Wikipedia, this algorithm is a parsing algorithm for <code>context-free grammars</code> published by Itiroo Sakai in 1961. The algorithm is named after its rediscoverers. It employs <code>bottom-up parsing</code> and <code>dynamic programming</code>. </p> <p>The standard version of the algorithm operates on context-free grammars given in <code>chomsky normal form &#40;CNF&#41;</code>. However any context-free grammar may be alagorithmically transformed into a CNF grammar expressing the same language. </p> <h3 id=the_pseudo-code_goes_as ><a href="#the_pseudo-code_goes_as" class=header-anchor >The Pseudo-code Goes As</a></h3> <pre><code class="julia hljs"><span class=hljs-keyword >let</span> the input be a string I consisting of n characters: a1 ... an.
-<span class=hljs-keyword >let</span> the grammar contain r nonterminal symbols R1 ... Rr, with start symbol R1.
-<span class=hljs-keyword >let</span> P[n,n,r] be an array of booleans. Initialize all elements of P to <span class=hljs-literal >false</span>.
-<span class=hljs-keyword >let</span> back[n,n,r] be an array of lists of backpointing triples. Initialize all 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/poole_hyde.css">
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="/css/poole_hyde.css">
+<link rel="stylesheet" href="/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+<link rel="icon" type="img/png" href="/assets/emoji.png">
+
+   <title>NLPwShiyi - Natural Language Processing with Shiyi</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+
+    <img src="/assets/nlpwshiyi.png" style="width: 250px;position:sticky; height: auto; display: inline">
+    <nav class="sidebar-nav">
+      <!-- <br></br>
+                                                      <br></br>
+                                                      <br></br> -->
+      <div class="sidebar-about">
+        <!-- <img src="/assets/robot.png"
+                                                                             style="margin-left:1em; position:relative;left:px; top:-30px;bottom:5px; width: 60px; height: auto; display: inline"> -->
+        <h1 style="font-size:1em; opacity: 0.95;">
+          <a href="/">Natural Language Processing w Shiyi S.</a>
+        </h1>
+      </div>
+      <div class="week">Introduction</div>
+      <!-- <a class="sidebar-nav-item {{ispage /modules/privacy-preserving-ML}}active{{end}}"
+                                                      href="/modules/privacy-preserving-ML">
+                                                        <b>Part One</b><em>Information Theory</em>
+                                                      </a> -->
+
+      <a class="sidebar-nav-item " href="/modules/0-info-theory">
+        <b>
+          ·
+        </b>
+        <em>Information Theory</em>
+      </a>
+
+      <a class="sidebar-nav-item " href="/modules/1-phil-of-mind">
+        <b>
+          ·
+        </b>
+        <em>Computationalism vs Connectionism</em>
+      </a>
+
+
+      <a class="sidebar-nav-item " href="/modules/1a-nn">
+        <b>
+          ·
+        </b>
+        <em>Modern Natural Language Processing</em>
+      </a>
+
+      <!-- Week 1 starts here -->
+
+      <div class="week">NLP before AI</div>
+
+      <a class="sidebar-nav-item " href="/modules/5a-finite-automata">
+        <b>
+          ·
+        </b>
+        <em>
+          Finite State Automata and Transducers
+        </em>
+      </a>
+
+      <a class="sidebar-nav-item "
+        href="/modules/noisy-channel-model">
+        <b>
+          ·
+        </b>
+        <em>
+          The Noisy Channel Model
+        </em>
+      </a>
+
+      <a class="sidebar-nav-item active" href="/modules/4a-cky-algorithm">
+        <b>
+          ·
+        </b>
+        <em>
+          The CKY Algorithm
+        </em>
+      </a>
+
+      <a class="sidebar-nav-item " href="/modules/1b-mutual-info">
+        <b>
+          ·
+        </b>
+        <em>
+          Mutual Information
+        </em>
+      </a>
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>
+          Markov Processes
+        </em>
+      </a>
+
+
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>
+          Dynamic Programming and Viterbi Algorithm
+        </em>
+      </a>
+      </a>
+
+      
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>
+          Formal Logic Systems and General Problem Solving
+        </em>
+      </a><!-- Week 1 ends here --><!-- Week 2 starts here -->
+
+      <a class="sidebar-nav-item " href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>
+          Cryptography</em>
+      </a>
+
+
+
+      <div class="week">
+        NLP with AI</div><a class="sidebar-nav-item "
+        href="/modules/1-intro-general-overview">
+        <b>
+          ·
+        </b>
+        <em>
+          General Model Workflow and Technicalities
+        </em></a><a class="sidebar-nav-item " href="/modules/8c-word2vec">
+        <b>
+          ·
+        </b>
+        <em>Word2vec</em></a>
+        
+        <a class="sidebar-nav-item " href="/modules/">
+          <b>
+            ·
+          </b>
+          <em>
+            Continuous BOW And Skip-gram</em>
+        </a>
+        
+        <a class="sidebar-nav-item "
+        href="/modules/2a-pytorch-tensors">
+        <b>
+          ·
+        </b>
+        <em>Forward and Backward Propagation</em></a>
+        
+        
+        <a class="sidebar-nav-item "
+        href="/modules/2b-automatic-differentiation">
+
+        <b>
+          ·
+        </b>
+        <em>Automatic differentiation</em></a><a class="sidebar-nav-item "
+        href="/modules/">
+        <b>
+          ·
+        </b>
+        <em>Automatic differentiation: Jacobian Matrices</em></a><a
+        class="sidebar-nav-item "
+        href="/modules/3-loss-functions-for-classification">
+        <b>
+          ·
+        </b>
+        <em>Loss functions for classification</em></a>
+        
+
+        <a class="sidebar-nav-item "
+        href="/modules/5-stacking-layers">
+        <b>
+          ·
+        </b>
+        <em>Stochastic Gradient Decent</em></a>
+
+
+        <a
+        class="sidebar-nav-item "
+        href="/modules/4-optimization-for-deep-learning">
+        <b>
+          ·
+        </b>
+        <em>Optimization for DL</em></a>
+        
+
+        
+        <!-- <a class="sidebar-nav-item {{ispage /modules/7-dataloading}}active{{end}}"
+        href="/modules/7-dataloading">
+        <b>
+          ·
+        </b>
+        <em>Dataloading</em></a>
+         -->
+        <a class="sidebar-nav-item "
+        href="/modules/8a-embedding-layers">
+        <b>
+          ·
+        </b>
+        <em>Embedding layers</em></a>
+<!-- 
+      <a class="sidebar-nav-item {{ispage /modules/8b-collaborative-filtering}}active{{end}}"
+        href="/modules/8b-collaborative-filtering">
+        <b>
+          ·
+        </b>
+        <em>Collaborative
+          filtering And Max Pooling</em></a>Week 3 ends hereWeek 4 starts here<div class="week">Unit 4</div> -->
+
+
+      <a class="sidebar-nav-item " href="/modules/9a-autoencoders"> <b>
+          ·
+        </b>
+        <em>Autoencoders</em>
+
+        <a class="sidebar-nav-item " href="modules/15-dropout">
+
+          <b>
+            · </b><em>Dropout</em></a>
+
+
+        <a class="sidebar-nav-item "
+          href="modules/11c-batches-with-sequences">
+          <b>
+            ·
+          </b>
+          <em>Batches with sequences in Pytorch</em></a>
+
+
+        <a class="sidebar-nav-item "
+          href="/modules/6-convolutional-neural-network">
+
+        </a>
+
+        <a class="sidebar-nav-item " href="/modules/16-batchnorm">
+          <b>
+            ·
+          </b><em>Batchnorm</em>
+
+
+          <a class="sidebar-nav-item " href="/modules/13-siamese">
+            <b>
+              ·
+            </b>
+            <em>The Benefits of Depth</em></a>
+
+
+          <a class="sidebar-nav-item " href="/modules/14b-depth">
+            <b>
+              ·
+            </b>
+            <em>The Problems with Depth</em></a>
+
+          <div class="week">Large Language Models</div>
+
+          <a class="sidebar-nav-item "
+            href="/modules/10-generative-adversarial-networks">
+            <b>
+              ·
+            </b>
+            <em>Generative adversarial networks</em></a>
+
+          <a class="sidebar-nav-item " href="/modules/9c-flows">
+            <b>
+              ·
+            </b>
+            <em>GAN vs
+              VAE</em></a><!-- Week 4 ends here --><!-- Week 5 starts here --><!-- <div class="week">Unit 5</div> -->
+          <a class="sidebar-nav-item "
+            href="/modules/11a-recurrent-neural-networks-theory"> <b>
+              ·
+            </b>
+            <em>Recurrent Neural Networks (theory)</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/modules/11b-recurrent-neural-networks-practice">
+            <b>
+              ·
+            </b>
+            <em>RNN in practice</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/modules/11c-batches-with-sequences">
+
+            <b>
+              ·
+            </b>
+            <em>
+              Convolutional Neural Network
+            </em></a>
+
+          <a class="sidebar-nav-item " href="/modules/12-attention">
+            <b>
+              ·
+            </b>
+            <em>Attention and Transformers</em></a>
+          
+
+            
+          <a class="sidebar-nav-item " href="/modules/18a-diffusion"><b> ·
+          </b><em> Denoising Diffusion Probabilistic
+            Models</em></a>
+
+          <div class="week">Hands-On</div>
+
+          <a class="sidebar-nav-item "
+            href="/homework/1-mlp-from-scratch"> <b>
+              · </b><em>MLP from scratch</em></a>
+
+          <a class="sidebar-nav-item "
+            href="/homework/2-CAM-adversarial"><b>
+              · </b><em>Class Activation and Adversarial Examples</em></a>
+
+          <a class="sidebar-nav-item " href="/homework/3-VAE"><b>
+              · </b><em>VAE for MNIST clustering and generation</em></a>
+          </a>
+
+          <a class="sidebar-nav-item " href="/modules/18a-diffusion"><b> ·
+            </b><em>BI-LSTM CRF SEMIEVAL Task8 Coreference Resolution</em>
+          </a><!-- <div class="week">Unit 7</div>--><!-- Unit 6 ends here --><!-- Unit 7 starts here -->
+
+
+          <a class="sidebar-nav-item "
+            href="/homework/1-mlp-from-scratch"> <b>
+              · </b><em>Exploring The TMNT Package for Seq2Seq Processing</em>
+          </a>
+
+          <a class="sidebar-nav-item "
+            href="/homework/2-CAM-adversarial"><b>
+              · </b><em>Text-based Ideal Points and Topic Modeling over 2021 Election Candidates' Twitter Data</em>
+          </a>
+
+          <a class="sidebar-nav-item " href="/homework/3-VAE"><b>
+              · </b><em>ETL Data Pipeline And Serverless Application Example</em></a>
+        </a>
+
+
+
+    </nav>
+  </div>
+</div>
+<div class="content container">
+<!-- Content appended here -->
+<div class="franklin-content"><h1 id="chomsky_hierarchy_cfg_and_cky_algorithm"><a href="#chomsky_hierarchy_cfg_and_cky_algorithm" class="header-anchor">Chomsky Hierarchy, CFG, and CKY Algorithm</a></h1>
+<p>According to Wikipedia, this algorithm is a parsing algorithm for <code>context-free grammars</code> published  by Itiroo Sakai in 1961. The algorithm is named after its rediscoverers. It employs <code>bottom-up parsing</code> and <code>dynamic programming</code>. </p>
+<p>The standard version of the algorithm operates on context-free grammars given in <code>chomsky normal form &#40;CNF&#41;</code>. However any context-free grammar may be alagorithmically transformed into a CNF grammar expressing the same language. </p>
+<h3 id="the_pseudo-code_goes_as"><a href="#the_pseudo-code_goes_as" class="header-anchor">The Pseudo-code Goes As</a></h3>
+<pre><code class="language-julia">let the input be a string I consisting of n characters: a1 ... an.
+let the grammar contain r nonterminal symbols R1 ... Rr, with start symbol R1.
+let P&#91;n,n,r&#93; be an array of booleans. Initialize all elements of P to false.
+let back&#91;n,n,r&#93; be an array of lists of backpointing triples. Initialize all 
 elements of back to the empty list.
 
-<span class=hljs-keyword >for</span> each s = <span class=hljs-number >1</span> to n
-    <span class=hljs-keyword >for</span> each unit production Rv → as
-        set P[<span class=hljs-number >1</span>,s,v] = <span class=hljs-literal >true</span>
+for each s &#61; 1 to n
+    for each unit production Rv → as
+        set P&#91;1,s,v&#93; &#61; true
 
-<span class=hljs-keyword >for</span> each l = <span class=hljs-number >2</span> to n -- Length of span
-    <span class=hljs-keyword >for</span> each s = <span class=hljs-number >1</span> to n-l+<span class=hljs-number >1</span> -- Start of span
-        <span class=hljs-keyword >for</span> each p = <span class=hljs-number >1</span> to l-<span class=hljs-number >1</span> -- Partition of span
-            <span class=hljs-keyword >for</span> each production Ra → Rb Rc
-                <span class=hljs-keyword >if</span> P[p,s,b] and P[l-p ,s+p ,c] then
-                    set P[l,s,a] = <span class=hljs-literal >true</span>, 
-                    append &lt;p,b,c&gt; to back[l,s,a]
+for each l &#61; 2 to n -- Length of span
+    for each s &#61; 1 to n-l&#43;1 -- Start of span
+        for each p &#61; 1 to l-1 -- Partition of span
+            for each production Ra → Rb Rc
+                if P&#91;p,s,b&#93; and P&#91;l-p ,s&#43;p ,c&#93; then
+                    set P&#91;l,s,a&#93; &#61; true, 
+                    append &lt;p,b,c&gt; to back&#91;l,s,a&#93;
 
-<span class=hljs-keyword >if</span> P[n,<span class=hljs-number >1</span>,<span class=hljs-number >1</span>] is <span class=hljs-literal >true</span> then
+if P&#91;n,1,1&#93; is true then
     I is member of language
-    <span class=hljs-keyword >return</span> back -- by retracing the steps through back, 
+    return back -- by retracing the steps through back, 
     one can easily construct all possible parse trees of the string.
-<span class=hljs-keyword >else</span>
-    <span class=hljs-keyword >return</span> <span class=hljs-string >&quot;not a member of language&quot;</span></code></pre> <hr /> <h3 id=probabilistic_cyk_for_finding_the_most_probable_parse ><a href="#probabilistic_cyk_for_finding_the_most_probable_parse" class=header-anchor >Probabilistic CYK &#40;for finding the most probable parse&#41;</a></h3> <p>In informal terms, this algorithm considers every possible substring of the input string and sets <code>P&#91;l,s,v&#93;</code> to be true if the substring of length l starting from <code>s</code> can be generated from the nonterminal <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>v</mi></msub></mrow><annotation encoding="application/x-tex">R_{v}</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.83333em;vertical-align:-0.15em;"></span><span class=mord ><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class=msupsub ><span class="vlist-t vlist-t2"><span class=vlist-r ><span class=vlist  style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class=pstrut  style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">v</span></span></span></span></span><span class=vlist-s >​</span></span><span class=vlist-r ><span class=vlist  style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>. Once it has considered substrings of length <code>1</code>, it goes on to substrings of length <code>2</code>, and so on. </p> <p>For substrings of length <code>2</code> and greater, it considers every possible partition of the substring into two parts, and checks to see if there is some production <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi><mtext> </mtext><mspace linebreak=newline ></mspace><mi>C</mi></mrow><annotation encoding="application/x-tex">A\to B\; \\ C</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class=mspace  style="margin-right:0.2777777777777778em;"></span><span class=mrel >→</span><span class=mspace  style="margin-right:0.2777777777777778em;"></span></span><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class=mspace  style="margin-right:0.2777777777777778em;"></span></span><span class="mspace newline"></span><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span> such that <code>B</code> matches the first part and <code>C</code> matches the second part. If so, it records A as matching the whole substring. </p> <p>Once this process is completed, the input string is generated by the grammar if the substring containing the entire input string is matched by the start symbol.</p> <hr /> <p><img src="../extras/info_theory/cky.gif" alt=cky  /></p> <hr /> <p>Now the sentence she eats a fish with a fork is analyzed using the CYK algorithm. In the following table, in <code>P&#91;i,j,k&#93;</code>, i is the number of the row &#40;starting at the bottom at 1&#41;, and j is the number of the column &#40;starting at the left at 1&#41;.</p> <pre><code class="plaintext hljs">S -&gt; NP VP; VP -&gt; VP PP 
+else
+    return &quot;not a member of language&quot;</code></pre>
+<hr />
+<h3 id="probabilistic_cyk_for_finding_the_most_probable_parse"><a href="#probabilistic_cyk_for_finding_the_most_probable_parse" class="header-anchor">Probabilistic CYK &#40;for finding the most probable parse&#41;</a></h3>
+<p>In informal terms, this algorithm considers every possible substring of the input string and sets <code>P&#91;l,s,v&#93;</code> to be true if the substring of length l starting from <code>s</code> can be generated from the nonterminal \(R_{v}\). Once it has considered substrings of length <code>1</code>, it goes on to substrings of length <code>2</code>, and so on. </p>
+<p>For substrings of length <code>2</code> and greater, it considers every possible partition of the substring into two parts, and checks to see if there is some production \(A\to B\; \\ C\) such that <code>B</code> matches the first part and <code>C</code> matches the second part. If so, it records A as matching the whole substring. </p>
+<p>Once this process is completed, the input string is generated by the grammar if the substring containing the entire input string is matched by the start symbol.</p>
+<hr />
+<p><img src="../extras/info_theory/cky.gif" alt="cky" /></p>
+<hr />
+<p>Now the sentence she eats a fish with a fork is analyzed using the CYK algorithm. In the following table, in <code>P&#91;i,j,k&#93;</code>, i is the number of the row &#40;starting at the bottom at 1&#41;, and j is the number of the column &#40;starting at the left at 1&#41;.</p>
+<pre><code class="language-plaintext">S -&gt; NP VP; VP -&gt; VP PP 
 VP -&gt; V NP; VP -&gt; EATS
 PP -&gt; P NP; NP -&gt; DET N
 NP -&gt; SHE; V -&gt; EATS; P -&gt; WITH 
-N -&gt; FISH; N -&gt; FORK; DET -&gt; A</code></pre> <p>Now the sentence <code>she eats a fish</code> with a fork is analyzed using the CYK algorithm. In the following table, in <code>P&#91;i,j,k&#93;</code>, i is the number of the row &#40;starting at the bottom at 1&#41;, and j is the number of the column &#40;starting at the left at 1&#41;.</p> <hr /> <p><img src="../extras/info_theory/cky_table.png" alt=cky_tbl  /></p> <hr /> <h3 id=dynamic_programming ><a href="#dynamic_programming" class=header-anchor >Dynamic Programming </a></h3> <p>It&quot;s a very ubiquitous method of reducing the runtime algorithms by discovering solutions to subproblems along the way to the solution of the main problem; to optimally plan a multi-stage process </p> <div class=colbox-blue ><ul> <li><p>good for problems with overlapping subproblems </p> <li><p>generally involves the caching of partial results in a table for later retrieval</p> <li><p>many application &#40;outside of NLP&#41;</p> </ul></div> <h4 id=what_are_the_subproblems_for_the_parsing_task ><a href="#what_are_the_subproblems_for_the_parsing_task" class=header-anchor >What are the subproblems for the parsing task?</a></h4> <p>A <code>well-formed substring table is a data structure containing partial consitutency structures</code>. It may be represented as either a chart or a graph.</p> <p><em><strong>Example</strong></em></p> <blockquote> <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant=bold >Thebrowndog</mtext><mspace linebreak=newline ></mspace><mspace linebreak=newline ></mspace><mo>−</mo><mo>−</mo><mo>−</mo><mo>−</mo><mo>−</mo><mo>−</mo><mo>−</mo><mo>−</mo><mspace linebreak=newline ></mspace><mspace linebreak=newline ></mspace><mtext>NP</mtext><mo>→</mo><mtext>DT</mtext><mtext> </mtext><mtext> </mtext><mtext>Nom</mtext><mspace linebreak=newline ></mspace><mtext>Nom</mtext><mo>→</mo><mtext>JJ</mtext><mtext> </mtext><mtext> </mtext><mtext>NN</mtext><mspace linebreak=newline ></mspace><mtext>DT</mtext><mo>→</mo><mtext> </mtext><mi>e</mi><mi>t</mi><mi>c</mi></mrow><annotation encoding="application/x-tex"> \textbf{The} \textbf{brown} \textbf{dog} \\ \\ -------- \\ \\ \text{NP}\to \text{DT} \, \, \text{Nom} \\ \text{Nom}\to \text{JJ} \,\, \text{NN} \\ \text{DT}\to \, etc</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord textbf">The</span></span><span class="mord text"><span class="mord textbf">brown</span></span><span class="mord text"><span class="mord textbf">dog</span></span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class="mspace newline"></span><span class="mspace newline"></span><span class=base ><span class=strut  style="height:0.66666em;vertical-align:-0.08333em;"></span><span class=mbin >−</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class=base ><span class=strut  style="height:0.66666em;vertical-align:-0.08333em;"></span><span class=mord >−</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span><span class=mbin >−</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class=base ><span class=strut  style="height:0.66666em;vertical-align:-0.08333em;"></span><span class=mord >−</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span><span class=mbin >−</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class=base ><span class=strut  style="height:0.66666em;vertical-align:-0.08333em;"></span><span class=mord >−</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span><span class=mbin >−</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class=base ><span class=strut  style="height:0.66666em;vertical-align:-0.08333em;"></span><span class=mord >−</span></span><span class="mspace newline"></span><span class="mspace newline"></span><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class=mord >NP</span></span><span class=mspace  style="margin-right:0.2777777777777778em;"></span><span class=mrel >→</span><span class=mspace  style="margin-right:0.2777777777777778em;"></span></span><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class=mord >DT</span></span><span class=mspace  style="margin-right:0.16666666666666666em;"></span><span class=mspace  style="margin-right:0.16666666666666666em;"></span><span class="mord text"><span class=mord >Nom</span></span></span><span class="mspace newline"></span><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class=mord >Nom</span></span><span class=mspace  style="margin-right:0.2777777777777778em;"></span><span class=mrel >→</span><span class=mspace  style="margin-right:0.2777777777777778em;"></span></span><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class=mord >JJ</span></span><span class=mspace  style="margin-right:0.16666666666666666em;"></span><span class=mspace  style="margin-right:0.16666666666666666em;"></span><span class="mord text"><span class=mord >NN</span></span></span><span class="mspace newline"></span><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class=mord >DT</span></span><span class=mspace  style="margin-right:0.2777777777777778em;"></span><span class=mrel >→</span><span class=mspace  style="margin-right:0.2777777777777778em;"></span><span class=mspace  style="margin-right:0.16666666666666666em;"></span></span><span class=base ><span class=strut  style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">e</span><span class="mord mathdefault">t</span><span class="mord mathdefault">c</span></span></span></span> </blockquote> <p>Put into a chart,</p> <table><tr><th align=right >The<th align=right >Brown<th align=right >Dog<tr><td align=right ><span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>DT</mtext><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\text{DT}_{1}</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.83333em;vertical-align:-0.15em;"></span><span class=mord ><span class="mord text"><span class=mord >DT</span></span><span class=msupsub ><span class="vlist-t vlist-t2"><span class=vlist-r ><span class=vlist  style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class=pstrut  style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s >​</span></span><span class=vlist-r ><span class=vlist  style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><td align=right ><td align=right ><span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>NP</mtext><mn>5</mn></msub></mrow><annotation encoding="application/x-tex">\text{NP}_{5}</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.83333em;vertical-align:-0.15em;"></span><span class=mord ><span class="mord text"><span class=mord >NP</span></span><span class=msupsub ><span class="vlist-t vlist-t2"><span class=vlist-r ><span class=vlist  style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class=pstrut  style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span><span class=vlist-s >​</span></span><span class=vlist-r ><span class=vlist  style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><tr><td align=right ><td align=right ><span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>JJ</mtext><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\text{JJ}_{2}</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.83333em;vertical-align:-0.15em;"></span><span class=mord ><span class="mord text"><span class=mord >JJ</span></span><span class=msupsub ><span class="vlist-t vlist-t2"><span class=vlist-r ><span class=vlist  style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class=pstrut  style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class=vlist-s >​</span></span><span class=vlist-r ><span class=vlist  style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><td align=right ><span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>Nom</mtext><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">\text{Nom}_{4}</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.83333em;vertical-align:-0.15em;"></span><span class=mord ><span class="mord text"><span class=mord >Nom</span></span><span class=msupsub ><span class="vlist-t vlist-t2"><span class=vlist-r ><span class=vlist  style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class=pstrut  style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span></span><span class=vlist-s >​</span></span><span class=vlist-r ><span class=vlist  style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><tr><td align=right ><td align=right ><td align=right ><span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>NN</mtext><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\text{NN}_{3}</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.83333em;vertical-align:-0.15em;"></span><span class=mord ><span class="mord text"><span class=mord >NN</span></span><span class=msupsub ><span class="vlist-t vlist-t2"><span class=vlist-r ><span class=vlist  style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class=pstrut  style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span><span class=vlist-s >​</span></span><span class=vlist-r ><span class=vlist  style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></table> <code>Numbers indicate order in which symbol was entered into table.</code> <hr /> <p><em><strong>Setting up the CKY algorithm</strong></em> </p> <ul> <li><p>For an input of length&#61;n, crate a matrix <code>&#40;n &#43; 1 x n &#43; 1&#41;</code></p> </ul> <p>indexed from 0 to <em>n</em>.</p> <ul> <li><p>Each cell in the matrix <code>&#91;i,j&#93;</code> is the set of all categories of constituents spanning from position <code>i</code> to <code>j</code>.</p> <li><p>The alforithm forces you to fill in the table in the most efficient way. </p> <li><p>Process cells left to right &#40;across columns&#41;, bottom to top &#40;backwards across rows&#41;.</p> </ul> <hr /> <p><em><strong>CKY Assumptions</strong></em></p> <p><code>Critical observation</code>: any portion of the input string spanning <code>i</code> to <code>j</code> can be split at <code>k</code>, and structure can then be built using sub-solutions spanning <code>i</code> to <code>k</code> and sub-solutionts spanning <code>k</code> to <code>j</code>.</p> <blockquote> <p>•0 The •1 Brown •2 Dog •3 </p> </blockquote> <hr /> <ul> <li><p>K &#61; 1: possible consitituents are <code>&#91;0,1&#93;</code> and <code>&#91;1,3&#93;</code></p> <li><p>K &#61; 2: possible constituent are <code>&#91;0,2&#93;</code> and <code>&#91;2,3&#93;</code></p> </ul> <hr /> <h4 id=simple_grammar ><a href="#simple_grammar" class=header-anchor >Simple grammar</a></h4> <pre><code class="julia hljs">S → NP VBZ; DT → the
+N -&gt; FISH; N -&gt; FORK; DET -&gt; A</code></pre>
+<p>Now the sentence <code>she eats a fish</code> with a fork is analyzed using the CYK algorithm. In the following table, in <code>P&#91;i,j,k&#93;</code>, i is the number of the row &#40;starting at the bottom at 1&#41;, and j is the number of the column &#40;starting at the left at 1&#41;.</p>
+<hr />
+<p><img src="../extras/info_theory/cky_table.png" alt="cky_tbl" /></p>
+<hr />
+<h3 id="dynamic_programming"><a href="#dynamic_programming" class="header-anchor">Dynamic Programming </a></h3>
+<p>It&quot;s a very ubiquitous method of reducing the runtime algorithms by discovering solutions to subproblems along the way to the solution of the main problem; to optimally plan a multi-stage process </p>
+<div class="colbox-blue"><ul>
+<li><p>good for problems with overlapping subproblems </p>
+</li>
+<li><p>generally involves the caching of partial results in a table for later retrieval</p>
+</li>
+<li><p>many application &#40;outside of NLP&#41;</p>
+</li>
+</ul></div>
+<h4 id="what_are_the_subproblems_for_the_parsing_task"><a href="#what_are_the_subproblems_for_the_parsing_task" class="header-anchor">What are the subproblems for the parsing task?</a></h4>
+<p>A <code>well-formed substring table is a data structure containing partial consitutency structures</code>. It may be represented as either a chart or a graph.</p>
+<p><em><strong>Example</strong></em></p>
+<blockquote>
+\( \textbf{The} \textbf{brown} \textbf{dog} \\ \\ -------- \\ \\ \text{NP}\to  \text{DT} \, \, \text{Nom} \\ \text{Nom}\to \text{JJ} \,\,  \text{NN} \\ \text{DT}\to \, etc\)
+</blockquote>
+<p>Put into a chart,</p>
+<table><tr><th align="right">The</th><th align="right">Brown</th><th align="right">Dog</th></tr><tr><td align="right">\(\text{DT}_{1}\)</td><td align="right"></td><td align="right">\(\text{NP}_{5}\)</td></tr><tr><td align="right"></td><td align="right">\(\text{JJ}_{2}\)</td><td align="right">\(\text{Nom}_{4}\)</td></tr><tr><td align="right"></td><td align="right"></td><td align="right">\(\text{NN}_{3}\)</td></tr></table>
+<code>Numbers indicate order in which symbol was entered into table.</code>
+<hr />
+<p><em><strong>Setting up the CKY algorithm</strong></em> </p>
+<ul>
+<li><p>For an input of length&#61;n, crate a matrix <code>&#40;n &#43; 1 x n &#43; 1&#41;</code></p>
+</li>
+</ul>
+<p>indexed from 0 to <em>n</em>.</p>
+<ul>
+<li><p>Each cell in the matrix <code>&#91;i,j&#93;</code> is the set of all categories of constituents spanning from position <code>i</code> to <code>j</code>.</p>
+</li>
+<li><p>The alforithm forces you to fill in the table in the most efficient way. </p>
+</li>
+<li><p>Process cells left to right &#40;across columns&#41;, bottom to top &#40;backwards across rows&#41;.</p>
+</li>
+</ul>
+<hr />
+<p><em><strong>CKY Assumptions</strong></em></p>
+<p><code>Critical observation</code>: any portion of the input string spanning <code>i</code> to <code>j</code> can be split at <code>k</code>, and structure can then be built using sub-solutions spanning <code>i</code> to <code>k</code> and sub-solutionts spanning <code>k</code> to <code>j</code>.</p>
+<blockquote>
+<p>•0 The •1 Brown •2 Dog •3 </p>
+</blockquote>
+<hr />
+<ul>
+<li><p>K &#61; 1: possible consitituents are <code>&#91;0,1&#93;</code> and <code>&#91;1,3&#93;</code></p>
+</li>
+<li><p>K &#61; 2: possible constituent  are <code>&#91;0,2&#93;</code> and <code>&#91;2,3&#93;</code></p>
+</li>
+</ul>
+<hr />
+<h4 id="simple_grammar"><a href="#simple_grammar" class="header-anchor">Simple grammar</a></h4>
+<pre><code class="language-julia">S → NP VBZ; DT → the
 S → NP VP; NN → chef
 VP → VP PP; NNS → fish
 VP → VBZ NP; NNS → chopsticks
@@ -38,55 +485,238 @@ NP → DT NN
 NP → DT NNS
 PP → IN NP
 
-•<span class=hljs-number >0</span> the •<span class=hljs-number >1</span> chef •<span class=hljs-number >2</span> eats •<span class=hljs-number >3</span> fish •<span class=hljs-number >4</span> with •<span class=hljs-number >5</span> the •<span class=hljs-number >6</span> chopsticks •<span class=hljs-number >7</span></code></pre> <h3 id=lets_walk_through_this_in_an_example ><a href="#lets_walk_through_this_in_an_example" class=header-anchor >Let&#39;s Walk Through This In An Example</a></h3> <table><tr><th align=right >0<th align=right >1<th align=right >2<th align=right >3<th align=right >4<th align=right >5<th align=right >6<th align=right >7<tr><td align=right >0<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ></table> <h5 id=first_we_need_to_build_a_table_build_an_n_1_x_n_1_matrix_where_n_number_of_words_in_input ><a href="#first_we_need_to_build_a_table_build_an_n_1_x_n_1_matrix_where_n_number_of_words_in_input" class=header-anchor >First we need to build a table; build an <code>n &#43; 1 x n &#43; 1</code> matrix, where <code>n &#61; number</code> of words in input</a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right >chef 2<th align=right >eats 3<th align=right >fish 4<th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >&#91;0,1&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >&#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=illustrate_the_numbering_of_cells_ijs_represent_spans ><a href="#illustrate_the_numbering_of_cells_ijs_represent_spans" class=header-anchor >Illustrate the numbering of cells: <code>&#91;i,j&#93;</code>s represent spans.</a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right ><code>chef 2</code><th align=right >eats 3<th align=right >fish 4<th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right ><code>&#91;1,2&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ></table> <h5 id=notice_how_the_spans_eg_12_differ_from_the_word_indices_eg_chef_2 ><a href="#notice_how_the_spans_eg_12_differ_from_the_word_indices_eg_chef_2" class=header-anchor >Notice how the spans &#40;e.g. <code>&#91;1,2&#93;</code>&#41; differ from the word indices &#40;e.g. <code>&quot;chef&quot;</code> , 2&#41;.</a></h5> <hr /> <table><tr><th align=right >0<th align=right ><code>the 1</code><th align=right >chef 2<th align=right >eats 3<th align=right >fish 4<th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right ><code>DT &#91;0,1&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN &#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >&#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=the_is_labeled_dt ><a href="#the_is_labeled_dt" class=header-anchor ><code>&quot;The&quot;</code> is labeled <code>DT</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right ><code>chef 2</code><th align=right >eats 3<th align=right >fish 4<th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >DT &#91;0,1&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right ><code>NN &#91;1,2&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >&#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=chef_is_labelled_nn ><a href="#chef_is_labelled_nn" class=header-anchor ><code>&quot;chef&quot;</code> is labelled <code>NN</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right ><code>the 1</code><th align=right ><code>chef 2</code><th align=right >eats 3<th align=right >fish 4<th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right ><code>DT &#91;0,1&#93;</code><td align=right ><code>NP &#91;0,2&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right ><code>NN &#91;1,2&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >&#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=found_an_np_01_12 ><a href="#found_an_np_01_12" class=header-anchor >Found an <code>NP</code>: <code>&#91;0,1&#93;</code> ,<code>&#91;1,2&#93;</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right >chef 2<th align=right ><code>eats 3</code><th align=right >fish 4<th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >DT &#91;0,1&#93;<td align=right >NP &#91;0,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN &#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right ><code>VBZ &#91;2,3&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=eats_is_labelled_vbz ><a href="#eats_is_labelled_vbz" class=header-anchor ><code>&quot;eats&quot;</code> is labelled <code>VBZ</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right ><code>the1</code><th align=right ><code>chef2</code><th align=right ><code>eats3</code><th align=right >fish4<th align=right >with5<th align=right >the6<th align=right >chopsticks7<tr><td align=right >0<td align=right >DT &#91;0,1&#93;<td align=right ><code>NP &#91;0,2&#93;</code><td align=right ><code>S &#91;0,3&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN &#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right ><code>VBZ &#91;2,3&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=found_an_s_02_23 ><a href="#found_an_s_02_23" class=header-anchor >Found an <code>S</code>: <code>&#91;0,2&#93;</code> ,<code>&#91;2,3&#93;</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right >chef 2<th align=right >eats 3<th align=right >fish 4<th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >D　T&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right ><code>NNS&#91;3,4&#93;</code><td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=fish_is_lablled_nns ><a href="#fish_is_lablled_nns" class=header-anchor ><code>&quot;fish&quot;</code> is lablled <code>NNS</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right >chef 2<th align=right ><code>eats 3</code><th align=right ><code>fish 4</code><th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >D　T&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right ><code>VBZ &#91;2,3&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right ><code>NNS, VBP&#91;3,4&#93;</code><td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=fish_is_also_labelled_vbp_because_of_the_verb_eats_or_vbz ><a href="#fish_is_also_labelled_vbp_because_of_the_verb_eats_or_vbz" class=header-anchor ><code>&quot;fish&quot;</code> is also labelled <code>VBP</code> because of the verb <code>&quot;eats&quot;</code> or <code>VBZ</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right >chef 2<th align=right ><code>eats 3</code><th align=right ><code>fish 4</code><th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >D　T&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right ><code>VBZ &#91;2,3&#93;</code><td align=right ><code>VP&#91;2,4&#93;</code><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right ><code>NNS, VBP&#91;3,4&#93;</code><td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=found_a_vp ><a href="#found_a_vp" class=header-anchor >Found a <code>VP</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right >chef 2<th align=right >eats 3<th align=right >fish 4<th align=right >with 5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right ><code>NP　&#91;0,2&#93;</code><td align=right >S　&#91;0,3&#93;<td align=right ><code>S&#91;0,4&#93;</code><td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><code>VP &#91;2,4&#93;</code><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=found_an_s_0224 ><a href="#found_an_s_0224" class=header-anchor >Found an <code>S</code>: <code>&#91;0,2&#93;</code>,<code>&#91;2,4&#93;</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right >chef 2<th align=right >eats 3<th align=right >fish 4<th align=right ><code>with 5</code><th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >DT &#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right >S&#91;0,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><code>IN &#91;4,5&#93;</code><td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=with_is_labelled_in ><a href="#with_is_labelled_in" class=header-anchor ><code>&quot;with&quot;</code> is labelled <code>IN</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the1<th align=right >chef2<th align=right >eats3<th align=right >fish4<th align=right >with5<th align=right >the6<th align=right >chopsticks7<tr><td align=right >0<td align=right >&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right >S&#91;0,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><code>DT &#91;5,6&#93;</code><td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;6,7&#93;</table> <h5 id=the_is_labelled_dt ><a href="#the_is_labelled_dt" class=header-anchor ><code>&quot;the&quot;</code> is labelled <code>DT</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the1<th align=right >chef2<th align=right >eats3<th align=right >fish4<th align=right >with5<th align=right >the 6<th align=right >chopsticks7<tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right >S &#91;0,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;5,6&#93;<td align=right ><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><code>NNS&#91;6,7&#93;</code></table> <h5 id=chopsticks_is_labelled_nns ><a href="#chopsticks_is_labelled_nns" class=header-anchor ><code>&quot;chopsticks&quot;</code> is labelled <code>NNS</code> </a></h5> <hr /> <table><tr><th align=right >0<th align=right >the1<th align=right >chef2<th align=right >eats3<th align=right >fish4<th align=right >with5<th align=right ><code>the6</code><th align=right ><code>chopsticks7</code><tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right >S &#91;0,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >&#91;4,5&#93;<td align=right ><td align=right ><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><code>DT&#91;5,6&#93;</code><td align=right ><code>NP&#91;5,7&#93;</code><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><code>NNS&#91;6,7&#93;</code></table> <h5 id=found_an_np_56_67 ><a href="#found_an_np_56_67" class=header-anchor >Found an <code>NP</code>: <code>&#91;5,6&#93;</code>, <code>&#91;6,7&#93;</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the 1<th align=right >chef 2<th align=right >eats 3<th align=right >fish 4<th align=right ><code>with5</code><th align=right ><code>the6</code><th align=right ><code>chopsticks7</code><tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right >S &#91;0,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><code>IN &#91;4,5&#93;</code><td align=right ><td align=right ><code>PP &#91;4,7&#93;</code><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >DT&#91;5,6&#93;<td align=right ><code>NP &#91;5,7&#93;</code><tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;6,7&#93;</table> <h5 id=found_a_pp_45_57 ><a href="#found_a_pp_45_57" class=header-anchor >Found a <code>PP</code>: <code>&#91;4,5&#93;</code>, <code>&#91;5,7&#93;</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the1<th align=right >chef2<th align=right >eats3<th align=right ><code>fish4</code><th align=right ><code>with5</code><th align=right ><code>the6</code><th align=right ><code>chopsticks7</code><tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right >S &#91;0,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >NNS, <code>VPB&#91;3,4&#93;</code><td align=right ><td align=right ><td align=right ><code>VP &#91;3,7&#93;</code><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >IN &#91;4,5&#93;<td align=right ><td align=right ><code>PP &#91;4,7&#93;</code><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >DT&#91;5,6&#93;<td align=right >NP &#91;5,7&#93;<tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;6,7&#93;</table> <h5 id=found_a_vp_34_47 ><a href="#found_a_vp_34_47" class=header-anchor >Found a <code>VP</code>: <code>&#91;3,4&#93;</code>, <code>&#91;4,7&#93;</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the1<th align=right >chef2<th align=right ><code>eats3</code><th align=right ><code>fish4</code><th align=right ><code>with5</code><th align=right ><code>the6</code><th align=right ><code>chopsticks7</code><tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right >S &#91;0,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right ><code>VBZ &#91;2,3&#93;</code><td align=right ><td align=right ><td align=right ><td align=right ><code>VP &#91;2,7&#93;</code><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >NNS, VPB&#91;3,4&#93;<td align=right ><td align=right ><td align=right ><code>VP &#91;3,7&#93;</code><tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >IN &#91;4,5&#93;<td align=right ><td align=right >PP &#91;4,7&#93;<tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >DT&#91;5,6&#93;<td align=right >NP &#91;5,7&#93;<tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;6,7&#93;</table> <h5 id=found_a_vp23_37 ><a href="#found_a_vp23_37" class=header-anchor >Found a <code>VP</code>:<code>&#91;2,3&#93;</code>, <code>&#91;3,7&#93;</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right >the1<th align=right >chef2<th align=right ><code>eats3</code><th align=right >fish4<th align=right ><code>with5</code><th align=right ><code>the6</code><th align=right ><code>chopsticks7</code><tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right >NP　&#91;0,2&#93;<td align=right >S　&#91;0,3&#93;<td align=right >S &#91;0,4&#93;<td align=right ><td align=right ><td align=right ><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right ><code>VP &#91;2,4&#93;</code><td align=right ><td align=right ><td align=right >VP_&#123;1&#125;, <code>VP_&#123;2&#125; &#91;2,7&#93;</code><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >NNS, VPB&#91;3,4&#93;<td align=right ><td align=right ><td align=right >VP &#91;3,7&#93;<tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >IN &#91;4,5&#93;<td align=right ><td align=right ><code>PP &#91;4,7&#93;</code><tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >DT&#91;5,6&#93;<td align=right >NP &#91;5,7&#93;<tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;6,7&#93;</table> <h5 id=found_another_vp_24_47 ><a href="#found_another_vp_24_47" class=header-anchor >Found another <code>VP</code>: <code>&#91;2,4&#93;</code>, <code>&#91;4,7&#93;</code></a></h5> <hr /> <table><tr><th align=right >0<th align=right ><code>the1</code><th align=right ><code>chef2</code><th align=right ><code>eats3</code><th align=right >fish4<th align=right ><code>with5</code><th align=right ><code>the6</code><th align=right ><code>chopsticks7</code><tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right ><code>NP　&#91;0,2&#93;</code><td align=right >S　&#91;0,3&#93;<td align=right >S &#91;0,4&#93;<td align=right ><td align=right ><td align=right ><code>S &#91;0,7&#93;</code><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right >VP &#91;2,4&#93;<td align=right ><td align=right ><td align=right ><code>VP_&#123;1&#125; &#91;2,7&#93;</code>, VP_&#123;2&#125;<tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >NNS, VPB&#91;3,4&#93;<td align=right ><td align=right ><td align=right >VP &#91;3,7&#93;<tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >IN &#91;4,5&#93;<td align=right ><td align=right >PP &#91;4,7&#93;<tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >DT&#91;5,6&#93;<td align=right >NP &#91;5,7&#93;<tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;6,7&#93;</table> <hr /> <h5 id=found_an_s_node_0227 ><a href="#found_an_s_node_0227" class=header-anchor >Found an <code>S</code> node: <code>&#91;0,2&#93;</code>,<code>&#91;2,7&#93;</code></a></h5> <table><tr><th align=right >0<th align=right ><code>the1</code><th align=right ><code>chef2</code><th align=right ><code>eats3</code><th align=right ><code>fish4</code><th align=right ><code>with5</code><th align=right ><code>the6</code><th align=right ><code>chopsticks7</code><tr><td align=right >0<td align=right >DT&#91;0,1&#93;<td align=right ><code>NP　&#91;0,2&#93;</code><td align=right >S　&#91;0,3&#93;<td align=right >S &#91;0,4&#93;<td align=right ><td align=right ><td align=right >S_&#123;1&#125;, <code>S_&#123;2&#125; &#91;0,7&#93;</code><tr><td align=right >1<td align=right ><td align=right >NN　&#91;1,2&#93;<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><tr><td align=right >2<td align=right ><td align=right ><td align=right >VBZ &#91;2,3&#93;<td align=right >VP &#91;2,4&#93;<td align=right ><td align=right ><td align=right >VP_&#123;1&#125; &#91;2,7&#93;, <code>VP_&#123;2&#125; &#91;2,7&#93;</code><tr><td align=right >3<td align=right ><td align=right ><td align=right ><td align=right >NNS, VPB&#91;3,4&#93;<td align=right ><td align=right ><td align=right >VP &#91;3,7&#93;<tr><td align=right >4<td align=right ><td align=right ><td align=right ><td align=right ><td align=right >IN &#91;4,5&#93;<td align=right ><td align=right >PP &#91;4,7&#93;<tr><td align=right >5<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >DT&#91;5,6&#93;<td align=right >NP &#91;5,7&#93;<tr><td align=right >6<td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right ><td align=right >NNS&#91;6,7&#93;</table> <h5 id=found_a_second_s_node_also_02_27 ><a href="#found_a_second_s_node_also_02_27" class=header-anchor >Found a second <code>S</code> node also: <code>&#91;0,2&#93;</code>, <code>&#91;2,7&#93;</code></a></h5> <hr /> <ul> <li><p>Recognition algorithm returns <code>true</code> when a root node is found in <code>&#91;0,n&#93;</code>.</p> </ul> <hr /> <h4 id=another_version_of_the_cky_algorithm_pseudo_code ><a href="#another_version_of_the_cky_algorithm_pseudo_code" class=header-anchor >Another Version of The CKY Algorithm Pseudo Code</a></h4> <ul> <li><h4>CKY Recognition</h4> </ul> <pre><code class="julia hljs"><span class=hljs-keyword >function</span> CKY-Parse (words, grammar) returns table
-    <span class=hljs-keyword >for</span> j ← <span class=hljs-number >1</span> to length(words) <span class=hljs-keyword >do</span>: (loop over columns)
-        table[j-<span class=hljs-number >1</span>,j] ← {A|A → words[j] ∈ grammar} (add POS)
-        <span class=hljs-keyword >for</span> i ← j-<span class=hljs-number >2</span> downto <span class=hljs-number >0</span> <span class=hljs-keyword >do</span>: (loop over rows, backwards)
-            <span class=hljs-keyword >for</span> k ← i+<span class=hljs-number >1</span> to j-<span class=hljs-number >1</span> <span class=hljs-keyword >do</span>: (loop over contents of cell)
-            table[i,j] ← table[i,j] ∪ {A|A → B C ∈ grammar,B ∈ table[i,k]
-            C ∈ table[k,j] }</code></pre> <ul> <li><p>Returning the full parse requires storing more in a cell than</p> </ul> <p>just a node label.</p> <ul> <li><p>We also require back-pointers to constituents of that node.</p> <li><p>We could also store whole trees, but less space efficient.</p> <li><p>For parsing, we must add an extra step to the algorithm.</p> </ul> <ul> <li><h4>CKY Parsing</h4> </ul> <pre><code class="julia hljs"><span class=hljs-keyword >function</span> CKY-Parse (words, grammar) returns parses
-    <span class=hljs-keyword >for</span> j ← <span class=hljs-number >1</span> to length(words) <span class=hljs-keyword >do</span>: (loop over columns)
-        table[j-<span class=hljs-number >1</span>,j] ← <span class=hljs-keyword >for</span> all {A|A → words[j] ∈ grammar} (add all POS)
-        <span class=hljs-keyword >for</span> i ← j-<span class=hljs-number >2</span> downto <span class=hljs-number >0</span> <span class=hljs-keyword >do</span>: (loop over rows, backwards)
-            <span class=hljs-keyword >for</span> k ← i+<span class=hljs-number >1</span> to j-<span class=hljs-number >1</span> <span class=hljs-keyword >do</span>: (loop over contents of cell)
-                <span class=hljs-keyword >for</span> all {A|A → B C}: (all productions)
-                back[i,j,A] ← { k,B,C } (add back pointer)
-    <span class=hljs-keyword >return</span> buildtree(back[<span class=hljs-number >1</span>, length(words,S]), table[<span class=hljs-number >1</span>,LENGTH(words),S])
-    (follow back pointer)</code></pre> <h5 id=facts_about_cky_algo ><a href="#facts_about_cky_algo" class=header-anchor >Facts about CKY algo</a></h5> <ul> <li><p>The CKY can be performed in cubic time: <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy=false >(</mo><msup><mi>n</mi><mn>3</mn></msup><mo stretchy=false >)</mo></mrow><annotation encoding="application/x-tex">O(n^3)</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class=mopen >(</span><span class=mord ><span class="mord mathdefault">n</span><span class=msupsub ><span class=vlist-t ><span class=vlist-r ><span class=vlist  style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class=pstrut  style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class=mclose >)</span></span></span></span>, where n&#61;number of words in sentence.</p> <li><p>The complexity of the inner most loop is bounded by the square of the number of non-terminals.</p> <li><p>The more rules, the less efficient; but this increases at a constant rate <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">L = r^2</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class=mspace  style="margin-right:0.2777777777777778em;"></span><span class=mrel >=</span><span class=mspace  style="margin-right:0.2777777777777778em;"></span></span><span class=base ><span class=strut  style="height:0.8141079999999999em;vertical-align:0em;"></span><span class=mord ><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class=msupsub ><span class=vlist-t ><span class=vlist-r ><span class=vlist  style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class=pstrut  style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> where r is the number of non-terminal.</p> <li><p>The basic algoritm requires a binary grammar, in fact a grammar in Chomsky Normal Form.</p> <li><p>Basic algorithm can be extended to account for arbitrary <code>CFGs</code>.</p> <li><p>However, transforming a grammar into a <code>CNF grammar</code> is easier and more efficient than parsing with an arbitrary grammar.</p> <li><p>Later, we’ll look at the <code>Earley Algorithm</code> for parsing arbitrary CFGs.</p> </ul> <h5 id=chomsky_normal_form_grammar ><a href="#chomsky_normal_form_grammar" class=header-anchor >Chomsky Normal Form grammar </a></h5> <ul> <li><p>a context-free grammar where the <code>RHS</code> of each production rule is restricted to be either <code>two non-terminals</code> or <code>one terminal</code>, and no empty productions are allowed.</p> </ul> <h5 id=there_can_be ><a href="#there_can_be" class=header-anchor >There can be:</a></h5> <ul> <li><p>no mixed rules <code>&#40;NP → the NN&#41;</code></p> <li><p>no unit productions &#40;<code>NP → NNP</code>&#41;, except for <code>NN → dog</code></p> <li><p>no right hand sides of more than two non-terminals &#40;<code>VP → VBZ NP PP</code>&#41;.</p> </ul> <h5 id=grammar_equivalence ><a href="#grammar_equivalence" class=header-anchor >Grammar equivalence </a></h5> <ul> <li><p>Any CFG can be converted to a weakly equivalent grammar in <code>CNF</code>.</p> <li><p><code>Weak equivalence</code>: Two grammars are weakly equivalent if they generate the same set of strings &#40;sentences&#41;. Transforming a grammar to <code>CNF</code> results in a new grammar that is weakly equivalent.</p> <li><p><code>Strong equivalence</code>: Two grammars are strongly equivalent if they generate the same set of strings AND the same structures over those strings. If only the variable names are diff. then the grammar are said to be isomorphic. </p> </ul> <h5 id=symbol_naming_conventions_-_x_bar_theory ><a href="#symbol_naming_conventions_-_x_bar_theory" class=header-anchor >Symbol Naming Conventions - X Bar Theory </a></h5> <ul> <li><p>Use new symbols &#40;binarization&#41;: <code>X1, X2, . . . , Y3</code>:</p> </ul> <p> <code>S → NP VP PUNC</code> becomes: <code>S → NP X1</code>, <code>X1 → VP PUNC</code></p> <ul> <li><p>Delete a symbol &#40;unary collapsing&#41;:</p> </ul> <p> <code>SBAR → S</code>, <code>S → NP VP</code> becomes <code>SBAR → NP VP</code></p> <h5 id=refer_to_nltk_tree_transforms_module ><a href="#refer_to_nltk_tree_transforms_module" class=header-anchor >Refer to NLTK tree transforms module:</a></h5> <ul> <li><p>Create new symbols from old &#40;binarization&#41;: <code>S → NP VP PUNC</code> becomes: <code>S → NP S|hVP-PUNCi</code>, <code>S|hVP-PUNCi → VP PUNC</code></p> <li><p>Create new symbols from old &#40;unary collapsing&#41;: <code>SBAR → S</code>, <code>S → NP VP</code> becomes <code>SBAR&#43;S → NP VP</code></p> </ul> <h5 id=a_sample_of_cfg ><a href="#a_sample_of_cfg" class=header-anchor >A Sample of CFG</a></h5> <pre><code class="julia hljs">S → NP VP PUNC (non-binary)
-       S → S and S (mixed) 
-        NP → DT NP (OK)
-           NP → NN (unit production)
-          NN → dog (OK)
-          NN → cat (OK)
-       VP → VBZ NP (OK)
-          VP → VBZ (unit production)
-      VBZ → sleeps (OK)
-        VBZ → eats (OK)
-          DT → the (OK)</code></pre> <h5 id=conversion_of_cfg_to_cnf_step_1 ><a href="#conversion_of_cfg_to_cnf_step_1" class=header-anchor >Conversion of CFG to CNF: Step 1</a></h5> <pre><code class="julia hljs">Non-CNF grammar|| CNF grammar||     Action
+•0 the •1 chef •2 eats •3 fish •4 with •5 the •6 chopsticks •7</code></pre>
+<h3 id="lets_walk_through_this_in_an_example"><a href="#lets_walk_through_this_in_an_example" class="header-anchor">Let&#39;s Walk Through This In An Example</a></h3>
+<table><tr><th align="right">0</th><th align="right">1</th><th align="right">2</th><th align="right">3</th><th align="right">4</th><th align="right">5</th><th align="right">6</th><th align="right">7</th></tr><tr><td align="right">0</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr></table>
+<h5 id="first_we_need_to_build_a_table_build_an_n_1_x_n_1_matrix_where_n_number_of_words_in_input"><a href="#first_we_need_to_build_a_table_build_an_n_1_x_n_1_matrix_where_n_number_of_words_in_input" class="header-anchor">First we need to build a table; build an <code>n &#43; 1 x n &#43; 1</code> matrix, where <code>n &#61; number</code> of words in input</a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right">chef 2</th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">&#91;0,1&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">&#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="illustrate_the_numbering_of_cells_ijs_represent_spans"><a href="#illustrate_the_numbering_of_cells_ijs_represent_spans" class="header-anchor">Illustrate the numbering of cells: <code>&#91;i,j&#93;</code>s represent spans.</a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right"><code>chef 2</code></th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right"><code>&#91;1,2&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr></table>
+<h5 id="notice_how_the_spans_eg_12_differ_from_the_word_indices_eg_chef_2"><a href="#notice_how_the_spans_eg_12_differ_from_the_word_indices_eg_chef_2" class="header-anchor">Notice how the spans &#40;e.g. <code>&#91;1,2&#93;</code>&#41; differ from the word indices &#40;e.g. <code>&quot;chef&quot;</code> , 2&#41;.</a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right"><code>the 1</code></th><th align="right">chef 2</th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right"><code>DT &#91;0,1&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN &#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">&#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="the_is_labeled_dt"><a href="#the_is_labeled_dt" class="header-anchor"><code>&quot;The&quot;</code> is labeled <code>DT</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right"><code>chef 2</code></th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">DT &#91;0,1&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right"><code>NN &#91;1,2&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">&#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="chef_is_labelled_nn"><a href="#chef_is_labelled_nn" class="header-anchor"><code>&quot;chef&quot;</code> is labelled <code>NN</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right"><code>the 1</code></th><th align="right"><code>chef 2</code></th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right"><code>DT &#91;0,1&#93;</code></td><td align="right"><code>NP &#91;0,2&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right"><code>NN &#91;1,2&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">&#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="found_an_np_01_12"><a href="#found_an_np_01_12" class="header-anchor">Found an <code>NP</code>: <code>&#91;0,1&#93;</code> ,<code>&#91;1,2&#93;</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right">chef 2</th><th align="right"><code>eats 3</code></th><th align="right">fish 4</th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">DT &#91;0,1&#93;</td><td align="right">NP &#91;0,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN &#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right"><code>VBZ &#91;2,3&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="eats_is_labelled_vbz"><a href="#eats_is_labelled_vbz" class="header-anchor"><code>&quot;eats&quot;</code> is labelled <code>VBZ</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right"><code>the1</code></th><th align="right"><code>chef2</code></th><th align="right"><code>eats3</code></th><th align="right">fish4</th><th align="right">with5</th><th align="right">the6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">DT &#91;0,1&#93;</td><td align="right"><code>NP &#91;0,2&#93;</code></td><td align="right"><code>S &#91;0,3&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN &#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right"><code>VBZ &#91;2,3&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="found_an_s_02_23"><a href="#found_an_s_02_23" class="header-anchor">Found an <code>S</code>: <code>&#91;0,2&#93;</code> ,<code>&#91;2,3&#93;</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right">chef 2</th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">D　T&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>NNS&#91;3,4&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="fish_is_lablled_nns"><a href="#fish_is_lablled_nns" class="header-anchor"><code>&quot;fish&quot;</code> is lablled <code>NNS</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right">chef 2</th><th align="right"><code>eats 3</code></th><th align="right"><code>fish 4</code></th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">D　T&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right"><code>VBZ &#91;2,3&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>NNS, VBP&#91;3,4&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="fish_is_also_labelled_vbp_because_of_the_verb_eats_or_vbz"><a href="#fish_is_also_labelled_vbp_because_of_the_verb_eats_or_vbz" class="header-anchor"><code>&quot;fish&quot;</code> is also labelled <code>VBP</code> because of the verb <code>&quot;eats&quot;</code> or <code>VBZ</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right">chef 2</th><th align="right"><code>eats 3</code></th><th align="right"><code>fish 4</code></th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">D　T&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right"><code>VBZ &#91;2,3&#93;</code></td><td align="right"><code>VP&#91;2,4&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>NNS, VBP&#91;3,4&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="found_a_vp"><a href="#found_a_vp" class="header-anchor">Found a <code>VP</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right">chef 2</th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right">with 5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right"><code>NP　&#91;0,2&#93;</code></td><td align="right">S　&#91;0,3&#93;</td><td align="right"><code>S&#91;0,4&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"><code>VP &#91;2,4&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="found_an_s_0224"><a href="#found_an_s_0224" class="header-anchor">Found an <code>S</code>: <code>&#91;0,2&#93;</code>,<code>&#91;2,4&#93;</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right">chef 2</th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right"><code>with 5</code></th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">DT &#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right">S&#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>IN &#91;4,5&#93;</code></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="with_is_labelled_in"><a href="#with_is_labelled_in" class="header-anchor"><code>&quot;with&quot;</code> is labelled <code>IN</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the1</th><th align="right">chef2</th><th align="right">eats3</th><th align="right">fish4</th><th align="right">with5</th><th align="right">the6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right">S&#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>DT &#91;5,6&#93;</code></td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;6,7&#93;</td></tr></table>
+<h5 id="the_is_labelled_dt"><a href="#the_is_labelled_dt" class="header-anchor"><code>&quot;the&quot;</code> is labelled <code>DT</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the1</th><th align="right">chef2</th><th align="right">eats3</th><th align="right">fish4</th><th align="right">with5</th><th align="right">the 6</th><th align="right">chopsticks7</th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right">S &#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;5,6&#93;</td><td align="right"></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>NNS&#91;6,7&#93;</code></td></tr></table>
+<h5 id="chopsticks_is_labelled_nns"><a href="#chopsticks_is_labelled_nns" class="header-anchor"><code>&quot;chopsticks&quot;</code> is labelled <code>NNS</code> </a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the1</th><th align="right">chef2</th><th align="right">eats3</th><th align="right">fish4</th><th align="right">with5</th><th align="right"><code>the6</code></th><th align="right"><code>chopsticks7</code></th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right">S  &#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;4,5&#93;</td><td align="right"></td><td align="right"></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>DT&#91;5,6&#93;</code></td><td align="right"><code>NP&#91;5,7&#93;</code></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>NNS&#91;6,7&#93;</code></td></tr></table>
+<h5 id="found_an_np_56_67"><a href="#found_an_np_56_67" class="header-anchor">Found an <code>NP</code>: <code>&#91;5,6&#93;</code>, <code>&#91;6,7&#93;</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the 1</th><th align="right">chef 2</th><th align="right">eats 3</th><th align="right">fish 4</th><th align="right"><code>with5</code></th><th align="right"><code>the6</code></th><th align="right"><code>chopsticks7</code></th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right">S  &#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>IN &#91;4,5&#93;</code></td><td align="right"></td><td align="right"><code>PP &#91;4,7&#93;</code></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">DT&#91;5,6&#93;</td><td align="right"><code>NP &#91;5,7&#93;</code></td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;6,7&#93;</td></tr></table>
+<h5 id="found_a_pp_45_57"><a href="#found_a_pp_45_57" class="header-anchor">Found a <code>PP</code>: <code>&#91;4,5&#93;</code>, <code>&#91;5,7&#93;</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the1</th><th align="right">chef2</th><th align="right">eats3</th><th align="right"><code>fish4</code></th><th align="right"><code>with5</code></th><th align="right"><code>the6</code></th><th align="right"><code>chopsticks7</code></th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right">S  &#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS, <code>VPB&#91;3,4&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"><code>VP &#91;3,7&#93;</code></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">IN &#91;4,5&#93;</td><td align="right"></td><td align="right"><code>PP &#91;4,7&#93;</code></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">DT&#91;5,6&#93;</td><td align="right">NP &#91;5,7&#93;</td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;6,7&#93;</td></tr></table>
+<h5 id="found_a_vp_34_47"><a href="#found_a_vp_34_47" class="header-anchor">Found a <code>VP</code>: <code>&#91;3,4&#93;</code>, <code>&#91;4,7&#93;</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the1</th><th align="right">chef2</th><th align="right"><code>eats3</code></th><th align="right"><code>fish4</code></th><th align="right"><code>with5</code></th><th align="right"><code>the6</code></th><th align="right"><code>chopsticks7</code></th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right">S  &#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right"><code>VBZ &#91;2,3&#93;</code></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"><code>VP &#91;2,7&#93;</code></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS, VPB&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"><code>VP &#91;3,7&#93;</code></td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">IN &#91;4,5&#93;</td><td align="right"></td><td align="right">PP &#91;4,7&#93;</td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">DT&#91;5,6&#93;</td><td align="right">NP &#91;5,7&#93;</td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;6,7&#93;</td></tr></table>
+<h5 id="found_a_vp23_37"><a href="#found_a_vp23_37" class="header-anchor">Found a <code>VP</code>:<code>&#91;2,3&#93;</code>, <code>&#91;3,7&#93;</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right">the1</th><th align="right">chef2</th><th align="right"><code>eats3</code></th><th align="right">fish4</th><th align="right"><code>with5</code></th><th align="right"><code>the6</code></th><th align="right"><code>chopsticks7</code></th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right">NP　&#91;0,2&#93;</td><td align="right">S　&#91;0,3&#93;</td><td align="right">S  &#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right"><code>VP &#91;2,4&#93;</code></td><td align="right"></td><td align="right"></td><td align="right">VP_&#123;1&#125;, <code>VP_&#123;2&#125; &#91;2,7&#93;</code></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS, VPB&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right">VP &#91;3,7&#93;</td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">IN &#91;4,5&#93;</td><td align="right"></td><td align="right"><code>PP &#91;4,7&#93;</code></td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">DT&#91;5,6&#93;</td><td align="right">NP &#91;5,7&#93;</td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;6,7&#93;</td></tr></table>
+<h5 id="found_another_vp_24_47"><a href="#found_another_vp_24_47" class="header-anchor">Found another <code>VP</code>: <code>&#91;2,4&#93;</code>, <code>&#91;4,7&#93;</code></a></h5>
+<hr />
+<table><tr><th align="right">0</th><th align="right"><code>the1</code></th><th align="right"><code>chef2</code></th><th align="right"><code>eats3</code></th><th align="right">fish4</th><th align="right"><code>with5</code></th><th align="right"><code>the6</code></th><th align="right"><code>chopsticks7</code></th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right"><code>NP　&#91;0,2&#93;</code></td><td align="right">S　&#91;0,3&#93;</td><td align="right">S  &#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"><code>S &#91;0,7&#93;</code></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right">VP &#91;2,4&#93;</td><td align="right"></td><td align="right"></td><td align="right"><code>VP_&#123;1&#125; &#91;2,7&#93;</code>, VP_&#123;2&#125;</td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS, VPB&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right">VP &#91;3,7&#93;</td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">IN &#91;4,5&#93;</td><td align="right"></td><td align="right">PP &#91;4,7&#93;</td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">DT&#91;5,6&#93;</td><td align="right">NP &#91;5,7&#93;</td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;6,7&#93;</td></tr></table>
+<hr />
+<h5 id="found_an_s_node_0227"><a href="#found_an_s_node_0227" class="header-anchor">Found an <code>S</code> node: <code>&#91;0,2&#93;</code>,<code>&#91;2,7&#93;</code></a></h5>
+<table><tr><th align="right">0</th><th align="right"><code>the1</code></th><th align="right"><code>chef2</code></th><th align="right"><code>eats3</code></th><th align="right"><code>fish4</code></th><th align="right"><code>with5</code></th><th align="right"><code>the6</code></th><th align="right"><code>chopsticks7</code></th></tr><tr><td align="right">0</td><td align="right">DT&#91;0,1&#93;</td><td align="right"><code>NP　&#91;0,2&#93;</code></td><td align="right">S　&#91;0,3&#93;</td><td align="right">S  &#91;0,4&#93;</td><td align="right"></td><td align="right"></td><td align="right">S_&#123;1&#125;, <code>S_&#123;2&#125; &#91;0,7&#93;</code></td></tr><tr><td align="right">1</td><td align="right"></td><td align="right">NN　&#91;1,2&#93;</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">2</td><td align="right"></td><td align="right"></td><td align="right">VBZ &#91;2,3&#93;</td><td align="right">VP &#91;2,4&#93;</td><td align="right"></td><td align="right"></td><td align="right">VP_&#123;1&#125; &#91;2,7&#93;, <code>VP_&#123;2&#125; &#91;2,7&#93;</code></td></tr><tr><td align="right">3</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS, VPB&#91;3,4&#93;</td><td align="right"></td><td align="right"></td><td align="right">VP &#91;3,7&#93;</td></tr><tr><td align="right">4</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">IN &#91;4,5&#93;</td><td align="right"></td><td align="right">PP &#91;4,7&#93;</td></tr><tr><td align="right">5</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">DT&#91;5,6&#93;</td><td align="right">NP &#91;5,7&#93;</td></tr><tr><td align="right">6</td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right"></td><td align="right">NNS&#91;6,7&#93;</td></tr></table>
+<h5 id="found_a_second_s_node_also_02_27"><a href="#found_a_second_s_node_also_02_27" class="header-anchor">Found a second <code>S</code> node also: <code>&#91;0,2&#93;</code>, <code>&#91;2,7&#93;</code></a></h5>
+<hr />
+<ul>
+<li><p>Recognition algorithm returns <code>true</code> when a root node is found in <code>&#91;0,n&#93;</code>.</p>
+</li>
+</ul>
+<hr />
+<h4 id="another_version_of_the_cky_algorithm_pseudo_code"><a href="#another_version_of_the_cky_algorithm_pseudo_code" class="header-anchor">Another Version of The CKY Algorithm Pseudo Code</a></h4>
+<ul>
+<li><h4>CKY Recognition</h4>
+</li>
+</ul>
+<pre><code class="language-julia">function CKY-Parse &#40;words, grammar&#41; returns table
+    for j ← 1 to length&#40;words&#41; do: &#40;loop over columns&#41;
+        table&#91;j-1,j&#93; ← &#123;A|A → words&#91;j&#93; ∈ grammar&#125; &#40;add POS&#41;
+        for i ← j-2 downto 0 do: &#40;loop over rows, backwards&#41;
+            for k ← i&#43;1 to j-1 do: &#40;loop over contents of cell&#41;
+            table&#91;i,j&#93; ← table&#91;i,j&#93; ∪ &#123;A|A → B C ∈ grammar,B ∈ table&#91;i,k&#93;
+            C ∈ table&#91;k,j&#93; &#125;</code></pre>
+<ul>
+<li><p>Returning the full parse requires storing more in a cell than</p>
+</li>
+</ul>
+<p>just a node label.</p>
+<ul>
+<li><p>We also require back-pointers to constituents of that node.</p>
+</li>
+<li><p>We could also store whole trees, but less space efficient.</p>
+</li>
+<li><p>For parsing, we must add an extra step to the algorithm.</p>
+</li>
+</ul>
+<ul>
+<li><h4>CKY Parsing</h4>
+</li>
+</ul>
+<pre><code class="language-julia">function CKY-Parse &#40;words, grammar&#41; returns parses
+    for j ← 1 to length&#40;words&#41; do: &#40;loop over columns&#41;
+        table&#91;j-1,j&#93; ← for all &#123;A|A → words&#91;j&#93; ∈ grammar&#125; &#40;add all POS&#41;
+        for i ← j-2 downto 0 do: &#40;loop over rows, backwards&#41;
+            for k ← i&#43;1 to j-1 do: &#40;loop over contents of cell&#41;
+                for all &#123;A|A → B C&#125;: &#40;all productions&#41;
+                back&#91;i,j,A&#93; ← &#123; k,B,C &#125; &#40;add back pointer&#41;
+    return buildtree&#40;back&#91;1, length&#40;words,S&#93;&#41;, table&#91;1,LENGTH&#40;words&#41;,S&#93;&#41;
+    &#40;follow back pointer&#41;</code></pre>
+<h5 id="facts_about_cky_algo"><a href="#facts_about_cky_algo" class="header-anchor">Facts about CKY algo</a></h5>
+<ul>
+<li><p>The CKY can be performed in cubic time: \(O(n^3)\), where n&#61;number of words in sentence.</p>
+</li>
+<li><p>The complexity of the inner most loop is bounded by the square of the number of non-terminals.</p>
+</li>
+<li><p>The more rules, the less efficient; but this increases at a constant rate \(L = r^2\) where r is the number of non-terminal.</p>
+</li>
+<li><p>The basic algoritm requires a binary grammar, in fact a grammar in Chomsky Normal Form.</p>
+</li>
+<li><p>Basic algorithm can be extended to account for arbitrary <code>CFGs</code>.</p>
+</li>
+<li><p>However, transforming a grammar into a <code>CNF grammar</code> is easier and more efficient than parsing with an arbitrary grammar.</p>
+</li>
+<li><p>Later, we’ll look at the <code>Earley Algorithm</code> for parsing arbitrary   CFGs.</p>
+</li>
+</ul>
+<h5 id="chomsky_normal_form_grammar"><a href="#chomsky_normal_form_grammar" class="header-anchor">Chomsky Normal Form grammar                                                                         </a></h5>
+<ul>
+<li><p>a context-free grammar where the <code>RHS</code> of each production rule is restricted to be either <code>two non-terminals</code> or <code>one terminal</code>, and no empty productions are allowed.</p>
+</li>
+</ul>
+<h5 id="there_can_be"><a href="#there_can_be" class="header-anchor">There can be:</a></h5>
+<ul>
+<li><p>no mixed rules <code>&#40;NP → the NN&#41;</code></p>
+</li>
+<li><p>no unit productions &#40;<code>NP → NNP</code>&#41;, except for <code>NN → dog</code></p>
+</li>
+<li><p>no right hand sides of more than two non-terminals &#40;<code>VP → VBZ NP PP</code>&#41;.</p>
+</li>
+</ul>
+<h5 id="grammar_equivalence"><a href="#grammar_equivalence" class="header-anchor">Grammar equivalence </a></h5>
+<ul>
+<li><p>Any CFG can be converted to a weakly equivalent grammar in <code>CNF</code>.</p>
+</li>
+<li><p><code>Weak equivalence</code>: Two grammars are weakly equivalent if they   generate the same set of strings &#40;sentences&#41;. Transforming a   grammar to <code>CNF</code> results in a new grammar that is weakly     equivalent.</p>
+</li>
+<li><p><code>Strong equivalence</code>: Two grammars are strongly equivalent if they   generate the same set of strings AND the same structures over   those strings. If only the variable names are diff. then the grammar   are said to be isomorphic.        </p>
+</li>
+</ul>
+<h5 id="symbol_naming_conventions_-_x_bar_theory"><a href="#symbol_naming_conventions_-_x_bar_theory" class="header-anchor">Symbol Naming Conventions - X Bar Theory </a></h5>
+<ul>
+<li><p>Use new symbols &#40;binarization&#41;: <code>X1, X2, . . . , Y3</code>:</p>
+<p><code>S → NP VP PUNC</code> becomes: <code>S → NP X1</code>, <code>X1 → VP PUNC</code></p>
+</li>
+<li><p>Delete a symbol &#40;unary collapsing&#41;:</p>
+<p><code>SBAR → S</code>, <code>S → NP VP</code> becomes <code>SBAR → NP VP</code></p>
+</li>
+</ul>
+<h5 id="refer_to_nltk_tree_transforms_module"><a href="#refer_to_nltk_tree_transforms_module" class="header-anchor">Refer to NLTK tree transforms module:</a></h5>
+<ul>
+<li><p>Create new symbols from old &#40;binarization&#41;: <code>S → NP VP PUNC</code> becomes: <code>S → NP S|hVP-PUNCi</code>, <code>S|hVP-PUNCi → VP PUNC</code></p>
+</li>
+<li><p>Create new symbols from old &#40;unary collapsing&#41;: <code>SBAR → S</code>, <code>S → NP VP</code> becomes <code>SBAR&#43;S → NP VP</code></p>
+</li>
+</ul>
+<h5 id="a_sample_of_cfg"><a href="#a_sample_of_cfg" class="header-anchor">A Sample of CFG</a></h5>
+<pre><code class="language-julia">S → NP VP PUNC &#40;non-binary&#41;
+       S → S and S &#40;mixed&#41; 
+        NP → DT NP &#40;OK&#41;
+           NP → NN &#40;unit production&#41;
+          NN → dog &#40;OK&#41;
+          NN → cat &#40;OK&#41;
+       VP → VBZ NP &#40;OK&#41;
+          VP → VBZ &#40;unit production&#41;
+      VBZ → sleeps &#40;OK&#41;
+        VBZ → eats &#40;OK&#41;
+          DT → the &#40;OK&#41;</code></pre>
+<h5 id="conversion_of_cfg_to_cnf_step_1"><a href="#conversion_of_cfg_to_cnf_step_1" class="header-anchor">Conversion of CFG to CNF: Step 1</a></h5>
+<pre><code class="language-julia">Non-CNF grammar|| CNF grammar||     Action
 -------------- || ---------- || ----------- 
 NP -&gt; NN       ||            ||
 NN -&gt; dog      ||            ||
 NN -&gt; cat      ||            ||
-               || NP -&gt; dog  ||  (collapse rule)
-               || NP -&gt; cat  ||  (collapse rule)
+               || NP -&gt; dog  ||  &#40;collapse rule&#41;
+               || NP -&gt; cat  ||  &#40;collapse rule&#41;
 VP -&gt; VBZ      ||            ||
 VBZ -&gt; sleeps  ||            ||
-VBZ -&gt; eats    ||VP -&gt; sleeps||  (collapse rule)</code></pre> <h5 id=conversion_of_cfg_to_cnf_step_2 ><a href="#conversion_of_cfg_to_cnf_step_2" class=header-anchor >Conversion of CFG to CNF: Step 2</a></h5> <pre><code class="julia hljs">Non-CNF grammar|| CNF grammar||     Action
+VBZ -&gt; eats    ||VP -&gt; sleeps||  &#40;collapse rule&#41;</code></pre>
+<h5 id="conversion_of_cfg_to_cnf_step_2"><a href="#conversion_of_cfg_to_cnf_step_2" class="header-anchor">Conversion of CFG to CNF: Step 2</a></h5>
+<pre><code class="language-julia">Non-CNF grammar|| CNF grammar||     Action
 -------------- || ---------- || ----------- 
 S -&gt; S and S   ||            ||
-               || S -&gt; S X1  ||  (new symbol)
-               || X1 -&gt; X2 S ||  (new symbol)
-               || X2 -&gt; and  ||</code></pre> <h5 id=conversion_of_cfg_to_cnf_step_3 ><a href="#conversion_of_cfg_to_cnf_step_3" class=header-anchor >Conversion of CFG to CNF: Step 3</a></h5> <pre><code class="julia hljs">Non-CNF grammar|| CNF grammar   ||     Action
+               || S -&gt; S X1  ||  &#40;new symbol&#41;
+               || X1 -&gt; X2 S ||  &#40;new symbol&#41;
+               || X2 -&gt; and  ||</code></pre>
+<h5 id="conversion_of_cfg_to_cnf_step_3"><a href="#conversion_of_cfg_to_cnf_step_3" class="header-anchor">Conversion of CFG to CNF: Step 3</a></h5>
+<pre><code class="language-julia">Non-CNF grammar|| CNF grammar   ||     Action
 -------------- || ------------- || ----------- 
 S -&gt; NP VP PUNC||               ||
-               || S  -&gt; NP X3   ||  (new symbol)
+               || S  -&gt; NP X3   ||  &#40;new symbol&#41;
                || X3 -&gt; VP PUNC ||
-NP -&gt; DT NP    || NP -&gt; DT NP   ||  (carry over)
-VP -&gt; VBZ NP   || VP -&gt; VBZ NP  ||  (carry over)
-DT -&gt; the      || DT -&gt; the     ||  (carry over)</code></pre> <h5 id=finally_cfg_in_cnf ><a href="#finally_cfg_in_cnf" class=header-anchor >Finally CFG in CNF</a></h5> <pre><code class="julia hljs">NP → dog S → NP X3
+NP -&gt; DT NP    || NP -&gt; DT NP   ||  &#40;carry over&#41;
+VP -&gt; VBZ NP   || VP -&gt; VBZ NP  ||  &#40;carry over&#41;
+DT -&gt; the      || DT -&gt; the     ||  &#40;carry over&#41;</code></pre>
+<h5 id="finally_cfg_in_cnf"><a href="#finally_cfg_in_cnf" class="header-anchor">Finally CFG in CNF</a></h5>
+<pre><code class="language-julia">NP → dog S → NP X3
 NP → cat X3 → VP PUNC
 VP → sleeps NP → DT NP
 VP → eats VP → VBZ NP
 S → S X1 DT → the
 X1 → X2 S
-X2 → and</code></pre> <div class=page-foot > <div class=copyright > <a href="https://github.com/shiyis/nlpwme/tree/master"><b> This page is hosted on <img class=github-logo  src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></b></a> ©️Last modified: October 19, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> </div>
+X2 → and</code></pre>
+<div class="page-foot">
+  <div class="copyright">
+    <a href="https://github.com/shiyis/nlpwme/tree/master"><b> This page is hosted on <img class="github-logo" src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></img></b></a></br>
+     ©️Last modified: January 03, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>
