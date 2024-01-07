@@ -76,7 +76,7 @@ To accept this position, connectionism has to accept RTT + COMP. Eliminativist c
 
 Some literature later debated around the necessity of commitment to productivity and systematicity of thoughts. Supporters still seek to illuminate the traditional style of computational system.
 
-    However, objections in entirety go against the need of adopting the representational theory. Another stream of objections go against the fact that the productivity and systematicity nature of language of thought had been greatly exaggerated. The last steak of objections posits that one can still create models that reflect the compositionality and the internal structures without adopting the Turing style model.
+    However, objections in entirety go against the need of adopting the representational theory. Another stream of objections go against the fact that the productivity and systematicity nature of language of thought had been greatly exaggerated. The last streak of objections posits that one can still create models that reflect the compositionality and the internal structures without adopting the Turing style model.
 
 The connectionists contend that instead of a concatenated structure, distributed representations could well capture the integral parts of LOT. However, doubt was raised around the idea that if we consider concatenative constituency structure is only one of the realizations of the _productivity_ and _systematicity_ of the LOT, then these schools of neural models would still be considered as part of the classicism.
 
@@ -92,7 +92,7 @@ The argument ties back to researches conducted around _concept acquisition_, and
 
 The hypothesis formulation and model testing done around the argument has suffered two logic fallacies: _ad infinitum_ and _the pain of circularity_, as children could not possibly develop a meta-meta-language to explain a meta-language nor could they have the ability to represent something unless the concept is already known, which is through the required inductive reasoning in a hypothesis formulation about the denotation of _Mentalese_.
 
-Therefore, it bears that there's no such thing as concept learning. And the conclusion was that concepts are unlearned in fact they are innate.
+Therefore, it bears that there's no such a thing as concept learning. And the conclusion was that concepts are unlearned in fact they are innate.
 
 In such a case, it's very important to explain what it means by understanding a natural language? The conclusion was that,
 
@@ -129,7 +129,7 @@ Molecular theory treats separately the relations borne out between symbols; on t
 
 To explain in simpler terms as I understood it, looking at a natural language say we have the simple term _word_ and _words_ in English serving as a basic unit or lexical item; they would belong to the same primitive type WORD as the same token under MT and different under HT.
 
-However it's concerned under HT that it might violate the _publicity constraint_ as propositional attitudes are shareable. And in contemporary literature through the inferential judgement that in a natural language, there's a vague and arbitrary sense of denotation (The English word "cat" denotes cats, but could denote something had the linguistic convention presumes so), one can also conclude that in a _Mentalese_, such a case is applicable.
+However it's concerned under HT that it might have violated the _publicity constraint_ as propositional attitudes are shareable. And in contemporary literature through the inferential judgement that in a natural language, there's a vague and arbitrary sense of denotation (The English word "cat" denotes cats, but could denote something had the linguistic convention presumes so), one can also conclude that in a _Mentalese_, such a case is applicable.
 
 Yet, historical literature suggests an alternative view that addresses an distinction that _Mentalese_ is essentially semantically permeated meaning that they are not arbitrary as a natural language is and at least to some extent they have a fixed denotation.
 
@@ -145,11 +145,11 @@ In a nutshell, above individuation theories might not be adequate to account for
 
 #### How Are The Above Premises Important to Establishing the Framework of Natural Language Understanding?
 
-To answer this question, we might need to discuss the important researches done in the realm of  around the 80s to 90s. As we have mentioned in previous paragraphs of the scientists' attempts to address the issues with representing a _Mentalese_ in the realm of cognitive science.
+To answer this question, we might need to discuss the important researches done in the realm around the 80s to 90s. As we have mentioned in previous paragraphs of the scientists' attempts to address the issues with representing a _Mentalese_ in the realm of cognitive science.
 
 In the same light, around the 90s emerging researches under the name _Connection Science_ has sparked a unique route to addressing issues with representation (e.g. distributed vs. localist representations, classical vs. uniquely connectionist representation, type/token vs. part/whole hierarchies).
 
-In this section and the subsequent sections, I will go through the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language modeling and understanding tasks often want to seek solutions that extract the underlying complex syntactic structure of a natural language. And oftentimes at least in _Connection Science_ this is done through a more generally functionalism approach (we will get into this in more detail later).
+In this section and the subsequent sections, I will go through the Chomskyan Transformation Grammar Theory; we now may call it TG. The importance is that natural language modeling and understanding tasks often want to seek solutions that extract the underlying complex syntactic structure of a natural language. And oftentimes at least in _Connection Science_ this is done through a more generally functionalist approach (we will get into this in more detail later).
 
 In order to capture more complex syntactic structures that lie in a natural language sentence, the researchers of LOTH have put a great deal of effort in developing distributed representational models with endowment of some kind of compositionality abide to the COMP law (the Compositionality of Mental Processes).
 
@@ -261,8 +261,6 @@ The remainder of this section describes the use of maps to enforce four constrai
 \textoutput{cards}
 
 ---
-
-
 
 The resulting model is highly complex. However, the implementation and evaluation decision is far from arbitrary. In fact, it's highly regular and generalized to be applied to other example sentences (though not tested on wh-questions).
 
